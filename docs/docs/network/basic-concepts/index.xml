@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Novel CS</title>
+    <link>https://example.org/docs/network/basic-concepts/</link>
+    <description>Recent content on Novel CS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://example.org/docs/network/basic-concepts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/0.0.0.0-127.0.0.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/0.0.0.0-127.0.0.1/</guid>
+      <description>The difference between 0.0.0.0 and 127.0.0.1 # 0.0.0.0: This is a non-routable meta-address used to designate an invalid, unknown, or non-applicable target. In the context of servers, 0.0.0.0 means &amp;ldquo;all IPv4 addresses on the local machine.&amp;rdquo; If a server is set to listen on 0.0.0.0, it will be reachable at any IPv4 address that the machine happens to have. This makes it useful for services that should be accessible from any network.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/datagram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/datagram/</guid>
+      <description>The idea behind datagram # The idea behind datagrams is incredibly simple: You just include in every packet enough information to enable any switch to decide how to get it to its destination. That is, every packet contains the complete destination address.
+Contactless # A host can send a packet anywhere at any time, since any packet that turns up at a switch can be immediately forwarded (assuming a correctly populated forwarding table).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/forward-routing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/forward-routing/</guid>
+      <description> forwarding and routing # Routing Table # Prefix/Length Next Hop 18/8 171.69.245.10 Forwarding Table # Prefix/Length Interface MAC Address 18/8 if0 8:0:2b:e4:b:1:2 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/hardware_components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/hardware_components/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/hostname_domainname/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/hostname_domainname/</guid>
+      <description>What’s the difference between a hostname, a domain name, and an FQDN? A hostname refers to a particular device on a network. So, in the URL www.mybusiness.com, “www” is the hostname.
+A domain name identifies the website. So, stick with the example website URL www.mybusiness.com. “Mybusiness” is the domain name. Multiple hostnames can be associated with a singular domain.
+The FQDN is the hostname, domain name, and TLD (e.g., .com). So, “www.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/ip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/ip/</guid>
+      <description>IP Header # Version (4 bits): Specifies the IP version. For IPv4, this value is 4. HLEN (Header Length, 4 bits): Indicates the length of the header in 32-bit words. The minimum value is 5 (20 bytes), and the maximum is 15 (60 bytes). TOS (Type of Service, 8 bits): Used to specify the priority of the packet and request specific types of service (e.g., low delay, high throughput). Length (16 bits): Total length of the IP packet (header + data) in bytes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/sliding_window/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/sliding_window/</guid>
+      <description>Frame Header # typedef uint8_t SwpSeqno; typedef struct { SwpSeqno SeqNum; /* sequence number of this frame */ SwpSeqno AckNum; /* ack of received frame */ uint8_t Flags; /* up to 8 bits worth of flags */ } SwpHdr; Sliding Window Protocol State # typedef struct { /* sender side state: */ SwpSeqno LAR; /* seqno of last ACK received */ SwpSeqno LFS; /* last frame sent */ Semaphore sendWindowNotFull; SwpHdr hdr; /* pre-initialized header */ struct sendQ_slot { Event timeout; /* event associated with send-timeout */ Msg msg; } sendQ[SWS]; /* receiver side state: */ SwpSeqno NFE; /* seqno of next frame expected */ struct recvQ_slot { int received; /* is msg valid?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/socket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/socket/</guid>
+      <description>It is important to keep two concerns separate in your mind. Each protocol provides a certain set of services, and the API provides a syntax by which those services can be invoked on a particular computer system. The implementation is then responsible for mapping the tangible set of operations and objects defined by the API onto the abstract set of services defined by the protocol. If you have done a good job of defining the interface, then it will be possible to use the syntax of the interface to invoke the services of many different protocols.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/socks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/socks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/tcp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/tcp/</guid>
+      <description>Transport Level Protocol # The application-level processes that use its services have certain requirements. The following list itemizes some of the common properties that a transport protocol can be expected to provide:
+Guarantees message delivery
+Delivers messages in the same order they are sent
+Delivers at most one copy of each message
+Supports arbitrarily large messages
+Supports synchronization between the sender and the receiver
+Allows the receiver to apply flow control to the sender</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/udp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/udp/</guid>
+      <description>Basic Characteristics of UDP # Connectionless Protocol: UDP does not establish a connection before sending data. It sends data without ensuring that the receiver is ready or available to receive it, which contrasts sharply with TCP (Transmission Control Protocol), a connection-oriented protocol. No Guarantee of Delivery: UDP does not guarantee that data sent will reach its destination, as it does not track delivery. There is no acknowledgment mechanism that the data has been received.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/webrtc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/webrtc/</guid>
+      <description>How WebRTC segment and assemble datagram over UDP? # WebRTC (Web Real-Time Communication) incorporates similar principles for handling real-time audio and video streams, but it is more sophisticated and includes additional mechanisms to ensure reliable and efficient communication. Here’s how WebRTC works and how it handles segmenting and reassembling using UDP:
+WebRTC is a protocol suite and set of APIs that enable real-time communication directly between web browsers or other endpoints without requiring an intermediary server for the media exchange.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/x-forward/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/x-forward/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

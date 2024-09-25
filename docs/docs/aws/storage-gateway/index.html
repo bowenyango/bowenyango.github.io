@@ -1,0 +1,3661 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="How Does AWS Storage Gateway Work? # AWS Storage Gateway is a service provided by Amazon Web Services (AWS) that connects an on-premises software appliance with cloud-based storage. It provides a seamless and secure connection between a company&rsquo;s on-premises environment and AWS&rsquo;s storage infrastructure. The service is designed to simplify storage management and reduce costs by leveraging AWS&rsquo;s scalable, reliable, and secure cloud storage.
+Here&rsquo;s an overview of how AWS Storage Gateway works:">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://example.org/docs/aws/storage-gateway/" />
+<title>Storage Gateway | Novel CS</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="stylesheet" href="/book.min.7055069b7ad78bf78d8164ea58acd20302b8dd3c53c7185d6fa082b1a00566c9.css" integrity="sha256-cFUGm3rXi/eNgWTqWKzSAwK43TxTxxhdb6CCsaAFZsk=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.c4bec0d91e1b31194a2c624c2542f830550baae92f4d7c3a1e9d202f9a35d98a.js" integrity="sha256-xL7A2R4bMRlKLGJMJUL4MFULqukvTXw6Hp0gL5o12Yo=" crossorigin="anonymous"></script>
+<link rel="alternate" type="application/rss+xml" href="https://example.org/docs/aws/storage-gateway/index.xml" title="Novel CS" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Novel CS</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-9fa2c981eb2e459556d5149da0fded38" class="toggle"  />
+    <label for="section-9fa2c981eb2e459556d5149da0fded38" class="flex justify-between">
+      <a href="/docs/advanced-programming/" class="">Advanced Programming</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/advanced-programming/bloomfilter/" class="">Bloomfilter</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-552b1427be68e6594b307ce9b2a1df65" class="toggle"  />
+    <label for="section-552b1427be68e6594b307ce9b2a1df65" class="flex justify-between">
+      <a href="/docs/block-chain/" class="">Block Chain</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0aa628be1b77873d42496375bdf82ac4" class="toggle"  />
+    <label for="section-0aa628be1b77873d42496375bdf82ac4" class="flex justify-between">
+      <a href="/docs/caching/" class="">Caching</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e53a127f8c142d9a14e70e7e80aaab58" class="toggle"  />
+    <label for="section-e53a127f8c142d9a14e70e7e80aaab58" class="flex justify-between">
+      <a href="/docs/caching/redis/" class="">Redis</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/caching/redis/data-type/" class="">Data Type</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/caching/redis/performance/" class="">Performance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/caching/redis/persistence/" class="">Persistence</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/caching/redis/security/" class="">Security</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/caching/redis/source-code/" class="">Source Code</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e0ef13282893a33de964008228a0f2ee" class="toggle"  />
+    <label for="section-e0ef13282893a33de964008228a0f2ee" class="flex justify-between">
+      <a href="/docs/caching/types-of-caching/" class="">Types of Caching</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/caching/types-of-caching/broswer-caching/" class="">Broswer Caching</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/caching/types-of-caching/cdn/" class="">Cdn</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/caching/types-of-caching/cpu-caching/" class="">CPU Caching</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/caching/types-of-caching/disk-caching/" class="">Disk Caching</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/caching/types-of-caching/ram-caching/" class="">RAM Caching</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/caching/algorithms/" class="">Algorithms</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/caching/caching-strategies/" class="">Caching Strategies</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-80b44ed3e98109cd76e2c34b59e497c2" class="toggle"  />
+    <label for="section-80b44ed3e98109cd76e2c34b59e497c2" class="flex justify-between">
+      <a href="/docs/cloud-computing/" class="">Cloud Computing</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e6a9112e0587176c5535e7aa3e3e59a2" class="toggle"  />
+    <label for="section-e6a9112e0587176c5535e7aa3e3e59a2" class="flex justify-between">
+      <a href="/docs/cloud-computing/aws/" class="">Aws</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7db6a4bdc95e280882a5777d56f35b38" class="toggle"  />
+    <label for="section-7db6a4bdc95e280882a5777d56f35b38" class="flex justify-between">
+      <a href="/docs/cloud-computing/aws/computing/" class="">Computing</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/computing/ec2/" class="">Ec2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/computing/lambda/" class="">Lambda</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7d4a9272eb8133e984af1ad3ef5edc23" class="toggle"  />
+    <label for="section-7d4a9272eb8133e984af1ad3ef5edc23" class="flex justify-between">
+      <a href="/docs/cloud-computing/aws/monitoring/" class="">Monitoring</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/monitoring/cloudwatch/" class="">Cloudwatch</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-abe72cc26d3b91631ec56704a11323ad" class="toggle"  />
+    <label for="section-abe72cc26d3b91631ec56704a11323ad" class="flex justify-between">
+      <a href="/docs/cloud-computing/aws/network/" class="">Network</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/network/vpc/" class="">Vpc</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-77a0d3b10a3308f069bebfdebf6e5b9b" class="toggle"  />
+    <label for="section-77a0d3b10a3308f069bebfdebf6e5b9b" class="flex justify-between">
+      <a href="/docs/cloud-computing/aws/role-control/" class="">Role Control</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-62a9214297d839f9701c2abe53a5b897" class="toggle"  />
+    <label for="section-62a9214297d839f9701c2abe53a5b897" class="flex justify-between">
+      <a href="/docs/cloud-computing/aws/security/" class="">Security</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/ecs/ecs/" class="">Ecs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/ecs/how-to-deploy-stateful-application/" class="">How to Deploy Stateful Application</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/eks/" class="">Eks</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/eks/cluster/" class="">Cluster</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/eks/deployment/" class="">Deployment</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/eks/pod/" class="">Pod</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/eks/podtemplate/" class="">Pod Template</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/eks/replicasets/" class="">Replica Sets</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/eks/statefulsets/" class="">Stateful Sets</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Load Balancer</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/load-balancer/port/" class="">Port</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/load-balancer/sticky-session/" class="">Sticky Session</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-381c6808afef64574c0c7bb8e3f8c1ea" class="toggle"  />
+    <label for="section-381c6808afef64574c0c7bb8e3f8c1ea" class="flex justify-between">
+      <a href="/docs/cloud-computing/cicd/" class="">Cicd</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/cicd/circleci/circleci/" class="">Circle Ci</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Github Actions</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/cicd/github_actions/caching/" class="">Caching</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4d6b78cda08da76404b3913989f8e8d3" class="toggle"  />
+    <label for="section-4d6b78cda08da76404b3913989f8e8d3" class="flex justify-between">
+      <a href="/docs/cloud-computing/cloud-native/" class="">Cloud Native</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d6010ffc99bd62ffd942bc8622748f9c" class="toggle"  />
+    <label for="section-d6010ffc99bd62ffd942bc8622748f9c" class="flex justify-between">
+      <a href="/docs/cloud-computing/config-management/" class="">Config Management</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/config-management/ansible/" class="">Ansible</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/config-management/cloud-init/" class="">Cloud Init</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6a6e43f8c74a28f06f2d69acdee03e16" class="toggle"  />
+    <label for="section-6a6e43f8c74a28f06f2d69acdee03e16" class="flex justify-between">
+      <a href="/docs/cloud-computing/iac/" class="">Ia C</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e28cc33fe5745d14abf4a0147d0624a5" class="toggle"  />
+    <label for="section-e28cc33fe5745d14abf4a0147d0624a5" class="flex justify-between">
+      <a href="/docs/database/" class="">Database</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-78ea1f7bc7dff05cfd5d1c9933e5df1d" class="toggle"  />
+    <label for="section-78ea1f7bc7dff05cfd5d1c9933e5df1d" class="flex justify-between">
+      <a href="/docs/database/data-modeling/" class="">Data Modeling</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/database/data-modeling/indexing/" class="">Indexing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/database/data-modeling/partitioning/" class="">Partitioning</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/database/data-modeling/sharding/" class="">Sharding</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ec573dc58466e31956ae737154486fa8" class="toggle"  />
+    <label for="section-ec573dc58466e31956ae737154486fa8" class="flex justify-between">
+      <a href="/docs/database/graph/" class="">Graph</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0801fe6d34703637bc2eff8c6d73b46a" class="toggle"  />
+    <label for="section-0801fe6d34703637bc2eff8c6d73b46a" class="flex justify-between">
+      <a href="/docs/database/nosql/" class="">Nosql</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b277535837a034ea508658968ea52480" class="toggle"  />
+    <label for="section-b277535837a034ea508658968ea52480" class="flex justify-between">
+      <a href="/docs/database/object/" class="">Object</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bb746c52d8e3683e28dd8ab005e999b4" class="toggle"  />
+    <label for="section-bb746c52d8e3683e28dd8ab005e999b4" class="flex justify-between">
+      <a href="/docs/database/relational/" class="">Relational</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/database/relational/postgres/" class="">Postgres</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b1f57185aedd628a8dd219b16cfef01a" class="toggle"  />
+    <label for="section-b1f57185aedd628a8dd219b16cfef01a" class="flex justify-between">
+      <a href="/docs/database/time-series/" class="">Time Series</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-217a2f15a2930027097de809839a21a6" class="toggle"  />
+    <label for="section-217a2f15a2930027097de809839a21a6" class="flex justify-between">
+      <a href="/docs/database/transaction/" class="">Transaction</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/database/transaction/acid/" class="">Acid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/database/transaction/concurrency/" class="">Concurrency</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/database/transaction/isolation/" class="">Isolation</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/database/orm/" class="">Orm</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4b3cf1ccd3748936ce37f1105d65434c" class="toggle"  />
+    <label for="section-4b3cf1ccd3748936ce37f1105d65434c" class="flex justify-between">
+      <a href="/docs/distributed-systems/" class="">Distributed Systems</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-aa30fb0ec15d161522b90b1665bbe202" class="toggle"  />
+    <label for="section-aa30fb0ec15d161522b90b1665bbe202" class="flex justify-between">
+      <a href="/docs/distributed-systems/algorithms/" class="">Algorithms</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/algorithms/mapreduce/" class="">Mapreduce</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/algorithms/paxos/" class="">Paxos</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/algorithms/raft/" class="">Raft</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/algorithms/three-phase-commit/" class="">Three Phase Commit</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/algorithms/zab/" class="">Zab</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d50ec40409a2c9d992790bd4ce2b1246" class="toggle"  />
+    <label for="section-d50ec40409a2c9d992790bd4ce2b1246" class="flex justify-between">
+      <a href="/docs/distributed-systems/systems/" class="">Systems</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/systems/hadoop/" class="">Hadoop</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/systems/kafka/" class="">Kafka</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/systems/rabbitmq/" class="">Rabbitmq</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/systems/spark/" class="">Spark</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3162b2fac306ee83052be5db5794fb78" class="toggle"  />
+    <label for="section-3162b2fac306ee83052be5db5794fb78" class="flex justify-between">
+      <a href="/docs/files-systems/" class="">Files Systems</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d65de6a85a268171512e37a7b0acf741" class="toggle"  />
+    <label for="section-d65de6a85a268171512e37a7b0acf741" class="flex justify-between">
+      <a href="/docs/files-systems/basic-concepts/" class="">Basic Concepts</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8e483a88466f9421174f421ca8b2d011" class="toggle"  />
+    <label for="section-8e483a88466f9421174f421ca8b2d011" class="flex justify-between">
+      <a href="/docs/files-systems/distributed/" class="">Distributed</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6449a4eece0c76ed9d58f93d7279e081" class="toggle"  />
+    <label for="section-6449a4eece0c76ed9d58f93d7279e081" class="flex justify-between">
+      <a href="/docs/files-systems/network/" class="">Network</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2ce4e7b2186ed9fb8f4beedfb2fdfc2a" class="toggle"  />
+    <label for="section-2ce4e7b2186ed9fb8f4beedfb2fdfc2a" class="flex justify-between">
+      <a href="/docs/files-systems/traditional/" class="">Traditional</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3110560962cac834dcd3aead95e804a4" class="toggle"  />
+    <label for="section-3110560962cac834dcd3aead95e804a4" class="flex justify-between">
+      <a href="/docs/network/" class="">Network</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0e5acecafaa9cd8cd53d1183372fdebf" class="toggle"  />
+    <label for="section-0e5acecafaa9cd8cd53d1183372fdebf" class="flex justify-between">
+      <a href="/docs/network/attacks/" class="">Attacks</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d20c8ee3b55dc44335601cabce5337ff" class="toggle"  />
+    <label for="section-d20c8ee3b55dc44335601cabce5337ff" class="flex justify-between">
+      <a href="/docs/network/basic-concepts/" class="">Basic Concepts</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/basic-concepts/0.0.0.0-127.0.0.1/" class="">0.0.0.0 127.0.0.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/basic-concepts/datagram/" class="">Datagram</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/basic-concepts/forward-routing/" class="">Forward Routing</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/basic-concepts/hostname_domainname/" class="">Hostname Domainname</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/basic-concepts/ip/" class="">IP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/basic-concepts/sliding_window/" class="">Sliding Window</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/basic-concepts/socket/" class="">Socket</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/basic-concepts/tcp/" class="">Tcp</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/basic-concepts/udp/" class="">UDP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/basic-concepts/webrtc/" class="">Web Rtc</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f46409509a9a2d1967b7fd4d9b3f29f3" class="toggle"  />
+    <label for="section-f46409509a9a2d1967b7fd4d9b3f29f3" class="flex justify-between">
+      <a href="/docs/network/encryption/" class="">Encryption</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-04a52421ca63e982627bee4594f11206" class="toggle"  />
+    <label for="section-04a52421ca63e982627bee4594f11206" class="flex justify-between">
+      <a href="/docs/network/protocols/" class="">Protocols</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/protocols/definition/" class="">Definition</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8f001020b7d867723fb2718bf6fbc2fc" class="toggle"  />
+    <label for="section-8f001020b7d867723fb2718bf6fbc2fc" class="flex justify-between">
+      <a href="/docs/network/security/" class="">Security</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ecf40b2f4dff923d4b331bb42d39172c" class="toggle"  />
+    <label for="section-ecf40b2f4dff923d4b331bb42d39172c" class="flex justify-between">
+      <a href="/docs/operating-systems/" class="">Operating Systems</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4d6398fc87a61d08068d3269b57b98e9" class="toggle"  />
+    <label for="section-4d6398fc87a61d08068d3269b57b98e9" class="flex justify-between">
+      <a href="/docs/operating-systems/basic-concept/" class="">Basic Concept</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/operating-systems/basic-concept/clock-tick/" class="">Clock Tick</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/operating-systems/basic-concept/coroutine/" class="">Coroutine</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/operating-systems/basic-concept/thread/" class="">Thread</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a0a8b3a8fdbd5ec93720570b04595329" class="toggle"  />
+    <label for="section-a0a8b3a8fdbd5ec93720570b04595329" class="flex justify-between">
+      <a href="/docs/operating-systems/concurrent-programming/" class="">Concurrent Programming</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-30cda8165e74720a665d50438ce97d0a" class="toggle"  />
+    <label for="section-30cda8165e74720a665d50438ce97d0a" class="flex justify-between">
+      <a href="/docs/operating-systems/system-call/" class="">System Call</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-9b45844456997acdb27e862690b034bc" class="toggle"  />
+    <label for="section-9b45844456997acdb27e862690b034bc" class="flex justify-between">
+      <a href="/docs/operating-systems/virtualization/" class="">Virtualization</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/operating-systems/use-macro/" class="">Use Macro</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8e0c2e18eed636363d440c2c883db188" class="toggle"  />
+    <label for="section-8e0c2e18eed636363d440c2c883db188" class="flex justify-between">
+      <a href="/docs/search-engine/" class="">Search Engine</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-93696954016cfff2dc955108e20ce51c" class="toggle"  />
+    <label for="section-93696954016cfff2dc955108e20ce51c" class="flex justify-between">
+      <a href="/docs/search-engine/elasticsearch/" class="">Elasticsearch</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/search-engine/elasticsearch/boolean-query/" class="">Boolean Query</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/search-engine/elasticsearch/customized-preference-search/" class="">Customized Preference Search</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/search-engine/elasticsearch/full-text-search/" class="">Full Text Search</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/search-engine/elasticsearch/query-types/" class="">Query Types</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-843fa1d1d2a746b14b9632b2882a3b22" class="toggle"  />
+    <label for="section-843fa1d1d2a746b14b9632b2882a3b22" class="flex justify-between">
+      <a href="/docs/testing/" class="">Testing</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b560e27a0759a0f6d23872c5d0f5d659" class="toggle"  />
+    <label for="section-b560e27a0759a0f6d23872c5d0f5d659" class="flex justify-between">
+      <a href="/docs/web-development/" class="">Web Development</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1b419fbe063c239e14fd642a54138031" class="toggle"  />
+    <label for="section-1b419fbe063c239e14fd642a54138031" class="flex justify-between">
+      <a href="/docs/web-development/backend-techs/" class="">Backend Techs</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-9a7f69af57689936e317b39ba4cd659d" class="toggle"  />
+    <label for="section-9a7f69af57689936e317b39ba4cd659d" class="flex justify-between">
+      <a href="/docs/web-development/frontend-techs/" class="">Frontend Techs</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7771bd55ba792435fa521d6992edb258" class="toggle"  />
+    <label for="section-7771bd55ba792435fa521d6992edb258" class="flex justify-between">
+      <a href="/docs/web-development/frontend-techs/node.js/" class="">Node.js</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/node.js/issues/" class="">Issues</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/authentication-and-authorization/cookie/" class="">Cookie</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/authentication-and-authorization/jwt/" class="">JWT</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/authentication-and-authorization/session/" class="">Session</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/cors/" class="">Cors</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/css/" class="">Css</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/html/" class="">HTML</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/javascript/" class="">Javascript</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b961af458dea9c04597a51143e2f26a0" class="toggle"  />
+    <label for="section-b961af458dea9c04597a51143e2f26a0" class="flex justify-between">
+      <a href="/docs/web-development/high-throughput/" class="">High Throughput</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ac547513637d72bd737c34bbb4eb46b4" class="toggle"  />
+    <label for="section-ac547513637d72bd737c34bbb4eb46b4" class="flex justify-between">
+      <a href="/docs/web-development/package-management/" class="">Package Management</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0f5e075707152e2e22e798342beb7978" class="toggle"  />
+    <label for="section-0f5e075707152e2e22e798342beb7978" class="flex justify-between">
+      <a href="/docs/web-development/web-authentication-mechanisms/" class="">Web Authentication Mechanisms</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/web-authentication-mechanisms/callback-url/" class="">Callback URL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/web-authentication-mechanisms/captcha-recaptcha/" class="">Captcha Re Captcha</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/web-authentication-mechanisms/csrf/" class="">Csrf</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/web-authentication-mechanisms/multi-factor-authentication/" class="">Multi Factor Authentication</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/web-authentication-mechanisms/oauth-oidc/" class="">Oauth Oidc</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/web-authentication-mechanisms/ssl-tls/" class="">Ssl Tls</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/file-upload-limitation/" class="">File Upload Limitation</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/http-header/forwarded/" class="">Forwarded</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/nginx/config/" class="">Config</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/nginx/errors/" class="">Errors</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/nginx/file-upload/" class="">File Upload</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Aws</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-701c795c5421456f62dc0575631afca7" class="toggle"  />
+    <label for="section-701c795c5421456f62dc0575631afca7" class="flex justify-between">
+      <a href="/docs/aws/kms/key-rotation/" class="">Key Rotation</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/api-gateway/api-endpoint-type/" class="">API Endpoint Type</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/api-gateway/domain-name/" class="">Domain Name</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/api-gateway/header/" class="">Header</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/api-gateway/payload-limitation/" class="">Payload Limitation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/api-gateway/redirect-http-to-https/" class="">Redirect HTTP to HTTPS</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/cloudfront/" class="">Cloudfront</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/cloudfront/features/" class="">Features</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Ecs</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/ecs/capacity-groups/" class="">Capacity Groups</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/ecs/ec2_group/" class="">Ec2 Group</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/ecs/fargate/" class="">Fargate</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/ecs/network_modes/" class="">Network Modes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/ecs/sdk/" class="">Sdk</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/efs/" class="">Efs</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/fsx/" class="">Fsx</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/iam/all-actions-resources-conditions/" class="">All Actions Resources Conditions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/iam/definition/" class="">Definition</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/iam/iam-policy/" class="">Iam Policy</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/lambda/basic/" class="">Basic</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/lambda/custom_domain/" class="">Custom Domain</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/lambda/layer/" class="">Layer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/load-balancer/application-load-balancer/" class="">Application Load Balancer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Route53</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/route53/record-types/" class="">Record Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/route53/routing-policy-types/" class="">Routing Policy Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/route53/subdomain_delegation/" class="">Subdomain Delegation</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/s3/bucket/" class="">Bucket</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/s3_glacier/" class="">S3 Glacier</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/secret_manager/" class="">Secret Manager</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/ssm/ssm-agent/" class="">Ssm Agent</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/storage-gateway/" class="active">Storage Gateway</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/vpc/" class="">Vpc</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/vpc/eni/" class="">Eni</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/vpc/gateway/" class="">Gateway</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/vpc/route-table/" class="">Route Table</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/vpc/vpc-endpoint/" class="">Vpc Endpoint</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/vpc/vpc-peering/" class="">Vpc Peering</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/waf/sql-injection/" class="">SQL Injection</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/book-reading/system-design-alex-xu/" class="">System Design Alex Xu</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/containerization/docker/configuration/" class="">Configuration</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/containerization/docker/entrypoint_and_command/" class="">Entrypoint and Command</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/math/algorithm/" class="">Algorithm</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming-languages/go/go/" class="">Go</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming-languages/issues/loop-variable-in-goroutine/" class="">Loop Variable in Goroutine</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming-languages/late-static-binding/" class="">Late Static Binding</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming-thoughts/code-database-synchronization/" class="">Code Database Synchronization</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming-thoughts/microservice/" class="">Microservice</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shell/commands/" class="">Commands</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shell/curl/" class="">Curl</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shell/grep/" class="">Grep</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shell/ssh/" class="">SSH</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/system-design/" class="">System Design</a>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/system-design/uber/" class="">Uber</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/system-design/uber/1.requirement-clarification/" class="">1. Requirement Clarification</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Storage Gateway</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#how-does-aws-storage-gateway-work">How Does AWS Storage Gateway Work?</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#what-is-file-shares-in-aws-storage-gateway">What is File Shares in AWS Storage Gateway?</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#core-of-aws-storage-gateway-on-ec2">Core of AWS Storage Gateway on EC2</a>
+      <ul>
+        <li><a href="#the-core-of-aws-storage-gateway-on-ec2">The Core of AWS Storage Gateway on EC2</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </li>
+    <li><a href="#role-of-storage-gateway-on-ec2-with-file-shares">Role of Storage Gateway on EC2 with File Shares</a>
+      <ul>
+        <li><a href="#1-data-transfer-and-translation">1. <strong>Data Transfer and Translation</strong></a></li>
+        <li><a href="#2-caching-and-performance-optimization">2. <strong>Caching and Performance Optimization</strong></a></li>
+        <li><a href="#3-security-and-encryption">3. <strong>Security and Encryption</strong></a></li>
+        <li><a href="#4-data-consistency-and-integrity">4. <strong>Data Consistency and Integrity</strong></a></li>
+        <li><a href="#5-scalability-and-manageability">5. <strong>Scalability and Manageability</strong></a></li>
+        <li><a href="#6-hybrid-cloud-integration">6. <strong>Hybrid Cloud Integration</strong></a></li>
+        <li><a href="#conclusion-1">Conclusion</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h2 id="how-does-aws-storage-gateway-work">
+  How Does AWS Storage Gateway Work?
+  <a class="anchor" href="#how-does-aws-storage-gateway-work">#</a>
+</h2>
+<p>AWS Storage Gateway is a service provided by Amazon Web Services (AWS) that connects an on-premises software appliance with cloud-based storage. It provides a seamless and secure connection between a company&rsquo;s on-premises environment and AWS&rsquo;s storage infrastructure. The service is designed to simplify storage management and reduce costs by leveraging AWS&rsquo;s scalable, reliable, and secure cloud storage.</p>
+<p>Here&rsquo;s an overview of how AWS Storage Gateway works:</p>
+<h4 id="1-gateway-types">
+  1. <strong>Gateway Types</strong>
+  <a class="anchor" href="#1-gateway-types">#</a>
+</h4>
+<p>AWS Storage Gateway offers three types of gateways, each serving different use cases:</p>
+<ul>
+<li><strong>File Gateway:</strong> For storing and retrieving files as objects in Amazon S3, using the NFS or SMB protocol.</li>
+<li><strong>Volume Gateway:</strong> Provides cloud-backed storage volumes. It can be configured in two modes:
+<ul>
+<li><strong>Stored Volumes:</strong> Store primary data locally, while asynchronously backing up that data to AWS.</li>
+<li><strong>Cached Volumes:</strong> Store primary data in AWS, retaining frequently accessed data locally.</li>
+</ul>
+</li>
+<li><strong>Tape Gateway:</strong> Simulates physical tape infrastructure for archiving and backup, integrating with existing tape-based backup software.</li>
+</ul>
+<h4 id="2-deployment-and-configuration">
+  2. <strong>Deployment and Configuration</strong>
+  <a class="anchor" href="#2-deployment-and-configuration">#</a>
+</h4>
+<ul>
+<li><strong>Install the Appliance:</strong> You install the Storage Gateway appliance on your local infrastructure. This can be a virtual machine or a physical gateway appliance.</li>
+<li><strong>Connect to AWS:</strong> The appliance connects to AWS over the Internet or AWS Direct Connect, providing a secure link between your local environment and AWS storage.</li>
+</ul>
+<h4 id="3-data-transfer-and-management">
+  3. <strong>Data Transfer and Management</strong>
+  <a class="anchor" href="#3-data-transfer-and-management">#</a>
+</h4>
+<ul>
+<li><strong>Upload Data:</strong> Data written to the Storage Gateway is transferred securely to AWS storage services, like S3, EBS, or Glacier.</li>
+<li><strong>Management:</strong> You can manage the gateway and its storage via the AWS Management Console. This includes tasks like creating volumes, snapshots, and configuring backups.</li>
+</ul>
+<h4 id="4-security-and-compliance">
+  4. <strong>Security and Compliance</strong>
+  <a class="anchor" href="#4-security-and-compliance">#</a>
+</h4>
+<ul>
+<li><strong>Encryption:</strong> Data is encrypted in transit and at rest, ensuring that your data is secure.</li>
+<li><strong>Compliance:</strong> AWS Storage Gateway adheres to various compliance standards, making it suitable for regulated industries.</li>
+</ul>
+<h4 id="5-hybrid-cloud-use-cases">
+  5. <strong>Hybrid Cloud Use Cases</strong>
+  <a class="anchor" href="#5-hybrid-cloud-use-cases">#</a>
+</h4>
+<p>AWS Storage Gateway is typically used in hybrid cloud environments. Common use cases include:</p>
+<ul>
+<li><strong>Disaster Recovery:</strong> Providing a way to back up on-premises data to the cloud.</li>
+<li><strong>Data Archiving:</strong> Leveraging AWS for long-term, cost-effective storage.</li>
+<li><strong>Storage Expansion:</strong> Extending local storage capacity with the cloud, without needing to invest in local infrastructure.</li>
+</ul>
+<h4 id="6-cost-effective-and-scalable">
+  6. <strong>Cost-Effective and Scalable</strong>
+  <a class="anchor" href="#6-cost-effective-and-scalable">#</a>
+</h4>
+<ul>
+<li><strong>Pay-As-You-Go:</strong> You only pay for the storage and data transfer that you use.</li>
+<li><strong>Scalable:</strong> Easily scale your storage needs up or down based on demand.</li>
+</ul>
+<p>In summary, AWS Storage Gateway bridges on-premises environments with AWS&rsquo;s cloud storage, offering a variety of storage solutions while ensuring data is securely transferred and managed. It&rsquo;s particularly beneficial for hybrid cloud strategies, data archiving, backup, and disaster recovery scenarios.</p>
+<h2 id="what-is-file-shares-in-aws-storage-gateway">
+  What is File Shares in AWS Storage Gateway?
+  <a class="anchor" href="#what-is-file-shares-in-aws-storage-gateway">#</a>
+</h2>
+<p>If you are using the File Gateway type of AWS Storage Gateway, creating file shares is a key step. File shares allow your on-premises applications to store and retrieve files in Amazon S3 through standard file storage protocols. Here&rsquo;s how you would generally proceed after setting up a File Gateway:</p>
+<h4 id="1-setting-up-file-gateway">
+  1. <strong>Setting Up File Gateway</strong>
+  <a class="anchor" href="#1-setting-up-file-gateway">#</a>
+</h4>
+<ul>
+<li>First, ensure that you have successfully deployed a File Gateway on your on-premises environment. This involves downloading and installing the gateway software on a supported host, such as a virtual machine.</li>
+<li>Configure the gateway to connect to your AWS account and the appropriate AWS region.</li>
+</ul>
+<h4 id="2-creating-file-shares">
+  2. <strong>Creating File Shares</strong>
+  <a class="anchor" href="#2-creating-file-shares">#</a>
+</h4>
+<ul>
+<li><strong>Access AWS Management Console:</strong> Go to the AWS Management Console and navigate to the Storage Gateway section.</li>
+<li><strong>Create a New File Share:</strong> Select your File Gateway and then create a new file share.</li>
+<li><strong>Configure the File Share:</strong>
+<ul>
+<li><strong>Select Storage Type:</strong> Choose the Amazon S3 bucket where the files will be stored.</li>
+<li><strong>Set Access Protocols:</strong> Choose the protocol for the file share, either NFS (Network File System) or SMB (Server Message Block).</li>
+<li><strong>Configure Security and Access:</strong> Set up permissions and access control for the file share. You may also need to configure your network settings, such as the gateway&rsquo;s IP address.</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-using-the-file-shares">
+  3. <strong>Using the File Shares</strong>
+  <a class="anchor" href="#3-using-the-file-shares">#</a>
+</h4>
+<ul>
+<li>After the file share is created, it will be accessible from your on-premises network.</li>
+<li>You can mount the file share on your on-premises servers or user devices, just as you would with any other network share.</li>
+<li>When files are added to, updated, or deleted from this file share, these changes are synchronized with the corresponding S3 bucket in AWS.</li>
+</ul>
+<h4 id="4-data-management-and-optimization">
+  4. <strong>Data Management and Optimization</strong>
+  <a class="anchor" href="#4-data-management-and-optimization">#</a>
+</h4>
+<ul>
+<li><strong>Lifecycle Management:</strong> You might want to set up lifecycle policies on your S3 bucket to manage data efficiently.</li>
+<li><strong>Performance Optimization:</strong> Consider enabling features like caching to optimize the performance of frequently accessed files.</li>
+</ul>
+<h4 id="5-monitoring-and-maintenance">
+  5. <strong>Monitoring and Maintenance</strong>
+  <a class="anchor" href="#5-monitoring-and-maintenance">#</a>
+</h4>
+<ul>
+<li><strong>Monitor Usage:</strong> Regularly check the performance and usage metrics of your file shares.</li>
+<li><strong>Update and Maintain:</strong> Ensure your File Gateway software is kept up-to-date and maintained for security and performance.</li>
+</ul>
+<h4 id="important-considerations">
+  Important Considerations
+  <a class="anchor" href="#important-considerations">#</a>
+</h4>
+<ul>
+<li><strong>Network Configuration:</strong> Ensure your network is configured to allow smooth communication between your on-premises environment and the AWS File Gateway.</li>
+<li><strong>Security:</strong> Implement necessary security measures such as encryption, IAM roles, and network firewalls to secure your data.</li>
+<li><strong>Backup and Recovery:</strong> Implement strategies for backing up your data and recovering it in case of a disaster.</li>
+</ul>
+<p>Creating and managing file shares through the File Gateway allows you to seamlessly integrate your on-premises file storage with the scalable, durable, and cost-effective storage available in AWS S3.</p>
+<h2 id="core-of-aws-storage-gateway-on-ec2">
+  Core of AWS Storage Gateway on EC2
+  <a class="anchor" href="#core-of-aws-storage-gateway-on-ec2">#</a>
+</h2>
+<p>When you deploy AWS Storage Gateway on an Amazon EC2 instance, what you&rsquo;re essentially running is a virtualized version of the Storage Gateway appliance. This virtual appliance is indeed managed primarily through a command-line interface (CLI), especially for initial setup and configuration. Here are some key aspects to understand:</p>
+<h3 id="the-core-of-aws-storage-gateway-on-ec2">
+  The Core of AWS Storage Gateway on EC2
+  <a class="anchor" href="#the-core-of-aws-storage-gateway-on-ec2">#</a>
+</h3>
+<ol>
+<li>
+<p><strong>Virtual Appliance</strong>: The AWS Storage Gateway deployed on an EC2 instance is a virtual appliance, which means it&rsquo;s a pre-configured virtual machine image specifically designed for the Storage Gateway service.</p>
+</li>
+<li>
+<p><strong>Command-Line Interface (CLI)</strong>:</p>
+<ul>
+<li>Initial interactions with the Storage Gateway appliance are often via a CLI. This interface is used for basic setup procedures like configuring network settings, connecting the appliance to your AWS account, and setting up initial parameters.</li>
+<li>The CLI is not where you&rsquo;ll manage all aspects of the Storage Gateway; it&rsquo;s primarily for setup and some basic configuration tasks.</li>
+</ul>
+</li>
+<li>
+<p><strong>AWS Management Console</strong>:</p>
+<ul>
+<li>Most of the management and operational tasks for the Storage Gateway (like creating file shares, monitoring performance, and managing backups) are done through the AWS Management Console.</li>
+<li>Once you&rsquo;ve completed the initial setup through the CLI, you&rsquo;ll typically switch to the console for day-to-day operations and management.</li>
+</ul>
+</li>
+<li>
+<p><strong>Limited Interaction with the Underlying OS</strong>:</p>
+<ul>
+<li>When you deploy Storage Gateway on an EC2 instance, you&rsquo;re not meant to interact extensively with the underlying operating system (OS) as you would with a typical EC2 instance. The Storage Gateway software appliance abstracts most of the OS-level details.</li>
+<li>Direct modifications to the underlying Linux OS or attempts to use it for purposes other than what AWS Storage Gateway is designed for are not recommended and can lead to issues with the service.</li>
+</ul>
+</li>
+<li>
+<p><strong>Updates and Maintenance</strong>:</p>
+<ul>
+<li>AWS manages updates and maintenance of the Storage Gateway software. These updates are usually applied directly through the AWS Management Console or automatically, depending on the configuration.</li>
+</ul>
+</li>
+<li>
+<p><strong>Role of the Storage Gateway</strong>:</p>
+<ul>
+<li>The primary role of this appliance is to facilitate secure data transfer between your on-premises environment (or EC2 in this case) and AWS storage services like Amazon S3, Glacier, or EBS.</li>
+<li>Its functionalities are focused on storage integration, data encryption, caching, and optimizing data transfer.</li>
+</ul>
+</li>
+</ol>
+<h3 id="conclusion">
+  Conclusion
+  <a class="anchor" href="#conclusion">#</a>
+</h3>
+<p>So, yes, the CLI aspect you see after logging into the EC2 instance running the Storage Gateway is part of its core, but it&rsquo;s primarily for setup and initial configuration. The main functionalities and day-to-day management of the Storage Gateway are accessed through the AWS Management Console. This setup ensures a secure, efficient, and user-friendly way to integrate your on-premises or cloud-based resources with AWS’s storage solutions.</p>
+<h2 id="role-of-storage-gateway-on-ec2-with-file-shares">
+  Role of Storage Gateway on EC2 with File Shares
+  <a class="anchor" href="#role-of-storage-gateway-on-ec2-with-file-shares">#</a>
+</h2>
+<p>Yes, that&rsquo;s a good summary. When you create a file share for an Amazon S3 bucket using AWS Storage Gateway (specifically, the File Gateway type) and mount it on your local machine, the Storage Gateway serves as an intermediary that facilitates data transfer between your local environment and AWS S3. Here&rsquo;s a breakdown of its role:</p>
+<h3 id="1-data-transfer-and-translation">
+  1. <strong>Data Transfer and Translation</strong>
+  <a class="anchor" href="#1-data-transfer-and-translation">#</a>
+</h3>
+<ul>
+<li>The Storage Gateway on EC2 acts as a bridge or translator between your local file system protocols (like NFS or SMB) and the object storage protocol used by Amazon S3.</li>
+<li>When you read or write files to the mounted file share on your local machine, these operations are translated by the File Gateway into corresponding S3 API calls.</li>
+</ul>
+<h3 id="2-caching-and-performance-optimization">
+  2. <strong>Caching and Performance Optimization</strong>
+  <a class="anchor" href="#2-caching-and-performance-optimization">#</a>
+</h3>
+<ul>
+<li>The Gateway caches frequently accessed data. This improves performance by reducing the need to fetch data from S3 for every read operation.</li>
+<li>It can also buffer write operations locally before sending them to S3, optimizing data transfer and minimizing latency.</li>
+</ul>
+<h3 id="3-security-and-encryption">
+  3. <strong>Security and Encryption</strong>
+  <a class="anchor" href="#3-security-and-encryption">#</a>
+</h3>
+<ul>
+<li>The Storage Gateway handles the encryption of data in transit between your local environment and AWS S3.</li>
+<li>It can also integrate with AWS IAM for access control and adhere to security policies set for your S3 resources.</li>
+</ul>
+<h3 id="4-data-consistency-and-integrity">
+  4. <strong>Data Consistency and Integrity</strong>
+  <a class="anchor" href="#4-data-consistency-and-integrity">#</a>
+</h3>
+<ul>
+<li>Ensures data consistency between your on-premises environment and the AWS cloud.</li>
+<li>Manages data integrity checks and handles any communication retries or errors during the data transfer process.</li>
+</ul>
+<h3 id="5-scalability-and-manageability">
+  5. <strong>Scalability and Manageability</strong>
+  <a class="anchor" href="#5-scalability-and-manageability">#</a>
+</h3>
+<ul>
+<li>The Storage Gateway on EC2 can scale to handle varying loads, accommodating changes in demand.</li>
+<li>It simplifies the management of cloud storage resources, offering a familiar file-based interface for your cloud storage.</li>
+</ul>
+<h3 id="6-hybrid-cloud-integration">
+  6. <strong>Hybrid Cloud Integration</strong>
+  <a class="anchor" href="#6-hybrid-cloud-integration">#</a>
+</h3>
+<ul>
+<li>The Gateway provides a seamless integration point for hybrid cloud setups, allowing on-premises systems to interact efficiently with AWS cloud storage.</li>
+</ul>
+<h3 id="conclusion-1">
+  Conclusion
+  <a class="anchor" href="#conclusion-1">#</a>
+</h3>
+<p>In essence, the AWS Storage Gateway on an EC2 instance acts as a mediator and facilitator in the data exchange between your local systems and AWS S3. It translates file operations into S3 object actions, manages performance and security aspects, and provides a reliable, scalable, and efficient way to extend your on-premises storage capabilities into the cloud. This setup allows businesses to leverage cloud storage benefits while maintaining a familiar local storage experience.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#how-does-aws-storage-gateway-work">How Does AWS Storage Gateway Work?</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#what-is-file-shares-in-aws-storage-gateway">What is File Shares in AWS Storage Gateway?</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#core-of-aws-storage-gateway-on-ec2">Core of AWS Storage Gateway on EC2</a>
+      <ul>
+        <li><a href="#the-core-of-aws-storage-gateway-on-ec2">The Core of AWS Storage Gateway on EC2</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </li>
+    <li><a href="#role-of-storage-gateway-on-ec2-with-file-shares">Role of Storage Gateway on EC2 with File Shares</a>
+      <ul>
+        <li><a href="#1-data-transfer-and-translation">1. <strong>Data Transfer and Translation</strong></a></li>
+        <li><a href="#2-caching-and-performance-optimization">2. <strong>Caching and Performance Optimization</strong></a></li>
+        <li><a href="#3-security-and-encryption">3. <strong>Security and Encryption</strong></a></li>
+        <li><a href="#4-data-consistency-and-integrity">4. <strong>Data Consistency and Integrity</strong></a></li>
+        <li><a href="#5-scalability-and-manageability">5. <strong>Scalability and Manageability</strong></a></li>
+        <li><a href="#6-hybrid-cloud-integration">6. <strong>Hybrid Cloud Integration</strong></a></li>
+        <li><a href="#conclusion-1">Conclusion</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

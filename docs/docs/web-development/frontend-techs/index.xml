@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Novel CS</title>
+    <link>https://example.org/docs/web-development/frontend-techs/</link>
+    <description>Recent content on Novel CS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://example.org/docs/web-development/frontend-techs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/frontend-techs/authentication-and-authorization/cookie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/frontend-techs/authentication-and-authorization/cookie/</guid>
+      <description>What is Cookie? # A cookie is a small piece of data sent from a website and stored on the user&amp;rsquo;s computer by the user&amp;rsquo;s web browser while the user is browsing.
+Cookies are used to remember information about the user for the duration of the visit (session cookies) or for repeat visits (persistent cookies). They can store preferences, session information, and other data to improve the user experience or track user behavior.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/frontend-techs/authentication-and-authorization/jwt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/frontend-techs/authentication-and-authorization/jwt/</guid>
+      <description>What is JWT? # JWT is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object.
+JWTs are commonly used for authorization and information exchange. They can encode user credentials and are often used in token-based authentication systems.
+JWTs are secure because they can be digitally signed. However, they should be transmitted securely and stored safely. Since JWTs can contain sensitive information, they should not be exposed to untrusted environments.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/frontend-techs/authentication-and-authorization/session/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/frontend-techs/authentication-and-authorization/session/</guid>
+      <description>What is Session? # A session is a server-side storage of information that is related to a particular user or browser.
+Sessions are used to persist user data across multiple HTTP requests. When a session is started, the server creates a unique identifier (session ID) which is typically passed back to the browser via a cookie.
+The main security concern is session hijacking. Protecting the session ID, especially in transit (using HTTPS), is critical.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/frontend-techs/caching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/frontend-techs/caching/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/frontend-techs/cors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/frontend-techs/cors/</guid>
+      <description>What will happen if I allow localhost in CORS policy? # When you allow http://localhost:3000 in your CORS policy, anyone running a frontend on http://localhost:3000 on their own machine will be able to make requests to your backend service. Here&amp;rsquo;s how it works:
+CORS and Localhost: The http://localhost:3000 you allow in your CORS policy refers to any instance of a service running on port 3000 on localhost. This localhost is specific to the computer that the service is running on.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/frontend-techs/css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/frontend-techs/css/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/frontend-techs/html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/frontend-techs/html/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/frontend-techs/javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/frontend-techs/javascript/</guid>
+      <description> localStorage # sessionStorage # </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,3601 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Transport Level Protocol # The application-level processes that use its services have certain requirements. The following list itemizes some of the common properties that a transport protocol can be expected to provide:
+Guarantees message delivery
+Delivers messages in the same order they are sent
+Delivers at most one copy of each message
+Supports arbitrarily large messages
+Supports synchronization between the sender and the receiver
+Allows the receiver to apply flow control to the sender">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="Transport Level Protocol # The application-level processes that use its services have certain requirements. The following list itemizes some of the common properties that a transport protocol can be expected to provide:
+Guarantees message delivery
+Delivers messages in the same order they are sent
+Delivers at most one copy of each message
+Supports arbitrarily large messages
+Supports synchronization between the sender and the receiver
+Allows the receiver to apply flow control to the sender" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.org/docs/network/basic-concepts/tcp/" /><meta property="article:section" content="docs" />
+
+
+<title>Tcp | Novel CS</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="stylesheet" href="/book.min.7055069b7ad78bf78d8164ea58acd20302b8dd3c53c7185d6fa082b1a00566c9.css" integrity="sha256-cFUGm3rXi/eNgWTqWKzSAwK43TxTxxhdb6CCsaAFZsk=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.c4bec0d91e1b31194a2c624c2542f830550baae92f4d7c3a1e9d202f9a35d98a.js" integrity="sha256-xL7A2R4bMRlKLGJMJUL4MFULqukvTXw6Hp0gL5o12Yo=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Novel CS</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-9fa2c981eb2e459556d5149da0fded38" class="toggle"  />
+    <label for="section-9fa2c981eb2e459556d5149da0fded38" class="flex justify-between">
+      <a href="/docs/advanced-programming/" class="">Advanced Programming</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/advanced-programming/bloomfilter/" class="">Bloomfilter</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-552b1427be68e6594b307ce9b2a1df65" class="toggle"  />
+    <label for="section-552b1427be68e6594b307ce9b2a1df65" class="flex justify-between">
+      <a href="/docs/block-chain/" class="">Block Chain</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0aa628be1b77873d42496375bdf82ac4" class="toggle"  />
+    <label for="section-0aa628be1b77873d42496375bdf82ac4" class="flex justify-between">
+      <a href="/docs/caching/" class="">Caching</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e53a127f8c142d9a14e70e7e80aaab58" class="toggle"  />
+    <label for="section-e53a127f8c142d9a14e70e7e80aaab58" class="flex justify-between">
+      <a href="/docs/caching/redis/" class="">Redis</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/caching/redis/data-type/" class="">Data Type</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/caching/redis/performance/" class="">Performance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/caching/redis/persistence/" class="">Persistence</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/caching/redis/security/" class="">Security</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/caching/redis/source-code/" class="">Source Code</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e0ef13282893a33de964008228a0f2ee" class="toggle"  />
+    <label for="section-e0ef13282893a33de964008228a0f2ee" class="flex justify-between">
+      <a href="/docs/caching/types-of-caching/" class="">Types of Caching</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/caching/types-of-caching/broswer-caching/" class="">Broswer Caching</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/caching/types-of-caching/cdn/" class="">Cdn</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/caching/types-of-caching/cpu-caching/" class="">CPU Caching</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/caching/types-of-caching/disk-caching/" class="">Disk Caching</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/caching/types-of-caching/ram-caching/" class="">RAM Caching</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/caching/algorithms/" class="">Algorithms</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/caching/caching-strategies/" class="">Caching Strategies</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-80b44ed3e98109cd76e2c34b59e497c2" class="toggle"  />
+    <label for="section-80b44ed3e98109cd76e2c34b59e497c2" class="flex justify-between">
+      <a href="/docs/cloud-computing/" class="">Cloud Computing</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e6a9112e0587176c5535e7aa3e3e59a2" class="toggle"  />
+    <label for="section-e6a9112e0587176c5535e7aa3e3e59a2" class="flex justify-between">
+      <a href="/docs/cloud-computing/aws/" class="">Aws</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7db6a4bdc95e280882a5777d56f35b38" class="toggle"  />
+    <label for="section-7db6a4bdc95e280882a5777d56f35b38" class="flex justify-between">
+      <a href="/docs/cloud-computing/aws/computing/" class="">Computing</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/computing/ec2/" class="">Ec2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/computing/lambda/" class="">Lambda</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7d4a9272eb8133e984af1ad3ef5edc23" class="toggle"  />
+    <label for="section-7d4a9272eb8133e984af1ad3ef5edc23" class="flex justify-between">
+      <a href="/docs/cloud-computing/aws/monitoring/" class="">Monitoring</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/monitoring/cloudwatch/" class="">Cloudwatch</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-abe72cc26d3b91631ec56704a11323ad" class="toggle"  />
+    <label for="section-abe72cc26d3b91631ec56704a11323ad" class="flex justify-between">
+      <a href="/docs/cloud-computing/aws/network/" class="">Network</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/network/vpc/" class="">Vpc</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-77a0d3b10a3308f069bebfdebf6e5b9b" class="toggle"  />
+    <label for="section-77a0d3b10a3308f069bebfdebf6e5b9b" class="flex justify-between">
+      <a href="/docs/cloud-computing/aws/role-control/" class="">Role Control</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-62a9214297d839f9701c2abe53a5b897" class="toggle"  />
+    <label for="section-62a9214297d839f9701c2abe53a5b897" class="flex justify-between">
+      <a href="/docs/cloud-computing/aws/security/" class="">Security</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/ecs/ecs/" class="">Ecs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/ecs/how-to-deploy-stateful-application/" class="">How to Deploy Stateful Application</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/eks/" class="">Eks</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/eks/cluster/" class="">Cluster</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/eks/deployment/" class="">Deployment</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/eks/pod/" class="">Pod</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/eks/podtemplate/" class="">Pod Template</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/eks/replicasets/" class="">Replica Sets</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/eks/statefulsets/" class="">Stateful Sets</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Load Balancer</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/load-balancer/port/" class="">Port</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/aws/load-balancer/sticky-session/" class="">Sticky Session</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-381c6808afef64574c0c7bb8e3f8c1ea" class="toggle"  />
+    <label for="section-381c6808afef64574c0c7bb8e3f8c1ea" class="flex justify-between">
+      <a href="/docs/cloud-computing/cicd/" class="">Cicd</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/cicd/circleci/circleci/" class="">Circle Ci</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Github Actions</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/cicd/github_actions/caching/" class="">Caching</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4d6b78cda08da76404b3913989f8e8d3" class="toggle"  />
+    <label for="section-4d6b78cda08da76404b3913989f8e8d3" class="flex justify-between">
+      <a href="/docs/cloud-computing/cloud-native/" class="">Cloud Native</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d6010ffc99bd62ffd942bc8622748f9c" class="toggle"  />
+    <label for="section-d6010ffc99bd62ffd942bc8622748f9c" class="flex justify-between">
+      <a href="/docs/cloud-computing/config-management/" class="">Config Management</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/config-management/ansible/" class="">Ansible</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing/config-management/cloud-init/" class="">Cloud Init</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6a6e43f8c74a28f06f2d69acdee03e16" class="toggle"  />
+    <label for="section-6a6e43f8c74a28f06f2d69acdee03e16" class="flex justify-between">
+      <a href="/docs/cloud-computing/iac/" class="">Ia C</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e28cc33fe5745d14abf4a0147d0624a5" class="toggle"  />
+    <label for="section-e28cc33fe5745d14abf4a0147d0624a5" class="flex justify-between">
+      <a href="/docs/database/" class="">Database</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-78ea1f7bc7dff05cfd5d1c9933e5df1d" class="toggle"  />
+    <label for="section-78ea1f7bc7dff05cfd5d1c9933e5df1d" class="flex justify-between">
+      <a href="/docs/database/data-modeling/" class="">Data Modeling</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/database/data-modeling/indexing/" class="">Indexing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/database/data-modeling/partitioning/" class="">Partitioning</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/database/data-modeling/sharding/" class="">Sharding</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ec573dc58466e31956ae737154486fa8" class="toggle"  />
+    <label for="section-ec573dc58466e31956ae737154486fa8" class="flex justify-between">
+      <a href="/docs/database/graph/" class="">Graph</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0801fe6d34703637bc2eff8c6d73b46a" class="toggle"  />
+    <label for="section-0801fe6d34703637bc2eff8c6d73b46a" class="flex justify-between">
+      <a href="/docs/database/nosql/" class="">Nosql</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b277535837a034ea508658968ea52480" class="toggle"  />
+    <label for="section-b277535837a034ea508658968ea52480" class="flex justify-between">
+      <a href="/docs/database/object/" class="">Object</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bb746c52d8e3683e28dd8ab005e999b4" class="toggle"  />
+    <label for="section-bb746c52d8e3683e28dd8ab005e999b4" class="flex justify-between">
+      <a href="/docs/database/relational/" class="">Relational</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/database/relational/postgres/" class="">Postgres</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b1f57185aedd628a8dd219b16cfef01a" class="toggle"  />
+    <label for="section-b1f57185aedd628a8dd219b16cfef01a" class="flex justify-between">
+      <a href="/docs/database/time-series/" class="">Time Series</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-217a2f15a2930027097de809839a21a6" class="toggle"  />
+    <label for="section-217a2f15a2930027097de809839a21a6" class="flex justify-between">
+      <a href="/docs/database/transaction/" class="">Transaction</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/database/transaction/acid/" class="">Acid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/database/transaction/concurrency/" class="">Concurrency</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/database/transaction/isolation/" class="">Isolation</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/database/orm/" class="">Orm</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4b3cf1ccd3748936ce37f1105d65434c" class="toggle"  />
+    <label for="section-4b3cf1ccd3748936ce37f1105d65434c" class="flex justify-between">
+      <a href="/docs/distributed-systems/" class="">Distributed Systems</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-aa30fb0ec15d161522b90b1665bbe202" class="toggle"  />
+    <label for="section-aa30fb0ec15d161522b90b1665bbe202" class="flex justify-between">
+      <a href="/docs/distributed-systems/algorithms/" class="">Algorithms</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/algorithms/mapreduce/" class="">Mapreduce</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/algorithms/paxos/" class="">Paxos</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/algorithms/raft/" class="">Raft</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/algorithms/three-phase-commit/" class="">Three Phase Commit</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/algorithms/zab/" class="">Zab</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d50ec40409a2c9d992790bd4ce2b1246" class="toggle"  />
+    <label for="section-d50ec40409a2c9d992790bd4ce2b1246" class="flex justify-between">
+      <a href="/docs/distributed-systems/systems/" class="">Systems</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/systems/hadoop/" class="">Hadoop</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/systems/kafka/" class="">Kafka</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/systems/rabbitmq/" class="">Rabbitmq</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/systems/spark/" class="">Spark</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3162b2fac306ee83052be5db5794fb78" class="toggle"  />
+    <label for="section-3162b2fac306ee83052be5db5794fb78" class="flex justify-between">
+      <a href="/docs/files-systems/" class="">Files Systems</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d65de6a85a268171512e37a7b0acf741" class="toggle"  />
+    <label for="section-d65de6a85a268171512e37a7b0acf741" class="flex justify-between">
+      <a href="/docs/files-systems/basic-concepts/" class="">Basic Concepts</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8e483a88466f9421174f421ca8b2d011" class="toggle"  />
+    <label for="section-8e483a88466f9421174f421ca8b2d011" class="flex justify-between">
+      <a href="/docs/files-systems/distributed/" class="">Distributed</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6449a4eece0c76ed9d58f93d7279e081" class="toggle"  />
+    <label for="section-6449a4eece0c76ed9d58f93d7279e081" class="flex justify-between">
+      <a href="/docs/files-systems/network/" class="">Network</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2ce4e7b2186ed9fb8f4beedfb2fdfc2a" class="toggle"  />
+    <label for="section-2ce4e7b2186ed9fb8f4beedfb2fdfc2a" class="flex justify-between">
+      <a href="/docs/files-systems/traditional/" class="">Traditional</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3110560962cac834dcd3aead95e804a4" class="toggle" checked />
+    <label for="section-3110560962cac834dcd3aead95e804a4" class="flex justify-between">
+      <a href="/docs/network/" class="">Network</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0e5acecafaa9cd8cd53d1183372fdebf" class="toggle"  />
+    <label for="section-0e5acecafaa9cd8cd53d1183372fdebf" class="flex justify-between">
+      <a href="/docs/network/attacks/" class="">Attacks</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d20c8ee3b55dc44335601cabce5337ff" class="toggle" checked />
+    <label for="section-d20c8ee3b55dc44335601cabce5337ff" class="flex justify-between">
+      <a href="/docs/network/basic-concepts/" class="">Basic Concepts</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/basic-concepts/0.0.0.0-127.0.0.1/" class="">0.0.0.0 127.0.0.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/basic-concepts/datagram/" class="">Datagram</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/basic-concepts/forward-routing/" class="">Forward Routing</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/basic-concepts/hostname_domainname/" class="">Hostname Domainname</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/basic-concepts/ip/" class="">IP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/basic-concepts/sliding_window/" class="">Sliding Window</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/basic-concepts/socket/" class="">Socket</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/basic-concepts/tcp/" class="active">Tcp</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/basic-concepts/udp/" class="">UDP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/basic-concepts/webrtc/" class="">Web Rtc</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f46409509a9a2d1967b7fd4d9b3f29f3" class="toggle"  />
+    <label for="section-f46409509a9a2d1967b7fd4d9b3f29f3" class="flex justify-between">
+      <a href="/docs/network/encryption/" class="">Encryption</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-04a52421ca63e982627bee4594f11206" class="toggle"  />
+    <label for="section-04a52421ca63e982627bee4594f11206" class="flex justify-between">
+      <a href="/docs/network/protocols/" class="">Protocols</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/network/protocols/definition/" class="">Definition</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8f001020b7d867723fb2718bf6fbc2fc" class="toggle"  />
+    <label for="section-8f001020b7d867723fb2718bf6fbc2fc" class="flex justify-between">
+      <a href="/docs/network/security/" class="">Security</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ecf40b2f4dff923d4b331bb42d39172c" class="toggle"  />
+    <label for="section-ecf40b2f4dff923d4b331bb42d39172c" class="flex justify-between">
+      <a href="/docs/operating-systems/" class="">Operating Systems</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4d6398fc87a61d08068d3269b57b98e9" class="toggle"  />
+    <label for="section-4d6398fc87a61d08068d3269b57b98e9" class="flex justify-between">
+      <a href="/docs/operating-systems/basic-concept/" class="">Basic Concept</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/operating-systems/basic-concept/clock-tick/" class="">Clock Tick</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/operating-systems/basic-concept/coroutine/" class="">Coroutine</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/operating-systems/basic-concept/thread/" class="">Thread</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a0a8b3a8fdbd5ec93720570b04595329" class="toggle"  />
+    <label for="section-a0a8b3a8fdbd5ec93720570b04595329" class="flex justify-between">
+      <a href="/docs/operating-systems/concurrent-programming/" class="">Concurrent Programming</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-30cda8165e74720a665d50438ce97d0a" class="toggle"  />
+    <label for="section-30cda8165e74720a665d50438ce97d0a" class="flex justify-between">
+      <a href="/docs/operating-systems/system-call/" class="">System Call</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-9b45844456997acdb27e862690b034bc" class="toggle"  />
+    <label for="section-9b45844456997acdb27e862690b034bc" class="flex justify-between">
+      <a href="/docs/operating-systems/virtualization/" class="">Virtualization</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/operating-systems/use-macro/" class="">Use Macro</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8e0c2e18eed636363d440c2c883db188" class="toggle"  />
+    <label for="section-8e0c2e18eed636363d440c2c883db188" class="flex justify-between">
+      <a href="/docs/search-engine/" class="">Search Engine</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-93696954016cfff2dc955108e20ce51c" class="toggle"  />
+    <label for="section-93696954016cfff2dc955108e20ce51c" class="flex justify-between">
+      <a href="/docs/search-engine/elasticsearch/" class="">Elasticsearch</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/search-engine/elasticsearch/boolean-query/" class="">Boolean Query</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/search-engine/elasticsearch/customized-preference-search/" class="">Customized Preference Search</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/search-engine/elasticsearch/full-text-search/" class="">Full Text Search</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/search-engine/elasticsearch/query-types/" class="">Query Types</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-843fa1d1d2a746b14b9632b2882a3b22" class="toggle"  />
+    <label for="section-843fa1d1d2a746b14b9632b2882a3b22" class="flex justify-between">
+      <a href="/docs/testing/" class="">Testing</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b560e27a0759a0f6d23872c5d0f5d659" class="toggle"  />
+    <label for="section-b560e27a0759a0f6d23872c5d0f5d659" class="flex justify-between">
+      <a href="/docs/web-development/" class="">Web Development</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1b419fbe063c239e14fd642a54138031" class="toggle"  />
+    <label for="section-1b419fbe063c239e14fd642a54138031" class="flex justify-between">
+      <a href="/docs/web-development/backend-techs/" class="">Backend Techs</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-9a7f69af57689936e317b39ba4cd659d" class="toggle"  />
+    <label for="section-9a7f69af57689936e317b39ba4cd659d" class="flex justify-between">
+      <a href="/docs/web-development/frontend-techs/" class="">Frontend Techs</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7771bd55ba792435fa521d6992edb258" class="toggle"  />
+    <label for="section-7771bd55ba792435fa521d6992edb258" class="flex justify-between">
+      <a href="/docs/web-development/frontend-techs/node.js/" class="">Node.js</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/node.js/issues/" class="">Issues</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/authentication-and-authorization/cookie/" class="">Cookie</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/authentication-and-authorization/jwt/" class="">JWT</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/authentication-and-authorization/session/" class="">Session</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/cors/" class="">Cors</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/css/" class="">Css</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/html/" class="">HTML</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/javascript/" class="">Javascript</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b961af458dea9c04597a51143e2f26a0" class="toggle"  />
+    <label for="section-b961af458dea9c04597a51143e2f26a0" class="flex justify-between">
+      <a href="/docs/web-development/high-throughput/" class="">High Throughput</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ac547513637d72bd737c34bbb4eb46b4" class="toggle"  />
+    <label for="section-ac547513637d72bd737c34bbb4eb46b4" class="flex justify-between">
+      <a href="/docs/web-development/package-management/" class="">Package Management</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0f5e075707152e2e22e798342beb7978" class="toggle"  />
+    <label for="section-0f5e075707152e2e22e798342beb7978" class="flex justify-between">
+      <a href="/docs/web-development/web-authentication-mechanisms/" class="">Web Authentication Mechanisms</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/web-authentication-mechanisms/callback-url/" class="">Callback URL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/web-authentication-mechanisms/captcha-recaptcha/" class="">Captcha Re Captcha</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/web-authentication-mechanisms/csrf/" class="">Csrf</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/web-authentication-mechanisms/multi-factor-authentication/" class="">Multi Factor Authentication</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/web-authentication-mechanisms/oauth-oidc/" class="">Oauth Oidc</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/web-authentication-mechanisms/ssl-tls/" class="">Ssl Tls</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/file-upload-limitation/" class="">File Upload Limitation</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/http-header/forwarded/" class="">Forwarded</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/nginx/config/" class="">Config</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/nginx/errors/" class="">Errors</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/nginx/file-upload/" class="">File Upload</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Aws</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-701c795c5421456f62dc0575631afca7" class="toggle"  />
+    <label for="section-701c795c5421456f62dc0575631afca7" class="flex justify-between">
+      <a href="/docs/aws/kms/key-rotation/" class="">Key Rotation</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/api-gateway/api-endpoint-type/" class="">API Endpoint Type</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/api-gateway/domain-name/" class="">Domain Name</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/api-gateway/header/" class="">Header</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/api-gateway/payload-limitation/" class="">Payload Limitation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/api-gateway/redirect-http-to-https/" class="">Redirect HTTP to HTTPS</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/cloudfront/" class="">Cloudfront</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/cloudfront/features/" class="">Features</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Ecs</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/ecs/capacity-groups/" class="">Capacity Groups</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/ecs/ec2_group/" class="">Ec2 Group</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/ecs/fargate/" class="">Fargate</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/ecs/network_modes/" class="">Network Modes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/ecs/sdk/" class="">Sdk</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/efs/" class="">Efs</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/fsx/" class="">Fsx</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/iam/all-actions-resources-conditions/" class="">All Actions Resources Conditions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/iam/definition/" class="">Definition</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/iam/iam-policy/" class="">Iam Policy</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/lambda/basic/" class="">Basic</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/lambda/custom_domain/" class="">Custom Domain</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/lambda/layer/" class="">Layer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/load-balancer/application-load-balancer/" class="">Application Load Balancer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Route53</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/route53/record-types/" class="">Record Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/route53/routing-policy-types/" class="">Routing Policy Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/route53/subdomain_delegation/" class="">Subdomain Delegation</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/s3/bucket/" class="">Bucket</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/s3_glacier/" class="">S3 Glacier</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/secret_manager/" class="">Secret Manager</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/ssm/ssm-agent/" class="">Ssm Agent</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/storage-gateway/" class="">Storage Gateway</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/vpc/" class="">Vpc</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/vpc/eni/" class="">Eni</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/vpc/gateway/" class="">Gateway</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/vpc/route-table/" class="">Route Table</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/vpc/vpc-endpoint/" class="">Vpc Endpoint</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/vpc/vpc-peering/" class="">Vpc Peering</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/aws/waf/sql-injection/" class="">SQL Injection</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/book-reading/system-design-alex-xu/" class="">System Design Alex Xu</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/containerization/docker/configuration/" class="">Configuration</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/containerization/docker/entrypoint_and_command/" class="">Entrypoint and Command</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/math/algorithm/" class="">Algorithm</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming-languages/go/go/" class="">Go</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming-languages/issues/loop-variable-in-goroutine/" class="">Loop Variable in Goroutine</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming-languages/late-static-binding/" class="">Late Static Binding</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming-thoughts/code-database-synchronization/" class="">Code Database Synchronization</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming-thoughts/microservice/" class="">Microservice</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shell/commands/" class="">Commands</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shell/curl/" class="">Curl</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shell/grep/" class="">Grep</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shell/ssh/" class="">SSH</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/system-design/" class="">System Design</a>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/system-design/uber/" class="">Uber</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/system-design/uber/1.requirement-clarification/" class="">1. Requirement Clarification</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Tcp</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+        <li><a href="#why-tcp-uses-three-way-handshake">Why TCP uses three-way handshake?</a></li>
+        <li><a href="#sliding-window-in-data-link-layer--transport-layer">Sliding Window in data link layer / transport layer</a></li>
+        <li><a href="#triggering-transmission">Triggering Transmission</a></li>
+        <li><a href="#adaptive-retransmission">Adaptive Retransmission</a></li>
+        <li><a href="#tcp-extensions">TCP Extensions</a></li>
+        <li><a href="#alternative-design-choices-sctp-quic">Alternative Design Choices (SCTP, QUIC)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h4 id="transport-level-protocol">
+  Transport Level Protocol
+  <a class="anchor" href="#transport-level-protocol">#</a>
+</h4>
+<p>The application-level processes that use its services have certain requirements. The following list itemizes some of the common properties that a transport protocol can be expected to provide:</p>
+<ul>
+<li>
+<p>Guarantees message delivery</p>
+</li>
+<li>
+<p>Delivers messages in the same order they are sent</p>
+</li>
+<li>
+<p>Delivers at most one copy of each message</p>
+</li>
+<li>
+<p>Supports arbitrarily large messages</p>
+</li>
+<li>
+<p>Supports synchronization between the sender and the receiver</p>
+</li>
+<li>
+<p>Allows the receiver to apply flow control to the sender</p>
+</li>
+<li>
+<p>Supports multiple application processes on each host</p>
+</li>
+</ul>
+<h4 id="lower-level-protocolbest-effort-service">
+  Lower Level Protocol(best-effort service)
+  <a class="anchor" href="#lower-level-protocolbest-effort-service">#</a>
+</h4>
+<p>The underlying network upon which the transport protocol operates has certain limitations in the level of service it can provide. Some of the more typical limitations of the network are that it may</p>
+<ul>
+<li>
+<p>Drop messages</p>
+</li>
+<li>
+<p>Reorder messages</p>
+</li>
+<li>
+<p>Deliver duplicate copies of a given message</p>
+</li>
+<li>
+<p>Limit messages to some finite size</p>
+</li>
+<li>
+<p>Deliver messages after an arbitrarily long delay</p>
+</li>
+</ul>
+<h4 id="tcps-demux-key">
+  TCP’s demux key
+  <a class="anchor" href="#tcps-demux-key">#</a>
+</h4>
+<p><code>(SrcPort, SrcIPAddr, DstPort, DstIPAddr)</code></p>
+<h3 id="why-tcp-uses-three-way-handshake">
+  Why TCP uses three-way handshake?
+  <a class="anchor" href="#why-tcp-uses-three-way-handshake">#</a>
+</h3>
+<p>Because the client and server have to make sure the opposite side know what sequence number they are going to accept.</p>
+<p>So, to realize this goal, we need two round packets(4 in total: 2 * (SYN + ACK)).</p>
+<!-- raw HTML omitted -->
+<p>However, we can combine the SYN and ACK in the second/third steps to realize three-way handshake.</p>
+<h5 id="question-why-not-24-way-handshake-is-this-related-to-two-generals-question">
+  QUESTION: Why not 2/4/&hellip; way handshake? Is this related to two generals question?
+  <a class="anchor" href="#question-why-not-24-way-handshake-is-this-related-to-two-generals-question">#</a>
+</h5>
+<p>2-way handshake is not enough.</p>
+<ul>
+<li>A two-way handshake would involve only a SYN and an ACK (which also carries the server’s SYN). While this might establish a connection, it lacks an explicit final acknowledgment from the client that it is ready and has received the server’s initial sequence number correctly. This could potentially lead to scenarios where the server starts sending data without confirmation that the client is properly prepared, leading to data loss or connection errors right at the start.</li>
+</ul>
+<p>4+-way handshakes are redundant.</p>
+<ul>
+<li>Extending to a four-way handshake would involve additional messages beyond the SYN, SYN-ACK, and ACK. This could be used for further negotiations or settings (like in SSL/TLS protocols during HTTPS communications), but for TCP’s purpose of merely establishing a reliable connection, a four-way handshake would introduce unnecessary complexity and delay in establishing the connection. TCP&rsquo;s three-way handshake strikes a balance between reliability and efficiency.</li>
+</ul>
+<p>Both of TWO-GENERAL-QUESTION and THREE-WAY HANDSHAKE involve the challenges of coordinating and ensuring reliable communication over an unreliable channel. While the Two Generals&rsquo; Problem illustrates the need for reliable communication strategies in theory, it does not dictate the use of a three-way handshake specifically. The choice of a three-way handshake in TCP is more a product of practical engineering requirements—balancing reliability, speed, and simplicity—than a direct solution to the Two Generals&rsquo; Problem. The TCP protocol design effectively addresses real-world network conditions and aims to establish a reliable and efficient connection with minimal overhead.</p>
+<h5 id="question-will-there-be-multiple-connection-in-tcp">
+  QUESTION: Will there be multiple connection in TCP?
+  <a class="anchor" href="#question-will-there-be-multiple-connection-in-tcp">#</a>
+</h5>
+<p>No.</p>
+<ol>
+<li>
+<p>Initial Sequence Numbers (ISNs)</p>
+<p>TCP uses a sequence number in the SYN packet to uniquely identify the start of a new connection. Each new connection attempt from a client includes a unique ISN, which is chosen based on a time-based algorithm that makes it very unlikely to repeat recent sequence numbers.</p>
+</li>
+<li>
+<p>Client Response to Unexpected SYN-ACK</p>
+<ul>
+<li>
+<p>If a duplicate SYN packet (with the same ISN as the original) reaches the server after the original connection has been established, the server&rsquo;s response (a SYN-ACK with what should be the next sequence number) will not align with the client&rsquo;s expectations for a new connection (as the client would use a new ISN for a truly new connection).</p>
+</li>
+<li>
+<p>If the client receives a SYN-ACK that does not match any active connection attempt (meaning the ACK number doesn&rsquo;t match the ISN+1 of any SYN it sent), it will respond with a RST (reset) packet. This RST informs the server that the SYN-ACK it sent was unexpected and effectively closes that pseudo-connection from the server&rsquo;s side, preventing resource waste and potential confusion.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Server Handling of RST</p>
+<p>Upon receiving the RST, the server understands that the client did not initiate the connection it is acknowledging and can safely discard it, thus cleaning up any state or resources allocated to what it initially perceived as a valid connection.</p>
+</li>
+</ol>
+<h3 id="sliding-window-in-data-link-layer--transport-layer">
+  Sliding Window in data link layer / transport layer
+  <a class="anchor" href="#sliding-window-in-data-link-layer--transport-layer">#</a>
+</h3>
+<ul>
+<li>
+<p>Data Link Layer: Uses sliding window protocols like Go-Back-N and Selective Repeat for reliable frame delivery between directly connected nodes.</p>
+</li>
+<li>
+<p>Transport Layer (TCP): Uses a sliding window mechanism to ensure reliable, ordered delivery of data segments over a network.</p>
+</li>
+</ul>
+<p>Sliding window in TCP serves several purposes:</p>
+<ul>
+<li>(1) it guarantees the reliable delivery of data,</li>
+<li>(2) it ensures that data is delivered in order, and</li>
+<li>(3) it enforces flow control between the sender and the receiver.</li>
+</ul>
+<p>TCP’s use of the sliding window algorithm is the same as at the link level in the case of the first two of these three functions.</p>
+<p><img src="../../../../assets/network/tcp-sliding-window.png" alt="Alt text" /></p>
+<h4 id="flow-control">
+  Flow Control
+  <a class="anchor" href="#flow-control">#</a>
+</h4>
+<p>The only real difference is that this time we elaborated on the fact that the sending and receiving application processes are filling and emptying their local buffer, respectively.</p>
+<p>TCP use AdvertisedWindow in the header to realize FLOW CONTROL.</p>
+<p>TCP always sends a segment in response to a received data segment, and this response contains the latest values for the <code>Acknowledge</code> and <code>AdvertisedWindow</code> fields, even if these values have not changed since the last time they were sent.</p>
+<p>Whenever the other side advertises a window size of 0, the sending side persists in sending a segment with 1 byte of data every so often. It knows that this data will probably not be accepted, but it tries anyway, because each of these 1-byte segments triggers a response that contains the current advertised window. Eventually, one of these 1-byte probes triggers a response that reports a nonzero advertised window.</p>
+<p>Note that these 1-byte messages are called Zero Window Probes and in practice they are sent every 5 to 60 seconds. As for what single byte of data to send in the probe: it’s the next byte of actual data just outside the window. (It has to be real data in case it’s accepted by the receiver.)</p>
+<h4 id="protecting-against-wraparound">
+  Protecting Against Wraparound
+  <a class="anchor" href="#protecting-against-wraparound">#</a>
+</h4>
+<p>TCP’s <code>SequenceNum</code> field is 32 bits long -&gt; 2^32
+<code>AdvertisedWindow</code> field is 16 bits long -&gt; 2^16</p>
+<p>The 32-bit sequence number space is adequate at modest bandwidths, but given that OC-192 links are now common in the Internet backbone, and that most servers now come with 10Gig Ethernet (or 10 Gbps) interfaces, we’re now well-past the point where 32 bits is too small. Fortunately, the IETF has worked out an extension to TCP that effectively extends the sequence number space to protect against the sequence number wrapping around.</p>
+<h3 id="triggering-transmission">
+  Triggering Transmission
+  <a class="anchor" href="#triggering-transmission">#</a>
+</h3>
+<p>TCP maintains a variable, typically called the maximum segment size (MSS), and it sends a segment as soon as it has collected MSS bytes from the sending process. MSS is usually set to the size of the largest segment TCP can send without causing the local IP to fragment. That is, MSS is set to the maximum transmission unit (MTU) of the directly connected network, minus the size of the TCP and IP headers.</p>
+<h4 id="silly-window-syndrome">
+  Silly Window Syndrome
+  <a class="anchor" href="#silly-window-syndrome">#</a>
+</h4>
+<ul>
+<li>
+<p>Receiver Side:</p>
+<p>When the receiving application reads data from the TCP buffer slowly, the receiver advertises small window sizes to the sender. As a result, the sender can only transmit small amounts of data, leading to inefficient use of the network.</p>
+</li>
+<li>
+<p>Sender Side:</p>
+<p>When the sender generates data slowly or in small segments, it can result in sending small packets. This can happen if the sender doesn&rsquo;t wait to accumulate a larger amount of data before transmitting, thus leading to a high number of small packets.</p>
+</li>
+</ul>
+<h4 id="nagles-algorithm">
+  Nagle’s Algorithm
+  <a class="anchor" href="#nagles-algorithm">#</a>
+</h4>
+<p>This algorithm is implemented on the sender side to prevent small packet transmissions. It works by combining a number of small outgoing messages and sending them all at once. Specifically, it prevents the sender from sending more than one small packet per round-trip time (RTT) and waits until it can send a full-sized segment or until all outstanding data has been acknowledged.</p>
+<p>Some applications cannot afford such a delay for each write it does to a TCP connection, the socket interface allows the application to turn off Nagle’s algorithm by setting the TCP_NODELAY option. Setting this option means that data is transmitted as soon as possible.</p>
+<h3 id="adaptive-retransmission">
+  Adaptive Retransmission
+  <a class="anchor" href="#adaptive-retransmission">#</a>
+</h3>
+<p>Adaptive Retransmission in TCP is a mechanism that adjusts the retransmission timeout dynamically based on the observed round-trip times. It involves calculating the smoothed RTT and RTT variance to determine an appropriate RTO, balancing timely retransmissions with network efficiency. This approach enhances TCP&rsquo;s ability to handle varying network conditions, leading to improved reliability and performance.</p>
+<h3 id="tcp-extensions">
+  TCP Extensions
+  <a class="anchor" href="#tcp-extensions">#</a>
+</h3>
+<ul>
+<li>The first extension helps to improve TCP’s timeout mechanism.</li>
+<li>The second extension addresses the problem of TCP’s 32-bit SequenceNum field wrapping around too soon on a high-speed network.</li>
+<li>The third extension allows TCP to advertise a larger window, thereby allowing it to fill larger delay × bandwidth pipes that are made possible by high-speed networks.</li>
+<li>The fourth extension allows TCP to augment its cumulative acknowledgment with selective acknowledgments of any additional segments that have been received but aren’t contiguous with all previously received segments.</li>
+</ul>
+<h3 id="alternative-design-choices-sctp-quic">
+  Alternative Design Choices (SCTP, QUIC)
+  <a class="anchor" href="#alternative-design-choices-sctp-quic">#</a>
+</h3>
+<p>stream-oriented protocols like TCP and request/reply protocols like RPC.
+TCP is a full-duplex protocol</p>
+<ul>
+<li>
+<p><strong>No Message Boundary</strong></p>
+<p>Since TCP deals with a continuous stream of bytes, it does not provide any mechanism to distinguish where one message ends and another begins. It simply ensures that the bytes are delivered in the same order they were sent.</p>
+</li>
+<li>
+<p><strong>Message Orientation Protocol</strong></p>
+<p>Request/reply applications, such as HTTP or SMTP, operate with discrete messages. A message is a distinct unit of data that represents a complete request or response, often with clear boundaries (e.g., start and end markers).</p>
+<p>In these applications, the concept of a &ldquo;message&rdquo; is defined at the application layer, not by the transport layer (TCP). The application layer protocol must handle the parsing and recognition of message boundaries within the byte stream provided by TCP.</p>
+</li>
+</ul>
+<p>The first complication is that TCP is a <code>byte-oriented protocol</code> rather than a <code>message-oriented protocol</code>, and request/reply applications always deal with messages.</p>
+<p>the second complication is that in those situations where both the request message and the reply message fit in a single network packet, a well-designed request/reply protocol needs only two packets to implement the exchange, whereas TCP would need at least nine: three to establish the connection, two for the message exchange, and four to tear down the connection.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+        <li><a href="#why-tcp-uses-three-way-handshake">Why TCP uses three-way handshake?</a></li>
+        <li><a href="#sliding-window-in-data-link-layer--transport-layer">Sliding Window in data link layer / transport layer</a></li>
+        <li><a href="#triggering-transmission">Triggering Transmission</a></li>
+        <li><a href="#adaptive-retransmission">Adaptive Retransmission</a></li>
+        <li><a href="#tcp-extensions">TCP Extensions</a></li>
+        <li><a href="#alternative-design-choices-sctp-quic">Alternative Design Choices (SCTP, QUIC)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
