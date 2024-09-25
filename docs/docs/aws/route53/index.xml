@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Novel CS</title>
+    <link>https://example.org/docs/aws/route53/</link>
+    <description>Recent content on Novel CS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://example.org/docs/aws/route53/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/route53/record-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/route53/record-types/</guid>
+      <description>QUESTION # Use A records or CNAME records for my CloudFront distribution?
+ANSWER # You can create both A records and CNAME records for your CloudFront distribution, but there are specific conditions and contexts in which you would choose one over the other.
+CNAME Records: A CNAME record is used to map an alias name to a true or canonical domain name. When you use a CNAME record, the DNS query is redirected to the canonical name.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/route53/routing-policy-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/route53/routing-policy-types/</guid>
+      <description>QUESTION-1: What is the difference between different routing policy types in AWS route53? # Amazon Route 53 offers several types of routing policies that allow you to control how DNS queries are answered. Each routing policy serves different use cases and scenarios. Here are the different routing policies available in Route 53:
+1. Simple Routing Policy # Use Case: Basic routing where you route traffic to a single resource. Behavior: Returns one or more values without doing any special routing.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/route53/subdomain_delegation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/route53/subdomain_delegation/</guid>
+      <description>How to delegate a subdomain to another AWS account in AWS Route53? # Look at the new hosted zone you created for testing.example.com. This can be in the same AWS account, a different AWS account&amp;hellip; any AWS account. There&amp;rsquo;s nothing here that is &amp;ldquo;account&amp;rdquo; related. This uses standard DNS configuration. The whole of DNS is a hierarchy. The global root can tell you where to find com, and the com servers can tell you where to find example.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Novel CS</title>
+    <link>https://example.org/docs/search-engine/elasticsearch/</link>
+    <description>Recent content on Novel CS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://example.org/docs/search-engine/elasticsearch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/docs/search-engine/elasticsearch/aggregation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/search-engine/elasticsearch/aggregation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/search-engine/elasticsearch/boolean-query/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/search-engine/elasticsearch/boolean-query/</guid>
+      <description>The difference between must clause and filter clause # The must and filter clauses within a boolean query in Elasticsearch have distinct roles and behaviors:
+must Clause:
+Purpose: The must clause is used to specify search criteria that must be met for a document to be included in the search results. Behavior: Queries in the must clause contribute to the scoring of the document. This means that matching documents are not only required to match the criteria specified in the must clause but their relevance score is also influenced by how well they match these criteria.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/search-engine/elasticsearch/customized-preference-search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/search-engine/elasticsearch/customized-preference-search/</guid>
+      <description>In which step, the user preference is used to customize the searching results? # The user preference is primarily used to customize the search results during the step where the search query is tailored before being sent to Elasticsearch. This is a crucial step for integrating user-specific context into the search process. Here&amp;rsquo;s how it works:
+Step of Integrating User Preferences: # Retrieve User Context and Preferences:
+After the user initiates a search query, the system first retrieves relevant user data from the relational database.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/search-engine/elasticsearch/full-text-search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/search-engine/elasticsearch/full-text-search/</guid>
+      <description>What is full-text search? # Full-text search refers specifically to searching for text within content in a way that understands the nuances of human language, like handling synonyms, stemming, and relevance scoring.
+Inverted Index # When documents are indexed, the search engine processes the text and creates a list of all the unique words (terms) present in the documents. For each term, the engine maintains a list of documents (often with specific positions within those documents) where that term appears.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/search-engine/elasticsearch/query-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/search-engine/elasticsearch/query-types/</guid>
+      <description>All query types in elastic search # Full-Text Search Queries # Match Query: Searches text fields for matches on a given query string. It&amp;rsquo;s the most common type and handles full-text search, including analyzing the query string.
+Phrase Query: Looks for a specific sequence of terms in a specified order. Useful for searching exact phrases.
+Query String Query: Supports a compact, expressive syntax for specifying complex search criteria, including boolean logic, wildcards, fuzzy matches, and more.</description>
+    </item>
+    
+  </channel>
+</rss>

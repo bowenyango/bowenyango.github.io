@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Novel CS</title>
+    <link>https://example.org/docs/cloud-computing/aws/</link>
+    <description>Recent content on Novel CS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://example.org/docs/cloud-computing/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/aws/ecs/ecs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/aws/ecs/ecs/</guid>
+      <description>Ordered Placement Strategy # The &amp;ldquo;ordered_placement_strategy&amp;rdquo; you&amp;rsquo;re referring to seems to be related to container orchestration and management, likely in a cloud computing or distributed system environment. The strategy defines how tasks or containers are placed across a cluster of machines. Let&amp;rsquo;s break down the different types of strategies mentioned: binpack, random, and spread.
+Binpack Placement Strategy:
+Type: binpack Purpose: This strategy is used to place containers in such a way that they utilize as much of the available resources as possible on the least number of instances (or hosts).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/aws/ecs/how-to-deploy-stateful-application/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/aws/ecs/how-to-deploy-stateful-application/</guid>
+      <description>How to deploy stateful application in ECS? # Amazon Elastic Container Service (ECS) doesn&amp;rsquo;t have a direct equivalent to StatefulSets in Kubernetes. However, ECS has various features and strategies that can be used to manage stateful applications, although with different mechanisms compared to Kubernetes.
+ECS Concepts Comparable to StatefulSets: # Task Definitions: In ECS, you define your application using task definitions. While they don&amp;rsquo;t manage state in the same way as StatefulSets, task definitions are the closest you get to defining the desired state of your application in ECS.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/aws/storage/s3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/aws/storage/s3/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

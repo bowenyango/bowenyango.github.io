@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Novel CS</title>
+    <link>https://example.org/docs/caching/</link>
+    <description>Recent content on Novel CS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://example.org/docs/caching/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/docs/caching/algorithms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/caching/algorithms/</guid>
+      <description>TBD 3.1 Least Recently Used (LRU) 3.2 Most Recently Used (MRU) 3.3 First In, First Out (FIFO) 3.4 Least Frequently Used (LFU) 3.5 Random Replacement (RR)</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/caching/caching-strategies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/caching/caching-strategies/</guid>
+      <description>4.1 Write-through Cache 4.2 Write-back Cache 4.3 Write-around Cache 4.4 Cache Eviction Policies</description>
+    </item>
+    
+  </channel>
+</rss>

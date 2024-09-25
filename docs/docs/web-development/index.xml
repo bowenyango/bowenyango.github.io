@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Novel CS</title>
+    <link>https://example.org/docs/web-development/</link>
+    <description>Recent content on Novel CS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://example.org/docs/web-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/file-upload-limitation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/file-upload-limitation/</guid>
+      <description>How can I upload large files? # The limitation on the server configuration size # Let take PHP+Nginx as an example, we need to update the following parameters to increase the file upload limitations:
+Nginx: client_max_body_size PHP: post_max_size upload_max_filesize max_file_uploads Reference: # https://serverfault.com/questions/611239/increase-php-fpms-max-upload-post-size
+Request payload limit with AWS API Gateway # Maximum payload to API gateway is 10 MB and maximum payload for Lambda is 6 MB, which cannot be increased.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/header/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/http-header/forwarded/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/http-header/forwarded/</guid>
+      <description>RFC 7239 # The Forwarded header is standardized in RFC 7239 and is designed to convey information about the client and the proxy chain.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/nginx/config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/nginx/config/</guid>
+      <description>QUESTION # What is the difference between listen 80 and listen 80 default_server?
+ANSWER # The listen directive in Nginx is used to define what IP address and port number a server block should listen for incoming requests on. The default_server parameter is an optional argument that can be added to the listen directive to specify that a particular server block should be used as the default response for requests that do not match any other server block.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/nginx/errors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/nginx/errors/</guid>
+      <description>ERROR # CODE
+server { listen 80; server_name _; # This is a catch-all server name location /health-check { return 200 &amp;#39;healthy\n&amp;#39;; add_header Content-Type text/plain; } # The rest of your server configuration goes here... } RUN
+sudo nginx -t
+RESULT
+nginx: [warn] conflicting server name &amp;ldquo;_&amp;rdquo; on 0.0.0.0:80, ignored
+EXPLANATION
+There are multiple blocks have the same wildcard server listening</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/nginx/file-upload/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/nginx/file-upload/</guid>
+      <description>How does the Nginx process file-upload requests and reject large files? # Nginx processes the request body incrementally rather than downloading the entire content first before checking its size. Here&amp;rsquo;s a more detailed explanation of how it handles uploads:
+Receiving the Request: When Nginx receives a request with a body (e.g., a file upload), it starts reading the body in chunks as they arrive, rather than waiting for the entire body to be received.</description>
+    </item>
+    
+  </channel>
+</rss>
