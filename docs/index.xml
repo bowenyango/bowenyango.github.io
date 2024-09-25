@@ -1,0 +1,1766 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction on Novel CS</title>
+    <link>https://example.org/</link>
+    <description>Recent content in Introduction on Novel CS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/kms/key-rotation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/kms/key-rotation/</guid>
+      <description>KMS Key Use in RDS/Secrets Manager: The KMS key encrypts the RDS credentials before they are stored in Secrets Manager.
+Access Control: Access to the decrypted secret is controlled by AWS Identity and Access Management (IAM) policies. You need appropriate permissions both to access the secret in Secrets Manager and to use the associated KMS key for decryption.
+Transparency for the User: The decryption process is designed to be transparent to the user.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/advanced-programming/bloomfilter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/advanced-programming/bloomfilter/</guid>
+      <description>Bridging the Efficiency Gap with Bloom Filters: A Deep Dive # PaperMod # Welcome to demo of hugo’s theme PaperMod.
+PaperMod is a simple but fast and responsive theme with useful feature-set that enhances UX. Do give a 🌟 on Github ! PaperMod is based on theme Paper.
+Introduction # In today&amp;rsquo;s data-centric world, every millisecond spent searching and verifying can equate to tangible losses. For industries managing vast data sets, ensuring the efficiency of lookup operations is paramount.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/api-architectural-styles/graphql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/api-architectural-styles/graphql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/api-architectural-styles/grpc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/api-architectural-styles/grpc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/api-architectural-styles/restful/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/api-architectural-styles/restful/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/api-architectural-styles/websocket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/api-architectural-styles/websocket/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/api-gateway/api-endpoint-type/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/api-gateway/api-endpoint-type/</guid>
+      <description> API endpoint type # Regional APIs are deployed in the current AWS Region. Edge-optimized APIs route requests to the nearest CloudFront Point of Presence. Private APIs are only accessible from VPCs. </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/api-gateway/domain-name/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/api-gateway/domain-name/</guid>
+      <description>Why Can&amp;rsquo;t I Create a Route53 Record Pointing Directly to the API Invoke URL? # The API Invoke URL provided by AWS API Gateway is a domain managed by AWS. This URL usually follows a pattern like {api-id}.execute-api.{region}.amazonaws.com. When you use a service like Route 53 to manage your DNS, creating a CNAME record that directly points to this invoke URL is not recommended for a couple of reasons:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/api-gateway/header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/api-gateway/header/</guid>
+      <description>Forward Original Host from the Original Request # Today I met this issue, I tried to realize a request workflow like this:
+User Request -&amp;gt; Route53 DNS(CloudFront Distribution of the API Gateway Custom Domain) -&amp;gt; API Gateway -&amp;gt; via HTTP request -&amp;gt; Public Application Load Balancer -&amp;gt; ECS instance
+curl -H &amp;#34;Host: notification.dev.scrawlrapi.com&amp;#34; https://notification.dev.scrawlrapi.com/status When I tried to send request like this, the ECS instance indeed received the request but with a modified host header.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/api-gateway/http-api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/api-gateway/http-api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/api-gateway/payload-limitation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/api-gateway/payload-limitation/</guid>
+      <description>API Gateway has a hard limitation of payload as 10MB # Reference: # https://docs.aws.amazon.com/apigateway/latest/developerguide/limits.html</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/api-gateway/redirect-http-to-https/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/api-gateway/redirect-http-to-https/</guid>
+      <description>How to redirect API gateway http to https? # When use API Gateway HTTP API with custom domains(regional), it only works on HTTPS and not on HTTP.
+For example, if you have a custom domain like www.example.com, and in your reout53 DNS record you redirect that domain to the involke URL of API gateway, it works fine when a user access you website via https://www.example.com. However, because the api gateway doesn&amp;rsquo;t support http requests, it will raise ERR_CONNECTION_REFUSED error.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/api-gateway/vpc-links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/api-gateway/vpc-links/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/cloudfront/features/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/cloudfront/features/</guid>
+      <description>What can the CloudFront do as a CDN? # In reality, CloudFront is a highly versatile Content Delivery Network (CDN) service that can distribute both static and dynamic content. Here are some key points to clarify its capabilities:
+Multiple Origin Sources:
+CloudFront can deliver content from various sources, not just S3 buckets. These sources include Amazon EC2 instances, Elastic Load Balancers, and, notably, Amazon API Gateway.
+Dynamic Content Delivery:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/cloudfront/ssl_support_method/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/cloudfront/ssl_support_method/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/ecs/capacity-groups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/ecs/capacity-groups/</guid>
+      <description>Automatically manage Amazon ECS capacity with cluster auto scaling # Amazon ECS can manage the scaling of Amazon EC2 instances that are registered to your cluster. This is referred to as Amazon ECS cluster auto scaling. You turn on managed scaling when you create the Amazon ECS Auto Scaling group capacity provider. Then, you set a target percentage (the targetCapacity) for the instance utilization in this Auto Scaling group. Amazon ECS creates two custom CloudWatch metrics and a target tracking scaling policy for your Auto Scaling group.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/ecs/ec2_group/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/ecs/ec2_group/</guid>
+      <description>ECS - EC2 Architecture # Comparison with Fargate # The challenge of running EC2 instances is that they are servers. You have to patch them and keep them updated. You have to manage logging, manage ssh keys, manage what happens when you run out of disk space, etc. Your business doesn&amp;rsquo;t really get any value out of managing those things specifically, but historically we&amp;rsquo;ve accepted that we have to do those things if we want to run our app.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/ecs/fargate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/ecs/fargate/</guid>
+      <description> ECS - Fargate Architecture # Pricing Structure # Fargate pricing is based on five independently configurable dimensions:
+vCPU Memory Operating System CPU Architecture System Resources </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/ecs/launch_template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/ecs/launch_template/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/ecs/network_modes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/ecs/network_modes/</guid>
+      <description>ECS Network Modes # In AWS ECS (Elastic Container Service), the networking section refers to the configuration of how the containers within a task communicate with each other and with the outside world. There are several network modes available in ECS, each offering different capabilities and levels of isolation. Understanding these modes is crucial for designing your ECS deployment according to your application&amp;rsquo;s networking requirements. Here&amp;rsquo;s a breakdown of the different network modes:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/ecs/sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/ecs/sdk/</guid>
+      <description>Enter ECS Container # aws ecs execute-command &amp;ndash;region us-west-2 &amp;ndash;cluster arn:aws:ecs:us-west-2:340912226205:cluster/dev-lodgr-api &amp;ndash;task df7a7b460a71457a800d5517a1be4f6b &amp;ndash;container dev-lodgr-api &amp;ndash;command &amp;ldquo;bash&amp;rdquo; &amp;ndash;interactive</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/iam/all-actions-resources-conditions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/iam/all-actions-resources-conditions/</guid>
+      <description>Reference: # https://docs.aws.amazon.com/service-authorization/latest/reference/reference_policies_actions-resources-contextkeys.html</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/iam/definition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/iam/definition/</guid>
+      <description>How to create a IAM role with proper policy using terraform? # Trust Policy: Defines who can assume the role. Role: Defines the role itself. Permissions Policy: Defines what the role can do by specifying actions and resources. Policy Attachment: Attaches the permissions policy to the role. # Step 1: Define the trust policy data &amp;#34;aws_iam_policy_document&amp;#34; &amp;#34;assume_role&amp;#34; { statement { effect = &amp;#34;Allow&amp;#34; principals { type = &amp;#34;Service&amp;#34; identifiers = [&amp;#34;lambda.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/iam/iam-policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/iam/iam-policy/</guid>
+      <description>Difference between Trust Policy and Permission Policy # In AWS IAM, there are two main types of policies that are associated with roles:
+Trust Policy: Specifies who or what can assume the role. Permissions Policy: Specifies what actions the role can perform and on which resources. Trust Policy # Purpose: Defines the entities that are trusted to assume the role. Attachment: Each role can have only one trust policy. Example: Allowing AWS Lambda to assume a role.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/lambda/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/lambda/basic/</guid>
+      <description>What is a handler? # In AWS Lambda, a handler is a function within your code that AWS Lambda calls to start execution of your function. When you create a Lambda function, you specify a handler, which AWS Lambda uses to know which function to invoke when the Lambda function is triggered. The handler is the entry point for your Lambda function and is responsible for processing the input event and providing an output.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/lambda/custom_domain/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/lambda/custom_domain/</guid>
+      <description>How to deploy a custom domain for the auto-generated Lambda invoke URL? # 06 APR 2022 — AWS announced an exciting news of Built-in HTTPS Endpoints for Lambda functions. You can read the original post .
+Before this announcement, to expose an HTTP endpoint with a custom domain for your lambda backend you have to use the following AWS resources:
+Lambda (application backend) API Gateway (to expose HTTP endpoint) Cloudfront distribution Route 53 Fortunately, with AWS Lambda URLs you no longer need the API Gateway !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/lambda/layer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/lambda/layer/</guid>
+      <description>To upload custom runtime environment, libraries and configurations for Lambda function # Reference: # https://docs.aws.amazon.com/lambda/latest/dg/packaging-layers.html#packaging-layers-paths</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/load-balancer/application-load-balancer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/load-balancer/application-load-balancer/</guid>
+      <description>How Application Load Balancers work # Clients make requests to your application. The listeners in your load balancer receive requests matching the protocol and port that you configure. The receiving listener evaluates the incoming request against the rules you specify, and if applicable, routes the request to the appropriate target group. You can use an HTTPS listener to offload the work of TLS encryption and decryption to your load balancer.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/route53/record-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/route53/record-types/</guid>
+      <description>QUESTION # Use A records or CNAME records for my CloudFront distribution?
+ANSWER # You can create both A records and CNAME records for your CloudFront distribution, but there are specific conditions and contexts in which you would choose one over the other.
+CNAME Records: A CNAME record is used to map an alias name to a true or canonical domain name. When you use a CNAME record, the DNS query is redirected to the canonical name.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/route53/routing-policy-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/route53/routing-policy-types/</guid>
+      <description>QUESTION-1: What is the difference between different routing policy types in AWS route53? # Amazon Route 53 offers several types of routing policies that allow you to control how DNS queries are answered. Each routing policy serves different use cases and scenarios. Here are the different routing policies available in Route 53:
+1. Simple Routing Policy # Use Case: Basic routing where you route traffic to a single resource. Behavior: Returns one or more values without doing any special routing.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/route53/subdomain_delegation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/route53/subdomain_delegation/</guid>
+      <description>How to delegate a subdomain to another AWS account in AWS Route53? # Look at the new hosted zone you created for testing.example.com. This can be in the same AWS account, a different AWS account&amp;hellip; any AWS account. There&amp;rsquo;s nothing here that is &amp;ldquo;account&amp;rdquo; related. This uses standard DNS configuration. The whole of DNS is a hierarchy. The global root can tell you where to find com, and the com servers can tell you where to find example.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/s3/bucket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/s3/bucket/</guid>
+      <description>Block public access (bucket settings) # BlockPublicAcls - This prevents any new ACLs to be created or existing ACLs being modified which enable public access to the object. With this alone existing ACLs will not be affected. IgnorePublicAcls - Any ACLs actions that exist with public access will be ignored, this does not prevent them being created but prevents their effects. BlockPublicPolicy - This prevents a bucket policy containing public actions from being created or modified on an S3 bucket, the bucket itself will still allow the existing policy.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/ssm/ssm-agent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/ssm/ssm-agent/</guid>
+      <description>QUESTION # What user does AWS SSM RUN COMMAND use?
+ANSWER # The SSM Agent typically runs as the root user. This means that commands executed through SSM Run Command have root-level privileges, allowing them to perform a wide range of system-level operations.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/vpc/eni/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/vpc/eni/</guid>
+      <description>Elastic Network Interface # To understand how AWS achieves the AWSVPC network mode for containers, which allows them to have their own network settings regardless of the instance&amp;rsquo;s network configuration, we need to look into the underlying technology and AWS&amp;rsquo;s infrastructure capabilities:
+Elastic Network Interface (ENI): In AWSVPC mode, each ECS task is assigned its own Elastic Network Interface (ENI). An ENI is a virtual network interface that you can attach to an instance in a VPC.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/vpc/gateway/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/vpc/gateway/</guid>
+      <description>NAT Gateway # Internet Gateway # An Internet Gateway is used to allow resources in your network to access the internet, and to allow the internet to connect to those resources. It serves as a route for internet traffic from and to a network. In a cloud environment like AWS (Amazon Web Services), an Internet Gateway is attached to a VPC (Virtual Private Cloud) to enable communication between instances in the VPC and the internet.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/vpc/route-table/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/vpc/route-table/</guid>
+      <description>Subnet -&amp;gt; Route Table # in AWS, each subnet can only be associated with one route table at a time. Here&amp;rsquo;s how it works:
+Single Route Table per Subnet: If you need different routing rules for different parts of your network, you need to create multiple subnets and associate each with a different route table. Multiple Subnets per Route Table: Conversely, a single route table can be associated with multiple subnets.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/vpc/vpc-endpoint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/vpc/vpc-endpoint/</guid>
+      <description>VPC Endpoints # There are three types of VPC endpoints – Interface endpoints, Gateway Load Balancer endpoints, and Gateway endpoints. Interface endpoints and Gateway Load Balancer endpoints are powered by AWS PrivateLink, and use an Elastic Network Interface (ENI) as an entry point for traffic destined to the service. Interface endpoints are typically accessed using the public or private DNS name associated with the service, while Gateway endpoints and Gateway Load Balancer endpoints serve as a target for a route in your route table for traffic destined for the service.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/vpc/vpc-peering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/vpc/vpc-peering/</guid>
+      <description>Configuration # Have to add routes to both two subnets&amp;rsquo; route table. Route table Destination Target VPC A VPC A CIDR Local VPC B CIDR pcx-11112222 VPC B VPC B CIDR Local VPC A CIDR pcx-11112222 No unidirection access if only one route is added to one subnet&amp;rsquo;s route table. Route table Destination Target VPC A VPC A CIDR Local VPC B CIDR pcx-11112222 VPC B VPC B CIDR Local OR</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/waf/sql-injection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/waf/sql-injection/</guid>
+      <description>What is the difference between different options in field_to_match in the statement block? # When setting up a rule in AWS WAF to protect against SQL injections, choosing the right field to match is crucial. Among the options provided (all_query_arguments, body, cookies, header_order, headers, ja3_fingerprint, json_body, method, query_string, single_header, single_query_argument, uri_path), the most effective choice can depend on the specifics of your application and where you expect SQL injection attempts to occur.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/book-reading/system-design-alex-xu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/book-reading/system-design-alex-xu/</guid>
+      <description>Chapter One: SCALE FROM ZERO TO MILLIONS OF USERS # Cache Eviction Policy # Eviction Policy: Once the cache is full, any requests to add items to the cache might cause existing items to be removed. This is called cache eviction. Least-recently-used (LRU) is the most popular cache eviction policy. Other eviction policies, such as the Least Frequently Used (LFU) or First in First Out (FIFO), can be adopted to satisfy different use cases.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/caching/algorithms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/caching/algorithms/</guid>
+      <description>TBD 3.1 Least Recently Used (LRU) 3.2 Most Recently Used (MRU) 3.3 First In, First Out (FIFO) 3.4 Least Frequently Used (LFU) 3.5 Random Replacement (RR)</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/caching/caching-strategies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/caching/caching-strategies/</guid>
+      <description>4.1 Write-through Cache 4.2 Write-back Cache 4.3 Write-around Cache 4.4 Cache Eviction Policies</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/caching/redis/data-type/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/caching/redis/data-type/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/caching/redis/performance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/caching/redis/performance/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/caching/redis/persistence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/caching/redis/persistence/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/caching/redis/security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/caching/redis/security/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/caching/redis/source-code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/caching/redis/source-code/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/caching/types-of-caching/broswer-caching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/caching/types-of-caching/broswer-caching/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/caching/types-of-caching/cdn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/caching/types-of-caching/cdn/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/caching/types-of-caching/cpu-caching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/caching/types-of-caching/cpu-caching/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/caching/types-of-caching/disk-caching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/caching/types-of-caching/disk-caching/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/caching/types-of-caching/ram-caching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/caching/types-of-caching/ram-caching/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/aws/computing/ec2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/aws/computing/ec2/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/aws/computing/lambda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/aws/computing/lambda/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/aws/ecs/ecs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/aws/ecs/ecs/</guid>
+      <description>Ordered Placement Strategy # The &amp;ldquo;ordered_placement_strategy&amp;rdquo; you&amp;rsquo;re referring to seems to be related to container orchestration and management, likely in a cloud computing or distributed system environment. The strategy defines how tasks or containers are placed across a cluster of machines. Let&amp;rsquo;s break down the different types of strategies mentioned: binpack, random, and spread.
+Binpack Placement Strategy:
+Type: binpack Purpose: This strategy is used to place containers in such a way that they utilize as much of the available resources as possible on the least number of instances (or hosts).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/aws/ecs/how-to-deploy-stateful-application/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/aws/ecs/how-to-deploy-stateful-application/</guid>
+      <description>How to deploy stateful application in ECS? # Amazon Elastic Container Service (ECS) doesn&amp;rsquo;t have a direct equivalent to StatefulSets in Kubernetes. However, ECS has various features and strategies that can be used to manage stateful applications, although with different mechanisms compared to Kubernetes.
+ECS Concepts Comparable to StatefulSets: # Task Definitions: In ECS, you define your application using task definitions. While they don&amp;rsquo;t manage state in the same way as StatefulSets, task definitions are the closest you get to defining the desired state of your application in ECS.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/aws/eks/cluster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/aws/eks/cluster/</guid>
+      <description>Cluster in Amazon Elastic Kubernetes Service (EKS) # Overview # Amazon Elastic Kubernetes Service (EKS) is a managed service that makes it easy to run Kubernetes on AWS without needing to install and operate your own Kubernetes control plane or worker nodes.
+What is a Cluster? # In the context of Amazon EKS, a cluster refers to the Kubernetes control plane and the compute infrastructure it manages. The control plane runs in an account managed by AWS, and the user manages the compute infrastructure.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/aws/eks/deployment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/aws/eks/deployment/</guid>
+      <description>Deployment in Kubernetes (K8s) # What is a Deployment? # A Deployment in Kubernetes is a resource object that provides declarative updates to applications. It allows you to describe an application’s life cycle, such as which images to use for the app, the number of pods there should be, and the way to update them, among other aspects.
+Key Features of Deployment # Replica Management: Deployments allow you to specify how many replicas (copies) of a pod should be running.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/aws/eks/pod/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/aws/eks/pod/</guid>
+      <description>Pod in Amazon Elastic Kubernetes Service (EKS) # Overview # A pod in Amazon Elastic Kubernetes Service (EKS) is the smallest and most basic deployable object in Kubernetes. It represents a single instance of a process running in your cluster.
+Understanding Pods # Fundamental Unit of Deployment: Pods are the basic building blocks of Kubernetes applications. Containers Within Pods: Each pod can contain one or more containers, usually with closely related functionality.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/aws/eks/podtemplate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/aws/eks/podtemplate/</guid>
+      <description> PodTemplates in Amazon Elastic Kubernetes Service (EKS) # Overview # PodTemplates are specifications for creating Pods within Kubernetes, and by extension, in Amazon Elastic Kubernetes Service (EKS). They are templates that describe the desired state of a pod.
+Understanding PodTemplates # A PodTemplate is embedded in workload resources like Deployments, StatefulSets, and Jobs. The template contains specifications for pod creation, such as containers, volumes, and labels.
+Structure of a PodTemplate # apiVersion: version kind: ResourceType metadata: name: name spec: template: metadata: labels: key: value spec: containers: - name: containerName image: containerImage ports: - containerPort: port </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/aws/eks/replicasets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/aws/eks/replicasets/</guid>
+      <description>ReplicaSets in Amazon Elastic Kubernetes Service (EKS) # Overview # ReplicaSets are a fundamental workload management resource in Kubernetes, and by extension, in Amazon Elastic Kubernetes Service (EKS). They ensure that a specified number of pod replicas are running at any given time.
+Purpose of ReplicaSets # Maintain Stability: ReplicaSets maintain a stable set of replica Pods running at any given time. Self-Healing: If a pod fails, the ReplicaSet replaces it to maintain the desired state.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/aws/eks/statefulsets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/aws/eks/statefulsets/</guid>
+      <description>1. What is statefulSet? # StatefulSets in Kubernetes (K8s) is a workload API object used for managing stateful applications. It manages the deployment and scaling of a set of Pods and provides guarantees about the ordering and uniqueness of these Pods. Unlike a Deployment, a StatefulSet maintains a sticky identity for each of their Pods. This feature is particularly important for stateful applications that require stable, unique network identifiers, stable persistent storage, and ordered, graceful deployment and scaling.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/aws/load-balancer/port/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/aws/load-balancer/port/</guid>
+      <description>QUESTION # There are four ports can be configured in load-balancer related settings.
+The port of the listener The port of the target group The port of the target group health checking The port of the instance in the target group So what is the meaning of the port of the target group?
+ANSWER # The port of the listener is used to receive all the incoming requests and data sent to the load-balancer through that port.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/aws/load-balancer/sticky-session/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/aws/load-balancer/sticky-session/</guid>
+      <description>What is sticky session? # By default, an Application Load Balancer routes each request independently to a registered target based on the chosen load-balancing algorithm. However, you can use the sticky session feature (also known as session affinity) to enable the load balancer to bind a user&amp;rsquo;s session to a specific target.
+This ensures that all requests from the user during the session are sent to the same target. This feature is useful for servers that maintain state information in order to provide a continuous experience to clients.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/aws/monitoring/cloudwatch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/aws/monitoring/cloudwatch/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/aws/network/api-gateway/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/aws/network/api-gateway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/aws/network/cloud-front/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/aws/network/cloud-front/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/aws/network/route53/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/aws/network/route53/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/aws/network/vpc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/aws/network/vpc/</guid>
+      <description>QUESTION # What is VPC and subnets?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/aws/role-control/iam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/aws/role-control/iam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/aws/security/kms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/aws/security/kms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/aws/storage/s3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/aws/storage/s3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/cicd/circleci/circleci/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/cicd/circleci/circleci/</guid>
+      <description># In CircleCI, the save_cache step allows you to cache dependencies or other directories between jobs. The scope of a cache in CircleCI is at the repository level, but its applicability can be fine-tuned using keys that may include branch names, environment variables, or other parameters. Here&amp;rsquo;s how it works:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/cicd/github_actions/caching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/cicd/github_actions/caching/</guid>
+      <description>How to speed up npm ci command? # npm ci should be preferred in CI because it respects the package-lock.json file. Unlike npm install, which rewrites the file and always installs new versions.
+By design this command always purges all local packages, by removing the node_modules directory in the beginning. This is the main reason for long builds. And there is no option to avoid this irritating behaviour.
+So the idea is not to cache the node_modules folder, but to cache the libs of npm.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/config-management/ansible/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/config-management/ansible/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/config-management/cloud-init/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/config-management/cloud-init/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing/iac/terraform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing/iac/terraform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/containerization/docker/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/containerization/docker/configuration/</guid>
+      <description>Hostname VS Container Name # ECS Link Container # Host Port = 0 # In an AWS ECS (Elastic Container Service) task definition, if you set the host port as 0 in the port mapping of a container definition, it enables dynamic port mapping. This means that ECS will automatically assign an available port from the EC2 instance (or the underlying infrastructure) to the container.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/containerization/docker/docker-engine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/containerization/docker/docker-engine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/containerization/docker/dockershim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/containerization/docker/dockershim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/containerization/docker/entrypoint_and_command/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/containerization/docker/entrypoint_and_command/</guid>
+      <description>What is the difference between CMD and ENTRYPOINT? # Docker has a default entrypoint which is /bin/sh -c but does not have a default command.
+When you run docker like this: docker run -i -t ubuntu bash the entrypoint is the default /bin/sh -c, the image is ubuntu and the command is bash.
+The command is run via the entrypoint. i.e., the actual thing that gets executed is /bin/sh -c bash.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/containerization/kubernetes/containerd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/containerization/kubernetes/containerd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/containerization/kubernetes/kubelet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/containerization/kubernetes/kubelet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/database/data-modeling/indexing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/database/data-modeling/indexing/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/database/data-modeling/partitioning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/database/data-modeling/partitioning/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/database/data-modeling/sharding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/database/data-modeling/sharding/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/database/database-proxy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/database/database-proxy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/database/orm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/database/orm/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/database/relational/postgres/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/database/relational/postgres/</guid>
+      <description>What is search_path? # The default search path usually includes the public schema, which is why \dt typically shows tables from the public schema if no schema is specified. However, if your search path is set to include other schemas, or if you&amp;rsquo;ve modified the default search path, \dt will show tables from those schemas as well.
+To view the current search path, you can use the following command in psql:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/database/transaction/acid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/database/transaction/acid/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/database/transaction/concurrency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/database/transaction/concurrency/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/database/transaction/isolation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/database/transaction/isolation/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/distributed-systems/algorithms/consistency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/distributed-systems/algorithms/consistency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/distributed-systems/algorithms/mapreduce/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/distributed-systems/algorithms/mapreduce/</guid>
+      <description>Question: Where is the data stored for Mapreduce? # In a typical MapReduce framework, the large datasets are stored in a distributed file system, such as the Hadoop Distributed File System (HDFS). Here&amp;rsquo;s how the storage and data distribution process works:
+Storage and Data Distribution in MapReduce: # Distributed File System:
+Large datasets are stored in a distributed file system (e.g., HDFS). The data is divided into blocks (e.g., 128 MB each) and distributed across multiple nodes in the cluster.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/distributed-systems/algorithms/paxos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/distributed-systems/algorithms/paxos/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/distributed-systems/algorithms/raft/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/distributed-systems/algorithms/raft/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/distributed-systems/algorithms/three-phase-commit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/distributed-systems/algorithms/three-phase-commit/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/distributed-systems/algorithms/zab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/distributed-systems/algorithms/zab/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/distributed-systems/systems/hadoop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/distributed-systems/systems/hadoop/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/distributed-systems/systems/kafka/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/distributed-systems/systems/kafka/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/distributed-systems/systems/rabbitmq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/distributed-systems/systems/rabbitmq/</guid>
+      <description>RabbitMQ plugin # [E*]: This indicates that the plugin is enabled. The uppercase E signifies that the plugin is currently active and functioning in your RabbitMQ instance.
+[e*]: The lowercase e typically indicates that the plugin is enabled, but it&amp;rsquo;s either a dependency of another plugin or it was enabled as a result of enabling another plugin. In other words, it might not have been explicitly enabled by the user, but it&amp;rsquo;s required for the functioning of another plugin that has been enabled.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/distributed-systems/systems/spark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/distributed-systems/systems/spark/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/files-systems/basic-concepts/journaling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/files-systems/basic-concepts/journaling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/files-systems/basic-concepts/permissions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/files-systems/basic-concepts/permissions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/files-systems/basic-concepts/posix-compliant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/files-systems/basic-concepts/posix-compliant/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/files-systems/distributed/ceph/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/files-systems/distributed/ceph/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/files-systems/distributed/hdfs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/files-systems/distributed/hdfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/files-systems/network/nfs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/files-systems/network/nfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/files-systems/traditional/ext/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/files-systems/traditional/ext/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/files-systems/traditional/fat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/files-systems/traditional/fat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/files-systems/traditional/ntfs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/files-systems/traditional/ntfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/math/algorithm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/math/algorithm/</guid>
+      <description> Newton&amp;rsquo;s Method Equation # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/message-middleware/rabbitmq/exchange/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/message-middleware/rabbitmq/exchange/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/message-middleware/rabbitmq/priority-queue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/message-middleware/rabbitmq/priority-queue/</guid>
+      <description>Does a priority queue with 5 levels in RabbitMQ maintain 5 separate queues internally? # In RabbitMQ, a priority queue allows you to assign different levels of priority to messages, which affects the order in which they are consumed. Messages with higher priority are dequeued and processed before lower-priority messages, regardless of when they were published.
+Here’s how it works and some examples to illustrate:
+How Priority Queues Work in RabbitMQ: # Priority Levels: When you declare a queue with x-max-priority, you specify the number of priority levels.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/message-middleware/rabbitmq/queue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/message-middleware/rabbitmq/queue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/message-middleware/rabbitmq/user_permission/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/message-middleware/rabbitmq/user_permission/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/message-middleware/rabbitmq/vhost/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/message-middleware/rabbitmq/vhost/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/0.0.0.0-127.0.0.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/0.0.0.0-127.0.0.1/</guid>
+      <description>The difference between 0.0.0.0 and 127.0.0.1 # 0.0.0.0: This is a non-routable meta-address used to designate an invalid, unknown, or non-applicable target. In the context of servers, 0.0.0.0 means &amp;ldquo;all IPv4 addresses on the local machine.&amp;rdquo; If a server is set to listen on 0.0.0.0, it will be reachable at any IPv4 address that the machine happens to have. This makes it useful for services that should be accessible from any network.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/datagram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/datagram/</guid>
+      <description>The idea behind datagram # The idea behind datagrams is incredibly simple: You just include in every packet enough information to enable any switch to decide how to get it to its destination. That is, every packet contains the complete destination address.
+Contactless # A host can send a packet anywhere at any time, since any packet that turns up at a switch can be immediately forwarded (assuming a correctly populated forwarding table).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/forward-routing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/forward-routing/</guid>
+      <description> forwarding and routing # Routing Table # Prefix/Length Next Hop 18/8 171.69.245.10 Forwarding Table # Prefix/Length Interface MAC Address 18/8 if0 8:0:2b:e4:b:1:2 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/hardware_components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/hardware_components/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/hostname_domainname/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/hostname_domainname/</guid>
+      <description>What’s the difference between a hostname, a domain name, and an FQDN? A hostname refers to a particular device on a network. So, in the URL www.mybusiness.com, “www” is the hostname.
+A domain name identifies the website. So, stick with the example website URL www.mybusiness.com. “Mybusiness” is the domain name. Multiple hostnames can be associated with a singular domain.
+The FQDN is the hostname, domain name, and TLD (e.g., .com). So, “www.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/ip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/ip/</guid>
+      <description>IP Header # Version (4 bits): Specifies the IP version. For IPv4, this value is 4. HLEN (Header Length, 4 bits): Indicates the length of the header in 32-bit words. The minimum value is 5 (20 bytes), and the maximum is 15 (60 bytes). TOS (Type of Service, 8 bits): Used to specify the priority of the packet and request specific types of service (e.g., low delay, high throughput). Length (16 bits): Total length of the IP packet (header + data) in bytes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/sliding_window/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/sliding_window/</guid>
+      <description>Frame Header # typedef uint8_t SwpSeqno; typedef struct { SwpSeqno SeqNum; /* sequence number of this frame */ SwpSeqno AckNum; /* ack of received frame */ uint8_t Flags; /* up to 8 bits worth of flags */ } SwpHdr; Sliding Window Protocol State # typedef struct { /* sender side state: */ SwpSeqno LAR; /* seqno of last ACK received */ SwpSeqno LFS; /* last frame sent */ Semaphore sendWindowNotFull; SwpHdr hdr; /* pre-initialized header */ struct sendQ_slot { Event timeout; /* event associated with send-timeout */ Msg msg; } sendQ[SWS]; /* receiver side state: */ SwpSeqno NFE; /* seqno of next frame expected */ struct recvQ_slot { int received; /* is msg valid?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/socket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/socket/</guid>
+      <description>It is important to keep two concerns separate in your mind. Each protocol provides a certain set of services, and the API provides a syntax by which those services can be invoked on a particular computer system. The implementation is then responsible for mapping the tangible set of operations and objects defined by the API onto the abstract set of services defined by the protocol. If you have done a good job of defining the interface, then it will be possible to use the syntax of the interface to invoke the services of many different protocols.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/socks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/socks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/tcp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/tcp/</guid>
+      <description>Transport Level Protocol # The application-level processes that use its services have certain requirements. The following list itemizes some of the common properties that a transport protocol can be expected to provide:
+Guarantees message delivery
+Delivers messages in the same order they are sent
+Delivers at most one copy of each message
+Supports arbitrarily large messages
+Supports synchronization between the sender and the receiver
+Allows the receiver to apply flow control to the sender</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/udp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/udp/</guid>
+      <description>Basic Characteristics of UDP # Connectionless Protocol: UDP does not establish a connection before sending data. It sends data without ensuring that the receiver is ready or available to receive it, which contrasts sharply with TCP (Transmission Control Protocol), a connection-oriented protocol. No Guarantee of Delivery: UDP does not guarantee that data sent will reach its destination, as it does not track delivery. There is no acknowledgment mechanism that the data has been received.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/webrtc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/webrtc/</guid>
+      <description>How WebRTC segment and assemble datagram over UDP? # WebRTC (Web Real-Time Communication) incorporates similar principles for handling real-time audio and video streams, but it is more sophisticated and includes additional mechanisms to ensure reliable and efficient communication. Here’s how WebRTC works and how it handles segmenting and reassembling using UDP:
+WebRTC is a protocol suite and set of APIs that enable real-time communication directly between web browsers or other endpoints without requiring an intermediary server for the media exchange.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/basic-concepts/x-forward/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/basic-concepts/x-forward/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/network/protocols/definition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/network/protocols/definition/</guid>
+      <description>What is a protocol? # Protocol is the abstract objects that make up the layers of a network system are called protocols. That is, a protocol provides a communication service that higher-level objects (such as application processes, or perhaps higher-level protocols) use to exchange messages.
+Each protocol defines two different interfaces. First, it defines a service interface to the other objects on the same computer that want to use its communication services.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/operating-systems/basic-concept/clock-tick/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/operating-systems/basic-concept/clock-tick/</guid>
+      <description>How a timer is implemented in Operating System? # Implementing a timer under the hood in an operating system or application involves several key components and mechanisms. Here&amp;rsquo;s an overview of how timers work:
+1. Timer Creation and Storage # When a timer is created, it typically specifies a duration (e.g., 5 seconds) and an action to be executed when the timer expires. The system stores this timer in a data structure, often sorted by the time when each timer is set to expire.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/operating-systems/basic-concept/coroutine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/operating-systems/basic-concept/coroutine/</guid>
+      <description>Processes # Separate instances of programs. Independent execution units Heavyweight, more memory and overhead. Isolated memory space. Require IPC for communication. Good for high isolation, parallelism. Threads # Units of execution within a process. Preemptive multitasking — operating system’s scheduler determines when a thread should be paused and resumed Lighter weight, less overhead. Share memory space. Direct communication. Good for concurrency and shared data. Coroutines # Cooperative units within a thread.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/operating-systems/basic-concept/process/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/operating-systems/basic-concept/process/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/operating-systems/basic-concept/thread/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/operating-systems/basic-concept/thread/</guid>
+      <description> Thread Scheduling VS Process Scheduling # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/operating-systems/concurrent-programming/race-condition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/operating-systems/concurrent-programming/race-condition/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/operating-systems/concurrent-programming/synchronization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/operating-systems/concurrent-programming/synchronization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/operating-systems/use-macro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/operating-systems/use-macro/</guid>
+      <description>Why do the Linux use macro over function? # int __sys_socket(int family, int type, int protocol) { struct socket *sock; int flags; sock = __sys_socket_create(family, type, update_socket_protocol(family, type, protocol)); if (IS_ERR(sock)) return PTR_ERR(sock); flags = type &amp;amp; ~SOCK_TYPE_MASK; if (SOCK_NONBLOCK != O_NONBLOCK &amp;amp;&amp;amp; (flags &amp;amp; SOCK_NONBLOCK)) flags = (flags &amp;amp; ~SOCK_NONBLOCK) | O_NONBLOCK; return sock_map_fd(sock, flags &amp;amp; (O_CLOEXEC | O_NONBLOCK)); } SYSCALL_DEFINE3(socket, int, family, int, type, int, protocol) { return __sys_socket(family, type, protocol); } The use of macros instead of functions in this code is primarily for performance and code size reasons.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/operating-systems/virtualization/hypervisors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/operating-systems/virtualization/hypervisors/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/programming-languages/closure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/programming-languages/closure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/programming-languages/go/go/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/programming-languages/go/go/</guid>
+      <description>xmapf, err := p.Lookup(&amp;quot;Map&amp;quot;) can I use the xmapf as a function directly? # In Go, when you use the plugin.Lookup method, it returns a plugin.Symbol, which is a type alias for interface{}. This means that the returned value is of type interface{} and doesn&amp;rsquo;t have a concrete type until you use a type assertion.
+You cannot use xmapf and xreducef directly as functions because they are of type interface{}.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/programming-languages/go/reflect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/programming-languages/go/reflect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/programming-languages/issues/loop-variable-in-goroutine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/programming-languages/issues/loop-variable-in-goroutine/</guid>
+      <description>Summary of the Loop Variable Capturing Issue in Goroutines Closure # Problem Description # In Go, when using a for loop to iterate over elements and launching goroutines within the loop, a common issue arises due to the loop variable being reused across all iterations. Since the loop variable (req in our example) is allocated once and its memory address remains constant, all goroutines that capture this variable end up referencing the same memory location.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/programming-languages/late-static-binding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/programming-languages/late-static-binding/</guid>
+      <description>Late static binding (LSB) is a feature primarily associated with dynamically typed languages like PHP. It allows static methods and properties to be resolved at runtime based on the calling class context, rather than the class in which they were defined.
+Languages with Late Static Binding # PHP: PHP is the most well-known language that supports late static binding using the static keyword. Languages with Early Static Binding # Early static binding is more common in statically typed languages, where static methods and properties are resolved at compile-time based on the class in which they were defined.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/programming-thoughts/code-database-synchronization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/programming-thoughts/code-database-synchronization/</guid>
+      <description>Service Code and Database Schema Synchronization in Production Environment # To ensure that your microservices on AWS ECS and your database schema updates are synchronized effectively without causing service disruptions or inconsistencies, you can consider the following approaches:
+1. Implement a Blue-Green Deployment Strategy # Useful when the databases and code are not backward/forward compatible.
+Prepare a Green environment with the new code and the updated schema while the Blue environment continues to run the old code and schema.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/programming-thoughts/microservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/programming-thoughts/microservice/</guid>
+      <description>Monolithic VS Microservice # In a monolithic architecture, the components interact directly within a single application instance, often sharing data in-memory or through internal function calls.
+In contrast, in a microservices architecture, different services are typically deployed on separate servers or environments and communicate through network calls, often using HTTP requests.
+Scalability # Monolithic`: Scaling requires scaling the entire application, even if only one part of the application needs more resources.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/search-engine/elasticsearch/aggregation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/search-engine/elasticsearch/aggregation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/search-engine/elasticsearch/boolean-query/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/search-engine/elasticsearch/boolean-query/</guid>
+      <description>The difference between must clause and filter clause # The must and filter clauses within a boolean query in Elasticsearch have distinct roles and behaviors:
+must Clause:
+Purpose: The must clause is used to specify search criteria that must be met for a document to be included in the search results. Behavior: Queries in the must clause contribute to the scoring of the document. This means that matching documents are not only required to match the criteria specified in the must clause but their relevance score is also influenced by how well they match these criteria.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/search-engine/elasticsearch/customized-preference-search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/search-engine/elasticsearch/customized-preference-search/</guid>
+      <description>In which step, the user preference is used to customize the searching results? # The user preference is primarily used to customize the search results during the step where the search query is tailored before being sent to Elasticsearch. This is a crucial step for integrating user-specific context into the search process. Here&amp;rsquo;s how it works:
+Step of Integrating User Preferences: # Retrieve User Context and Preferences:
+After the user initiates a search query, the system first retrieves relevant user data from the relational database.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/search-engine/elasticsearch/full-text-search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/search-engine/elasticsearch/full-text-search/</guid>
+      <description>What is full-text search? # Full-text search refers specifically to searching for text within content in a way that understands the nuances of human language, like handling synonyms, stemming, and relevance scoring.
+Inverted Index # When documents are indexed, the search engine processes the text and creates a list of all the unique words (terms) present in the documents. For each term, the engine maintains a list of documents (often with specific positions within those documents) where that term appears.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/search-engine/elasticsearch/query-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/search-engine/elasticsearch/query-types/</guid>
+      <description>All query types in elastic search # Full-Text Search Queries # Match Query: Searches text fields for matches on a given query string. It&amp;rsquo;s the most common type and handles full-text search, including analyzing the query string.
+Phrase Query: Looks for a specific sequence of terms in a specified order. Useful for searching exact phrases.
+Query String Query: Supports a compact, expressive syntax for specifying complex search criteria, including boolean logic, wildcards, fuzzy matches, and more.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/shell/commands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/shell/commands/</guid>
+      <description>Here String # diff &amp;lt;(echo &amp;#34;string1&amp;#34;) &amp;lt;(echo &amp;#34;string2&amp;#34;) &amp;lt;(echo &amp;quot;string&amp;quot;) construct creates a temporary file-like object that contains the string.
+So in this way, we can walk around the file as input requirement of diff command.
+Checking the exit status of ANY command in a pipeline # It&amp;rsquo;s a pretty common thing in a shell script to want to check the exit status of the previous command. You can do this with the $?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/shell/curl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/shell/curl/</guid>
+      <description>How to send HTTPS request with curl? # To send an HTTPS request using Curl, pass the destination endpoint that supports SSL connections on the Curl command line. Curl will automatically establish an SSL connection with the server. When Curl sends a request to an HTTPS URL, it checks the SSL certificate against the certificate store of the local CA. Curl returns the error message Certificate Verify Failed for expired and self-signed certificates.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/shell/grep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/shell/grep/</guid>
+      <description>grep failed with exit code 1 in CircleCI workflow # grep will throw an error when nothing matched $ echo &amp;#34;anything&amp;#34; | grep a a $ echo $? 0 $ echo &amp;#34;anything&amp;#34; | grep b $ echo $? 1 This command behaves the same across different system environments.
+How to make grep return 0 if nothing matched? # Add || true. If the first part of the command &amp;ldquo;fails&amp;rdquo; (meaning grep e returns a non-zero exit code) then the part after the || is executed, succeeds and returns zero as the exit code (true always returns zero).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/shell/ssh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/shell/ssh/</guid>
+      <description> Use SSH to run command remotely # ssh &amp;lt;&amp;lt; redis_instance__username &amp;gt;&amp;gt;@&amp;lt;&amp;lt; redis_instance__hostname &amp;gt;&amp;gt; \ &amp;#34;redis-cli -h &amp;lt;&amp;lt; parameters.redis_host &amp;gt;&amp;gt; -p &amp;lt;&amp;lt; parameters.redis_port &amp;gt;&amp;gt; FLUSHALL&amp;#34; </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/system-design/ideas/fantastic_four/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/system-design/ideas/fantastic_four/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/system-design/telegram/telegram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/system-design/telegram/telegram/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/system-design/twitch/twitch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/system-design/twitch/twitch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/system-design/uber/1.requirement-clarification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/system-design/uber/1.requirement-clarification/</guid>
+      <description>1. Requirements Clarification # Functional Requirements: Matching riders with drivers Calculating the fare Handling payments Tracking the ride in real-time Rating system for drivers and riders Non-functional Requirements: High availability Scalability Low latency Real-time processing Data consistency Constraints: Handling millions of users and rides Supporting multiple platforms (iOS, Android, Web) A. essential features (functional requirements) # 1. User Registration and Profiles # Include features like photo upload, personal information, payment information, vehicle details for drivers, etc.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/file-upload-limitation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/file-upload-limitation/</guid>
+      <description>How can I upload large files? # The limitation on the server configuration size # Let take PHP+Nginx as an example, we need to update the following parameters to increase the file upload limitations:
+Nginx: client_max_body_size PHP: post_max_size upload_max_filesize max_file_uploads Reference: # https://serverfault.com/questions/611239/increase-php-fpms-max-upload-post-size
+Request payload limit with AWS API Gateway # Maximum payload to API gateway is 10 MB and maximum payload for Lambda is 6 MB, which cannot be increased.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/frontend-techs/authentication-and-authorization/cookie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/frontend-techs/authentication-and-authorization/cookie/</guid>
+      <description>What is Cookie? # A cookie is a small piece of data sent from a website and stored on the user&amp;rsquo;s computer by the user&amp;rsquo;s web browser while the user is browsing.
+Cookies are used to remember information about the user for the duration of the visit (session cookies) or for repeat visits (persistent cookies). They can store preferences, session information, and other data to improve the user experience or track user behavior.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/frontend-techs/authentication-and-authorization/jwt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/frontend-techs/authentication-and-authorization/jwt/</guid>
+      <description>What is JWT? # JWT is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object.
+JWTs are commonly used for authorization and information exchange. They can encode user credentials and are often used in token-based authentication systems.
+JWTs are secure because they can be digitally signed. However, they should be transmitted securely and stored safely. Since JWTs can contain sensitive information, they should not be exposed to untrusted environments.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/frontend-techs/authentication-and-authorization/session/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/frontend-techs/authentication-and-authorization/session/</guid>
+      <description>What is Session? # A session is a server-side storage of information that is related to a particular user or browser.
+Sessions are used to persist user data across multiple HTTP requests. When a session is started, the server creates a unique identifier (session ID) which is typically passed back to the browser via a cookie.
+The main security concern is session hijacking. Protecting the session ID, especially in transit (using HTTPS), is critical.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/frontend-techs/caching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/frontend-techs/caching/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/frontend-techs/cors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/frontend-techs/cors/</guid>
+      <description>What will happen if I allow localhost in CORS policy? # When you allow http://localhost:3000 in your CORS policy, anyone running a frontend on http://localhost:3000 on their own machine will be able to make requests to your backend service. Here&amp;rsquo;s how it works:
+CORS and Localhost: The http://localhost:3000 you allow in your CORS policy refers to any instance of a service running on port 3000 on localhost. This localhost is specific to the computer that the service is running on.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/frontend-techs/css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/frontend-techs/css/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/frontend-techs/html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/frontend-techs/html/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/frontend-techs/javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/frontend-techs/javascript/</guid>
+      <description> localStorage # sessionStorage # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/frontend-techs/node.js/fastify/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/frontend-techs/node.js/fastify/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/frontend-techs/node.js/issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/frontend-techs/node.js/issues/</guid>
+      <description>Node 20 cannot bind port less than 1024 without root permission # The same code to listen on 0.0.0.0:443 works well on Node 18, but got an error on Node 20:
+&amp;#34;Error: listen EACCES: permission denied 0.0.0.0:1023 at Http2SecureServer.setupListenHandle [as _listen2] (node:net:1880:21) at listenInCluster (node:net:1945:12) at doListen (node:net:2109:7) at process.processTicksAndRejections (node:internal/process/task_queues:83:21)&amp;#34;, &amp;#34;code&amp;#34;:&amp;#34;EACCES&amp;#34;, &amp;#34;errno&amp;#34;:-13, &amp;#34;syscall&amp;#34;:&amp;#34;listen&amp;#34;, &amp;#34;address&amp;#34;:&amp;#34;0.0.0.0&amp;#34;, &amp;#34;port&amp;#34;:1023}, &amp;#34;msg&amp;#34;:&amp;#34;listen EACCES: permission denied 0.0.0.0:1023&amp;#34; So I tried to listen on port 1023 and 1024, and the project can listen well on 1024 but not 1023.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/header/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/high-throughput/connection-pool/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/high-throughput/connection-pool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/http-header/forwarded/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/http-header/forwarded/</guid>
+      <description>RFC 7239 # The Forwarded header is standardized in RFC 7239 and is designed to convey information about the client and the proxy chain.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/nginx/config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/nginx/config/</guid>
+      <description>QUESTION # What is the difference between listen 80 and listen 80 default_server?
+ANSWER # The listen directive in Nginx is used to define what IP address and port number a server block should listen for incoming requests on. The default_server parameter is an optional argument that can be added to the listen directive to specify that a particular server block should be used as the default response for requests that do not match any other server block.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/nginx/errors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/nginx/errors/</guid>
+      <description>ERROR # CODE
+server { listen 80; server_name _; # This is a catch-all server name location /health-check { return 200 &amp;#39;healthy\n&amp;#39;; add_header Content-Type text/plain; } # The rest of your server configuration goes here... } RUN
+sudo nginx -t
+RESULT
+nginx: [warn] conflicting server name &amp;ldquo;_&amp;rdquo; on 0.0.0.0:80, ignored
+EXPLANATION
+There are multiple blocks have the same wildcard server listening</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/nginx/file-upload/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/nginx/file-upload/</guid>
+      <description>How does the Nginx process file-upload requests and reject large files? # Nginx processes the request body incrementally rather than downloading the entire content first before checking its size. Here&amp;rsquo;s a more detailed explanation of how it handles uploads:
+Receiving the Request: When Nginx receives a request with a body (e.g., a file upload), it starts reading the body in chunks as they arrive, rather than waiting for the entire body to be received.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/package-management/npm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/package-management/npm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/package-management/yarn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/package-management/yarn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/web-authentication-mechanisms/callback-url/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/web-authentication-mechanisms/callback-url/</guid>
+      <description>What is callback URL? # A callback URL is a web address that an application will redirect to after a certain event has occurred, often with some additional data. This is a common pattern in web development, especially in scenarios involving authentication, webhooks, or integrating third-party services.
+For example, when you log into a website using a third-party service (like logging into a site with your Google account), after successful authentication, Google will redirect you back to the original website using a callback URL provided by that website.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/web-authentication-mechanisms/captcha-recaptcha/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/web-authentication-mechanisms/captcha-recaptcha/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/web-authentication-mechanisms/cors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/web-authentication-mechanisms/cors/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/web-authentication-mechanisms/csrf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/web-authentication-mechanisms/csrf/</guid>
+      <description>What is CSRF(Cross-Site Request Forgery)? # CSRF stands for Cross-Site Request Forgery, which is a type of security vulnerability typically found in web applications. It allows an attacker to induce users to perform actions that they do not intend to do. A CSRF attack specifically targets state-changing requests, not theft of data, since the attacker has no way to see the response to the forged request.
+Here&amp;rsquo;s a basic example of how CSRF could work:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/web-authentication-mechanisms/multi-factor-authentication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/web-authentication-mechanisms/multi-factor-authentication/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/web-authentication-mechanisms/oauth-oidc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/web-authentication-mechanisms/oauth-oidc/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/web-authentication-mechanisms/ssl-tls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/web-authentication-mechanisms/ssl-tls/</guid>
+      <description>How the SSL/TLS is used when users access websites via HTTPS? # SSL/TLS (Secure Sockets Layer/Transport Layer Security) is a protocol for securing internet communications. It&amp;rsquo;s used extensively for securing data transfer, especially in HTTPS, which is the secure version of HTTP used for web browsing. Here&amp;rsquo;s a simplified overview of how SSL/TLS works when you access a website via HTTPS:
+Client-Server Handshake Initiation
+Client Hello: When you enter an HTTPS URL in your browser (the client), it initiates a connection to the server hosting the website.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Novel CS</title>
+    <link>https://example.org/docs/distributed-systems/algorithms/</link>
+    <description>Recent content on Novel CS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://example.org/docs/distributed-systems/algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/docs/distributed-systems/algorithms/consistency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/distributed-systems/algorithms/consistency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/distributed-systems/algorithms/mapreduce/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/distributed-systems/algorithms/mapreduce/</guid>
+      <description>Question: Where is the data stored for Mapreduce? # In a typical MapReduce framework, the large datasets are stored in a distributed file system, such as the Hadoop Distributed File System (HDFS). Here&amp;rsquo;s how the storage and data distribution process works:
+Storage and Data Distribution in MapReduce: # Distributed File System:
+Large datasets are stored in a distributed file system (e.g., HDFS). The data is divided into blocks (e.g., 128 MB each) and distributed across multiple nodes in the cluster.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/distributed-systems/algorithms/paxos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/distributed-systems/algorithms/paxos/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/distributed-systems/algorithms/raft/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/distributed-systems/algorithms/raft/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/distributed-systems/algorithms/three-phase-commit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/distributed-systems/algorithms/three-phase-commit/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/distributed-systems/algorithms/zab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/distributed-systems/algorithms/zab/</guid>
+      <description>TBD</description>
+    </item>
+    
+  </channel>
+</rss>

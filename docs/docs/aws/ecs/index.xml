@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Novel CS</title>
+    <link>https://example.org/docs/aws/ecs/</link>
+    <description>Recent content on Novel CS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://example.org/docs/aws/ecs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/ecs/capacity-groups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/ecs/capacity-groups/</guid>
+      <description>Automatically manage Amazon ECS capacity with cluster auto scaling # Amazon ECS can manage the scaling of Amazon EC2 instances that are registered to your cluster. This is referred to as Amazon ECS cluster auto scaling. You turn on managed scaling when you create the Amazon ECS Auto Scaling group capacity provider. Then, you set a target percentage (the targetCapacity) for the instance utilization in this Auto Scaling group. Amazon ECS creates two custom CloudWatch metrics and a target tracking scaling policy for your Auto Scaling group.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/ecs/ec2_group/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/ecs/ec2_group/</guid>
+      <description>ECS - EC2 Architecture # Comparison with Fargate # The challenge of running EC2 instances is that they are servers. You have to patch them and keep them updated. You have to manage logging, manage ssh keys, manage what happens when you run out of disk space, etc. Your business doesn&amp;rsquo;t really get any value out of managing those things specifically, but historically we&amp;rsquo;ve accepted that we have to do those things if we want to run our app.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/ecs/fargate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/ecs/fargate/</guid>
+      <description> ECS - Fargate Architecture # Pricing Structure # Fargate pricing is based on five independently configurable dimensions:
+vCPU Memory Operating System CPU Architecture System Resources </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/ecs/launch_template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/ecs/launch_template/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/ecs/network_modes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/ecs/network_modes/</guid>
+      <description>ECS Network Modes # In AWS ECS (Elastic Container Service), the networking section refers to the configuration of how the containers within a task communicate with each other and with the outside world. There are several network modes available in ECS, each offering different capabilities and levels of isolation. Understanding these modes is crucial for designing your ECS deployment according to your application&amp;rsquo;s networking requirements. Here&amp;rsquo;s a breakdown of the different network modes:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/aws/ecs/sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/aws/ecs/sdk/</guid>
+      <description>Enter ECS Container # aws ecs execute-command &amp;ndash;region us-west-2 &amp;ndash;cluster arn:aws:ecs:us-west-2:340912226205:cluster/dev-lodgr-api &amp;ndash;task df7a7b460a71457a800d5517a1be4f6b &amp;ndash;container dev-lodgr-api &amp;ndash;command &amp;ldquo;bash&amp;rdquo; &amp;ndash;interactive</description>
+    </item>
+    
+  </channel>
+</rss>
