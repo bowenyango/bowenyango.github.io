@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Novel CS</title>
+    <link>https://example.org/docs/web-development/header/</link>
+    <description>Recent content on Novel CS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://example.org/docs/web-development/header/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/header/forwarded/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/header/forwarded/</guid>
+      <description>RFC 7239 # The Forwarded header is standardized in RFC 7239 and is designed to convey information about the client and the proxy chain.</description>
+    </item>
+    
+  </channel>
+</rss>

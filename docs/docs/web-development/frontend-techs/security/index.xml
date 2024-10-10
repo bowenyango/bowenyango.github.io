@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Novel CS</title>
+    <link>https://example.org/docs/web-development/frontend-techs/security/</link>
+    <description>Recent content on Novel CS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://example.org/docs/web-development/frontend-techs/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/frontend-techs/security/content-security-policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/frontend-techs/security/content-security-policy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/web-development/frontend-techs/security/cors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/web-development/frontend-techs/security/cors/</guid>
+      <description>What will happen if I allow localhost in CORS policy? # When you allow http://localhost:3000 in your CORS policy, anyone running a frontend on http://localhost:3000 on their own machine will be able to make requests to your backend service. Here&amp;rsquo;s how it works:
+CORS and Localhost: The http://localhost:3000 you allow in your CORS policy refers to any instance of a service running on port 3000 on localhost. This localhost is specific to the computer that the service is running on.</description>
+    </item>
+    
+  </channel>
+</rss>

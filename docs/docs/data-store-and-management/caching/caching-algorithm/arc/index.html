@@ -1,0 +1,3214 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ARC # Adaptive Replacement Cache (ARC) is a fascinating approach to improving cache performance. Unlike more straightforward caching algorithms like LRU (Least Recently Used) or LFU (Least Frequently Used), ARC dynamically adapts to changing access patterns.
+How ARC Works # ARC aims to balance between recency (like LRU) and frequency (like LFU). To do this, ARC maintains four lists:
+T1: Recently seen but not yet frequently used items. B1: A ghost list of items recently evicted from T1.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="ARC # Adaptive Replacement Cache (ARC) is a fascinating approach to improving cache performance. Unlike more straightforward caching algorithms like LRU (Least Recently Used) or LFU (Least Frequently Used), ARC dynamically adapts to changing access patterns.
+How ARC Works # ARC aims to balance between recency (like LRU) and frequency (like LFU). To do this, ARC maintains four lists:
+T1: Recently seen but not yet frequently used items. B1: A ghost list of items recently evicted from T1." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.org/docs/data-store-and-management/caching/caching-algorithm/arc/" /><meta property="article:section" content="docs" />
+
+
+<title>Arc | Novel CS</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="stylesheet" href="/book.min.33a48f5432973b8ff9a82679d9e45d67f2c15d4399bd2829269455cfe390b5e8.css" integrity="sha256-M6SPVDKXO4/5qCZ52eRdZ/LBXUOZvSgpJpRVz&#43;OQteg=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.84dc43b64e63936af16c8531c9ecff93d14034caf6695bdcaff9ef0f3fac5f61.js" integrity="sha256-hNxDtk5jk2rxbIUxyez/k9FANMr2aVvcr/nvDz&#43;sX2E=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Novel CS</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-552b1427be68e6594b307ce9b2a1df65" class="toggle"  />
+    <label for="section-552b1427be68e6594b307ce9b2a1df65" class="flex justify-between">
+      <a href="/docs/block-chain/" class="">Block Chain</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7f641d1bdb6830a96c54eb8d602f77d6" class="toggle"  />
+    <label for="section-7f641d1bdb6830a96c54eb8d602f77d6" class="flex justify-between">
+      <a role="button" class="">Book Reading</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/book-reading/system-design-alex-xu/" class="">System Design Alex Xu</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f05e7ebaa73d4a1344632e4ec44740c1" class="toggle"  />
+    <label for="section-f05e7ebaa73d4a1344632e4ec44740c1" class="flex justify-between">
+      <a href="/docs/cloud-computing-and-infrastructure/" class="">Cloud Computing and Infrastructure</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fc7070fff1fa7922a69d792d5fdc1b38" class="toggle"  />
+    <label for="section-fc7070fff1fa7922a69d792d5fdc1b38" class="flex justify-between">
+      <a role="button" class="">Aws</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7efb2caddf578eed3b0f8d54cd616e15" class="toggle"  />
+    <label for="section-7efb2caddf578eed3b0f8d54cd616e15" class="flex justify-between">
+      <a role="button" class="">API Gateway</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/api-gateway/api-endpoint-type/" class="">API Endpoint Type</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/api-gateway/domain-name/" class="">Domain Name</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/api-gateway/header/" class="">Header</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/api-gateway/payload-limitation/" class="">Payload Limitation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/api-gateway/redirect-http-to-https/" class="">Redirect HTTP to HTTPS</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e71044b6b5280d1fb0851caa31ffe961" class="toggle"  />
+    <label for="section-e71044b6b5280d1fb0851caa31ffe961" class="flex justify-between">
+      <a href="/docs/cloud-computing-and-infrastructure/aws/cloudfront/" class="">Cloudfront</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/cloudfront/features/" class="">Features</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/cloudfront/response-header/" class="">Response Header</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Cloudwatch</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-69f0409e509fe109d79379496efb6df9" class="toggle"  />
+    <label for="section-69f0409e509fe109d79379496efb6df9" class="flex justify-between">
+      <a role="button" class="">Ecs</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/ecs/capacity-groups/" class="">Capacity Groups</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/ecs/ec2_group/" class="">Ec2 Group</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/ecs/ecs/" class="">Ecs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/ecs/fargate/" class="">Fargate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/ecs/how-to-deploy-stateful-application/" class="">How to Deploy Stateful Application</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/ecs/network_modes/" class="">Network Modes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/ecs/sdk/" class="">Sdk</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e49b267081a2059d25915b4c6b14acbe" class="toggle"  />
+    <label for="section-e49b267081a2059d25915b4c6b14acbe" class="flex justify-between">
+      <a href="/docs/cloud-computing-and-infrastructure/aws/efs/" class="">Efs</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e88686fe027c9a39512865deca0dd95a" class="toggle"  />
+    <label for="section-e88686fe027c9a39512865deca0dd95a" class="flex justify-between">
+      <a href="/docs/cloud-computing-and-infrastructure/aws/eks/" class="">Eks</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/eks/cluster/" class="">Cluster</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/eks/deployment/" class="">Deployment</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/eks/pod/" class="">Pod</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/eks/podtemplate/" class="">Pod Template</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/eks/replicasets/" class="">Replica Sets</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/eks/statefulsets/" class="">Stateful Sets</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-195211c9ebc1edc299b9b5cd9e3e5607" class="toggle"  />
+    <label for="section-195211c9ebc1edc299b9b5cd9e3e5607" class="flex justify-between">
+      <a href="/docs/cloud-computing-and-infrastructure/aws/fsx/" class="">Fsx</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8e8f93d556b678534d9dadbb767cb403" class="toggle"  />
+    <label for="section-8e8f93d556b678534d9dadbb767cb403" class="flex justify-between">
+      <a role="button" class="">Iam</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/iam/all-actions-resources-conditions/" class="">All Actions Resources Conditions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/iam/definition/" class="">Definition</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/iam/iam-policy/" class="">Iam Policy</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6bc772b35c649d7e526ca4119f9b8f1f" class="toggle"  />
+    <label for="section-6bc772b35c649d7e526ca4119f9b8f1f" class="flex justify-between">
+      <a role="button" class="">Kms</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/kms/key-rotation/" class="">Key Rotation</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-631aeefe08b2f0b9c0849bb3f73a8304" class="toggle"  />
+    <label for="section-631aeefe08b2f0b9c0849bb3f73a8304" class="flex justify-between">
+      <a role="button" class="">Lambda</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/lambda/basic/" class="">Basic</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/lambda/custom_domain/" class="">Custom Domain</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/lambda/layer/" class="">Layer</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2a6283bb374429f252289f6f286d524f" class="toggle"  />
+    <label for="section-2a6283bb374429f252289f6f286d524f" class="flex justify-between">
+      <a role="button" class="">Load Balancer</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/load-balancer/application-load-balancer/" class="">Application Load Balancer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/load-balancer/port/" class="">Port</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/load-balancer/sticky-session/" class="">Sticky Session</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-82f56ef4ee755ecb3601523e547fa6a6" class="toggle"  />
+    <label for="section-82f56ef4ee755ecb3601523e547fa6a6" class="flex justify-between">
+      <a role="button" class="">Opensearch</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-eabddf15aff96af698c333b4dd8293d6" class="toggle"  />
+    <label for="section-eabddf15aff96af698c333b4dd8293d6" class="flex justify-between">
+      <a role="button" class="">Route53</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/route53/record-types/" class="">Record Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/route53/routing-policy-types/" class="">Routing Policy Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/route53/subdomain_delegation/" class="">Subdomain Delegation</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3acb06343cbe5c28a1296bfd541b141f" class="toggle"  />
+    <label for="section-3acb06343cbe5c28a1296bfd541b141f" class="flex justify-between">
+      <a role="button" class="">S3</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/s3/bucket/" class="">Bucket</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-08e6ef336cbfe7dac49dd39c57802ce0" class="toggle"  />
+    <label for="section-08e6ef336cbfe7dac49dd39c57802ce0" class="flex justify-between">
+      <a href="/docs/cloud-computing-and-infrastructure/aws/s3_glacier/" class="">S3 Glacier</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c71af4ef900f4ad24431b9b1a1fe6e7b" class="toggle"  />
+    <label for="section-c71af4ef900f4ad24431b9b1a1fe6e7b" class="flex justify-between">
+      <a href="/docs/cloud-computing-and-infrastructure/aws/secret_manager/" class="">Secret Manager</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ea45dae56c4bf6560e14fe1f3b799e16" class="toggle"  />
+    <label for="section-ea45dae56c4bf6560e14fe1f3b799e16" class="flex justify-between">
+      <a role="button" class="">Ssm</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/ssm/ssm-agent/" class="">Ssm Agent</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-164bec0b7290c1731c5c8783a0f0cc6a" class="toggle"  />
+    <label for="section-164bec0b7290c1731c5c8783a0f0cc6a" class="flex justify-between">
+      <a href="/docs/cloud-computing-and-infrastructure/aws/storage-gateway/" class="">Storage Gateway</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1bb3f24d725e4887823e94da533f777a" class="toggle"  />
+    <label for="section-1bb3f24d725e4887823e94da533f777a" class="flex justify-between">
+      <a href="/docs/cloud-computing-and-infrastructure/aws/vpc/" class="">Vpc</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/vpc/eni/" class="">Eni</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/vpc/gateway/" class="">Gateway</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/vpc/route-table/" class="">Route Table</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/vpc/vpc-endpoint/" class="">Vpc Endpoint</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/vpc/vpc-peering/" class="">Vpc Peering</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f8d5b717ceb1de81cf3bc6f7387d0d82" class="toggle"  />
+    <label for="section-f8d5b717ceb1de81cf3bc6f7387d0d82" class="flex justify-between">
+      <a role="button" class="">Waf</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/aws/waf/sql-injection/" class="">SQL Injection</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a4c0fd97d9484b79186312d85d1a44b0" class="toggle"  />
+    <label for="section-a4c0fd97d9484b79186312d85d1a44b0" class="flex justify-between">
+      <a href="/docs/cloud-computing-and-infrastructure/cicd/" class="">Cicd</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a677da602074b4280b483623538fb69f" class="toggle"  />
+    <label for="section-a677da602074b4280b483623538fb69f" class="flex justify-between">
+      <a href="/docs/cloud-computing-and-infrastructure/cicd/circleci/" class="">Circleci</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/cicd/circleci/avoid-infinite-loop/" class="">Avoid Infinite Loop</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/cicd/circleci/circleci/" class="">Circle Ci</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/cicd/circleci/workspace/" class="">Workspace</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3a6d1c42adf95b7871d1da3f1024502c" class="toggle"  />
+    <label for="section-3a6d1c42adf95b7871d1da3f1024502c" class="flex justify-between">
+      <a href="/docs/cloud-computing-and-infrastructure/cicd/github_actions/" class="">Github Actions</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/cicd/github_actions/caching/" class="">Caching</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/cicd/github_actions/deployment-status/" class="">Deployment Status</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-474c58af805567a721b15223dc3cbcd8" class="toggle"  />
+    <label for="section-474c58af805567a721b15223dc3cbcd8" class="flex justify-between">
+      <a href="/docs/cloud-computing-and-infrastructure/config-management/" class="">Config Management</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/config-management/ansible/" class="">Ansible</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/config-management/cloud-init/" class="">Cloud Init</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-66963eedb8fce0a39da5761c5d0432f8" class="toggle"  />
+    <label for="section-66963eedb8fce0a39da5761c5d0432f8" class="flex justify-between">
+      <a href="/docs/cloud-computing-and-infrastructure/containerization-and-orchestration/" class="">Containerization and Orchestration</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-47ee5655bd882f404f2803570bf1090a" class="toggle"  />
+    <label for="section-47ee5655bd882f404f2803570bf1090a" class="flex justify-between">
+      <a role="button" class="">Docker</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/configuration/" class="">Configuration</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/entrypoint_and_command/" class="">Entrypoint and Command</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-27979fa6dcdce7ebe1eb50dc764d011c" class="toggle"  />
+    <label for="section-27979fa6dcdce7ebe1eb50dc764d011c" class="flex justify-between">
+      <a role="button" class="">Kubernetes</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8cd59aec16647350ba1fb1eb07f464af" class="toggle"  />
+    <label for="section-8cd59aec16647350ba1fb1eb07f464af" class="flex justify-between">
+      <a href="/docs/cloud-computing-and-infrastructure/infra-as-code/" class="">Infra as Code</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4b3cf1ccd3748936ce37f1105d65434c" class="toggle"  />
+    <label for="section-4b3cf1ccd3748936ce37f1105d65434c" class="flex justify-between">
+      <a href="/docs/distributed-systems/" class="">Distributed Systems</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-aa30fb0ec15d161522b90b1665bbe202" class="toggle"  />
+    <label for="section-aa30fb0ec15d161522b90b1665bbe202" class="flex justify-between">
+      <a href="/docs/distributed-systems/algorithms/" class="">Algorithms</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/algorithms/mapreduce/" class="">Mapreduce</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/algorithms/paxos/" class="">Paxos</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/algorithms/raft/" class="">Raft</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/algorithms/zab/" class="">Zab</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/commit-protocols/three-phase-commit/" class="">Three Phase Commit</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/commit-protocols/two-phase-commit/" class="">Two Phase Commit</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d50ec40409a2c9d992790bd4ce2b1246" class="toggle"  />
+    <label for="section-d50ec40409a2c9d992790bd4ce2b1246" class="flex justify-between">
+      <a href="/docs/distributed-systems/systems/" class="">Systems</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/systems/hadoop/" class="">Hadoop</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/systems/kafka/" class="">Kafka</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/systems/rabbitmq/" class="">Rabbitmq</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/distributed-systems/systems/spark/" class="">Spark</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-426c24f586a1a31f40b6adbe7793c4e5" class="toggle"  />
+    <label for="section-426c24f586a1a31f40b6adbe7793c4e5" class="flex justify-between">
+      <a role="button" class="">Math</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fead3ff1203e8cc4eaca9ccc1e4a3425" class="toggle"  />
+    <label for="section-fead3ff1203e8cc4eaca9ccc1e4a3425" class="flex justify-between">
+      <a href="/docs/programming-basic/" class="">Programming Basic</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-90ac61d728cfcd4e9e326161ece6f652" class="toggle"  />
+    <label for="section-90ac61d728cfcd4e9e326161ece6f652" class="flex justify-between">
+      <a href="/docs/programming-basic/programming-languages/" class="">Programming Languages</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-010732f1abb1efaa50860fe1c74a9f56" class="toggle"  />
+    <label for="section-010732f1abb1efaa50860fe1c74a9f56" class="flex justify-between">
+      <a href="/docs/programming-basic/programming-languages/go/" class="">Go</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming-basic/programming-languages/go/channel/" class="">Channel</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-af65fbe51c39186157a9ee0dfcc24745" class="toggle"  />
+    <label for="section-af65fbe51c39186157a9ee0dfcc24745" class="flex justify-between">
+      <a href="/docs/programming-basic/programming-languages/go/common-issues/" class="">Common Issues</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming-basic/programming-languages/go/common-issues/loop-variable-in-goroutine/" class="">Loop Variable in Goroutine</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming-basic/programming-languages/go/go-routine/" class="">Go Routine</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming-basic/programming-languages/go/go/" class="">Go</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming-basic/programming-languages/go/reflect/" class="">Reflect</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming-basic/programming-languages/late-static-binding/" class="">Late Static Binding</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-498b531b29268dd0d5bbb1c45a844275" class="toggle"  />
+    <label for="section-498b531b29268dd0d5bbb1c45a844275" class="flex justify-between">
+      <a href="/docs/programming-basic/programming-thoughts/" class="">Programming Thoughts</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming-basic/programming-thoughts/api-database-synchronization/" class="">API Database Synchronization</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/programming-basic/programming-thoughts/microservice/" class="">Microservice</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2e68b18a2908c2a0b6e57142acd3643f" class="toggle"  />
+    <label for="section-2e68b18a2908c2a0b6e57142acd3643f" class="flex justify-between">
+      <a href="/docs/system-design/" class="">System Design</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b45769a21bbc6dff0f5c791a146aeb50" class="toggle"  />
+    <label for="section-b45769a21bbc6dff0f5c791a146aeb50" class="flex justify-between">
+      <a href="/docs/system-design/common-systems/" class="">Common Systems</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-020c45873b4119c84899af7aa5ccfb0f" class="toggle"  />
+    <label for="section-020c45873b4119c84899af7aa5ccfb0f" class="flex justify-between">
+      <a href="/docs/system-design/common-systems/amazon/" class="">Amazon</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-809e9c4a69fb1d31262c651f66dce575" class="toggle"  />
+    <label for="section-809e9c4a69fb1d31262c651f66dce575" class="flex justify-between">
+      <a href="/docs/system-design/common-systems/paypal/" class="">Paypal</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8f4e17cf07c43c8c7d84ed7665330565" class="toggle"  />
+    <label for="section-8f4e17cf07c43c8c7d84ed7665330565" class="flex justify-between">
+      <a href="/docs/system-design/common-systems/telegram/" class="">Telegram</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-01e7b462bb8bbb809217a383f2bba984" class="toggle"  />
+    <label for="section-01e7b462bb8bbb809217a383f2bba984" class="flex justify-between">
+      <a href="/docs/system-design/common-systems/twitch/" class="">Twitch</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3807ae87e8fa23020d432a063279944c" class="toggle"  />
+    <label for="section-3807ae87e8fa23020d432a063279944c" class="flex justify-between">
+      <a href="/docs/system-design/common-systems/uber/" class="">Uber</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/system-design/common-systems/uber/1.requirement-clarification/" class="">1. Requirement Clarification</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e20b1d50f62f8f306fdf665eeb9df850" class="toggle"  />
+    <label for="section-e20b1d50f62f8f306fdf665eeb9df850" class="flex justify-between">
+      <a href="/docs/system-design/common-systems/uber/outline/" class="">Outline</a>
+    </label>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c43fffcc839db8c92a4606e4af333f7f" class="toggle"  />
+    <label for="section-c43fffcc839db8c92a4606e4af333f7f" class="flex justify-between">
+      <a href="/docs/system-design/design-methodologies/" class="">Design Methodologies</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-935490389f5ae9f285389a7f6a77a036" class="toggle"  />
+    <label for="section-935490389f5ae9f285389a7f6a77a036" class="flex justify-between">
+      <a href="/docs/system-design/design-patterns/" class="">Design Patterns</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3cc2b29b06db27269358c96298ce2ac0" class="toggle"  />
+    <label for="section-3cc2b29b06db27269358c96298ce2ac0" class="flex justify-between">
+      <a href="/docs/system-design/design-principles/" class="">Design Principles</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b4a94f690fe9964a1f261d4872274c59" class="toggle"  />
+    <label for="section-b4a94f690fe9964a1f261d4872274c59" class="flex justify-between">
+      <a href="/docs/system-design/ideas/" class="">Ideas</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b560e27a0759a0f6d23872c5d0f5d659" class="toggle"  />
+    <label for="section-b560e27a0759a0f6d23872c5d0f5d659" class="flex justify-between">
+      <a href="/docs/web-development/" class="">Web Development</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1b419fbe063c239e14fd642a54138031" class="toggle"  />
+    <label for="section-1b419fbe063c239e14fd642a54138031" class="flex justify-between">
+      <a href="/docs/web-development/backend-techs/" class="">Backend Techs</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f68c2e21460286a0851936baf59b5d6d" class="toggle"  />
+    <label for="section-f68c2e21460286a0851936baf59b5d6d" class="flex justify-between">
+      <a href="/docs/web-development/backend-techs/api-architectural-styles/" class="">API Architectural Styles</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c5b6767991bb30c1e708a0ec9552ef4b" class="toggle"  />
+    <label for="section-c5b6767991bb30c1e708a0ec9552ef4b" class="flex justify-between">
+      <a href="/docs/web-development/backend-techs/nginx/" class="">Nginx</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/backend-techs/nginx/config/" class="">Config</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/backend-techs/nginx/errors/" class="">Errors</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/backend-techs/nginx/file-upload/" class="">File Upload</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6b8952aa596ef6a1991f64e699c478ef" class="toggle"  />
+    <label for="section-6b8952aa596ef6a1991f64e699c478ef" class="flex justify-between">
+      <a href="/docs/web-development/backend-techs/web-security/" class="">Web Security</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/backend-techs/web-security/captcha-recaptcha/" class="">Captcha Re Captcha</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/backend-techs/web-security/csrf/" class="">Csrf</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/backend-techs/web-security/ssl-tls/" class="">Ssl Tls</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-be55b88c194859b59b0cf309325cba09" class="toggle"  />
+    <label for="section-be55b88c194859b59b0cf309325cba09" class="flex justify-between">
+      <a href="/docs/web-development/data-transmission/" class="">Data Transmission</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/data-transmission/file-upload-limitation/" class="">File Upload Limitation</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-9a7f69af57689936e317b39ba4cd659d" class="toggle"  />
+    <label for="section-9a7f69af57689936e317b39ba4cd659d" class="flex justify-between">
+      <a href="/docs/web-development/frontend-techs/" class="">Frontend Techs</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-49acb7822086aa4e79e89ebdc4d5314e" class="toggle"  />
+    <label for="section-49acb7822086aa4e79e89ebdc4d5314e" class="flex justify-between">
+      <a role="button" class="">Authentication and Authorization</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/authentication-and-authorization/callback-url/" class="">Callback URL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/authentication-and-authorization/cookie/" class="">Cookie</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/authentication-and-authorization/jwt/" class="">JWT</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/authentication-and-authorization/multi-factor-authentication/" class="">Multi Factor Authentication</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/authentication-and-authorization/oauth-oidc/" class="">Oauth Oidc</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/authentication-and-authorization/session/" class="">Session</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-dd777f31ec6733a473981dc316e31c6d" class="toggle"  />
+    <label for="section-dd777f31ec6733a473981dc316e31c6d" class="flex justify-between">
+      <a role="button" class="">Browser Storage</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-828aa709d22dc83fadb3af7d2d07160f" class="toggle"  />
+    <label for="section-828aa709d22dc83fadb3af7d2d07160f" class="flex justify-between">
+      <a href="/docs/web-development/frontend-techs/css/" class="">Css</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-af68d8261479d7831055fe00279d167e" class="toggle"  />
+    <label for="section-af68d8261479d7831055fe00279d167e" class="flex justify-between">
+      <a href="/docs/web-development/frontend-techs/html/" class="">HTML</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/html/html/" class="">HTML</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2fc514d65edb3447d13c131002efd369" class="toggle"  />
+    <label for="section-2fc514d65edb3447d13c131002efd369" class="flex justify-between">
+      <a href="/docs/web-development/frontend-techs/javascript/" class="">Javascript</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7771bd55ba792435fa521d6992edb258" class="toggle"  />
+    <label for="section-7771bd55ba792435fa521d6992edb258" class="flex justify-between">
+      <a href="/docs/web-development/frontend-techs/node.js/" class="">Node.js</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/node.js/issues/" class="">Issues</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-aace3abad379b48f864f6831ebaac6d5" class="toggle"  />
+    <label for="section-aace3abad379b48f864f6831ebaac6d5" class="flex justify-between">
+      <a href="/docs/web-development/frontend-techs/package-management/" class="">Package Management</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4778ce8dde17ea0e4820401c03aa5733" class="toggle"  />
+    <label for="section-4778ce8dde17ea0e4820401c03aa5733" class="flex justify-between">
+      <a href="/docs/web-development/frontend-techs/react/" class="">React</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-186a74134671e0133e37d00daa1a03dc" class="toggle"  />
+    <label for="section-186a74134671e0133e37d00daa1a03dc" class="flex justify-between">
+      <a href="/docs/web-development/frontend-techs/security/" class="">Security</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/frontend-techs/security/cors/" class="">Cors</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-70550501119d1db20bb0fb38a719658c" class="toggle"  />
+    <label for="section-70550501119d1db20bb0fb38a719658c" class="flex justify-between">
+      <a href="/docs/web-development/frontend-techs/typescript/" class="">Typescript</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ab8043b7d709c8fc004a6caa49077a37" class="toggle"  />
+    <label for="section-ab8043b7d709c8fc004a6caa49077a37" class="flex justify-between">
+      <a href="/docs/web-development/frontend-techs/vue/" class="">Vue</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-386ff17c719f3968d81e27c95f9d8d19" class="toggle"  />
+    <label for="section-386ff17c719f3968d81e27c95f9d8d19" class="flex justify-between">
+      <a href="/docs/web-development/header/" class="">Header</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/web-development/header/forwarded/" class="">Forwarded</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b961af458dea9c04597a51143e2f26a0" class="toggle"  />
+    <label for="section-b961af458dea9c04597a51143e2f26a0" class="flex justify-between">
+      <a href="/docs/web-development/high-throughput/" class="">High Throughput</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c879bdb6554ed202863e19789b4bc9bc" class="toggle"  />
+    <label for="section-c879bdb6554ed202863e19789b4bc9bc" class="flex justify-between">
+      <a href="/docs/web-development/testing/" class="">Testing</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-31a21991afbbd50a0e252804fcffd6bf" class="toggle"  />
+    <label for="section-31a21991afbbd50a0e252804fcffd6bf" class="flex justify-between">
+      <a role="button" class="">Playwright</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Arc</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#arc">ARC</a>
+      <ul>
+        <li><a href="#how-arc-works">How ARC Works</a></li>
+        <li><a href="#practical-scenario-database-caching">Practical Scenario: Database Caching</a></li>
+        <li><a href="#visual-representation">Visual Representation</a></li>
+        <li><a href="#challenges-in-implementation">Challenges in Implementation</a></li>
+        <li><a href="#practical-considerations">Practical Considerations</a></li>
+        <li><a href="#code-snippet">Code Snippet</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h2 id="arc">
+  ARC
+  <a class="anchor" href="#arc">#</a>
+</h2>
+<p>Adaptive Replacement Cache (ARC) is a fascinating approach to improving cache performance. Unlike more straightforward caching algorithms like LRU (Least Recently Used) or LFU (Least Frequently Used), ARC dynamically adapts to changing access patterns.</p>
+<h3 id="how-arc-works">
+  How ARC Works
+  <a class="anchor" href="#how-arc-works">#</a>
+</h3>
+<p>ARC aims to balance between recency (like LRU) and frequency (like LFU). To do this, ARC maintains <strong>four lists</strong>:</p>
+<ul>
+<li><strong>T1</strong>: Recently seen but not yet frequently used items.</li>
+<li><strong>B1</strong>: A ghost list of items recently evicted from T1.</li>
+<li><strong>T2</strong>: Frequently accessed items.</li>
+<li><strong>B2</strong>: A ghost list of items recently evicted from T2.</li>
+</ul>
+<p>The key innovation of ARC is how it uses these lists to adaptively manage the cache. When a new page request comes in, ARC decides whether to place the item in the recent or frequent pool based on its prior access history. If it notices a lot of churn in recently used items, it will increase the space for T1, essentially behaving more like LRU. On the other hand, if certain items are frequently requested, it will allocate more space to T2, behaving more like LFU.</p>
+<p>This adaptability makes ARC particularly effective in scenarios with <strong>changing access patterns</strong>, where traditional LRU or LFU might perform poorly.</p>
+<h3 id="practical-scenario-database-caching">
+  Practical Scenario: Database Caching
+  <a class="anchor" href="#practical-scenario-database-caching">#</a>
+</h3>
+<p>A typical use case for ARC is in <strong>database systems</strong>, where query patterns can change depending on the workload. Imagine a database that powers an online shopping site. During a flash sale, customer activity becomes highly erratic. Some products get a surge in popularity, while others experience lower-than-usual traffic.</p>
+<p>Traditional LRU might fail here, evicting items that might soon become hot again. LFU might keep less popular items in the cache for too long. ARC&rsquo;s adaptability helps retain recently hot items while ensuring frequently accessed ones are not prematurely evicted, making it ideal for handling such dynamic workloads.</p>
+<h3 id="visual-representation">
+  Visual Representation
+  <a class="anchor" href="#visual-representation">#</a>
+</h3>
+<p>Here&rsquo;s a simple flowchart illustrating how ARC manages cache hits and evictions:</p>
+<ol>
+<li><strong>New Request</strong>: Is the item in T1 or T2? If yes, it&rsquo;s a cache hit.</li>
+<li><strong>Cache Miss</strong>: Is the item in B1 or B2 (ghost lists)?
+<ul>
+<li>If yes, adjust the cache partitioning to give more priority to either recent or frequent.</li>
+<li>If no, evict from the appropriate list based on current partition size.</li>
+</ul>
+</li>
+</ol>
+<p>By using ghost lists (B1 and B2), ARC keeps track of what was recently evicted, allowing it to &ldquo;learn&rdquo; from recent cache misses and adjust its strategy accordingly.</p>
+<h3 id="challenges-in-implementation">
+  Challenges in Implementation
+  <a class="anchor" href="#challenges-in-implementation">#</a>
+</h3>
+<p>Implementing ARC can be complex compared to simpler algorithms. Maintaining <strong>four separate lists</strong> means additional overhead, and managing the size of each list efficiently can be challenging. Moreover, the algorithm&rsquo;s performance depends on <strong>careful tuning</strong>. For instance, in a scenario where memory is tight, the added overhead might negate some of ARC&rsquo;s benefits.</p>
+<p>Another potential issue is the <strong>cost of adaptation</strong>. While ARC adapts well to changing workloads, the adaptation itself takes time and incurs computational overhead. If the access pattern changes too frequently, ARC might spend too much time adapting, leading to suboptimal performance.</p>
+<h3 id="practical-considerations">
+  Practical Considerations
+  <a class="anchor" href="#practical-considerations">#</a>
+</h3>
+<ul>
+<li><strong>Memory Overhead</strong>: Since ARC keeps two ghost lists in addition to the primary cache, it needs extra memory to manage these lists. This could be problematic in memory-constrained environments.</li>
+<li><strong>Latency Sensitivity</strong>: In systems where latency is critical, like financial trading platforms, ARC&rsquo;s added overhead might make LRU or LFU a better choice despite their simplicity. However, for general-purpose databases or file systems, ARC&rsquo;s adaptability can lead to much better hit rates over time.</li>
+</ul>
+<h3 id="code-snippet">
+  Code Snippet
+  <a class="anchor" href="#code-snippet">#</a>
+</h3>
+<p>Here’s a Python-style pseudocode to give you an idea of how ARC works:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> collections <span style="color:#f92672">import</span> OrderedDict
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ARC</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, cache_size):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>cache_size <span style="color:#f92672">=</span> cache_size
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>T1 <span style="color:#f92672">=</span> OrderedDict()  <span style="color:#75715e"># Recent cache (new) -  Size = p</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>B1 <span style="color:#f92672">=</span> OrderedDict()  <span style="color:#75715e"># Ghost cache for T1 (recently evicted from T1)</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>T2 <span style="color:#f92672">=</span> OrderedDict()  <span style="color:#75715e"># Frequent cache - Size = Cach</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>B2 <span style="color:#f92672">=</span> OrderedDict()  <span style="color:#75715e"># Ghost cache for T2 (recently evicted from T2)</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>p <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>    <span style="color:#75715e"># p represents the target size of T1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">request</span>(self, key):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> key <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>T1 <span style="color:#f92672">or</span> key <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>T2:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Cache hit</span>
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>hit(key) <span style="color:#75715e"># T1 -&gt; T2 or node in T2 -&gt; T2.end</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> key <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>B1:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Cache miss but in B1 (ghost of T1)</span>
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>adapt_cache(<span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>replace(key) <span style="color:#75715e"># B in T out</span>
+</span></span><span style="display:flex;"><span>            value <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>B1[key]
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">del</span> self<span style="color:#f92672">.</span>B1[key]
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>T2[key] <span style="color:#f92672">=</span> value  <span style="color:#75715e"># Promote to T2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> key <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>B2:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Cache miss but in B2 (ghost of T2)</span>
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>adapt_cache(<span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>replace(key) <span style="color:#75715e"># B in T out</span>
+</span></span><span style="display:flex;"><span>            value <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>B2[key]
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">del</span> self<span style="color:#f92672">.</span>B2[key]
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>T2[key] <span style="color:#f92672">=</span> value  <span style="color:#75715e"># Promote to T2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Cache miss and not in ghost caches</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> len(self<span style="color:#f92672">.</span>T1) <span style="color:#f92672">+</span> len(self<span style="color:#f92672">.</span>B1) <span style="color:#f92672">&gt;=</span> self<span style="color:#f92672">.</span>cache_size:
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> len(self<span style="color:#f92672">.</span>T1) <span style="color:#f92672">&lt;</span> self<span style="color:#f92672">.</span>cache_size:
+</span></span><span style="display:flex;"><span>                    <span style="color:#75715e"># Remove from B1</span>
+</span></span><span style="display:flex;"><span>                    self<span style="color:#f92672">.</span>B1<span style="color:#f92672">.</span>popitem(last<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>                    replace(key) <span style="color:#75715e"># B in T out</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>                    <span style="color:#75715e"># Remove from T1</span>
+</span></span><span style="display:flex;"><span>                    self<span style="color:#f92672">.</span>T1<span style="color:#f92672">.</span>popitem(last<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">elif</span> len(self<span style="color:#f92672">.</span>T1) <span style="color:#f92672">+</span> len(self<span style="color:#f92672">.</span>T2) <span style="color:#f92672">+</span> len(self<span style="color:#f92672">.</span>B1) <span style="color:#f92672">+</span> len(self<span style="color:#f92672">.</span>B2) <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> self<span style="color:#f92672">.</span>cache_size:
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e"># Ensure total size does not exceed 2 * cache_size</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> len(self<span style="color:#f92672">.</span>B2) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>		                <span style="color:#75715e"># Remove from B2</span>
+</span></span><span style="display:flex;"><span>                    self<span style="color:#f92672">.</span>B2<span style="color:#f92672">.</span>popitem(last<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>		                <span style="color:#75715e"># Remove from B1</span>
+</span></span><span style="display:flex;"><span>                    self<span style="color:#f92672">.</span>B1<span style="color:#f92672">.</span>popitem(last<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>                replace(key) <span style="color:#75715e"># B in T out</span>
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>T1[key] <span style="color:#f92672">=</span> value_of(key)  <span style="color:#75715e"># Insert into T1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hit</span>(self, key):
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Move the page to T2 if it is in T1, otherwise update position in T2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> key <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>T1:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">del</span> self<span style="color:#f92672">.</span>T1[key]
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>T2[key] <span style="color:#f92672">=</span> key  <span style="color:#75715e"># Move to T2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> key <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>T2:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Update recency in T2</span>
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>T2<span style="color:#f92672">.</span>move_to_end(key)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">replace</span>(self, key):
+</span></span><span style="display:flex;"><span>		    <span style="color:#75715e"># The replace function in ARC decides which cache, T1 (recent) or T2 (frequent), should evict an item when space is needed, based on the adaptive parameter p.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> len(self<span style="color:#f92672">.</span>T1) <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">and</span> ((key <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>B2 <span style="color:#f92672">and</span> len(self<span style="color:#f92672">.</span>T1) <span style="color:#f92672">==</span> self<span style="color:#f92672">.</span>p) <span style="color:#f92672">or</span> len(self<span style="color:#f92672">.</span>T1) <span style="color:#f92672">&gt;</span> self<span style="color:#f92672">.</span>p):
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Evict from T1 and add to B1</span>
+</span></span><span style="display:flex;"><span>            evicted, value <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>T1<span style="color:#f92672">.</span>popitem(last<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>B1[evicted] <span style="color:#f92672">=</span> value
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Evict from T2 and add to B2</span>
+</span></span><span style="display:flex;"><span>            evicted, value <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>T2<span style="color:#f92672">.</span>popitem(last<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>B2[evicted] <span style="color:#f92672">=</span> value
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">adapt_cache</span>(self, hit_in_B1):
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Adjust the adaptive parameter p</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> hit_in_B1:
+</span></span><span style="display:flex;"><span>            delta <span style="color:#f92672">=</span> len(self<span style="color:#f92672">.</span>B2) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span> <span style="color:#66d9ef">if</span> len(self<span style="color:#f92672">.</span>B1) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">else</span> max(<span style="color:#ae81ff">1</span>, len(self<span style="color:#f92672">.</span>B2) <span style="color:#f92672">/</span> (<span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> len(self<span style="color:#f92672">.</span>B1)))
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>p <span style="color:#f92672">=</span> min(self<span style="color:#f92672">.</span>cache_size, self<span style="color:#f92672">.</span>p <span style="color:#f92672">+</span> delta)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            delta <span style="color:#f92672">=</span> len(self<span style="color:#f92672">.</span>B1) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span> <span style="color:#66d9ef">if</span> len(self<span style="color:#f92672">.</span>B2) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">else</span> max(<span style="color:#ae81ff">1</span>, len(self<span style="color:#f92672">.</span>B1) <span style="color:#f92672">/</span> (<span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> len(self<span style="color:#f92672">.</span>B2)))
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>p <span style="color:#f92672">=</span> max(<span style="color:#ae81ff">0</span>, self<span style="color:#f92672">.</span>p <span style="color:#f92672">-</span> delta)
+</span></span></code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#arc">ARC</a>
+      <ul>
+        <li><a href="#how-arc-works">How ARC Works</a></li>
+        <li><a href="#practical-scenario-database-caching">Practical Scenario: Database Caching</a></li>
+        <li><a href="#visual-representation">Visual Representation</a></li>
+        <li><a href="#challenges-in-implementation">Challenges in Implementation</a></li>
+        <li><a href="#practical-considerations">Practical Considerations</a></li>
+        <li><a href="#code-snippet">Code Snippet</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

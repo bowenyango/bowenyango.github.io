@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Novel CS</title>
+    <link>https://example.org/docs/data-store-and-management/message-middleware/kafka/</link>
+    <description>Recent content on Novel CS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://example.org/docs/data-store-and-management/message-middleware/kafka/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/docs/data-store-and-management/message-middleware/kafka/ksql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/data-store-and-management/message-middleware/kafka/ksql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/data-store-and-management/message-middleware/kafka/producer-consumer-broker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/data-store-and-management/message-middleware/kafka/producer-consumer-broker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/data-store-and-management/message-middleware/kafka/topics-and-partition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/data-store-and-management/message-middleware/kafka/topics-and-partition/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/data-store-and-management/message-middleware/kafka/zookeeper-coordination/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/data-store-and-management/message-middleware/kafka/zookeeper-coordination/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
