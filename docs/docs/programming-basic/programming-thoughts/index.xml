@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Novel CS</title>
+    <link>https://example.org/docs/programming-basic/programming-thoughts/</link>
+    <description>Recent content on Novel CS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://example.org/docs/programming-basic/programming-thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/docs/programming-basic/programming-thoughts/api-database-synchronization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/programming-basic/programming-thoughts/api-database-synchronization/</guid>
+      <description>Service Code and Database Schema Synchronization in Production Environment # To ensure that your microservices on AWS ECS and your database schema updates are synchronized effectively without causing service disruptions or inconsistencies, you can consider the following approaches:
+1. Implement a Blue-Green Deployment Strategy # Useful when the databases and code are not backward/forward compatible.
+Prepare a Green environment with the new code and the updated schema while the Blue environment continues to run the old code and schema.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/programming-basic/programming-thoughts/data-synchronization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/programming-basic/programming-thoughts/data-synchronization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/programming-basic/programming-thoughts/microservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/programming-basic/programming-thoughts/microservice/</guid>
+      <description>Monolithic VS Microservice # In a monolithic architecture, the components interact directly within a single application instance, often sharing data in-memory or through internal function calls.
+In contrast, in a microservices architecture, different services are typically deployed on separate servers or environments and communicate through network calls, often using HTTP requests.
+Scalability # Monolithic`: Scaling requires scaling the entire application, even if only one part of the application needs more resources.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -8,15 +8,6 @@
     <language>en-us</language><atom:link href="https://example.org/docs/distributed-systems/algorithms/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://example.org/docs/distributed-systems/algorithms/consistency/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.org/docs/distributed-systems/algorithms/consistency/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://example.org/docs/distributed-systems/algorithms/mapreduce/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -41,15 +32,6 @@ Large datasets are stored in a distributed file system (e.g., HDFS). The data is
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://example.org/docs/distributed-systems/algorithms/raft/</guid>
-      <description>TBD</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://example.org/docs/distributed-systems/algorithms/three-phase-commit/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.org/docs/distributed-systems/algorithms/three-phase-commit/</guid>
       <description>TBD</description>
     </item>
     

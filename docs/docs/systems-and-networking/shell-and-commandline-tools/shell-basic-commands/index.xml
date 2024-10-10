@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Novel CS</title>
+    <link>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/</link>
+    <description>Recent content on Novel CS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://example.org/docs/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/commands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/commands/</guid>
+      <description>Here String # diff &amp;lt;(echo &amp;#34;string1&amp;#34;) &amp;lt;(echo &amp;#34;string2&amp;#34;) &amp;lt;(echo &amp;quot;string&amp;quot;) construct creates a temporary file-like object that contains the string.
+So in this way, we can walk around the file as input requirement of diff command.
+Checking the exit status of ANY command in a pipeline # It&amp;rsquo;s a pretty common thing in a shell script to want to check the exit status of the previous command. You can do this with the $?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/ln/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/ln/</guid>
+      <description>ln command # The ln command links the file designated in the SourceFile parameter to the file designated by the TargetFile parameter or to the same file name in another directory specified by the TargetDirectory parameter. By default, the ln command creates hard links. To use the ln command to create symbolic links, designate the -s flag.
+Got Too Many Levels of Symbolic Links Error # The issue happens when the folder name is the same because the relative path can unintentionally create a circular reference.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/ssh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/ssh/</guid>
+      <description> Use SSH to run command remotely # ssh &amp;lt;&amp;lt; redis_instance__username &amp;gt;&amp;gt;@&amp;lt;&amp;lt; redis_instance__hostname &amp;gt;&amp;gt; \ &amp;#34;redis-cli -h &amp;lt;&amp;lt; parameters.redis_host &amp;gt;&amp;gt; -p &amp;lt;&amp;lt; parameters.redis_port &amp;gt;&amp;gt; FLUSHALL&amp;#34; </description>
+    </item>
+    
+  </channel>
+</rss>

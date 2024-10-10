@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Novel CS</title>
+    <link>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/</link>
+    <description>Recent content on Novel CS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/capacity-groups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/capacity-groups/</guid>
+      <description>Automatically manage Amazon ECS capacity with cluster auto scaling # Amazon ECS can manage the scaling of Amazon EC2 instances that are registered to your cluster. This is referred to as Amazon ECS cluster auto scaling. You turn on managed scaling when you create the Amazon ECS Auto Scaling group capacity provider. Then, you set a target percentage (the targetCapacity) for the instance utilization in this Auto Scaling group. Amazon ECS creates two custom CloudWatch metrics and a target tracking scaling policy for your Auto Scaling group.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/ec2_group/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/ec2_group/</guid>
+      <description>ECS - EC2 Architecture # Comparison with Fargate # The challenge of running EC2 instances is that they are servers. You have to patch them and keep them updated. You have to manage logging, manage ssh keys, manage what happens when you run out of disk space, etc. Your business doesn&amp;rsquo;t really get any value out of managing those things specifically, but historically we&amp;rsquo;ve accepted that we have to do those things if we want to run our app.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/ecs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/ecs/</guid>
+      <description>Exploring Ordered Placement Strategies in Container Orchestration # In the realm of container orchestration and management, particularly in cloud environments, choosing the right placement strategy for containers can significantly impact the performance and cost-efficiency of your infrastructure. Placement strategies define how containers (or tasks) are distributed across a cluster of machines, ensuring optimal resource usage and fault tolerance. In this post, we’ll explore three common strategies: binpack, random, and spread.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/fargate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/fargate/</guid>
+      <description> ECS - Fargate Architecture # Pricing Structure # Fargate pricing is based on five independently configurable dimensions:
+vCPU Memory Operating System CPU Architecture System Resources </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/how-to-deploy-stateful-application/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/how-to-deploy-stateful-application/</guid>
+      <description>How to deploy stateful application in ECS? # Amazon Elastic Container Service (ECS) doesn&amp;rsquo;t have a direct equivalent to StatefulSets in Kubernetes. However, ECS has various features and strategies that can be used to manage stateful applications, although with different mechanisms compared to Kubernetes.
+ECS Concepts Comparable to StatefulSets: # Task Definitions: In ECS, you define your application using task definitions. While they don&amp;rsquo;t manage state in the same way as StatefulSets, task definitions are the closest you get to defining the desired state of your application in ECS.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/launch_template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/launch_template/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/network_modes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/network_modes/</guid>
+      <description>ECS Network Modes # In AWS ECS (Elastic Container Service), the networking section refers to the configuration of how the containers within a task communicate with each other and with the outside world. There are several network modes available in ECS, each offering different capabilities and levels of isolation. Understanding these modes is crucial for designing your ECS deployment according to your application&amp;rsquo;s networking requirements. Here&amp;rsquo;s a breakdown of the different network modes:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/sdk/</guid>
+      <description>Enter ECS Container # aws ecs execute-command &amp;ndash;region us-west-2 &amp;ndash;cluster arn:aws:ecs:us-west-2:999999999999:cluster/XXXXXXXXXXXXX &amp;ndash;task 00000000000000000000000000000000 &amp;ndash;container XXXXXXXXXXXXX &amp;ndash;command &amp;ldquo;bash&amp;rdquo; &amp;ndash;interactive</description>
+    </item>
+    
+  </channel>
+</rss>

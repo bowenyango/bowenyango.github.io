@@ -6,5 +6,50 @@
     <description>Recent content on Novel CS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://example.org/docs/distributed-systems/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/docs/distributed-systems/commit-protocols/three-phase-commit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/distributed-systems/commit-protocols/three-phase-commit/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/distributed-systems/commit-protocols/two-phase-commit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/distributed-systems/commit-protocols/two-phase-commit/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/distributed-systems/core-concepts/cap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/distributed-systems/core-concepts/cap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/distributed-systems/core-concepts/consistency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/distributed-systems/core-concepts/consistency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/distributed-systems/core-concepts/fault-tolerance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/distributed-systems/core-concepts/fault-tolerance/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
