@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Novel CS</title>
+    <link>https://example.org/docs/cloud-computing-and-infrastructure/aws/waf/</link>
+    <description>Recent content on Novel CS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://example.org/docs/cloud-computing-and-infrastructure/aws/waf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing-and-infrastructure/aws/waf/sql-injection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing-and-infrastructure/aws/waf/sql-injection/</guid>
+      <description>What is the difference between different options in field_to_match in the statement block? # When setting up a rule in AWS WAF to protect against SQL injections, choosing the right field to match is crucial. Among the options provided (all_query_arguments, body, cookies, header_order, headers, ja3_fingerprint, json_body, method, query_string, single_header, single_query_argument, uri_path), the most effective choice can depend on the specifics of your application and where you expect SQL injection attempts to occur.</description>
+    </item>
+    
+  </channel>
+</rss>

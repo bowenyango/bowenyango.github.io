@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Novel CS</title>
+    <link>https://example.org/docs/cloud-computing-and-infrastructure/cicd/github_actions/</link>
+    <description>Recent content on Novel CS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://example.org/docs/cloud-computing-and-infrastructure/cicd/github_actions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing-and-infrastructure/cicd/github_actions/caching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing-and-infrastructure/cicd/github_actions/caching/</guid>
+      <description>How to speed up npm ci command? # npm ci should be preferred in CI because it respects the package-lock.json file. Unlike npm install, which rewrites the file and always installs new versions.
+By design this command always purges all local packages, by removing the node_modules directory in the beginning. This is the main reason for long builds. And there is no option to avoid this irritating behaviour.
+So the idea is not to cache the node_modules folder, but to cache the libs of npm.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/cloud-computing-and-infrastructure/cicd/github_actions/deployment-status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing-and-infrastructure/cicd/github_actions/deployment-status/</guid>
+      <description>There is only one active deployment for each environment # This can be annoying when I have multiple branches deployed to the same environment and have several open PRs to be merged at the same time. Only the PR that has the active deployment mark can be merged when I set deployment before merge branch protection rule.
+Solution 1: Run each deployment CICD again when you are reviewing the PR, so that branch&amp;rsquo;s deployment will be the latest one and becomd active.</description>
+    </item>
+    
+  </channel>
+</rss>

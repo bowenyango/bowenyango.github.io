@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Novel CS</title>
+    <link>https://example.org/docs/programming-basic/programming-languages/</link>
+    <description>Recent content on Novel CS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://example.org/docs/programming-basic/programming-languages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/docs/programming-basic/programming-languages/closure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/programming-basic/programming-languages/closure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/programming-basic/programming-languages/late-static-binding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/programming-basic/programming-languages/late-static-binding/</guid>
+      <description>Late static binding (LSB) is a feature primarily associated with dynamically typed languages like PHP. It allows static methods and properties to be resolved at runtime based on the calling class context, rather than the class in which they were defined.
+Languages with Late Static Binding # PHP: PHP is the most well-known language that supports late static binding using the static keyword. Languages with Early Static Binding # Early static binding is more common in statically typed languages, where static methods and properties are resolved at compile-time based on the class in which they were defined.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Novel CS</title>
+    <link>https://example.org/docs/programming-basic/</link>
+    <description>Recent content on Novel CS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://example.org/docs/programming-basic/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/docs/programming-basic/programming-concepts/data-structures/arrays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/programming-basic/programming-concepts/data-structures/arrays/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/programming-basic/programming-concepts/data-structures/graphs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/programming-basic/programming-concepts/data-structures/graphs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/programming-basic/programming-concepts/data-structures/hash-tables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/programming-basic/programming-concepts/data-structures/hash-tables/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/programming-basic/programming-concepts/data-structures/heaps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/programming-basic/programming-concepts/data-structures/heaps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/programming-basic/programming-concepts/data-structures/linked-lists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/programming-basic/programming-concepts/data-structures/linked-lists/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/programming-basic/programming-concepts/data-structures/orderdict/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/programming-basic/programming-concepts/data-structures/orderdict/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/programming-basic/programming-concepts/data-structures/priority-queues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/programming-basic/programming-concepts/data-structures/priority-queues/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/programming-basic/programming-concepts/data-structures/queues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/programming-basic/programming-concepts/data-structures/queues/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/programming-basic/programming-concepts/data-structures/stacks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/programming-basic/programming-concepts/data-structures/stacks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.org/docs/programming-basic/programming-concepts/data-structures/trees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/programming-basic/programming-concepts/data-structures/trees/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
