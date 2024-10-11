@@ -38,6 +38,16 @@ Adding one of these tags skips pipeline execution for all the commits included i
     
     <item>
       <title></title>
+      <link>https://example.org/docs/cloud-computing-and-infrastructure/cicd/circleci/update-node-modules-in-cci/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/docs/cloud-computing-and-infrastructure/cicd/circleci/update-node-modules-in-cci/</guid>
+      <description>Sometimes I will encounter weird issues and I would like to edit the code in third-party modules, for example, add info printing in libs in node_modules. What should I do? # I don&amp;rsquo;t know if this is a good approach, but it can really help sometimes when I don&amp;rsquo;t have the access to modify third party files but have to run tests in CircleCI.
+I use sed to modify the code in node_modules and add a function to return a private property because I want to check if the right value is passed to the class.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://example.org/docs/cloud-computing-and-infrastructure/cicd/circleci/workspace/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

@@ -6,6 +6,24 @@
   </url><url>
     <loc>https://example.org/docs/block-chain/</loc>
   </url><url>
+    <loc>https://example.org/docs/block-chain/blockchain-papers/</loc>
+  </url><url>
+    <loc>https://example.org/docs/block-chain/blockchain-papers/algorand/</loc>
+  </url><url>
+    <loc>https://example.org/docs/block-chain/blockchain-papers/conflux/</loc>
+  </url><url>
+    <loc>https://example.org/docs/block-chain/dag/</loc>
+  </url><url>
+    <loc>https://example.org/docs/block-chain/hardhat/</loc>
+  </url><url>
+    <loc>https://example.org/docs/block-chain/moralis/</loc>
+  </url><url>
+    <loc>https://example.org/docs/block-chain/openzeppelin/</loc>
+  </url><url>
+    <loc>https://example.org/docs/block-chain/smart-contract/</loc>
+  </url><url>
+    <loc>https://example.org/docs/block-chain/solidity/</loc>
+  </url><url>
     <loc>https://example.org/docs/book-reading/</loc>
   </url><url>
     <loc>https://example.org/docs/book-reading/system-design-alex-xu/</loc>
@@ -153,6 +171,8 @@
     <loc>https://example.org/docs/cloud-computing-and-infrastructure/cicd/circleci/circleci/</loc>
   </url><url>
     <loc>https://example.org/docs/cloud-computing-and-infrastructure/cicd/circleci/secret-masking/</loc>
+  </url><url>
+    <loc>https://example.org/docs/cloud-computing-and-infrastructure/cicd/circleci/update-node-modules-in-cci/</loc>
   </url><url>
     <loc>https://example.org/docs/cloud-computing-and-infrastructure/cicd/circleci/workspace/</loc>
   </url><url>
@@ -320,9 +340,17 @@
   </url><url>
     <loc>https://example.org/docs/data-store-and-management/files-systems/distributed/</loc>
   </url><url>
+    <loc>https://example.org/docs/data-store-and-management/files-systems/distributed/afs/</loc>
+  </url><url>
     <loc>https://example.org/docs/data-store-and-management/files-systems/distributed/ceph/</loc>
   </url><url>
     <loc>https://example.org/docs/data-store-and-management/files-systems/distributed/hdfs/</loc>
+  </url><url>
+    <loc>https://example.org/docs/data-store-and-management/files-systems/distributed/nfs/</loc>
+  </url><url>
+    <loc>https://example.org/docs/data-store-and-management/files-systems/journaling/</loc>
+  </url><url>
+    <loc>https://example.org/docs/data-store-and-management/files-systems/log-structured/</loc>
   </url><url>
     <loc>https://example.org/docs/data-store-and-management/files-systems/network/</loc>
   </url><url>
