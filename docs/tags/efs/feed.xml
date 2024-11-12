@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>CodeWisdom</title>
+      <link>https://codewisdom.io/blog</link>
+      <description>A blog sharing insights on computer science through practical projects and thoughtful exploration.</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Bowen Y)</managingEditor>
+      <webMaster>undefined (Bowen Y)</webMaster>
+      <lastBuildDate>Thu, 31 Oct 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://codewisdom.io/tags/efs/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/EFS/EFS-intro</guid>
+    <title>EFS</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/EFS/EFS-intro</link>
+    <description>Explains the EFS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>EFS</category>
+  </item>
+
+    </channel>
+  </rss>

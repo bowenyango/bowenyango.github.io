@@ -1,0 +1,604 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>CodeWisdom</title>
+      <link>https://codewisdom.io/blog</link>
+      <description>A blog sharing insights on computer science through practical projects and thoughtful exploration.</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Bowen Y)</managingEditor>
+      <webMaster>undefined (Bowen Y)</webMaster>
+      <lastBuildDate>Thu, 31 Oct 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://codewisdom.io/tags/systems-and-networking/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/advanced-concepts/NAT</guid>
+    <title>NAT</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/advanced-concepts/NAT</link>
+    <description>Explores the concepts of NAT.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>advanced-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/advanced-concepts/VPN</guid>
+    <title>VPN</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/advanced-concepts/VPN</link>
+    <description>Explores the concepts of VPN.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>advanced-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/advanced-concepts/forward-routing</guid>
+    <title>Forward Routing</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/advanced-concepts/forward-routing</link>
+    <description>Explores the concepts of forwarding and routing.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>advanced-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/advanced-concepts/load-balancing</guid>
+    <title>Load Balancing</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/advanced-concepts/load-balancing</link>
+    <description>Explores the concepts of load balancing.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>advanced-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/advanced-concepts/sliding_window</guid>
+    <title>Sliding Window</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/advanced-concepts/sliding_window</link>
+    <description>Explores the concepts of sliding window.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>advanced-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/advanced-concepts/webRTC</guid>
+    <title>WebRTC</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/advanced-concepts/webRTC</link>
+    <description>Explores the concepts of WebRTC.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>advanced-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/attacks/MITM</guid>
+    <title>MITM</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/attacks/MITM</link>
+    <description>Explores the concepts of MITM attacks.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>attacks</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/attacks/ddos</guid>
+    <title>DDoS</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/attacks/ddos</link>
+    <description>Explores the concepts of DDoS attacks.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>attacks</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/0.0.0.0-127.0.0.1</guid>
+    <title>0.0.0.0 vs 127.0.0.1</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/0.0.0.0-127.0.0.1</link>
+    <description>Explores the difference between 0.0.0.0 and 127.0.0.1.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/datagram</guid>
+    <title>Datagram</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/datagram</link>
+    <description>Explores the concepts of datagram.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/hardware_components</guid>
+    <title>Hardware Components</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/hardware_components</link>
+    <description>Explores the hardware components of a computer.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/hostname_domainname</guid>
+    <title>Hostname, Domain Name, and FQDN</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/hostname_domainname</link>
+    <description>Explores the difference between a hostname, a domain name, and an FQDN.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/ip</guid>
+    <title>IP</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/ip</link>
+    <description>Explores the concepts of IP.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/socket</guid>
+    <title>Socket</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/socket</link>
+    <description>Explores the concepts of socket.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/socks</guid>
+    <title>SOCKS</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/socks</link>
+    <description>Explores the concepts of SOCKS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/tcp</guid>
+    <title>TCP</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/tcp</link>
+    <description>Explores the concepts of TCP.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/udp</guid>
+    <title>UDP</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/udp</link>
+    <description>Explores the concepts of UDP.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/x-forward</guid>
+    <title>X-Forwarded-For</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/x-forward</link>
+    <description>Explores the concepts of X-Forwarded-For.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/protocols/definition</guid>
+    <title>Definition of a Protocol</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/protocols/definition</link>
+    <description>Explores the concepts of protocols.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>protocols</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/protocols/dns-dhcp</guid>
+    <title>DNS and DHCP</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/protocols/dns-dhcp</link>
+    <description>Explores the concepts of DNS and DHCP.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>protocols</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/protocols/ftp-sftp</guid>
+    <title>FTP and SFTP</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/protocols/ftp-sftp</link>
+    <description>Explores the concepts of FTP and SFTP.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>protocols</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/protocols/http-https</guid>
+    <title>HTTP and HTTPS</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/protocols/http-https</link>
+    <description>Explores the concepts of HTTP and HTTPS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>protocols</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/security/authentication-protocols</guid>
+    <title>Authentication Protocols</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/security/authentication-protocols</link>
+    <description>Explores the concepts of authentication protocols.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>security</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/security/encryption</guid>
+    <title>Encryption</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/security/encryption</link>
+    <description>Explores the concepts of encryption.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>security</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/clock-tick</guid>
+    <title>Clock Tick at Operating System Level</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/clock-tick</link>
+    <description>Explores the concepts of clock tick at operating system level.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/coroutine</guid>
+    <title>Coroutine at Operating System Level</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/coroutine</link>
+    <description>Explores the concepts of coroutine at operating system level.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/io-management</guid>
+    <title>IO Management at Operating System Level</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/io-management</link>
+    <description>Explores the concepts of IO management at operating system level.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/memory-management</guid>
+    <title>Memory Management at Operating System Level</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/memory-management</link>
+    <description>Explores the concepts of memory management at operating system level.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/process</guid>
+    <title>Process at Operating System Level</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/process</link>
+    <description>Explores the concepts of process at operating system level.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/thread</guid>
+    <title>Thread at Operating System Level</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/thread</link>
+    <description>Explores the concepts of thread at operating system level.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/concurrent-programming/deadlocks-and-starvation</guid>
+    <title>Deadlocks and Starvation in Concurrent Programming</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/concurrent-programming/deadlocks-and-starvation</link>
+    <description>Explores the concepts of deadlocks and starvation in concurrent programming.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>concurrent-programming</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/concurrent-programming/monitors</guid>
+    <title>Monitors in Concurrent Programming</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/concurrent-programming/monitors</link>
+    <description>Explores the concepts of monitors in concurrent programming.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>concurrent-programming</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/concurrent-programming/mutexes</guid>
+    <title>Mutexes in Concurrent Programming</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/concurrent-programming/mutexes</link>
+    <description>Explores the concepts of mutexes in concurrent programming.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>concurrent-programming</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/concurrent-programming/race-condition</guid>
+    <title>Race Condition in Concurrent Programming</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/concurrent-programming/race-condition</link>
+    <description>Explores the concepts of race condition in concurrent programming.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>concurrent-programming</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/concurrent-programming/semaphores</guid>
+    <title>Semaphores in Concurrent Programming</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/concurrent-programming/semaphores</link>
+    <description>Explores the concepts of semaphores in concurrent programming.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>concurrent-programming</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/concurrent-programming/synchronization</guid>
+    <title>Synchronization in Concurrent Programming</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/concurrent-programming/synchronization</link>
+    <description>Explores the concepts of synchronization in concurrent programming.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>concurrent-programming</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/questions/use-macro</guid>
+    <title>Why do the Linux use macro over function?</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/questions/use-macro</link>
+    <description>Explores the reasons why the Linux use macro over function.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>questions</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/system-calls/common-system-calls-in-unix</guid>
+    <title>Common System Calls in Unix</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/system-calls/common-system-calls-in-unix</link>
+    <description>Explores the concepts of common system calls in Unix.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>system-calls</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/cron-jobs/intro</guid>
+    <title>Cron Jobs</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/cron-jobs/intro</link>
+    <description>Explores the concepts of cron jobs.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell-and-commandline-tools</category><category>cron-jobs</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/curl</guid>
+    <title>Curl</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/curl</link>
+    <description>Explore the usage of Curl.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>networking</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/netstat</guid>
+    <title>Netstat</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/netstat</link>
+    <description>Explore the usage of netstat.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>networking</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/ping</guid>
+    <title>Ping</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/ping</link>
+    <description>Explore the usage of ping.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>networking</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/traceroute</guid>
+    <title>Traceroute</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/traceroute</link>
+    <description>Explore the usage of traceroute.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>networking</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/package-management-tools/apt</guid>
+    <title>Apt</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/package-management-tools/apt</link>
+    <description>Explore the usage of apt.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>package-management</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/package-management-tools/brew</guid>
+    <title>Brew</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/package-management-tools/brew</link>
+    <description>Explore the usage of brew.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>package-management</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/package-management-tools/yum</guid>
+    <title>Yum</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/package-management-tools/yum</link>
+    <description>Explore the usage of yum.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>package-management</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/commands</guid>
+    <title>Shell Basic Commands</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/commands</link>
+    <description>Explore the usage of shell basic commands.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/ln</guid>
+    <title>Ln</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/ln</link>
+    <description>Explore the usage of ln command.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/ssh</guid>
+    <title>Ssh</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/ssh</link>
+    <description>Explore the usage of ssh.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/terminal-multiplixer-tools/screen</guid>
+    <title>Screen</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/terminal-multiplixer-tools/screen</link>
+    <description>Explore the usage of screen.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>terminal-multiplexer</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/terminal-multiplixer-tools/tmux</guid>
+    <title>Tmux</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/terminal-multiplixer-tools/tmux</link>
+    <description>Explore the usage of tmux.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>terminal-multiplexer</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/virtualization/containers-vs-virtual-machines</guid>
+    <title>Containers vs Virtual Machines</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/virtualization/containers-vs-virtual-machines</link>
+    <description>Explores the concepts of containers vs virtual machines.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>virtualization</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/virtualization/emulation-and-paravirtualization</guid>
+    <title>Emulation and Paravirtualization</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/virtualization/emulation-and-paravirtualization</link>
+    <description>Explores the concepts of emulation and paravirtualization.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>virtualization</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/virtualization/hypervisors</guid>
+    <title>Hypervisors</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/virtualization/hypervisors</link>
+    <description>Explores the concepts of hypervisors.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>virtualization</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/awk</guid>
+    <title>Awk</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/awk</link>
+    <description>Explore the usage of awk.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>text-processing</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/grep</guid>
+    <title>Grep</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/grep</link>
+    <description>Explore the usage of grep.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>text-processing</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/jq</guid>
+    <title>JQ</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/jq</link>
+    <description>Explore the usage of JQ.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>text-processing</category><category>jq</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/sed</guid>
+    <title>Sed</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/sed</link>
+    <description>Explore the usage of sed.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>text-processing</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/yq</guid>
+    <title>YQ</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/yq</link>
+    <description>Explore the usage of yq.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>text-processing</category>
+  </item>
+
+    </channel>
+  </rss>

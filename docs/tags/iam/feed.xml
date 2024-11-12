@@ -1,0 +1,44 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>CodeWisdom</title>
+      <link>https://codewisdom.io/blog</link>
+      <description>A blog sharing insights on computer science through practical projects and thoughtful exploration.</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Bowen Y)</managingEditor>
+      <webMaster>undefined (Bowen Y)</webMaster>
+      <lastBuildDate>Thu, 31 Oct 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://codewisdom.io/tags/iam/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/iam/all-actions-resources-conditions</guid>
+    <title>All Actions, Resources, and Conditions</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/iam/all-actions-resources-conditions</link>
+    <description>Lists all actions, resources, and conditions in AWS IAM.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>IAM</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/iam/definition</guid>
+    <title>IAM</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/iam/definition</link>
+    <description>Explains the IAM.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>IAM</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/iam/iam-policy</guid>
+    <title>IAM Policy</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/iam/iam-policy</link>
+    <description>Explains the IAM policy.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>IAM</category>
+  </item>
+
+    </channel>
+  </rss>

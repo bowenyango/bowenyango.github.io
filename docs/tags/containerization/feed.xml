@@ -1,0 +1,74 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>CodeWisdom</title>
+      <link>https://codewisdom.io/blog</link>
+      <description>A blog sharing insights on computer science through practical projects and thoughtful exploration.</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Bowen Y)</managingEditor>
+      <webMaster>undefined (Bowen Y)</webMaster>
+      <lastBuildDate>Thu, 31 Oct 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://codewisdom.io/tags/containerization/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/configuration</guid>
+    <title>Configuration</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/configuration</link>
+    <description>Explains the configuration of Docker.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>containerization</category><category>docker</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/docker-engine</guid>
+    <title>Docker Engine</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/docker-engine</link>
+    <description>Explains the Docker engine.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>containerization</category><category>docker</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/dockershim</guid>
+    <title>Dockershim</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/dockershim</link>
+    <description>Explains the dockershim.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>containerization</category><category>docker</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/entrypoint_and_command</guid>
+    <title>Entrypoint and Command</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/entrypoint_and_command</link>
+    <description>Explains the entrypoint and command in Docker.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>containerization</category><category>docker</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/kubernetes/containerd</guid>
+    <title>Containerd</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/kubernetes/containerd</link>
+    <description>Explains the containerd.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>containerization</category><category>kubernetes</category><category>containerd</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/kubernetes/kubelet</guid>
+    <title>Kubelet</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/kubernetes/kubelet</link>
+    <description>Explains the kubelet.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>containerization</category><category>kubernetes</category><category>kubelet</category>
+  </item>
+
+    </channel>
+  </rss>

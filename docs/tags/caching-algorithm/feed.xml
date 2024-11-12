@@ -1,0 +1,74 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>CodeWisdom</title>
+      <link>https://codewisdom.io/blog</link>
+      <description>A blog sharing insights on computer science through practical projects and thoughtful exploration.</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Bowen Y)</managingEditor>
+      <webMaster>undefined (Bowen Y)</webMaster>
+      <lastBuildDate>Thu, 31 Oct 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://codewisdom.io/tags/caching-algorithm/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/ARC</guid>
+    <title>ARC</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/ARC</link>
+    <description>Explains the ARC algorithm.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>caching-algorithm</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/FIFO</guid>
+    <title>FIFO</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/FIFO</link>
+    <description>Explains the FIFO algorithm.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>caching-algorithm</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/LFU</guid>
+    <title>LFU</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/LFU</link>
+    <description>Explains the LFU algorithm.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>caching-algorithm</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/LRU-K</guid>
+    <title>LRU-K</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/LRU-K</link>
+    <description>Explains the LRU-K algorithm.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>caching-algorithm</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/LRU</guid>
+    <title>LRU</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/LRU</link>
+    <description>Explains the LRU algorithm.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>caching-algorithm</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/MRU</guid>
+    <title>MRU</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/MRU</link>
+    <description>Explains the MRU algorithm.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>caching-algorithm</category>
+  </item>
+
+    </channel>
+  </rss>

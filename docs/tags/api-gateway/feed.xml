@@ -1,0 +1,84 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>CodeWisdom</title>
+      <link>https://codewisdom.io/blog</link>
+      <description>A blog sharing insights on computer science through practical projects and thoughtful exploration.</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Bowen Y)</managingEditor>
+      <webMaster>undefined (Bowen Y)</webMaster>
+      <lastBuildDate>Thu, 31 Oct 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://codewisdom.io/tags/api-gateway/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/api-endpoint-type</guid>
+    <title>API Endpoint Type</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/api-endpoint-type</link>
+    <description>Explains the different types of API endpoints in API Gateway.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>API Gateway</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/domain-name</guid>
+    <title>Domain Name in API Gateway</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/domain-name</link>
+    <description>Explains the domain name in API Gateway.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>API Gateway</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/header</guid>
+    <title>Forward Original Host from the Original Request</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/header</link>
+    <description>Explains how to forward the original host from the original request in API Gateway.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>API Gateway</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/http-api</guid>
+    <title>HTTP API in API Gateway</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/http-api</link>
+    <description>Explains the HTTP API in API Gateway.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>API Gateway</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/payload-limitation</guid>
+    <title>Payload Limitation in API Gateway</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/payload-limitation</link>
+    <description>Explains the payload limitation in API Gateway.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>API Gateway</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/redirect-http-to-https</guid>
+    <title>Redirect HTTP to HTTPS in API Gateway</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/redirect-http-to-https</link>
+    <description>Explains how to redirect HTTP to HTTPS in API Gateway.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>API Gateway</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/vpc-links</guid>
+    <title>VPC Links in API Gateway</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/vpc-links</link>
+    <description>Explains the VPC links in API Gateway.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>API Gateway</category>
+  </item>
+
+    </channel>
+  </rss>

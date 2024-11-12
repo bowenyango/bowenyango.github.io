@@ -1,0 +1,74 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>CodeWisdom</title>
+      <link>https://codewisdom.io/blog</link>
+      <description>A blog sharing insights on computer science through practical projects and thoughtful exploration.</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Bowen Y)</managingEditor>
+      <webMaster>undefined (Bowen Y)</webMaster>
+      <lastBuildDate>Thu, 31 Oct 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://codewisdom.io/tags/systems/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://codewisdom.io/blog/distributed-systems/systems/GFS</guid>
+    <title>GFS</title>
+    <link>https://codewisdom.io/blog/distributed-systems/systems/GFS</link>
+    <description>Explores the GFS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>distributed-systems</category><category>systems</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/distributed-systems/systems/hadoop</guid>
+    <title>Hadoop</title>
+    <link>https://codewisdom.io/blog/distributed-systems/systems/hadoop</link>
+    <description>Explores the Hadoop.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>distributed-systems</category><category>systems</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/distributed-systems/systems/kafka</guid>
+    <title>Kafka</title>
+    <link>https://codewisdom.io/blog/distributed-systems/systems/kafka</link>
+    <description>Explores the Kafka.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>distributed-systems</category><category>systems</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/distributed-systems/systems/rabbitmq</guid>
+    <title>RabbitMQ</title>
+    <link>https://codewisdom.io/blog/distributed-systems/systems/rabbitmq</link>
+    <description>Explores the RabbitMQ.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>distributed-systems</category><category>systems</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/distributed-systems/systems/spanner</guid>
+    <title>Spanner</title>
+    <link>https://codewisdom.io/blog/distributed-systems/systems/spanner</link>
+    <description>Explores the Spanner.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>distributed-systems</category><category>systems</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/distributed-systems/systems/spark</guid>
+    <title>Spark</title>
+    <link>https://codewisdom.io/blog/distributed-systems/systems/spark</link>
+    <description>Explores the Spark.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>distributed-systems</category><category>systems</category>
+  </item>
+
+    </channel>
+  </rss>

@@ -1,0 +1,34 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>CodeWisdom</title>
+      <link>https://codewisdom.io/blog</link>
+      <description>A blog sharing insights on computer science through practical projects and thoughtful exploration.</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Bowen Y)</managingEditor>
+      <webMaster>undefined (Bowen Y)</webMaster>
+      <lastBuildDate>Thu, 31 Oct 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://codewisdom.io/tags/filtering/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/algorithms/advanced-algorithms/bloomfilter</guid>
+    <title>Bloom Filter</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/algorithms/advanced-algorithms/bloomfilter</link>
+    <description>Explores the Bloom filter.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>algorithms</category><category>filtering</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/algorithms/advanced-algorithms/cuckoo-filter</guid>
+    <title>Cuckoo Filter</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/algorithms/advanced-algorithms/cuckoo-filter</link>
+    <description>Explores the Cuckoo filter.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>algorithms</category><category>filtering</category>
+  </item>
+
+    </channel>
+  </rss>
