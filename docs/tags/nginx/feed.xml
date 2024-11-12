@@ -1,0 +1,54 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>CodeWisdom</title>
+      <link>https://codewisdom.io/blog</link>
+      <description>A blog sharing insights on computer science through practical projects and thoughtful exploration.</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Bowen Y)</managingEditor>
+      <webMaster>undefined (Bowen Y)</webMaster>
+      <lastBuildDate>Wed, 08 Mar 2023 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://codewisdom.io/tags/nginx/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/backend-techs/nginx/config</guid>
+    <title>Nginx Config</title>
+    <link>https://codewisdom.io/blog/web-development/backend-techs/nginx/config</link>
+    <description>Explains Nginx configurations for setting default servers, handling protocol forwarding, and using regex in location blocks for optimized request handling.</description>
+    <pubDate>Wed, 08 Mar 2023 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>nginx</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/backend-techs/nginx/errors</guid>
+    <title>Nginx Errors</title>
+    <link>https://codewisdom.io/blog/web-development/backend-techs/nginx/errors</link>
+    <description>Errors I encountered while setting up Nginx.</description>
+    <pubDate>Thu, 09 Mar 2023 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>nginx</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/backend-techs/nginx/file-upload</guid>
+    <title>Nginx File Upload</title>
+    <link>https://codewisdom.io/blog/web-development/backend-techs/nginx/file-upload</link>
+    <description>Explains how Nginx processes file uploads and rejects large files.</description>
+    <pubDate>Fri, 10 Mar 2023 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>nginx</category><category>file-upload</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/backend-techs/nginx/reverse-proxy-and-load-balancing</guid>
+    <title>Nginx Reverse Proxy and Load Balancing</title>
+    <link>https://codewisdom.io/blog/web-development/backend-techs/nginx/reverse-proxy-and-load-balancing</link>
+    <description>Explains how to set up a reverse proxy and load balancer using Nginx.</description>
+    <pubDate>Sat, 11 Mar 2023 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>nginx</category><category>reverse-proxy</category><category>load-balancing</category>
+  </item>
+
+    </channel>
+  </rss>

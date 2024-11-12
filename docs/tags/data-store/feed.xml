@@ -1,0 +1,804 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>CodeWisdom</title>
+      <link>https://codewisdom.io/blog</link>
+      <description>A blog sharing insights on computer science through practical projects and thoughtful exploration.</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Bowen Y)</managingEditor>
+      <webMaster>undefined (Bowen Y)</webMaster>
+      <lastBuildDate>Thu, 31 Oct 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://codewisdom.io/tags/data-store/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/ARC</guid>
+    <title>ARC</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/ARC</link>
+    <description>Explains the ARC algorithm.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>caching-algorithm</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/FIFO</guid>
+    <title>FIFO</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/FIFO</link>
+    <description>Explains the FIFO algorithm.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>caching-algorithm</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/LFU</guid>
+    <title>LFU</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/LFU</link>
+    <description>Explains the LFU algorithm.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>caching-algorithm</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/LRU-K</guid>
+    <title>LRU-K</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/LRU-K</link>
+    <description>Explains the LRU-K algorithm.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>caching-algorithm</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/LRU</guid>
+    <title>LRU</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/LRU</link>
+    <description>Explains the LRU algorithm.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>caching-algorithm</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/MRU</guid>
+    <title>MRU</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/MRU</link>
+    <description>Explains the MRU algorithm.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>caching-algorithm</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/caching-strategies/caching-strategies</guid>
+    <title>Caching Strategies</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/caching-strategies/caching-strategies</link>
+    <description>Explores the caching strategies.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>caching-strategies</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/redis/cluster-and-sentinel</guid>
+    <title>Redis Cluster and Sentinel</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/redis/cluster-and-sentinel</link>
+    <description>Explores the Redis cluster and sentinel.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>redis</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/redis/data-type</guid>
+    <title>Redis Data Types</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/redis/data-type</link>
+    <description>Explores the Redis data types.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>redis</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/redis/modules</guid>
+    <title>Redis Modules</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/redis/modules</link>
+    <description>Explores the Redis modules.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>redis</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/redis/performance</guid>
+    <title>Redis Performance</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/redis/performance</link>
+    <description>Explores the Redis performance.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>redis</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/redis/persistence</guid>
+    <title>Redis Persistence</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/redis/persistence</link>
+    <description>Explores the Redis persistence.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>redis</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/redis/security</guid>
+    <title>Redis Security</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/redis/security</link>
+    <description>Explores the Redis security.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>redis</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/redis/source-code</guid>
+    <title>Redis Source Code</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/redis/source-code</link>
+    <description>Explores the Redis source code.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>redis</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/redis/stream-pub-sub</guid>
+    <title>Redis Stream and Pub/Sub</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/redis/stream-pub-sub</link>
+    <description>Explores the Redis stream and pub/sub.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>redis</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/types-of-caching/CDN</guid>
+    <title>CDN</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/types-of-caching/CDN</link>
+    <description>Explores the CDN.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>types-of-caching</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/types-of-caching/application-caching</guid>
+    <title>Application Caching</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/types-of-caching/application-caching</link>
+    <description>Explores the application caching.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>types-of-caching</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/types-of-caching/broswer-caching</guid>
+    <title>Browser Caching</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/types-of-caching/broswer-caching</link>
+    <description>Explores the browser caching.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>types-of-caching</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/types-of-caching/cpu-caching</guid>
+    <title>CPU Caching</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/types-of-caching/cpu-caching</link>
+    <description>Explores the CPU caching.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>types-of-caching</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/types-of-caching/disk-caching</guid>
+    <title>Disk Caching</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/types-of-caching/disk-caching</link>
+    <description>Explores the disk caching.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>types-of-caching</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/types-of-caching/ram-caching</guid>
+    <title>RAM Caching</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/types-of-caching/ram-caching</link>
+    <description>Explores the RAM caching.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>types-of-caching</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/ORM/ORM-intro</guid>
+    <title>ORM Introduction</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/ORM/ORM-intro</link>
+    <description>Explores the ORM.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>orm</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/database-design-and-modeling/entity-relationship-diagrams</guid>
+    <title>Entity Relationship Diagrams</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/database-design-and-modeling/entity-relationship-diagrams</link>
+    <description>Explores the entity relationship diagrams.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>entity-relationship-diagrams</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/database-design-and-modeling/schema-design-principles</guid>
+    <title>Schema Design Principles</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/database-design-and-modeling/schema-design-principles</link>
+    <description>Explores the schema design principles.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>schema-design-principles</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/database-proxy-and-middleware/connection-pool</guid>
+    <title>Connection Pool</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/database-proxy-and-middleware/connection-pool</link>
+    <description>Explores the connection pool.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>connection-pool</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/database-proxy-and-middleware/database-proxy</guid>
+    <title>Database Proxy</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/database-proxy-and-middleware/database-proxy</link>
+    <description>Explores the database proxy.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>database-proxy</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/database-proxy-and-middleware/query-routing</guid>
+    <title>Query Routing</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/database-proxy-and-middleware/query-routing</link>
+    <description>Explores the query routing.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>query-routing</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/nosql/cassandra</guid>
+    <title>Cassandra</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/nosql/cassandra</link>
+    <description>Explores the Cassandra.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>nosql</category><category>cassandra</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/nosql/dynamodb</guid>
+    <title>DynamoDB</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/nosql/dynamodb</link>
+    <description>Explores the DynamoDB.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>nosql</category><category>dynamodb</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/nosql/mongodb</guid>
+    <title>MongoDB</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/nosql/mongodb</link>
+    <description>Explores the MongoDB.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>nosql</category><category>mongodb</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/object/s3</guid>
+    <title>S3</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/object/s3</link>
+    <description>Explores the S3 implementation.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>object</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/relational-databases/advanced-sql-query</guid>
+    <title>Advanced SQL Query</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/relational-databases/advanced-sql-query</link>
+    <description>Explores the advanced SQL query.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>relational-databases</category><category>advanced-sql-query</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/relational-databases/database-normalization</guid>
+    <title>Database Normalization</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/relational-databases/database-normalization</link>
+    <description>Explores the database normalization.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>relational-databases</category><category>database-normalization</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/relational-databases/postgres</guid>
+    <title>PostgreSQL</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/relational-databases/postgres</link>
+    <description>Explores the PostgreSQL.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>relational-databases</category><category>postgres</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/time-series/influxdb</guid>
+    <title>InfluxDB</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/time-series/influxdb</link>
+    <description>Explores the InfluxDB.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>time-series</category><category>influxdb</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/transactions-and-concurrency/ACID</guid>
+    <title>ACID</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/transactions-and-concurrency/ACID</link>
+    <description>Explores the ACID.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>transactions-and-concurrency</category><category>acid</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/transactions-and-concurrency/Isolation</guid>
+    <title>Isolation</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/transactions-and-concurrency/Isolation</link>
+    <description>Explores the isolation.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>transactions-and-concurrency</category><category>isolation</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/transactions-and-concurrency/concurrency</guid>
+    <title>Concurrency</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/transactions-and-concurrency/concurrency</link>
+    <description>Explores the concurrency.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>transactions-and-concurrency</category><category>concurrency</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/transactions-and-concurrency/distributed-transactions</guid>
+    <title>Distributed Transactions</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/transactions-and-concurrency/distributed-transactions</link>
+    <description>Explores the distributed transactions.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>transactions-and-concurrency</category><category>distributed-transactions</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/files-systems/basic-concepts/POSIX-compliant</guid>
+    <title>POSIX-compliant</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/files-systems/basic-concepts/POSIX-compliant</link>
+    <description>Explores the POSIX-compliant.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>files-systems</category><category>posix-compliant</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/files-systems/basic-concepts/inode-and-metadata</guid>
+    <title>Inode and Metadata</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/files-systems/basic-concepts/inode-and-metadata</link>
+    <description>Explores the inode and metadata.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>files-systems</category><category>inode</category><category>metadata</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/files-systems/basic-concepts/journaling</guid>
+    <title>Journaling</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/files-systems/basic-concepts/journaling</link>
+    <description>Explores the journaling.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>files-systems</category><category>journaling</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/files-systems/basic-concepts/permissions</guid>
+    <title>Permissions</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/files-systems/basic-concepts/permissions</link>
+    <description>Explores the permissions.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>files-systems</category><category>permissions</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/files-systems/distributed/afs</guid>
+    <title>AFS</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/files-systems/distributed/afs</link>
+    <description>Explores the AFS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>files-systems</category><category>distributed</category><category>afs</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/files-systems/distributed/ceph</guid>
+    <title>Ceph</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/files-systems/distributed/ceph</link>
+    <description>Explores the Ceph.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>files-systems</category><category>distributed</category><category>ceph</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/files-systems/distributed/hdfs</guid>
+    <title>HDFS</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/files-systems/distributed/hdfs</link>
+    <description>Explores the HDFS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>files-systems</category><category>distributed</category><category>hdfs</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/files-systems/distributed/nfs</guid>
+    <title>NFS</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/files-systems/distributed/nfs</link>
+    <description>Explores the NFS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>files-systems</category><category>distributed</category><category>nfs</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/files-systems/journaling/btrfs</guid>
+    <title>Btrfs Filesystem</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/files-systems/journaling/btrfs</link>
+    <description>Explores the Btrfs Filesystem.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>files-systems</category><category>journaling</category><category>btrfs</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/files-systems/journaling/ext</guid>
+    <title>EXT Filesystem</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/files-systems/journaling/ext</link>
+    <description>Explores the EXT Filesystem.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>files-systems</category><category>journaling</category><category>ext</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/files-systems/journaling/ntfs</guid>
+    <title>NTFS Filesystem</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/files-systems/journaling/ntfs</link>
+    <description>Explores the NTFS Filesystem.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>files-systems</category><category>journaling</category><category>ntfs</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/files-systems/log-structured/F2FS</guid>
+    <title>F2FS Filesystem</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/files-systems/log-structured/F2FS</link>
+    <description>Explores the F2FS Filesystem.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>files-systems</category><category>log-structured</category><category>f2fs</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/files-systems/log-structured/NILFS</guid>
+    <title>NILFS Filesystem</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/files-systems/log-structured/NILFS</link>
+    <description>Explores the NILFS Filesystem.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>files-systems</category><category>log-structured</category><category>nilfs</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/files-systems/network/nfs</guid>
+    <title>NFS Filesystem</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/files-systems/network/nfs</link>
+    <description>Explores the NFS Filesystem.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>files-systems</category><category>network</category><category>nfs</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/files-systems/traditional/FAT</guid>
+    <title>FAT Filesystem</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/files-systems/traditional/FAT</link>
+    <description>Explores the FAT Filesystem.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>files-systems</category><category>traditional</category><category>fat</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/message-middleware/kafka/KSQL</guid>
+    <title>KSQL</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/message-middleware/kafka/KSQL</link>
+    <description>Explores the KSQL.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>message-middleware</category><category>kafka</category><category>ksql</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/message-middleware/kafka/producer-consumer-broker</guid>
+    <title>Producer-Consumer-Broker in Kafka</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/message-middleware/kafka/producer-consumer-broker</link>
+    <description>Explores the producer-consumer-broker in Kafka.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>message-middleware</category><category>kafka</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/message-middleware/kafka/topics-and-partition</guid>
+    <title>Topics and Partitions in Kafka</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/message-middleware/kafka/topics-and-partition</link>
+    <description>Explores the topics and partitions in Kafka.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>message-middleware</category><category>kafka</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/message-middleware/kafka/zookeeper-coordination</guid>
+    <title>Zookeeper Coordination in Kafka</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/message-middleware/kafka/zookeeper-coordination</link>
+    <description>Explores the Zookeeper Coordination in Kafka.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>message-middleware</category><category>kafka</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/message-middleware/rabbitmq/binding-and-routing-key</guid>
+    <title>Binding and Routing Key in RabbitMQ</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/message-middleware/rabbitmq/binding-and-routing-key</link>
+    <description>Explores the binding and routing key in RabbitMQ.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>message-middleware</category><category>rabbitmq</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/message-middleware/rabbitmq/clustering-and-federation</guid>
+    <title>Clustering and Federation in RabbitMQ</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/message-middleware/rabbitmq/clustering-and-federation</link>
+    <description>Explores the clustering and federation in RabbitMQ.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>message-middleware</category><category>rabbitmq</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/message-middleware/rabbitmq/exchange</guid>
+    <title>Exchange in RabbitMQ</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/message-middleware/rabbitmq/exchange</link>
+    <description>Explores the exchange in RabbitMQ.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>message-middleware</category><category>rabbitmq</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/message-middleware/rabbitmq/priority-queue</guid>
+    <title>Priority Queue in RabbitMQ</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/message-middleware/rabbitmq/priority-queue</link>
+    <description>Explores the priority queue in RabbitMQ.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>message-middleware</category><category>rabbitmq</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/message-middleware/rabbitmq/queue</guid>
+    <title>Queue in RabbitMQ</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/message-middleware/rabbitmq/queue</link>
+    <description>Explores the queue in RabbitMQ.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>message-middleware</category><category>rabbitmq</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/message-middleware/rabbitmq/user_permission</guid>
+    <title>User Permission in RabbitMQ</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/message-middleware/rabbitmq/user_permission</link>
+    <description>Explores the user permission in RabbitMQ.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>message-middleware</category><category>rabbitmq</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/message-middleware/rabbitmq/vhost</guid>
+    <title>Vhost in RabbitMQ</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/message-middleware/rabbitmq/vhost</link>
+    <description>Explores the vhost in RabbitMQ.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>message-middleware</category><category>rabbitmq</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/search-engine/auto-completion/trie-data-structures</guid>
+    <title>Trie Data Structures</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/search-engine/auto-completion/trie-data-structures</link>
+    <description>Explores the trie data structures.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>search-engine</category><category>auto-completion</category><category>trie</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/aggregation</guid>
+    <title>Aggregation in Elasticsearch</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/aggregation</link>
+    <description>Explores the aggregation in Elasticsearch.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>search-engine</category><category>elasticsearch</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/boolean-query</guid>
+    <title>Boolean Query in Elasticsearch</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/boolean-query</link>
+    <description>Explores the boolean query in Elasticsearch.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>search-engine</category><category>elasticsearch</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/customized-preference-search</guid>
+    <title>Customized Preference Search in Elasticsearch</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/customized-preference-search</link>
+    <description>Explores the customized preference search in Elasticsearch.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>search-engine</category><category>elasticsearch</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/full-text-search</guid>
+    <title>Full-Text Search in Elasticsearch</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/full-text-search</link>
+    <description>Explores the full-text search in Elasticsearch.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>search-engine</category><category>elasticsearch</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/indexing-and-mapping</guid>
+    <title>Indexing and Mapping in Elasticsearch</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/indexing-and-mapping</link>
+    <description>Explores the indexing and mapping in Elasticsearch.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>search-engine</category><category>elasticsearch</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/query-types</guid>
+    <title>Query Types in Elasticsearch</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/query-types</link>
+    <description>Explores the query types in Elasticsearch.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>search-engine</category><category>elasticsearch</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/nosql/data-modeling/indexing</guid>
+    <title>Indexing in NoSQL</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/nosql/data-modeling/indexing</link>
+    <description>Explores the indexing in NoSQL.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>nosql</category><category>data-modeling</category><category>indexing</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/nosql/data-modeling/partitioning</guid>
+    <title>Partitioning in NoSQL</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/nosql/data-modeling/partitioning</link>
+    <description>Explores the partitioning in NoSQL.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>nosql</category><category>data-modeling</category><category>partitioning</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/nosql/data-modeling/sharding</guid>
+    <title>Sharding in NoSQL</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/nosql/data-modeling/sharding</link>
+    <description>Explores the sharding in NoSQL.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>nosql</category><category>data-modeling</category><category>sharding</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/nosql/graph/Neo4j</guid>
+    <title>Neo4j</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/nosql/graph/Neo4j</link>
+    <description>Explores the Neo4j.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>graph</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/relational-databases/data-modeling/indexing</guid>
+    <title>Indexing in Relational Databases</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/relational-databases/data-modeling/indexing</link>
+    <description>Explores the indexing in relational databases.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>relational-databases</category><category>data-modeling</category><category>indexing</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/relational-databases/data-modeling/partitioning</guid>
+    <title>Partitioning in Relational Databases</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/relational-databases/data-modeling/partitioning</link>
+    <description>Explores the partitioning in relational databases.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>relational-databases</category><category>data-modeling</category><category>partitioning</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/database/relational-databases/data-modeling/sharding</guid>
+    <title>Sharding in Relational Databases</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/database/relational-databases/data-modeling/sharding</link>
+    <description>Explores the sharding in relational databases.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>database</category><category>relational-databases</category><category>data-modeling</category><category>sharding</category>
+  </item>
+
+    </channel>
+  </rss>

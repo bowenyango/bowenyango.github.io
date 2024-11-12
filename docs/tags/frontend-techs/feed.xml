@@ -1,0 +1,374 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>CodeWisdom</title>
+      <link>https://codewisdom.io/blog</link>
+      <description>A blog sharing insights on computer science through practical projects and thoughtful exploration.</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Bowen Y)</managingEditor>
+      <webMaster>undefined (Bowen Y)</webMaster>
+      <lastBuildDate>Thu, 31 Oct 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://codewisdom.io/tags/frontend-techs/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/JWT</guid>
+    <title>JWT</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/JWT</link>
+    <description>Explore JWT.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>authentication-and-authorization</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/Multi-factor Authentication</guid>
+    <title>Multi-factor Authentication</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/Multi-factor Authentication</link>
+    <description>Explore Multi-factor Authentication.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>authentication-and-authorization</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/OAuth-OIDC</guid>
+    <title>OAuth &amp; OIDC</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/OAuth-OIDC</link>
+    <description>Explore OAuth and OIDC.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>authentication-and-authorization</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/OAuth-and-OpenID</guid>
+    <title>OAuth and OpenID</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/OAuth-and-OpenID</link>
+    <description>Explore OAuth and OpenID.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>authentication-and-authorization</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/callback-url</guid>
+    <title>Callback URL</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/callback-url</link>
+    <description>Explore the callback URL.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>authentication-and-authorization</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/cookie</guid>
+    <title>Cookie</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/cookie</link>
+    <description>Explore the cookie.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>authentication-and-authorization</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/session</guid>
+    <title>Session</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/session</link>
+    <description>Explore Session.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>authentication-and-authorization</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/browser-storage/caching</guid>
+    <title>Caching in Browser</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/browser-storage/caching</link>
+    <description>Explore Caching in browser.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>browser-storage</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/browser-storage/localStorage</guid>
+    <title>LocalStorage</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/browser-storage/localStorage</link>
+    <description>Explore LocalStorage in browser.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>browser-storage</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/browser-storage/sessionStorage</guid>
+    <title>SessionStorage</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/browser-storage/sessionStorage</link>
+    <description>Explore SessionStorage in browser.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>browser-storage</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/css/responsive-design</guid>
+    <title>Responsive Design</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/css/responsive-design</link>
+    <description>Explore Responsive Design.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>css</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/css/selectors-and-specificity</guid>
+    <title>Selectors and Specificity</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/css/selectors-and-specificity</link>
+    <description>Explore Selectors and Specificity.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>css</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/html/canvas-and-SVG</guid>
+    <title>Canvas and SVG in HTML</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/html/canvas-and-SVG</link>
+    <description>Explore Canvas and SVG.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>html</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/html/forms-and-input-validation</guid>
+    <title>Forms and Input Validation in HTML</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/html/forms-and-input-validation</link>
+    <description>Explore Forms and Input Validation.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>html</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/html/html</guid>
+    <title>Basic Concepts of HTML</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/html/html</link>
+    <description>Explore basic concepts of HTML.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>html</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/html/semantic-HTML</guid>
+    <title>Semantic HTML</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/html/semantic-HTML</link>
+    <description>Explore Semantic HTML.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>html</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/javascript/AJAX-and-fetch-API</guid>
+    <title>AJAX and Fetch API</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/javascript/AJAX-and-fetch-API</link>
+    <description>Explore AJAX and Fetch API.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>javascript</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/javascript/DOM-manipulation</guid>
+    <title>DOM Manipulation</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/javascript/DOM-manipulation</link>
+    <description>Explore DOM Manipulation.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>javascript</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/javascript/ES6-features</guid>
+    <title>ES6 Features</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/javascript/ES6-features</link>
+    <description>Explore ES6 features.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>javascript</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/javascript/asynchronous-programming</guid>
+    <title>Asynchronous Programming</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/javascript/asynchronous-programming</link>
+    <description>Explore Asynchronous Programming.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>javascript</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/javascript/event-handling</guid>
+    <title>Event Handling</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/javascript/event-handling</link>
+    <description>Explore Event Handling.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>javascript</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/node.js/fastify</guid>
+    <title>Fastify</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/node.js/fastify</link>
+    <description>Explore Fastify.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>nodejs</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/node.js/intro</guid>
+    <title>NodeJS Introduction</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/node.js/intro</link>
+    <description>Explore NodeJS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>nodejs</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/node.js/issues</guid>
+    <title>NodeJS Issues</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/node.js/issues</link>
+    <description>Explore NodeJS issues.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>nodejs</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/package-management/npm</guid>
+    <title>npm</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/package-management/npm</link>
+    <description>Explore npm.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>package-management</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/package-management/yarn</guid>
+    <title>Yarn</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/package-management/yarn</link>
+    <description>Explore Yarn.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>package-management</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/react/components-and-props</guid>
+    <title>Components and Props</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/react/components-and-props</link>
+    <description>Explore Components and Props.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>react</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/react/hooks</guid>
+    <title>Hooks</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/react/hooks</link>
+    <description>Explore Hooks.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>react</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/react/routing-with-react-router</guid>
+    <title>Routing with React Router</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/react/routing-with-react-router</link>
+    <description>Explore Routing with React Router.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>react</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/react/state-and-lifecycle</guid>
+    <title>State and Lifecycle</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/react/state-and-lifecycle</link>
+    <description>Explore State and Lifecycle.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>react</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/react/state-management-with-redux</guid>
+    <title>State Management with Redux</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/react/state-management-with-redux</link>
+    <description>Explore State Management with Redux.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>react</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/security/CORS</guid>
+    <title>CORS</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/security/CORS</link>
+    <description>Explore CORS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>security</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/security/Content-Security-Policy</guid>
+    <title>Content Security Policy</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/security/Content-Security-Policy</link>
+    <description>Explore Content Security Policy.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>security</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/typescript/decorators</guid>
+    <title>Decorators in TypeScript</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/typescript/decorators</link>
+    <description>Explore Decorators in TypeScript.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>typescript</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/typescript/interfaces-and-generics</guid>
+    <title>Interfaces and Generics in TypeScript</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/typescript/interfaces-and-generics</link>
+    <description>Explore Interfaces and Generics in TypeScript.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>typescript</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/vue/intro</guid>
+    <title>Intro to Vue</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/vue/intro</link>
+    <description>Introduction to Vue.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>vue</category>
+  </item>
+
+    </channel>
+  </rss>

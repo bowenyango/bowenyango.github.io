@@ -1,0 +1,84 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>CodeWisdom</title>
+      <link>https://codewisdom.io/blog</link>
+      <description>A blog sharing insights on computer science through practical projects and thoughtful exploration.</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Bowen Y)</managingEditor>
+      <webMaster>undefined (Bowen Y)</webMaster>
+      <lastBuildDate>Thu, 31 Oct 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://codewisdom.io/tags/authentication-and-authorization/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/JWT</guid>
+    <title>JWT</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/JWT</link>
+    <description>Explore JWT.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>authentication-and-authorization</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/Multi-factor Authentication</guid>
+    <title>Multi-factor Authentication</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/Multi-factor Authentication</link>
+    <description>Explore Multi-factor Authentication.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>authentication-and-authorization</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/OAuth-OIDC</guid>
+    <title>OAuth &amp; OIDC</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/OAuth-OIDC</link>
+    <description>Explore OAuth and OIDC.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>authentication-and-authorization</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/OAuth-and-OpenID</guid>
+    <title>OAuth and OpenID</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/OAuth-and-OpenID</link>
+    <description>Explore OAuth and OpenID.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>authentication-and-authorization</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/callback-url</guid>
+    <title>Callback URL</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/callback-url</link>
+    <description>Explore the callback URL.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>authentication-and-authorization</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/cookie</guid>
+    <title>Cookie</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/cookie</link>
+    <description>Explore the cookie.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>authentication-and-authorization</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/session</guid>
+    <title>Session</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/session</link>
+    <description>Explore Session.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>authentication-and-authorization</category>
+  </item>
+
+    </channel>
+  </rss>

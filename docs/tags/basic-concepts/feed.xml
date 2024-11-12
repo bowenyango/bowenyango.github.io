@@ -1,0 +1,174 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>CodeWisdom</title>
+      <link>https://codewisdom.io/blog</link>
+      <description>A blog sharing insights on computer science through practical projects and thoughtful exploration.</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Bowen Y)</managingEditor>
+      <webMaster>undefined (Bowen Y)</webMaster>
+      <lastBuildDate>Thu, 31 Oct 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://codewisdom.io/tags/basic-concepts/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/0.0.0.0-127.0.0.1</guid>
+    <title>0.0.0.0 vs 127.0.0.1</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/0.0.0.0-127.0.0.1</link>
+    <description>Explores the difference between 0.0.0.0 and 127.0.0.1.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/datagram</guid>
+    <title>Datagram</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/datagram</link>
+    <description>Explores the concepts of datagram.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/hardware_components</guid>
+    <title>Hardware Components</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/hardware_components</link>
+    <description>Explores the hardware components of a computer.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/hostname_domainname</guid>
+    <title>Hostname, Domain Name, and FQDN</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/hostname_domainname</link>
+    <description>Explores the difference between a hostname, a domain name, and an FQDN.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/ip</guid>
+    <title>IP</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/ip</link>
+    <description>Explores the concepts of IP.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/socket</guid>
+    <title>Socket</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/socket</link>
+    <description>Explores the concepts of socket.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/socks</guid>
+    <title>SOCKS</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/socks</link>
+    <description>Explores the concepts of SOCKS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/tcp</guid>
+    <title>TCP</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/tcp</link>
+    <description>Explores the concepts of TCP.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/udp</guid>
+    <title>UDP</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/udp</link>
+    <description>Explores the concepts of UDP.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/x-forward</guid>
+    <title>X-Forwarded-For</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/x-forward</link>
+    <description>Explores the concepts of X-Forwarded-For.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/clock-tick</guid>
+    <title>Clock Tick at Operating System Level</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/clock-tick</link>
+    <description>Explores the concepts of clock tick at operating system level.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/coroutine</guid>
+    <title>Coroutine at Operating System Level</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/coroutine</link>
+    <description>Explores the concepts of coroutine at operating system level.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/io-management</guid>
+    <title>IO Management at Operating System Level</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/io-management</link>
+    <description>Explores the concepts of IO management at operating system level.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/memory-management</guid>
+    <title>Memory Management at Operating System Level</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/memory-management</link>
+    <description>Explores the concepts of memory management at operating system level.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/process</guid>
+    <title>Process at Operating System Level</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/process</link>
+    <description>Explores the concepts of process at operating system level.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/thread</guid>
+    <title>Thread at Operating System Level</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/thread</link>
+    <description>Explores the concepts of thread at operating system level.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>basic-concepts</category>
+  </item>
+
+    </channel>
+  </rss>

@@ -1,0 +1,174 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>CodeWisdom</title>
+      <link>https://codewisdom.io/blog</link>
+      <description>A blog sharing insights on computer science through practical projects and thoughtful exploration.</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Bowen Y)</managingEditor>
+      <webMaster>undefined (Bowen Y)</webMaster>
+      <lastBuildDate>Thu, 31 Oct 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://codewisdom.io/tags/distributed-systems/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://codewisdom.io/blog/distributed-systems/algorithms/mapreduce</guid>
+    <title>MapReduce</title>
+    <link>https://codewisdom.io/blog/distributed-systems/algorithms/mapreduce</link>
+    <description>Explores the MapReduce algorithm.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>distributed-systems</category><category>algorithms</category><category>mapreduce</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/distributed-systems/algorithms/paxos</guid>
+    <title>Paxos</title>
+    <link>https://codewisdom.io/blog/distributed-systems/algorithms/paxos</link>
+    <description>Explores the Paxos algorithm.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>distributed-systems</category><category>algorithms</category><category>paxos</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/distributed-systems/algorithms/raft</guid>
+    <title>Raft</title>
+    <link>https://codewisdom.io/blog/distributed-systems/algorithms/raft</link>
+    <description>Explores the Raft algorithm.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>distributed-systems</category><category>algorithms</category><category>raft</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/distributed-systems/algorithms/zab</guid>
+    <title>ZAB</title>
+    <link>https://codewisdom.io/blog/distributed-systems/algorithms/zab</link>
+    <description>Explores the ZAB algorithm.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>distributed-systems</category><category>algorithms</category><category>zab</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/distributed-systems/commit-protocols/three-phase commit</guid>
+    <title>Three-Phase Commit</title>
+    <link>https://codewisdom.io/blog/distributed-systems/commit-protocols/three-phase commit</link>
+    <description>Explores the three-phase commit protocol.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>distributed-systems</category><category>commit-protocols</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/distributed-systems/commit-protocols/two-phase-commit</guid>
+    <title>Two-Phase Commit</title>
+    <link>https://codewisdom.io/blog/distributed-systems/commit-protocols/two-phase-commit</link>
+    <description>Explores the two-phase commit protocol.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>distributed-systems</category><category>commit-protocols</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/distributed-systems/core-concepts/CAP</guid>
+    <title>CAP Theorem</title>
+    <link>https://codewisdom.io/blog/distributed-systems/core-concepts/CAP</link>
+    <description>Explores the CAP theorem.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>distributed-systems</category><category>core-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/distributed-systems/core-concepts/availability</guid>
+    <title>Availability in Distributed Systems</title>
+    <link>https://codewisdom.io/blog/distributed-systems/core-concepts/availability</link>
+    <description>Explores the availability in distributed systems.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>distributed-systems</category><category>core-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/distributed-systems/core-concepts/consistency</guid>
+    <title>Consistency in Distributed Systems</title>
+    <link>https://codewisdom.io/blog/distributed-systems/core-concepts/consistency</link>
+    <description>Explores the consistency in distributed systems.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>distributed-systems</category><category>core-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/distributed-systems/core-concepts/fault-tolerance</guid>
+    <title>Fault Tolerance in Distributed Systems</title>
+    <link>https://codewisdom.io/blog/distributed-systems/core-concepts/fault-tolerance</link>
+    <description>Explores the fault tolerance in distributed systems.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>distributed-systems</category><category>core-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/distributed-systems/systems/GFS</guid>
+    <title>GFS</title>
+    <link>https://codewisdom.io/blog/distributed-systems/systems/GFS</link>
+    <description>Explores the GFS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>distributed-systems</category><category>systems</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/distributed-systems/systems/hadoop</guid>
+    <title>Hadoop</title>
+    <link>https://codewisdom.io/blog/distributed-systems/systems/hadoop</link>
+    <description>Explores the Hadoop.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>distributed-systems</category><category>systems</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/distributed-systems/systems/kafka</guid>
+    <title>Kafka</title>
+    <link>https://codewisdom.io/blog/distributed-systems/systems/kafka</link>
+    <description>Explores the Kafka.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>distributed-systems</category><category>systems</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/distributed-systems/systems/rabbitmq</guid>
+    <title>RabbitMQ</title>
+    <link>https://codewisdom.io/blog/distributed-systems/systems/rabbitmq</link>
+    <description>Explores the RabbitMQ.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>distributed-systems</category><category>systems</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/distributed-systems/systems/spanner</guid>
+    <title>Spanner</title>
+    <link>https://codewisdom.io/blog/distributed-systems/systems/spanner</link>
+    <description>Explores the Spanner.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>distributed-systems</category><category>systems</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/distributed-systems/systems/spark</guid>
+    <title>Spark</title>
+    <link>https://codewisdom.io/blog/distributed-systems/systems/spark</link>
+    <description>Explores the Spark.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>distributed-systems</category><category>systems</category>
+  </item>
+
+    </channel>
+  </rss>

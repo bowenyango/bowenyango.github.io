@@ -1,0 +1,84 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>CodeWisdom</title>
+      <link>https://codewisdom.io/blog</link>
+      <description>A blog sharing insights on computer science through practical projects and thoughtful exploration.</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Bowen Y)</managingEditor>
+      <webMaster>undefined (Bowen Y)</webMaster>
+      <lastBuildDate>Thu, 31 Oct 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://codewisdom.io/tags/eks/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/EKS-intro</guid>
+    <title>EKS</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/EKS-intro</link>
+    <description>Explains the EKS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>EKS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/cluster</guid>
+    <title>EKS Cluster</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/cluster</link>
+    <description>Explains the EKS cluster.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>EKS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/deployment</guid>
+    <title>EKS Deployment</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/deployment</link>
+    <description>Explains the EKS deployment.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>EKS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/pod</guid>
+    <title>EKS Pod</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/pod</link>
+    <description>Explains the EKS pod.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>EKS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/podTemplate</guid>
+    <title>EKS PodTemplate</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/podTemplate</link>
+    <description>Explains the EKS pod template.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>EKS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/replicaSets</guid>
+    <title>EKS ReplicaSets</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/replicaSets</link>
+    <description>Explains the EKS replica sets.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>EKS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/statefulSets</guid>
+    <title>EKS StatefulSets</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/statefulSets</link>
+    <description>Explains the EKS stateful sets.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>EKS</category>
+  </item>
+
+    </channel>
+  </rss>

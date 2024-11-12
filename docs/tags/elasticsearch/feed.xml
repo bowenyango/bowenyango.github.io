@@ -1,0 +1,74 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>CodeWisdom</title>
+      <link>https://codewisdom.io/blog</link>
+      <description>A blog sharing insights on computer science through practical projects and thoughtful exploration.</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Bowen Y)</managingEditor>
+      <webMaster>undefined (Bowen Y)</webMaster>
+      <lastBuildDate>Thu, 31 Oct 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://codewisdom.io/tags/elasticsearch/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/aggregation</guid>
+    <title>Aggregation in Elasticsearch</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/aggregation</link>
+    <description>Explores the aggregation in Elasticsearch.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>search-engine</category><category>elasticsearch</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/boolean-query</guid>
+    <title>Boolean Query in Elasticsearch</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/boolean-query</link>
+    <description>Explores the boolean query in Elasticsearch.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>search-engine</category><category>elasticsearch</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/customized-preference-search</guid>
+    <title>Customized Preference Search in Elasticsearch</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/customized-preference-search</link>
+    <description>Explores the customized preference search in Elasticsearch.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>search-engine</category><category>elasticsearch</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/full-text-search</guid>
+    <title>Full-Text Search in Elasticsearch</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/full-text-search</link>
+    <description>Explores the full-text search in Elasticsearch.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>search-engine</category><category>elasticsearch</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/indexing-and-mapping</guid>
+    <title>Indexing and Mapping in Elasticsearch</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/indexing-and-mapping</link>
+    <description>Explores the indexing and mapping in Elasticsearch.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>search-engine</category><category>elasticsearch</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/query-types</guid>
+    <title>Query Types in Elasticsearch</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/query-types</link>
+    <description>Explores the query types in Elasticsearch.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>search-engine</category><category>elasticsearch</category>
+  </item>
+
+    </channel>
+  </rss>

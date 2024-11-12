@@ -1,0 +1,184 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>CodeWisdom</title>
+      <link>https://codewisdom.io/blog</link>
+      <description>A blog sharing insights on computer science through practical projects and thoughtful exploration.</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Bowen Y)</managingEditor>
+      <webMaster>undefined (Bowen Y)</webMaster>
+      <lastBuildDate>Thu, 31 Oct 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://codewisdom.io/tags/shell/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/curl</guid>
+    <title>Curl</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/curl</link>
+    <description>Explore the usage of Curl.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>networking</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/netstat</guid>
+    <title>Netstat</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/netstat</link>
+    <description>Explore the usage of netstat.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>networking</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/ping</guid>
+    <title>Ping</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/ping</link>
+    <description>Explore the usage of ping.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>networking</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/traceroute</guid>
+    <title>Traceroute</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/traceroute</link>
+    <description>Explore the usage of traceroute.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>networking</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/package-management-tools/apt</guid>
+    <title>Apt</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/package-management-tools/apt</link>
+    <description>Explore the usage of apt.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>package-management</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/package-management-tools/brew</guid>
+    <title>Brew</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/package-management-tools/brew</link>
+    <description>Explore the usage of brew.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>package-management</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/package-management-tools/yum</guid>
+    <title>Yum</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/package-management-tools/yum</link>
+    <description>Explore the usage of yum.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>package-management</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/commands</guid>
+    <title>Shell Basic Commands</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/commands</link>
+    <description>Explore the usage of shell basic commands.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/ln</guid>
+    <title>Ln</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/ln</link>
+    <description>Explore the usage of ln command.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/ssh</guid>
+    <title>Ssh</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/ssh</link>
+    <description>Explore the usage of ssh.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/terminal-multiplixer-tools/screen</guid>
+    <title>Screen</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/terminal-multiplixer-tools/screen</link>
+    <description>Explore the usage of screen.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>terminal-multiplexer</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/terminal-multiplixer-tools/tmux</guid>
+    <title>Tmux</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/terminal-multiplixer-tools/tmux</link>
+    <description>Explore the usage of tmux.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>terminal-multiplexer</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/awk</guid>
+    <title>Awk</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/awk</link>
+    <description>Explore the usage of awk.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>text-processing</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/grep</guid>
+    <title>Grep</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/grep</link>
+    <description>Explore the usage of grep.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>text-processing</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/jq</guid>
+    <title>JQ</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/jq</link>
+    <description>Explore the usage of JQ.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>text-processing</category><category>jq</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/sed</guid>
+    <title>Sed</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/sed</link>
+    <description>Explore the usage of sed.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>text-processing</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/yq</guid>
+    <title>YQ</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/yq</link>
+    <description>Explore the usage of yq.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>text-processing</category>
+  </item>
+
+    </channel>
+  </rss>

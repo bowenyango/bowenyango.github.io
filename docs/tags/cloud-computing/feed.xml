@@ -1,0 +1,714 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>CodeWisdom</title>
+      <link>https://codewisdom.io/blog</link>
+      <description>A blog sharing insights on computer science through practical projects and thoughtful exploration.</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Bowen Y)</managingEditor>
+      <webMaster>undefined (Bowen Y)</webMaster>
+      <lastBuildDate>Thu, 31 Oct 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://codewisdom.io/tags/cloud-computing/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/config-management/ansible</guid>
+    <title>Ansible</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/config-management/ansible</link>
+    <description>Explains the Ansible.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>config-management</category><category>Ansible</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/config-management/cloud-init</guid>
+    <title>Cloud-init</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/config-management/cloud-init</link>
+    <description>Explains the cloud-init.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>config-management</category><category>cloud-init</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/infra-as-code/terraform</guid>
+    <title>Terraform</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/infra-as-code/terraform</link>
+    <description>Introduction to Terraform.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>infra-as-code</category><category>terraform</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/circleci/CircleCI</guid>
+    <title>CircleCI</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/circleci/CircleCI</link>
+    <description>Explains the cache in CircleCI.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>CICD</category><category>CircleCI</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/circleci/avoid-infinite-loop</guid>
+    <title>Avoid Infinite Loop</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/circleci/avoid-infinite-loop</link>
+    <description>Explains how to avoid infinite loop in CircleCI.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>CICD</category><category>CircleCI</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/circleci/secret-masking</guid>
+    <title>CircleCI</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/circleci/secret-masking</link>
+    <description>Explains the secret masking in CircleCI.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>CICD</category><category>CircleCI</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/circleci/update-node-modules-in-cci</guid>
+    <title>Update Node Modules in CircleCI</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/circleci/update-node-modules-in-cci</link>
+    <description>Explains how to update node modules in CircleCI.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>CICD</category><category>CircleCI</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/circleci/workspace</guid>
+    <title>CircleCI Workspace</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/circleci/workspace</link>
+    <description>Explains the workspace in CircleCI.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>CICD</category><category>CircleCI</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/github_actions/caching</guid>
+    <title>Caching in GitHub Actions</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/github_actions/caching</link>
+    <description>Explains the caching in GitHub Actions.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>CICD</category><category>GitHub Actions</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/github_actions/deployment-status</guid>
+    <title>Deployment Status in GitHub Actions</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/github_actions/deployment-status</link>
+    <description>Explains the deployment status in GitHub Actions.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>CICD</category><category>GitHub Actions</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/EFS/EFS-intro</guid>
+    <title>EFS</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/EFS/EFS-intro</link>
+    <description>Explains the EFS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>EFS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/FSx/FSx-intro</guid>
+    <title>FSx</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/FSx/FSx-intro</link>
+    <description>Explains the FSx.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>FSx</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/WAF/sql-injection</guid>
+    <title>SQL Injection</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/WAF/sql-injection</link>
+    <description>Explains the SQL injection.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>WAF</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/api-endpoint-type</guid>
+    <title>API Endpoint Type</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/api-endpoint-type</link>
+    <description>Explains the different types of API endpoints in API Gateway.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>API Gateway</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/domain-name</guid>
+    <title>Domain Name in API Gateway</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/domain-name</link>
+    <description>Explains the domain name in API Gateway.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>API Gateway</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/header</guid>
+    <title>Forward Original Host from the Original Request</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/header</link>
+    <description>Explains how to forward the original host from the original request in API Gateway.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>API Gateway</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/http-api</guid>
+    <title>HTTP API in API Gateway</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/http-api</link>
+    <description>Explains the HTTP API in API Gateway.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>API Gateway</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/payload-limitation</guid>
+    <title>Payload Limitation in API Gateway</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/payload-limitation</link>
+    <description>Explains the payload limitation in API Gateway.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>API Gateway</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/redirect-http-to-https</guid>
+    <title>Redirect HTTP to HTTPS in API Gateway</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/redirect-http-to-https</link>
+    <description>Explains how to redirect HTTP to HTTPS in API Gateway.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>API Gateway</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/vpc-links</guid>
+    <title>VPC Links in API Gateway</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/vpc-links</link>
+    <description>Explains the VPC links in API Gateway.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>API Gateway</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/cloudfront/cloudfront-intro</guid>
+    <title>CloudFront Introduction</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/cloudfront/cloudfront-intro</link>
+    <description>Explains the CloudFront.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>CloudFront</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/cloudfront/features</guid>
+    <title>CloudFront Features</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/cloudfront/features</link>
+    <description>Explains the features of CloudFront.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>CloudFront</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/cloudfront/response-header</guid>
+    <title>Response Header in CloudFront</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/cloudfront/response-header</link>
+    <description>Explains how to add the `X-Robots-Tag: noindex, nofollow` header to your website hosted on **S3 + CloudFront**.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>CloudFront</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/cloudfront/ssl_support_method</guid>
+    <title>SSL Support Method in CloudFront</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/cloudfront/ssl_support_method</link>
+    <description>Explains the different types of SSL support methods in CloudFront.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>CloudFront</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/capacity-groups</guid>
+    <title>Capacity Groups in ECS</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/capacity-groups</link>
+    <description>Explains the capacity groups in ECS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>ECS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/ec2_group</guid>
+    <title>ECS - EC2 Architecture</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/ec2_group</link>
+    <description>Explains the ECS - EC2 architecture.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>ECS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/ecs</guid>
+    <title>Exploring Ordered Placement Strategies in Container Orchestration</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/ecs</link>
+    <description>Exploring ordered placement strategies in container orchestration.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>ECS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/fargate</guid>
+    <title>ECS - Fargate Architecture</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/fargate</link>
+    <description>Explains the ECS - Fargate architecture.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>ECS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/how-to-deploy-stateful-application</guid>
+    <title>How to deploy stateful application in ECS?</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/how-to-deploy-stateful-application</link>
+    <description>Explains how to deploy stateful application in ECS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>ECS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/launch_template</guid>
+    <title>Launch Template in ECS</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/launch_template</link>
+    <description>Explains the launch template in ECS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>ECS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/network_modes</guid>
+    <title>Network Modes in ECS</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/network_modes</link>
+    <description>Explains the different network modes available in ECS and task-level network settings.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>ECS</category><category>networking</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/sdk</guid>
+    <title>ECS Execute Command</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/sdk</link>
+    <description>Shows how to execute commands in ECS containers using AWS CLI.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>ECS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/EKS-intro</guid>
+    <title>EKS</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/EKS-intro</link>
+    <description>Explains the EKS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>EKS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/cluster</guid>
+    <title>EKS Cluster</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/cluster</link>
+    <description>Explains the EKS cluster.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>EKS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/deployment</guid>
+    <title>EKS Deployment</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/deployment</link>
+    <description>Explains the EKS deployment.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>EKS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/pod</guid>
+    <title>EKS Pod</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/pod</link>
+    <description>Explains the EKS pod.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>EKS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/podTemplate</guid>
+    <title>EKS PodTemplate</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/podTemplate</link>
+    <description>Explains the EKS pod template.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>EKS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/replicaSets</guid>
+    <title>EKS ReplicaSets</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/replicaSets</link>
+    <description>Explains the EKS replica sets.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>EKS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/statefulSets</guid>
+    <title>EKS StatefulSets</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/statefulSets</link>
+    <description>Explains the EKS stateful sets.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>EKS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/iam/all-actions-resources-conditions</guid>
+    <title>All Actions, Resources, and Conditions</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/iam/all-actions-resources-conditions</link>
+    <description>Lists all actions, resources, and conditions in AWS IAM.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>IAM</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/iam/definition</guid>
+    <title>IAM</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/iam/definition</link>
+    <description>Explains the IAM.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>IAM</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/iam/iam-policy</guid>
+    <title>IAM Policy</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/iam/iam-policy</link>
+    <description>Explains the IAM policy.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>IAM</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/kms/key-rotation</guid>
+    <title>Key Rotation in KMS</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/kms/key-rotation</link>
+    <description>Explains the key rotation in KMS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>KMS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/lambda/basic</guid>
+    <title>Lambda</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/lambda/basic</link>
+    <description>Explains the Lambda.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>Lambda</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/lambda/custom_domain</guid>
+    <title>Custom Domain for Lambda</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/lambda/custom_domain</link>
+    <description>Explains how to deploy a custom domain for the auto-generated Lambda invoke URL.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>Lambda</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/lambda/layer</guid>
+    <title>Lambda Layer</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/lambda/layer</link>
+    <description>Explains the Lambda layer.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>Lambda</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/load-balancer/application-load-balancer</guid>
+    <title>Application Load Balancer</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/load-balancer/application-load-balancer</link>
+    <description>Explains the Application Load Balancer.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>load-balancer</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/load-balancer/port</guid>
+    <title>Load Balancer Port</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/load-balancer/port</link>
+    <description>Explains the load balancer port.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>load-balancer</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/load-balancer/sticky-session</guid>
+    <title>Sticky Session</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/load-balancer/sticky-session</link>
+    <description>Explains the sticky session.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>load-balancer</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/route53/record-types</guid>
+    <title>Route 53 Record Types</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/route53/record-types</link>
+    <description>Explains the Route 53 record types.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>Route 53</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/route53/routing-policy-types</guid>
+    <title>Routing Policy Types</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/route53/routing-policy-types</link>
+    <description>Explains the different routing policy types in AWS Route 53.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>Route 53</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/route53/subdomain_delegation</guid>
+    <title>Subdomain Delegation</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/route53/subdomain_delegation</link>
+    <description>Explains how to delegate a subdomain to another AWS account in AWS Route53.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>Route 53</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/s3/bucket</guid>
+    <title>S3 Bucket</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/s3/bucket</link>
+    <description>Explains the S3 bucket.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>S3</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/s3_glacier/s3-glacier-intro</guid>
+    <title>S3 Glacier</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/s3_glacier/s3-glacier-intro</link>
+    <description>Explains the S3 Glacier.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>S3 Glacier</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/secret_manager/secret-manager-intro</guid>
+    <title>Secret Manager</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/secret_manager/secret-manager-intro</link>
+    <description>Explains the Secret Manager.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>Secret Manager</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ssm/ssm-agent</guid>
+    <title>SSM Agent</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ssm/ssm-agent</link>
+    <description>Explains the SSM Agent.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>SSM</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/storage-gateway/storage-gateway-intro</guid>
+    <title>Storage Gateway</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/storage-gateway/storage-gateway-intro</link>
+    <description>Explains the Storage Gateway.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>Storage Gateway</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/eni</guid>
+    <title>Elastic Network Interface</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/eni</link>
+    <description>Explains the Elastic Network Interface.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>VPC</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/gateway</guid>
+    <title>Gateway</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/gateway</link>
+    <description>Explains the gateway.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>VPC</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/route-table</guid>
+    <title>Route Table</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/route-table</link>
+    <description>Explains the route table.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>VPC</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/vpc-endpoint</guid>
+    <title>VPC Endpoint</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/vpc-endpoint</link>
+    <description>Explains the VPC endpoint.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>VPC</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/vpc-peering</guid>
+    <title>VPC Peering</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/vpc-peering</link>
+    <description>Explains the VPC peering.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>VPC</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/vpc-question</guid>
+    <title>VPC Question</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/vpc-question</link>
+    <description>Explains the VPC question.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>VPC</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/configuration</guid>
+    <title>Configuration</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/configuration</link>
+    <description>Explains the configuration of Docker.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>containerization</category><category>docker</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/docker-engine</guid>
+    <title>Docker Engine</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/docker-engine</link>
+    <description>Explains the Docker engine.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>containerization</category><category>docker</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/dockershim</guid>
+    <title>Dockershim</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/dockershim</link>
+    <description>Explains the dockershim.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>containerization</category><category>docker</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/entrypoint_and_command</guid>
+    <title>Entrypoint and Command</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/entrypoint_and_command</link>
+    <description>Explains the entrypoint and command in Docker.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>containerization</category><category>docker</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/kubernetes/containerd</guid>
+    <title>Containerd</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/kubernetes/containerd</link>
+    <description>Explains the containerd.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>containerization</category><category>kubernetes</category><category>containerd</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/kubernetes/kubelet</guid>
+    <title>Kubelet</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/kubernetes/kubelet</link>
+    <description>Explains the kubelet.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>containerization</category><category>kubernetes</category><category>kubelet</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/kubernetes/kubernetes-intro</guid>
+    <title>Kubernetes Introduction</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/kubernetes/kubernetes-intro</link>
+    <description>Introduction to Kubernetes.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>orchestration</category><category>kubernetes</category>
+  </item>
+
+    </channel>
+  </rss>
