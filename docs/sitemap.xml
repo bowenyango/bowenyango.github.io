@@ -1,897 +1,451 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://example.org/docs/data-store-and-management/caching/</loc>
-  </url><url>
-    <loc>https://example.org/docs/block-chain/</loc>
-  </url><url>
-    <loc>https://example.org/docs/book-reading/</loc>
-  </url><url>
-    <loc>https://example.org/docs/book-reading/system-design-alex-xu/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/api-gateway/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/api-gateway/api-endpoint-type/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/api-gateway/domain-name/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/api-gateway/header/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/api-gateway/http-api/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/api-gateway/payload-limitation/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/api-gateway/redirect-http-to-https/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/api-gateway/vpc-links/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/cloudfront/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/cloudfront/features/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/cloudfront/response-header/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/cloudfront/ssl_support_method/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/cloudwatch/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/capacity-groups/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/ec2_group/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/ecs/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/fargate/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/how-to-deploy-stateful-application/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/launch_template/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/network_modes/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/ecs/sdk/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/efs/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/eks/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/eks/cluster/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/eks/deployment/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/eks/pod/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/eks/podtemplate/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/eks/replicasets/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/eks/statefulsets/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/fsx/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/iam/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/iam/all-actions-resources-conditions/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/iam/definition/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/iam/iam-policy/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/kms/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/kms/key-rotation/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/lambda/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/lambda/basic/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/lambda/custom_domain/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/lambda/layer/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/load-balancer/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/load-balancer/application-load-balancer/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/load-balancer/port/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/load-balancer/sticky-session/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/opensearch/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/route53/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/route53/record-types/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/route53/routing-policy-types/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/route53/subdomain_delegation/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/s3/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/s3/bucket/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/s3_glacier/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/secret_manager/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/ssm/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/ssm/ssm-agent/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/storage-gateway/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/vpc/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/vpc/eni/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/vpc/gateway/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/vpc/route-table/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/vpc/vpc-endpoint/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/vpc/vpc-peering/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/waf/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/aws/waf/sql-injection/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/cicd/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/cicd/circleci/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/cicd/circleci/avoid-infinite-loop/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/cicd/circleci/circleci/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/cicd/circleci/secret-masking/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/cicd/circleci/workspace/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/cicd/github_actions/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/cicd/github_actions/caching/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/cicd/github_actions/deployment-status/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/config-management/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/config-management/ansible/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/config-management/cloud-init/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/containerization-and-orchestration/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/configuration/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/docker-engine/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/dockershim/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/entrypoint_and_command/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/containerization-and-orchestration/kubernetes/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/containerization-and-orchestration/kubernetes/containerd/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/containerization-and-orchestration/kubernetes/kubelet/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/infra-as-code/</loc>
-  </url><url>
-    <loc>https://example.org/docs/cloud-computing-and-infrastructure/infra-as-code/terraform/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/caching-algorithm/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/caching-algorithm/arc/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/caching-algorithm/fifo/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/caching-algorithm/lfu/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/caching-algorithm/lru-k/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/caching-algorithm/lru/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/caching-algorithm/mru/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/caching-strategies/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/caching-strategies/caching-strategies/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/redis/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/redis/cluster-and-sentinel/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/redis/data-type/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/redis/modules/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/redis/performance/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/redis/persistence/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/redis/security/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/redis/source-code/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/redis/stream-pub-sub/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/types-of-caching/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/types-of-caching/application-caching/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/types-of-caching/broswer-caching/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/types-of-caching/cdn/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/types-of-caching/cpu-caching/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/types-of-caching/disk-caching/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/caching/types-of-caching/ram-caching/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/database-design-and-modeling/entity-relationship-diagrams/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/database-design-and-modeling/schema-design-principles/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/database-proxy-and-middleware/connection-pool/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/database-proxy-and-middleware/database-proxy/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/database-proxy-and-middleware/query-routing/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/graph/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/nosql/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/nosql/cassandra/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/nosql/data-modeling/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/nosql/data-modeling/indexing/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/nosql/data-modeling/partitioning/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/nosql/data-modeling/sharding/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/nosql/dynamodb/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/nosql/mongodb/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/object/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/object/s3/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/orm/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/relational-databases/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/relational-databases/advanced-sql-query/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/relational-databases/data-modeling/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/relational-databases/data-modeling/indexing/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/relational-databases/data-modeling/partitioning/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/relational-databases/data-modeling/sharding/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/relational-databases/database-normalization/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/relational-databases/postgres/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/time-series/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/time-series/influxdb/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/transactions-and-concurrency/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/transactions-and-concurrency/acid/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/transactions-and-concurrency/concurrency/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/transactions-and-concurrency/distributed-transactions/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/database/transactions-and-concurrency/isolation/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/files-systems/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/files-systems/basic-concepts/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/files-systems/basic-concepts/inode-and-metadata/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/files-systems/basic-concepts/journaling/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/files-systems/basic-concepts/permissions/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/files-systems/basic-concepts/posix-compliant/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/files-systems/distributed/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/files-systems/distributed/ceph/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/files-systems/distributed/hdfs/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/files-systems/network/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/files-systems/network/nfs/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/files-systems/traditional/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/files-systems/traditional/ext/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/files-systems/traditional/fat/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/files-systems/traditional/ntfs/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/message-middleware/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/message-middleware/kafka/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/message-middleware/kafka/ksql/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/message-middleware/kafka/producer-consumer-broker/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/message-middleware/kafka/topics-and-partition/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/message-middleware/kafka/zookeeper-coordination/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/message-middleware/rabbitmq/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/message-middleware/rabbitmq/binding-and-routing-key/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/message-middleware/rabbitmq/clustering-and-federation/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/message-middleware/rabbitmq/exchange/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/message-middleware/rabbitmq/priority-queue/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/message-middleware/rabbitmq/queue/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/message-middleware/rabbitmq/user_permission/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/message-middleware/rabbitmq/vhost/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/search-engine/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/search-engine/auto-completion/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/search-engine/auto-completion/trie-data-structures/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/search-engine/elasticsearch/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/search-engine/elasticsearch/aggregation/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/search-engine/elasticsearch/boolean-query/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/search-engine/elasticsearch/customized-preference-search/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/search-engine/elasticsearch/full-text-search/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/search-engine/elasticsearch/indexing-and-mapping/</loc>
-  </url><url>
-    <loc>https://example.org/docs/data-store-and-management/search-engine/elasticsearch/query-types/</loc>
-  </url><url>
-    <loc>https://example.org/docs/distributed-systems/</loc>
-  </url><url>
-    <loc>https://example.org/docs/distributed-systems/algorithms/</loc>
-  </url><url>
-    <loc>https://example.org/docs/distributed-systems/algorithms/mapreduce/</loc>
-  </url><url>
-    <loc>https://example.org/docs/distributed-systems/algorithms/paxos/</loc>
-  </url><url>
-    <loc>https://example.org/docs/distributed-systems/algorithms/raft/</loc>
-  </url><url>
-    <loc>https://example.org/docs/distributed-systems/algorithms/zab/</loc>
-  </url><url>
-    <loc>https://example.org/docs/distributed-systems/commit-protocols/three-phase-commit/</loc>
-  </url><url>
-    <loc>https://example.org/docs/distributed-systems/commit-protocols/two-phase-commit/</loc>
-  </url><url>
-    <loc>https://example.org/docs/distributed-systems/core-concepts/cap/</loc>
-  </url><url>
-    <loc>https://example.org/docs/distributed-systems/core-concepts/consistency/</loc>
-  </url><url>
-    <loc>https://example.org/docs/distributed-systems/core-concepts/fault-tolerance/</loc>
-  </url><url>
-    <loc>https://example.org/docs/distributed-systems/systems/</loc>
-  </url><url>
-    <loc>https://example.org/docs/distributed-systems/systems/hadoop/</loc>
-  </url><url>
-    <loc>https://example.org/docs/distributed-systems/systems/kafka/</loc>
-  </url><url>
-    <loc>https://example.org/docs/distributed-systems/systems/rabbitmq/</loc>
-  </url><url>
-    <loc>https://example.org/docs/distributed-systems/systems/spanner/</loc>
-  </url><url>
-    <loc>https://example.org/docs/distributed-systems/systems/spark/</loc>
-  </url><url>
-    <loc>https://example.org/docs/math/</loc>
-  </url><url>
-    <loc>https://example.org/docs/math/newtons-method-equation/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/algorithms/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/algorithms/advanced-algorithms/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/algorithms/advanced-algorithms/bloomfilter/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/algorithms/advanced-algorithms/cuckoo-filter/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/algorithms/dynamic-programming/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/algorithms/searching-algorithms/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/algorithms/sorting-algorithms/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/data-structures/arrays/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/data-structures/graphs/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/data-structures/hash-tables/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/data-structures/heaps/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/data-structures/linked-lists/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/data-structures/orderdict/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/data-structures/priority-queues/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/data-structures/queues/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/data-structures/stacks/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/data-structures/trees/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/design-patterns/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/design-patterns/behavioral-patterns/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/design-patterns/behavioral-patterns/observer/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/design-patterns/behavioral-patterns/strategy/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/design-patterns/creational-patterns/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/design-patterns/creational-patterns/factory/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/design-patterns/creational-patterns/singleton/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/design-patterns/structural-patterns/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/design-patterns/structural-patterns/adapter/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/design-patterns/structural-patterns/facade/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/programming-paradigms/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/programming-paradigms/functional-programming/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/programming-paradigms/object-oriented-programming/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/programming-paradigms/procedural-programming/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-concepts/programming-paradigms/reactive-programming/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-languages/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-languages/closure/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-languages/go/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-languages/go/channel/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-languages/go/common-issues/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-languages/go/common-issues/loop-variable-in-goroutine/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-languages/go/go-routine/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-languages/go/go/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-languages/go/reflect/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-languages/late-static-binding/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-thoughts/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-thoughts/api-database-synchronization/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-thoughts/data-synchronization/</loc>
-  </url><url>
-    <loc>https://example.org/docs/programming-basic/programming-thoughts/microservice/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/common-systems/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/common-systems/amazon/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/common-systems/paypal/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/common-systems/telegram/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/common-systems/twitch/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/common-systems/uber/1.requirement-clarification/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/common-systems/uber/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/common-systems/uber/outline/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/design-methodologies/1.requirement-gathering-and-clarification/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/design-methodologies/2.high-level-system-architecture/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/design-methodologies/3.component-design-and-interaction/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/design-methodologies/4.data-flow-and-storage-design/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/design-methodologies/5.scalability-and-load-balancing-strategies/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/design-methodologies/6.security-considerations/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/design-methodologies/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/design-patterns/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/design-patterns/circuit-breaker/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/design-patterns/command-query-responsibility-segregation/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/design-patterns/event-driven/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/design-patterns/microservices/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/design-patterns/saga-pattern/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/design-principles/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/design-principles/high-availability/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/design-principles/maintainability/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/design-principles/reliability/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/design-principles/scalability/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/design-principles/security-and-compliance/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/ideas/</loc>
-  </url><url>
-    <loc>https://example.org/docs/system-design/ideas/fantastic_four/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/advanced-concepts/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/advanced-concepts/forward-routing/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/advanced-concepts/load-balancing/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/advanced-concepts/nat/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/advanced-concepts/sliding_window/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/advanced-concepts/vpn/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/advanced-concepts/webrtc/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/attacks/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/attacks/ddos/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/attacks/mitm/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/basic-concepts/0.0.0.0-127.0.0.1/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/basic-concepts/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/basic-concepts/datagram/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/basic-concepts/hardware_components/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/basic-concepts/hostname_domainname/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/basic-concepts/ip/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/basic-concepts/socket/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/basic-concepts/socks/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/basic-concepts/tcp/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/basic-concepts/udp/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/basic-concepts/x-forward/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/protocols/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/protocols/definition/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/protocols/dns-dhcp/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/protocols/ftp-sftp/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/protocols/http-https/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/security/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/security/authentication-protocols/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/networking/security/encryption/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/operating-systems/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/operating-systems/basic-concepts/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/operating-systems/basic-concepts/clock-tick/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/operating-systems/basic-concepts/coroutine/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/operating-systems/basic-concepts/io-management/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/operating-systems/basic-concepts/memory-management/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/operating-systems/basic-concepts/process/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/operating-systems/basic-concepts/thread/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/operating-systems/concurrent-programming/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/operating-systems/concurrent-programming/deadlocks-and-starvation/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/operating-systems/concurrent-programming/monitors/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/operating-systems/concurrent-programming/mutexes/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/operating-systems/concurrent-programming/race-condition/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/operating-systems/concurrent-programming/semaphores/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/operating-systems/concurrent-programming/synchronization/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/operating-systems/questions/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/operating-systems/questions/use-macro/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/operating-systems/system-calls/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/operating-systems/system-calls/common-system-calls-in-unix/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/operating-systems/virtualization/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/operating-systems/virtualization/containers-vs-virtual-machines/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/operating-systems/virtualization/emulation-and-paravirtualization/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/operating-systems/virtualization/hypervisors/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/cron-jobs/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/curl/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/netstat/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/ping/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/traceroute/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/package-management-tools/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/package-management-tools/apt/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/package-management-tools/brew/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/package-management-tools/yum/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/commands/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/ln/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/ssh/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/terminal-multiplixer-tools/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/terminal-multiplixer-tools/screen/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/terminal-multiplixer-tools/tmux/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/awk/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/grep/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/jq/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/sed/</loc>
-  </url><url>
-    <loc>https://example.org/docs/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/yq/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/backend-techs/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/backend-techs/api-architectural-styles/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/backend-techs/api-architectural-styles/graphql/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/backend-techs/api-architectural-styles/grpc/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/backend-techs/api-architectural-styles/restful/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/backend-techs/api-architectural-styles/websocket/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/backend-techs/frameworks/gin/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/backend-techs/frameworks/spring-boot/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/backend-techs/nginx/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/backend-techs/nginx/config/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/backend-techs/nginx/errors/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/backend-techs/nginx/file-upload/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/backend-techs/nginx/reverse-proxy-and-load-balancing/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/backend-techs/web-security/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/backend-techs/web-security/captcha-recaptcha/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/backend-techs/web-security/command-injection/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/backend-techs/web-security/csrf/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/backend-techs/web-security/sql-injection/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/backend-techs/web-security/ssl-tls/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/backend-techs/web-security/xss/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/data-transmission/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/data-transmission/file-upload-limitation/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/authentication-and-authorization/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/authentication-and-authorization/callback-url/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/authentication-and-authorization/cookie/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/authentication-and-authorization/jwt/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/authentication-and-authorization/multi-factor-authentication/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/authentication-and-authorization/oauth-and-openid/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/authentication-and-authorization/oauth-oidc/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/authentication-and-authorization/session/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/browser-storage/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/browser-storage/caching/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/browser-storage/localstorage/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/browser-storage/sessionstorage/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/css/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/css/responsive-design/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/css/selectors-and-specificity/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/html/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/html/canvas-and-svg/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/html/forms-and-input-validation/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/html/html/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/html/semantic-html/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/javascript/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/javascript/ajax-and-fetch-api/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/javascript/asynchronous-programming/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/javascript/dom-manipulation/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/javascript/es6-features/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/javascript/event-handling/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/node.js/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/node.js/fastify/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/node.js/issues/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/package-management/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/package-management/npm/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/package-management/yarn/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/react/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/react/components-and-props/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/react/hooks/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/react/routing-with-react-router/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/react/state-and-lifecycle/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/react/state-management-with-redux/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/security/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/security/content-security-policy/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/security/cors/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/typescript/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/typescript/decorators/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/typescript/interfaces-and-generics/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/frontend-techs/vue/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/header/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/header/forwarded/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/high-throughput/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/high-throughput/connection-pool/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/testing/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/testing/env-to-end-testing/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/testing/integration-testing/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/testing/playwright/</loc>
-  </url><url>
-    <loc>https://example.org/docs/web-development/testing/unit-testing/</loc>
-  </url><url>
-    <loc>https://example.org/categories/</loc>
-  </url><url>
-    <loc>https://example.org/docs/</loc>
-  </url><url>
-    <loc>https://example.org/</loc>
-  </url><url>
-    <loc>https://example.org/tags/</loc>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://codewisdom.io/</loc>
+<lastmod>2024-11-12</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog</loc>
+<lastmod>2024-11-12</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/projects</loc>
+<lastmod>2024-11-12</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/tags</loc>
+<lastmod>2024-11-12</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/book-reading/system-design-alex-xu</loc>
+<lastmod>2024-08-15T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/distributed-systems/algorithms/mapreduce</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/distributed-systems/systems/GFS</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/programming-basic/programming-languages/late-static-binding</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/programming-basic/programming-thoughts/api-database-synchronization</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/programming-basic/programming-thoughts/microservice</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/web-development/data-transmission/file-upload-limitation</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/circleci/CircleCI</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/circleci/avoid-infinite-loop</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/circleci/update-node-modules-in-cci</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/circleci/workspace</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/github_actions/caching</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/github_actions/deployment-status</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/EFS/EFS-intro</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/FSx/FSx-intro</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/WAF/sql-injection</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/domain-name</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/header</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/payload-limitation</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/redirect-http-to-https</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/cloudfront/cloudfront-intro</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/cloudfront/features</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/cloudfront/response-header</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/capacity-groups</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/ec2_group</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/ecs</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/fargate</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/how-to-deploy-stateful-application</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/network_modes</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/EKS-intro</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/cluster</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/deployment</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/pod</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/podTemplate</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/replicaSets</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/statefulSets</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/iam/definition</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/iam/iam-policy</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/kms/key-rotation</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/lambda/basic</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/lambda/custom_domain</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/lambda/layer</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/load-balancer/application-load-balancer</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/load-balancer/port</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/load-balancer/sticky-session</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/route53/record-types</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/route53/routing-policy-types</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/route53/subdomain_delegation</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/s3/bucket</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/s3_glacier/s3-glacier-intro</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/secret_manager/secret-manager-intro</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ssm/ssm-agent</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/storage-gateway/storage-gateway-intro</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/eni</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/gateway</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/route-table</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/vpc-endpoint</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/vpc-peering</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/vpc-question</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/configuration</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/entrypoint_and_command</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/ARC</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/LRU</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/MRU</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/boolean-query</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/customized-preference-search</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/full-text-search</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/query-types</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/programming-basic/programming-languages/go/go-basic</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/programming-basic/programming-languages/go/mutex</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/programming-basic/programming-languages/go/race-detector</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/systems-and-networking/networking/advanced-concepts/sliding_window</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/systems-and-networking/networking/advanced-concepts/webRTC</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/0.0.0.0-127.0.0.1</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/datagram</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/hostname_domainname</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/ip</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/socket</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/tcp</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/udp</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/x-forward</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/systems-and-networking/networking/protocols/definition</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/clock-tick</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/coroutine</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/io-management</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/systems-and-networking/operating-systems/questions/use-macro</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/curl</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/ping</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/commands</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/ln</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/ssh</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/grep</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/web-development/backend-techs/nginx/config</loc>
+<lastmod>2023-03-08T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/web-development/backend-techs/nginx/errors</loc>
+<lastmod>2023-03-09T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/web-development/backend-techs/nginx/file-upload</loc>
+<lastmod>2023-03-10T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/web-development/backend-techs/web-security/CSRF</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/web-development/backend-techs/web-security/SSL-TLS</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/JWT</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/callback-url</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/cookie</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/session</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/web-development/frontend-techs/security/CORS</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/programming-basic/programming-concepts/algorithms/advanced-algorithms/bloomfilter</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/blog/programming-basic/programming-languages/go/common-issues/loop-variable-in-goroutine</loc>
+<lastmod>2024-10-31T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/projects/nft-market</loc>
+<lastmod>2022-11-03T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/projects/paxos</loc>
+<lastmod>2024-11-07T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/projects/twitter-analysis</loc>
+<lastmod>2022-06-06T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://codewisdom.io/projects/yana</loc>
+<lastmod>2021-05-30T00:00:00.000Z</lastmod>
+</url>
 </urlset>

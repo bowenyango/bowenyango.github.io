@@ -1,0 +1,1054 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>CodeWisdom</title>
+      <link>https://codewisdom.io/blog</link>
+      <description>A blog sharing insights on computer science through practical projects and thoughtful exploration.</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Bowen Y)</managingEditor>
+      <webMaster>undefined (Bowen Y)</webMaster>
+      <lastBuildDate>Thu, 31 Oct 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://codewisdom.io/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://codewisdom.io/blog/distributed-systems/algorithms/mapreduce</guid>
+    <title>MapReduce</title>
+    <link>https://codewisdom.io/blog/distributed-systems/algorithms/mapreduce</link>
+    <description>Explores the MapReduce algorithm.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>distributed-systems</category><category>algorithms</category><category>mapreduce</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/distributed-systems/systems/GFS</guid>
+    <title>GFS</title>
+    <link>https://codewisdom.io/blog/distributed-systems/systems/GFS</link>
+    <description>Explores the GFS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>distributed-systems</category><category>systems</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-languages/late-static-binding</guid>
+    <title>Late Static Binding</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-languages/late-static-binding</link>
+    <description>Explores the late static binding.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>programming-languages</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-thoughts/api-database-synchronization</guid>
+    <title>Service Code and Database Schema Synchronization in Production Environment</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-thoughts/api-database-synchronization</link>
+    <description>How to synchronize service code and database schema in production environment.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>programming-thoughts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-thoughts/microservice</guid>
+    <title>Microservice</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-thoughts/microservice</link>
+    <description>Explores the microservice architecture.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>programming-thoughts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/data-transmission/file-upload-limitation</guid>
+    <title>File Upload Limitation</title>
+    <link>https://codewisdom.io/blog/web-development/data-transmission/file-upload-limitation</link>
+    <description>Explore the file upload limitation.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>data-transmission</category><category>file-upload</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/circleci/CircleCI</guid>
+    <title>CircleCI</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/circleci/CircleCI</link>
+    <description>Explains the cache in CircleCI.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>CICD</category><category>CircleCI</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/circleci/avoid-infinite-loop</guid>
+    <title>Avoid Infinite Loop</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/circleci/avoid-infinite-loop</link>
+    <description>Explains how to avoid infinite loop in CircleCI.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>CICD</category><category>CircleCI</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/circleci/update-node-modules-in-cci</guid>
+    <title>Update Node Modules in CircleCI</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/circleci/update-node-modules-in-cci</link>
+    <description>Explains how to update node modules in CircleCI.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>CICD</category><category>CircleCI</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/circleci/workspace</guid>
+    <title>CircleCI Workspace</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/circleci/workspace</link>
+    <description>Explains the workspace in CircleCI.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>CICD</category><category>CircleCI</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/github_actions/caching</guid>
+    <title>Caching in GitHub Actions</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/github_actions/caching</link>
+    <description>Explains the caching in GitHub Actions.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>CICD</category><category>GitHub Actions</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/github_actions/deployment-status</guid>
+    <title>Deployment Status in GitHub Actions</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/CICD/github_actions/deployment-status</link>
+    <description>Explains the deployment status in GitHub Actions.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>CICD</category><category>GitHub Actions</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/EFS/EFS-intro</guid>
+    <title>EFS</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/EFS/EFS-intro</link>
+    <description>Explains the EFS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>EFS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/FSx/FSx-intro</guid>
+    <title>FSx</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/FSx/FSx-intro</link>
+    <description>Explains the FSx.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>FSx</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/WAF/sql-injection</guid>
+    <title>SQL Injection</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/WAF/sql-injection</link>
+    <description>Explains the SQL injection.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>WAF</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/domain-name</guid>
+    <title>Domain Name in API Gateway</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/domain-name</link>
+    <description>Explains the domain name in API Gateway.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>API Gateway</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/header</guid>
+    <title>Forward Original Host from the Original Request</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/header</link>
+    <description>Explains how to forward the original host from the original request in API Gateway.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>API Gateway</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/payload-limitation</guid>
+    <title>Payload Limitation in API Gateway</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/payload-limitation</link>
+    <description>Explains the payload limitation in API Gateway.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>API Gateway</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/redirect-http-to-https</guid>
+    <title>Redirect HTTP to HTTPS in API Gateway</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/api-gateway/redirect-http-to-https</link>
+    <description>Explains how to redirect HTTP to HTTPS in API Gateway.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>API Gateway</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/cloudfront/cloudfront-intro</guid>
+    <title>CloudFront Introduction</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/cloudfront/cloudfront-intro</link>
+    <description>Explains the CloudFront.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>CloudFront</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/cloudfront/features</guid>
+    <title>CloudFront Features</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/cloudfront/features</link>
+    <description>Explains the features of CloudFront.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>CloudFront</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/cloudfront/response-header</guid>
+    <title>Response Header in CloudFront</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/cloudfront/response-header</link>
+    <description>Explains how to add the `X-Robots-Tag: noindex, nofollow` header to your website hosted on **S3 + CloudFront**.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>CloudFront</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/capacity-groups</guid>
+    <title>Capacity Groups in ECS</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/capacity-groups</link>
+    <description>Explains the capacity groups in ECS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>ECS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/ec2_group</guid>
+    <title>ECS - EC2 Architecture</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/ec2_group</link>
+    <description>Explains the ECS - EC2 architecture.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>ECS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/ecs</guid>
+    <title>Exploring Ordered Placement Strategies in Container Orchestration</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/ecs</link>
+    <description>Exploring ordered placement strategies in container orchestration.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>ECS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/fargate</guid>
+    <title>ECS - Fargate Architecture</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/fargate</link>
+    <description>Explains the ECS - Fargate architecture.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>ECS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/how-to-deploy-stateful-application</guid>
+    <title>How to deploy stateful application in ECS?</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/how-to-deploy-stateful-application</link>
+    <description>Explains how to deploy stateful application in ECS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>ECS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/network_modes</guid>
+    <title>Network Modes in ECS</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ecs/network_modes</link>
+    <description>Explains the different network modes available in ECS and task-level network settings.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>ECS</category><category>networking</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/EKS-intro</guid>
+    <title>EKS</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/EKS-intro</link>
+    <description>Explains the EKS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>EKS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/cluster</guid>
+    <title>EKS Cluster</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/cluster</link>
+    <description>Explains the EKS cluster.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>EKS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/deployment</guid>
+    <title>EKS Deployment</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/deployment</link>
+    <description>Explains the EKS deployment.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>EKS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/pod</guid>
+    <title>EKS Pod</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/pod</link>
+    <description>Explains the EKS pod.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>EKS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/podTemplate</guid>
+    <title>EKS PodTemplate</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/podTemplate</link>
+    <description>Explains the EKS pod template.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>EKS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/replicaSets</guid>
+    <title>EKS ReplicaSets</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/replicaSets</link>
+    <description>Explains the EKS replica sets.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>EKS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/statefulSets</guid>
+    <title>EKS StatefulSets</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/eks/statefulSets</link>
+    <description>Explains the EKS stateful sets.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>EKS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/iam/definition</guid>
+    <title>IAM</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/iam/definition</link>
+    <description>Explains the IAM.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>IAM</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/iam/iam-policy</guid>
+    <title>IAM Policy</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/iam/iam-policy</link>
+    <description>Explains the IAM policy.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>IAM</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/kms/key-rotation</guid>
+    <title>Key Rotation in KMS</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/kms/key-rotation</link>
+    <description>Explains the key rotation in KMS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>KMS</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/lambda/basic</guid>
+    <title>Lambda</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/lambda/basic</link>
+    <description>Explains the Lambda.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>Lambda</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/lambda/custom_domain</guid>
+    <title>Custom Domain for Lambda</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/lambda/custom_domain</link>
+    <description>Explains how to deploy a custom domain for the auto-generated Lambda invoke URL.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>Lambda</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/lambda/layer</guid>
+    <title>Lambda Layer</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/lambda/layer</link>
+    <description>Explains the Lambda layer.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>Lambda</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/load-balancer/application-load-balancer</guid>
+    <title>Application Load Balancer</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/load-balancer/application-load-balancer</link>
+    <description>Explains the Application Load Balancer.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>load-balancer</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/load-balancer/port</guid>
+    <title>Load Balancer Port</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/load-balancer/port</link>
+    <description>Explains the load balancer port.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>load-balancer</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/load-balancer/sticky-session</guid>
+    <title>Sticky Session</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/load-balancer/sticky-session</link>
+    <description>Explains the sticky session.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>load-balancer</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/route53/record-types</guid>
+    <title>Route 53 Record Types</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/route53/record-types</link>
+    <description>Explains the Route 53 record types.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>Route 53</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/route53/routing-policy-types</guid>
+    <title>Routing Policy Types</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/route53/routing-policy-types</link>
+    <description>Explains the different routing policy types in AWS Route 53.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>Route 53</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/route53/subdomain_delegation</guid>
+    <title>Subdomain Delegation</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/route53/subdomain_delegation</link>
+    <description>Explains how to delegate a subdomain to another AWS account in AWS Route53.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>Route 53</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/s3/bucket</guid>
+    <title>S3 Bucket</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/s3/bucket</link>
+    <description>Explains the S3 bucket.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>S3</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/s3_glacier/s3-glacier-intro</guid>
+    <title>S3 Glacier</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/s3_glacier/s3-glacier-intro</link>
+    <description>Explains the S3 Glacier.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>S3 Glacier</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/secret_manager/secret-manager-intro</guid>
+    <title>Secret Manager</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/secret_manager/secret-manager-intro</link>
+    <description>Explains the Secret Manager.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>Secret Manager</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ssm/ssm-agent</guid>
+    <title>SSM Agent</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/ssm/ssm-agent</link>
+    <description>Explains the SSM Agent.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>SSM</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/storage-gateway/storage-gateway-intro</guid>
+    <title>Storage Gateway</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/storage-gateway/storage-gateway-intro</link>
+    <description>Explains the Storage Gateway.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>Storage Gateway</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/eni</guid>
+    <title>Elastic Network Interface</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/eni</link>
+    <description>Explains the Elastic Network Interface.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>VPC</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/gateway</guid>
+    <title>Gateway</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/gateway</link>
+    <description>Explains the gateway.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>VPC</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/route-table</guid>
+    <title>Route Table</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/route-table</link>
+    <description>Explains the route table.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>VPC</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/vpc-endpoint</guid>
+    <title>VPC Endpoint</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/vpc-endpoint</link>
+    <description>Explains the VPC endpoint.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>VPC</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/vpc-peering</guid>
+    <title>VPC Peering</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/vpc-peering</link>
+    <description>Explains the VPC peering.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>VPC</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/vpc-question</guid>
+    <title>VPC Question</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/AWS/vpc/vpc-question</link>
+    <description>Explains the VPC question.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>AWS</category><category>VPC</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/configuration</guid>
+    <title>Configuration</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/configuration</link>
+    <description>Explains the configuration of Docker.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>containerization</category><category>docker</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/entrypoint_and_command</guid>
+    <title>Entrypoint and Command</title>
+    <link>https://codewisdom.io/blog/cloud-computing-and-infrastructure/containerization-and-orchestration/docker/entrypoint_and_command</link>
+    <description>Explains the entrypoint and command in Docker.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>cloud-computing</category><category>infrastructure</category><category>containerization</category><category>docker</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/ARC</guid>
+    <title>ARC</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/ARC</link>
+    <description>Explains the ARC algorithm.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>caching-algorithm</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/LRU</guid>
+    <title>LRU</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/LRU</link>
+    <description>Explains the LRU algorithm.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>caching-algorithm</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/MRU</guid>
+    <title>MRU</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/caching/caching-algorithm/MRU</link>
+    <description>Explains the MRU algorithm.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>caching</category><category>caching-algorithm</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/boolean-query</guid>
+    <title>Boolean Query in Elasticsearch</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/boolean-query</link>
+    <description>Explores the boolean query in Elasticsearch.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>search-engine</category><category>elasticsearch</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/customized-preference-search</guid>
+    <title>Customized Preference Search in Elasticsearch</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/customized-preference-search</link>
+    <description>Explores the customized preference search in Elasticsearch.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>search-engine</category><category>elasticsearch</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/full-text-search</guid>
+    <title>Full-Text Search in Elasticsearch</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/full-text-search</link>
+    <description>Explores the full-text search in Elasticsearch.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>search-engine</category><category>elasticsearch</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/query-types</guid>
+    <title>Query Types in Elasticsearch</title>
+    <link>https://codewisdom.io/blog/data-store-and-management/search-engine/elasticsearch/query-types</link>
+    <description>Explores the query types in Elasticsearch.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>data-store</category><category>search-engine</category><category>elasticsearch</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-languages/go/go-basic</guid>
+    <title>Go Basic</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-languages/go/go-basic</link>
+    <description>Explores the basic of Go.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>programming-languages</category><category>go</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-languages/go/mutex</guid>
+    <title>Mutex in Go</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-languages/go/mutex</link>
+    <description>Explores the mutex in Go.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>programming-languages</category><category>go</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-languages/go/race-detector</guid>
+    <title>Race Detector in Go</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-languages/go/race-detector</link>
+    <description>Explores the race detector in Go.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>programming-languages</category><category>go</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/advanced-concepts/sliding_window</guid>
+    <title>Sliding Window</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/advanced-concepts/sliding_window</link>
+    <description>Explores the concepts of sliding window.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>advanced-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/advanced-concepts/webRTC</guid>
+    <title>WebRTC</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/advanced-concepts/webRTC</link>
+    <description>Explores the concepts of WebRTC.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>advanced-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/0.0.0.0-127.0.0.1</guid>
+    <title>0.0.0.0 vs 127.0.0.1</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/0.0.0.0-127.0.0.1</link>
+    <description>Explores the difference between 0.0.0.0 and 127.0.0.1.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/datagram</guid>
+    <title>Datagram</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/datagram</link>
+    <description>Explores the concepts of datagram.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/hostname_domainname</guid>
+    <title>Hostname, Domain Name, and FQDN</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/hostname_domainname</link>
+    <description>Explores the difference between a hostname, a domain name, and an FQDN.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/ip</guid>
+    <title>IP</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/ip</link>
+    <description>Explores the concepts of IP.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/socket</guid>
+    <title>Socket</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/socket</link>
+    <description>Explores the concepts of socket.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/tcp</guid>
+    <title>TCP</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/tcp</link>
+    <description>Explores the concepts of TCP.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/udp</guid>
+    <title>UDP</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/udp</link>
+    <description>Explores the concepts of UDP.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/x-forward</guid>
+    <title>X-Forwarded-For</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/basic-concepts/x-forward</link>
+    <description>Explores the concepts of X-Forwarded-For.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/networking/protocols/definition</guid>
+    <title>Definition of a Protocol</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/networking/protocols/definition</link>
+    <description>Explores the concepts of protocols.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>networking</category><category>protocols</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/clock-tick</guid>
+    <title>Clock Tick at Operating System Level</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/clock-tick</link>
+    <description>Explores the concepts of clock tick at operating system level.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/coroutine</guid>
+    <title>Coroutine at Operating System Level</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/coroutine</link>
+    <description>Explores the concepts of coroutine at operating system level.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/io-management</guid>
+    <title>IO Management at Operating System Level</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/basic-concepts/io-management</link>
+    <description>Explores the concepts of IO management at operating system level.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>basic-concepts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/operating-systems/questions/use-macro</guid>
+    <title>Why do the Linux use macro over function?</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/operating-systems/questions/use-macro</link>
+    <description>Explores the reasons why the Linux use macro over function.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>operating-systems</category><category>questions</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/curl</guid>
+    <title>Curl</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/curl</link>
+    <description>Explore the usage of Curl.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>networking</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/ping</guid>
+    <title>Ping</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/networking-commands-and-tools/ping</link>
+    <description>Explore the usage of ping.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>networking</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/commands</guid>
+    <title>Shell Basic Commands</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/commands</link>
+    <description>Explore the usage of shell basic commands.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/ln</guid>
+    <title>Ln</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/ln</link>
+    <description>Explore the usage of ln command.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/ssh</guid>
+    <title>Ssh</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/shell-basic-commands/ssh</link>
+    <description>Explore the usage of ssh.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/grep</guid>
+    <title>Grep</title>
+    <link>https://codewisdom.io/blog/systems-and-networking/shell-and-commandline-tools/text-processing-commands-and-tools/grep</link>
+    <description>Explore the usage of grep.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>systems-and-networking</category><category>shell</category><category>text-processing</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/backend-techs/web-security/CSRF</guid>
+    <title>CSRF</title>
+    <link>https://codewisdom.io/blog/web-development/backend-techs/web-security/CSRF</link>
+    <description>Explore CSRF.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>backend-techs</category><category>web-security</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/backend-techs/web-security/SSL-TLS</guid>
+    <title>SSL/TLS</title>
+    <link>https://codewisdom.io/blog/web-development/backend-techs/web-security/SSL-TLS</link>
+    <description>Explore SSL/TLS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>backend-techs</category><category>web-security</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/JWT</guid>
+    <title>JWT</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/JWT</link>
+    <description>Explore JWT.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>authentication-and-authorization</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/callback-url</guid>
+    <title>Callback URL</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/callback-url</link>
+    <description>Explore the callback URL.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>authentication-and-authorization</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/cookie</guid>
+    <title>Cookie</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/cookie</link>
+    <description>Explore the cookie.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>authentication-and-authorization</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/session</guid>
+    <title>Session</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/authentication-and-authorization/session</link>
+    <description>Explore Session.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>authentication-and-authorization</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/frontend-techs/security/CORS</guid>
+    <title>CORS</title>
+    <link>https://codewisdom.io/blog/web-development/frontend-techs/security/CORS</link>
+    <description>Explore CORS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>frontend-techs</category><category>security</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/algorithms/advanced-algorithms/bloomfilter</guid>
+    <title>Bloom Filter</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/algorithms/advanced-algorithms/bloomfilter</link>
+    <description>Explores the Bloom filter.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>algorithms</category><category>filtering</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-languages/go/common-issues/loop-variable-in-goroutine</guid>
+    <title>Loop Variable Capturing Issue in Goroutines Closure</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-languages/go/common-issues/loop-variable-in-goroutine</link>
+    <description>Explores the loop variable capturing issue in goroutines closure.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>programming-languages</category><category>go</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/book-reading/system-design-alex-xu</guid>
+    <title>System Design Alex Xu</title>
+    <link>https://codewisdom.io/blog/book-reading/system-design-alex-xu</link>
+    <description>Notes from the book &quot;System Design Interview by Alex Xu&quot;.</description>
+    <pubDate>Thu, 15 Aug 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>book-reading</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/backend-techs/nginx/file-upload</guid>
+    <title>Nginx File Upload</title>
+    <link>https://codewisdom.io/blog/web-development/backend-techs/nginx/file-upload</link>
+    <description>Explains how Nginx processes file uploads and rejects large files.</description>
+    <pubDate>Fri, 10 Mar 2023 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>nginx</category><category>file-upload</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/backend-techs/nginx/errors</guid>
+    <title>Nginx Errors</title>
+    <link>https://codewisdom.io/blog/web-development/backend-techs/nginx/errors</link>
+    <description>Errors I encountered while setting up Nginx.</description>
+    <pubDate>Thu, 09 Mar 2023 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>nginx</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/backend-techs/nginx/config</guid>
+    <title>Nginx Config</title>
+    <link>https://codewisdom.io/blog/web-development/backend-techs/nginx/config</link>
+    <description>Explains Nginx configurations for setting default servers, handling protocol forwarding, and using regex in location blocks for optimized request handling.</description>
+    <pubDate>Wed, 08 Mar 2023 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>nginx</category>
+  </item>
+
+    </channel>
+  </rss>

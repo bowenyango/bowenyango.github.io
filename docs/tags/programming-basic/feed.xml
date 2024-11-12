@@ -1,0 +1,384 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>CodeWisdom</title>
+      <link>https://codewisdom.io/blog</link>
+      <description>A blog sharing insights on computer science through practical projects and thoughtful exploration.</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Bowen Y)</managingEditor>
+      <webMaster>undefined (Bowen Y)</webMaster>
+      <lastBuildDate>Thu, 31 Oct 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://codewisdom.io/tags/programming-basic/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-languages/closure</guid>
+    <title>Closure</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-languages/closure</link>
+    <description>Explores the closure.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>programming-languages</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-languages/late-static-binding</guid>
+    <title>Late Static Binding</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-languages/late-static-binding</link>
+    <description>Explores the late static binding.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>programming-languages</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-thoughts/api-database-synchronization</guid>
+    <title>Service Code and Database Schema Synchronization in Production Environment</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-thoughts/api-database-synchronization</link>
+    <description>How to synchronize service code and database schema in production environment.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>programming-thoughts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-thoughts/data-synchronization</guid>
+    <title>Data Synchronization</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-thoughts/data-synchronization</link>
+    <description>Explores the data synchronization.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>programming-thoughts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-thoughts/microservice</guid>
+    <title>Microservice</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-thoughts/microservice</link>
+    <description>Explores the microservice architecture.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>programming-thoughts</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/data-structures/arrays</guid>
+    <title>Arrays</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/data-structures/arrays</link>
+    <description>Explores the arrays.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>data-structures</category><category>array</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/data-structures/graphs</guid>
+    <title>Graphs</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/data-structures/graphs</link>
+    <description>Explores the graphs.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>data-structures</category><category>graph</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/data-structures/hash-tables</guid>
+    <title>Hash Tables</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/data-structures/hash-tables</link>
+    <description>Explores the hash tables.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>data-structures</category><category>hash-table</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/data-structures/heaps</guid>
+    <title>Heaps</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/data-structures/heaps</link>
+    <description>Explores the heaps.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>data-structures</category><category>heap</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/data-structures/linked-lists</guid>
+    <title>Linked Lists</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/data-structures/linked-lists</link>
+    <description>Explores the linked lists.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>data-structures</category><category>linked-list</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/data-structures/orderDict</guid>
+    <title>Order Dictionaries</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/data-structures/orderDict</link>
+    <description>Explores the order dictionaries.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>data-structures</category><category>order-dict</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/data-structures/priority-queues</guid>
+    <title>Priority Queues</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/data-structures/priority-queues</link>
+    <description>Explores the priority queues.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>data-structures</category><category>priority-queue</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/data-structures/queues</guid>
+    <title>Queues</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/data-structures/queues</link>
+    <description>Explores the queues.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>data-structures</category><category>queue</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/data-structures/stacks</guid>
+    <title>Stacks</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/data-structures/stacks</link>
+    <description>Explores the stacks.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>data-structures</category><category>stack</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/data-structures/trees</guid>
+    <title>Trees</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/data-structures/trees</link>
+    <description>Explores the trees.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>data-structures</category><category>tree</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/programming-paradigms/functional-programming</guid>
+    <title>Functional Programming</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/programming-paradigms/functional-programming</link>
+    <description>Explores the functional programming.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>programming-paradigms</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/programming-paradigms/object-oriented-programming</guid>
+    <title>Object-Oriented Programming</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/programming-paradigms/object-oriented-programming</link>
+    <description>Explores the object-oriented programming.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>programming-paradigms</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/programming-paradigms/procedural-programming</guid>
+    <title>Procedural Programming</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/programming-paradigms/procedural-programming</link>
+    <description>Explores the procedural programming.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>programming-paradigms</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/programming-paradigms/reactive-programming</guid>
+    <title>Reactive Programming</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/programming-paradigms/reactive-programming</link>
+    <description>Explores the reactive programming.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>programming-paradigms</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-languages/go/channel</guid>
+    <title>Channel in Go</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-languages/go/channel</link>
+    <description>Explores the channel in Go.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>programming-languages</category><category>go</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-languages/go/go-basic</guid>
+    <title>Go Basic</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-languages/go/go-basic</link>
+    <description>Explores the basic of Go.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>programming-languages</category><category>go</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-languages/go/go-routine</guid>
+    <title>Go Routine in Go</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-languages/go/go-routine</link>
+    <description>Explores the go routine in Go.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>programming-languages</category><category>go</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-languages/go/mutex</guid>
+    <title>Mutex in Go</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-languages/go/mutex</link>
+    <description>Explores the mutex in Go.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>programming-languages</category><category>go</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-languages/go/race-detector</guid>
+    <title>Race Detector in Go</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-languages/go/race-detector</link>
+    <description>Explores the race detector in Go.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>programming-languages</category><category>go</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-languages/go/reflect</guid>
+    <title>Reflect in Go</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-languages/go/reflect</link>
+    <description>Explores the reflect in Go.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>programming-languages</category><category>go</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/algorithms/advanced-algorithms/bloomfilter</guid>
+    <title>Bloom Filter</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/algorithms/advanced-algorithms/bloomfilter</link>
+    <description>Explores the Bloom filter.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>algorithms</category><category>filtering</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/algorithms/advanced-algorithms/cuckoo-filter</guid>
+    <title>Cuckoo Filter</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/algorithms/advanced-algorithms/cuckoo-filter</link>
+    <description>Explores the Cuckoo filter.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>algorithms</category><category>filtering</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/algorithms/dynamic-programming/intro</guid>
+    <title>Dynamic Programming</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/algorithms/dynamic-programming/intro</link>
+    <description>Explores the dynamic programming.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>algorithms</category><category>dynamic-programming</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/algorithms/searching-algorithms/intro</guid>
+    <title>Searching Algorithms</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/algorithms/searching-algorithms/intro</link>
+    <description>Explores the searching algorithms.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>algorithms</category><category>searching</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/algorithms/sorting-algorithms/intro</guid>
+    <title>Sorting Algorithms</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/algorithms/sorting-algorithms/intro</link>
+    <description>Explores the sorting algorithms.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>algorithms</category><category>sorting</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/design-patterns/behavioral-patterns/observer</guid>
+    <title>Observer Pattern</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/design-patterns/behavioral-patterns/observer</link>
+    <description>Explores the observer pattern.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>design-patterns</category><category>behavioral-patterns</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/design-patterns/behavioral-patterns/strategy</guid>
+    <title>Strategy Pattern</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/design-patterns/behavioral-patterns/strategy</link>
+    <description>Explores the strategy pattern.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>design-patterns</category><category>behavioral-patterns</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/design-patterns/creational-patterns/factory</guid>
+    <title>Factory Pattern</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/design-patterns/creational-patterns/factory</link>
+    <description>Explores the factory pattern.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>design-patterns</category><category>creational-patterns</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/design-patterns/creational-patterns/singleton</guid>
+    <title>Singleton Pattern</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/design-patterns/creational-patterns/singleton</link>
+    <description>Explores the singleton pattern.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>design-patterns</category><category>creational-patterns</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/design-patterns/structural-patterns/adapter</guid>
+    <title>Adapter Pattern</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/design-patterns/structural-patterns/adapter</link>
+    <description>Explores the adapter pattern.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>design-patterns</category><category>structural-patterns</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-concepts/design-patterns/structural-patterns/facade</guid>
+    <title>Facade Pattern</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-concepts/design-patterns/structural-patterns/facade</link>
+    <description>Explores the facade pattern.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>design-patterns</category><category>structural-patterns</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/programming-basic/programming-languages/go/common-issues/loop-variable-in-goroutine</guid>
+    <title>Loop Variable Capturing Issue in Goroutines Closure</title>
+    <link>https://codewisdom.io/blog/programming-basic/programming-languages/go/common-issues/loop-variable-in-goroutine</link>
+    <description>Explores the loop variable capturing issue in goroutines closure.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>programming-basic</category><category>programming-languages</category><category>go</category>
+  </item>
+
+    </channel>
+  </rss>

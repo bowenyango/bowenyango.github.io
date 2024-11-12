@@ -1,0 +1,274 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>CodeWisdom</title>
+      <link>https://codewisdom.io/blog</link>
+      <description>A blog sharing insights on computer science through practical projects and thoughtful exploration.</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Bowen Y)</managingEditor>
+      <webMaster>undefined (Bowen Y)</webMaster>
+      <lastBuildDate>Thu, 15 Aug 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://codewisdom.io/tags/system-design/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://codewisdom.io/blog/book-reading/system-design-alex-xu</guid>
+    <title>System Design Alex Xu</title>
+    <link>https://codewisdom.io/blog/book-reading/system-design-alex-xu</link>
+    <description>Notes from the book &quot;System Design Interview by Alex Xu&quot;.</description>
+    <pubDate>Thu, 15 Aug 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>book-reading</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/design-methodologies/1.requirement-gathering-and-clarification</guid>
+    <title>Requirement Gathering and Clarification</title>
+    <link>https://codewisdom.io/blog/system-design/design-methodologies/1.requirement-gathering-and-clarification</link>
+    <description>How to gather requirements and clarify them.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>design-methodologies</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/design-methodologies/2.high-level-system-architecture</guid>
+    <title>High-Level System Architecture</title>
+    <link>https://codewisdom.io/blog/system-design/design-methodologies/2.high-level-system-architecture</link>
+    <description>How to design a high-level system architecture.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>design-methodologies</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/design-methodologies/3.component-design-and-interaction</guid>
+    <title>Component Design and Interaction</title>
+    <link>https://codewisdom.io/blog/system-design/design-methodologies/3.component-design-and-interaction</link>
+    <description>How to design components and interactions.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>design-methodologies</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/design-methodologies/4.data-flow-and-storage-design</guid>
+    <title>Data Flow and Storage Design</title>
+    <link>https://codewisdom.io/blog/system-design/design-methodologies/4.data-flow-and-storage-design</link>
+    <description>How to design data flow and storage.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>design-methodologies</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/design-methodologies/5.scalability-and-load-balancing-strategies</guid>
+    <title>Scalability and Load Balancing Strategies</title>
+    <link>https://codewisdom.io/blog/system-design/design-methodologies/5.scalability-and-load-balancing-strategies</link>
+    <description>How to scale and balance load.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>design-methodologies</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/design-methodologies/6.security-considerations</guid>
+    <title>Security Considerations</title>
+    <link>https://codewisdom.io/blog/system-design/design-methodologies/6.security-considerations</link>
+    <description>How to consider security in system design.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>design-methodologies</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/design-patterns/circuit-breaker</guid>
+    <title>Circuit Breaker</title>
+    <link>https://codewisdom.io/blog/system-design/design-patterns/circuit-breaker</link>
+    <description>How to design a circuit breaker.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>design-patterns</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/design-patterns/command-query-responsibility-segregation</guid>
+    <title>Command-Query Responsibility Segregation</title>
+    <link>https://codewisdom.io/blog/system-design/design-patterns/command-query-responsibility-segregation</link>
+    <description>How to design a command-query responsibility segregation.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>design-patterns</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/design-patterns/event-driven</guid>
+    <title>Event-Driven System</title>
+    <link>https://codewisdom.io/blog/system-design/design-patterns/event-driven</link>
+    <description>How to design an event-driven system.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>design-patterns</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/design-patterns/microservices</guid>
+    <title>Microservices</title>
+    <link>https://codewisdom.io/blog/system-design/design-patterns/microservices</link>
+    <description>How to design a microservices architecture.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>design-patterns</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/design-patterns/saga-pattern</guid>
+    <title>Saga Pattern</title>
+    <link>https://codewisdom.io/blog/system-design/design-patterns/saga-pattern</link>
+    <description>How to design a saga pattern.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>design-patterns</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/design-principles/high-availability</guid>
+    <title>High Availability</title>
+    <link>https://codewisdom.io/blog/system-design/design-principles/high-availability</link>
+    <description>Explores the principles of high availability in system design.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>design-principles</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/design-principles/maintainability</guid>
+    <title>Maintainability</title>
+    <link>https://codewisdom.io/blog/system-design/design-principles/maintainability</link>
+    <description>Explores the principles of maintainability in system design.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>design-principles</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/design-principles/reliability</guid>
+    <title>Reliability</title>
+    <link>https://codewisdom.io/blog/system-design/design-principles/reliability</link>
+    <description>Explores the principles of reliability in system design.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>design-principles</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/design-principles/scalability</guid>
+    <title>Scalability</title>
+    <link>https://codewisdom.io/blog/system-design/design-principles/scalability</link>
+    <description>Explores the principles of scalability in system design.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>design-principles</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/design-principles/security-and-compliance</guid>
+    <title>Security and Compliance</title>
+    <link>https://codewisdom.io/blog/system-design/design-principles/security-and-compliance</link>
+    <description>Explores the principles of security and compliance in system design.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>design-principles</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/ideas/fantastic_four</guid>
+    <title>Fantastic Four</title>
+    <link>https://codewisdom.io/blog/system-design/ideas/fantastic_four</link>
+    <description>Explores the four fundamental ideas in system design.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>ideas</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/ideas/steps</guid>
+    <title>Steps to Design a System</title>
+    <link>https://codewisdom.io/blog/system-design/ideas/steps</link>
+    <description>Explores the steps to design a system.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>ideas</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/common-systems/amazon/amazon</guid>
+    <title>Online Commercial System</title>
+    <link>https://codewisdom.io/blog/system-design/common-systems/amazon/amazon</link>
+    <description>How to design an online commercial system.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>online-commercial-systems</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/common-systems/paypal/paypal</guid>
+    <title>Online Payment System</title>
+    <link>https://codewisdom.io/blog/system-design/common-systems/paypal/paypal</link>
+    <description>How to design an online payment system.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>online-payment-systems</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/common-systems/telegram/telegram</guid>
+    <title>Online Chating System</title>
+    <link>https://codewisdom.io/blog/system-design/common-systems/telegram/telegram</link>
+    <description>How to design an online chat system.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>online-chat-systems</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/common-systems/twitch/twitch</guid>
+    <title>Online Live Broadcast System</title>
+    <link>https://codewisdom.io/blog/system-design/common-systems/twitch/twitch</link>
+    <description>How to design an online live broadcast system.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>online-live-broadcast-systems</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/common-systems/uber/1.Requirement-Clarification</guid>
+    <title>Uber System Design</title>
+    <link>https://codewisdom.io/blog/system-design/common-systems/uber/1.Requirement-Clarification</link>
+    <description>How to design an Uber system.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>uber</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/common-systems/uber/outline</guid>
+    <title>Uber System Design</title>
+    <link>https://codewisdom.io/blog/system-design/common-systems/uber/outline</link>
+    <description>How to design an Uber system.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>uber</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/system-design/common-systems/uber/uber</guid>
+    <title>Uber</title>
+    <link>https://codewisdom.io/blog/system-design/common-systems/uber/uber</link>
+    <description>How to design a real-world system.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>system-design</category><category>common-systems</category>
+  </item>
+
+    </channel>
+  </rss>

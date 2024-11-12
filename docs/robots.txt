@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://codewisdom.io
+Sitemap: https://codewisdom.io/sitemap.xml

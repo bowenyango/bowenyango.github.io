@@ -1,0 +1,74 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>CodeWisdom</title>
+      <link>https://codewisdom.io/blog</link>
+      <description>A blog sharing insights on computer science through practical projects and thoughtful exploration.</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Bowen Y)</managingEditor>
+      <webMaster>undefined (Bowen Y)</webMaster>
+      <lastBuildDate>Thu, 31 Oct 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://codewisdom.io/tags/web-security/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/backend-techs/web-security/CAPTCHA-ReCAPTCHA</guid>
+    <title>CAPTCHA &amp; ReCAPTCHA</title>
+    <link>https://codewisdom.io/blog/web-development/backend-techs/web-security/CAPTCHA-ReCAPTCHA</link>
+    <description>Explore CAPTCHA &amp; ReCAPTCHA.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>backend-techs</category><category>web-security</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/backend-techs/web-security/CSRF</guid>
+    <title>CSRF</title>
+    <link>https://codewisdom.io/blog/web-development/backend-techs/web-security/CSRF</link>
+    <description>Explore CSRF.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>backend-techs</category><category>web-security</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/backend-techs/web-security/SQL-injection</guid>
+    <title>SQL Injection</title>
+    <link>https://codewisdom.io/blog/web-development/backend-techs/web-security/SQL-injection</link>
+    <description>Explore SQL injection.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>backend-techs</category><category>web-security</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/backend-techs/web-security/SSL-TLS</guid>
+    <title>SSL/TLS</title>
+    <link>https://codewisdom.io/blog/web-development/backend-techs/web-security/SSL-TLS</link>
+    <description>Explore SSL/TLS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>backend-techs</category><category>web-security</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/backend-techs/web-security/XSS</guid>
+    <title>XSS</title>
+    <link>https://codewisdom.io/blog/web-development/backend-techs/web-security/XSS</link>
+    <description>Explore XSS.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>backend-techs</category><category>web-security</category>
+  </item>
+
+  <item>
+    <guid>https://codewisdom.io/blog/web-development/backend-techs/web-security/command-injection</guid>
+    <title>Command Injection</title>
+    <link>https://codewisdom.io/blog/web-development/backend-techs/web-security/command-injection</link>
+    <description>Explore command injection.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+    <author>undefined (Bowen Y)</author>
+    <category>web-development</category><category>backend-techs</category><category>web-security</category>
+  </item>
+
+    </channel>
+  </rss>
