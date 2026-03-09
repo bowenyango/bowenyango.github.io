@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Personal Website</title>
+    <link>https://codewisdom.io/blog/</link>
+    <description>Software engineering blog covering web development, systems design, and technical deep dives.</description>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 06 Mar 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://codewisdom.io/blog/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Hello World</title>
+      <link>https://codewisdom.io/blog/hello-world/</link>
+      <description>Sample blog post for content loader validation</description>
+      <pubDate>Fri, 06 Mar 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://codewisdom.io/blog/hello-world/</guid>
+    </item>
+  </channel>
+</rss>
