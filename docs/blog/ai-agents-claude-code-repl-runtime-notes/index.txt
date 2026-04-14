@@ -1,0 +1,215 @@
+3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[5422,["231","static/chunks/231-cda03aaab516dc35.js","185","static/chunks/app/layout-7fb6aa1a64abd4d2.js"],"default"]
+7:I[9669,["231","static/chunks/231-cda03aaab516dc35.js","185","static/chunks/app/layout-7fb6aa1a64abd4d2.js"],"default"]
+4:["slug","ai-agents-claude-code-repl-runtime-notes","d"]
+0:["8Yk2ujLo2tCBbuzKM08m4",[[["",{"children":["blog",{"children":[["slug","ai-agents-claude-code-repl-runtime-notes","d"],{"children":["__PAGE__?{\"slug\":\"ai-agents-claude-code-repl-runtime-notes\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["blog",{"children":[["slug","ai-agents-claude-code-repl-runtime-notes","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fc97ab377e9eb9f1.css","precedence":"next","crossOrigin":"$undefined"}]]}],null]},[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null],null]},[["$","html",null,{"lang":"en","suppressHydrationWarning":true,"className":"__variable_f367f3","children":["$","body",null,{"suppressHydrationWarning":true,"className":"relative min-h-screen overflow-x-hidden bg-[#FAF9F5] text-slate-900 antialiased","children":[["$","$L6",null,{}],["$","div",null,{"id":"app-shell","className":"relative z-10 flex min-h-screen flex-col","children":[["$","$L7",null,{}],["$","main",null,{"className":"mx-auto w-full max-w-5xl flex-1 px-4 py-8 sm:px-6 sm:py-10","children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]}],["$","footer",null,{"className":"bg-transparent","children":["$","div",null,{"className":"mx-auto w-full max-w-5xl px-4 py-6 sm:px-6","children":["$","p",null,{"className":"text-sm text-slate-400","children":"Code Wisdom © 2024-2026"}]}]}]]}]]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/011c10e6cbcb66d9.css","precedence":"next","crossOrigin":"$undefined"}]],[null,"$L8"]]]]]
+9:I[5474,["231","static/chunks/231-cda03aaab516dc35.js","540","static/chunks/540-c71c30a3213e5e7b.js","224","static/chunks/224-fa8e27c5e1ae8a62.js","331","static/chunks/331-7b4554f1e2ba1fc6.js","811","static/chunks/811-fe7d5e4541f95d60.js","308","static/chunks/app/blog/%5Bslug%5D/page-47193f5182e28c69.js"],"default"]
+a:I[2295,["231","static/chunks/231-cda03aaab516dc35.js","540","static/chunks/540-c71c30a3213e5e7b.js","224","static/chunks/224-fa8e27c5e1ae8a62.js","331","static/chunks/331-7b4554f1e2ba1fc6.js","811","static/chunks/811-fe7d5e4541f95d60.js","308","static/chunks/app/blog/%5Bslug%5D/page-47193f5182e28c69.js"],"default"]
+e:I[231,["231","static/chunks/231-cda03aaab516dc35.js","540","static/chunks/540-c71c30a3213e5e7b.js","224","static/chunks/224-fa8e27c5e1ae8a62.js","331","static/chunks/331-7b4554f1e2ba1fc6.js","811","static/chunks/811-fe7d5e4541f95d60.js","308","static/chunks/app/blog/%5Bslug%5D/page-47193f5182e28c69.js"],""]
+b:T698,// QueryGuard: atomic reserve + start, exposed via external store
+class QueryGuard {
+private state: 'idle' | 'reserved' | 'running' = 'idle'
+private listeners = new Set<() => void>()
+
+// Step 1: reserve BEFORE any await — synchronous
+reserve(): boolean {
+  if (this.state !== 'idle') return false
+  this.state = 'reserved'
+  this.notify()
+  return true
+}
+
+// Step 2: start ATOMICALLY — if state changed since reserve(), abort
+tryStart(): boolean {
+  if (this.state !== 'reserved') return false
+  this.state = 'running'
+  this.notify()
+  return true
+}
+
+end(): void {
+  this.state = 'idle'
+  this.notify()
+}
+
+// Expose via useSyncExternalStore — all subscribers see change atomically
+subscribe = (cb: () => void) => {
+  this.listeners.add(cb)
+  return () => this.listeners.delete(cb)
+}
+getSnapshot = () => this.state
+
+private notify() { this.listeners.forEach(l => l()) }
+}
+
+// Usage in REPL
+const queryGuard = useMemo(() => new QueryGuard(), [])
+const queryState = useSyncExternalStore(queryGuard.subscribe, queryGuard.getSnapshot)
+
+// Stale-read discipline: fresh store reads inside callbacks
+const store = useAppStateStore()  // direct store reference
+
+const onQueryImpl = useCallback(async (input: string) => {
+// CORRECT: read fresh state at call time, not at hook creation time
+const { mcp, toolPermissionContext } = store.getState()
+const tools = computeTools(mcp.tools, toolPermissionContext)
+// ...
+}, [store])  // store reference is stable — no stale capture risk
+
+// WRONG pattern (avoid):
+// const { mcp } = useAppState(s => s)  // captured at render, stale in callback
+// const onQueryImpl = useCallback(() => { use mcp here }, [mcp])  // re-creates on every mcp changec:T8ad,from enum import Enum
+from threading import Lock
+from typing import Callable, Literal
+
+QueryState = Literal['idle', 'reserved', 'running']
+
+class QueryGuard:
+  """
+  Atomic state machine for query execution lifecycle.
+  Replaces dual isLoading/isQueryRunning with one source of truth.
+  """
+
+  def __init__(self) -> None:
+      self._state: QueryState = 'idle'
+      self._lock = Lock()
+      self._listeners: set[Callable[[], None]] = set()
+
+  def reserve(self) -> bool:
+      """Step 1: claim slot SYNCHRONOUSLY before any await."""
+      with self._lock:
+          if self._state != 'idle':
+              return False
+          self._state = 'reserved'
+      self._notify()
+      return True
+
+  def try_start(self) -> bool:
+      """Step 2: atomically transition reserved → running."""
+      with self._lock:
+          if self._state != 'reserved':
+              return False
+          self._state = 'running'
+      self._notify()
+      return True
+
+  def end(self) -> None:
+      with self._lock:
+          self._state = 'idle'
+      self._notify()
+
+  @property
+  def state(self) -> QueryState:
+      with self._lock:
+          return self._state
+
+  def subscribe(self, listener: Callable[[], None]) -> Callable[[], None]:
+      self._listeners.add(listener)
+      return lambda: self._listeners.discard(listener)
+
+  def _notify(self) -> None:
+      for l in list(self._listeners):
+          l()
+
+# Usage: fresh state reads inside callbacks
+class REPLSession:
+  def __init__(self, store: 'AppStateStore') -> None:
+      self.guard = QueryGuard()
+      self._store = store  # stable reference
+
+  async def on_submit(self, input_text: str) -> None:
+      # Reserve slot synchronously before any await
+      if not self.guard.reserve():
+          self._enqueue(input_text)
+          return
+      try:
+          await self._execute(input_text)
+      finally:
+          self.guard.end()
+
+  async def _execute(self, input_text: str) -> None:
+      if not self.guard.try_start():
+          return  # race: another call won
+      # Read fresh state — not captured closure
+      state = self._store.get_state()
+      tools = compute_tools(state.mcp_tools, state.permission_context)
+      await run_query(input_text, tools)d:T686,type QueryState int
+
+const (
+  QueryIdle     QueryState = iota
+  QueryReserved
+  QueryRunning
+)
+
+// QueryGuard: atomic reservation + start, observer pattern
+type QueryGuard struct {
+  mu        sync.Mutex
+  state     QueryState
+  listeners []func()
+}
+
+// Reserve: claim slot SYNCHRONOUSLY — call before first async operation
+func (g *QueryGuard) Reserve() bool {
+  g.mu.Lock()
+  defer g.mu.Unlock()
+  if g.state != QueryIdle {
+      return false
+  }
+  g.state = QueryReserved
+  go g.notify() // async notify — don't hold lock during callbacks
+  return true
+}
+
+// TryStart: atomic transition reserved → running
+func (g *QueryGuard) TryStart() bool {
+  g.mu.Lock()
+  defer g.mu.Unlock()
+  if g.state != QueryReserved {
+      return false
+  }
+  g.state = QueryRunning
+  go g.notify()
+  return true
+}
+
+func (g *QueryGuard) End() {
+  g.mu.Lock()
+  g.state = QueryIdle
+  g.mu.Unlock()
+  go g.notify()
+}
+
+func (g *QueryGuard) notify() {
+  g.mu.Lock()
+  listeners := append([]func(){}, g.listeners...)
+  g.mu.Unlock()
+  for _, l := range listeners {
+      l()
+  }
+}
+
+// REPLSession: fresh state reads inside callbacks
+type REPLSession struct {
+  guard *QueryGuard
+  store *AppStateStore // stable reference — no stale capture
+}
+
+func (s *REPLSession) OnSubmit(ctx context.Context, input string) error {
+  if !s.guard.Reserve() {
+      s.enqueue(input)
+      return nil
+  }
+  defer s.guard.End()
+
+  if !s.guard.TryStart() {
+      return nil // race: another goroutine won
+  }
+
+  // Fresh state read — not captured at hook creation time
+  state := s.store.GetState()
+  tools := ComputeTools(state.MCPTools, state.PermissionContext)
+  return RunQuery(ctx, input, tools)
+}2:["$","article",null,{"className":"space-y-8","children":[["$","header",null,{"className":"space-y-4 rounded-2xl border border-slate-200 bg-gradient-to-br from-white to-indigo-50 p-6 sm:p-8","children":[["$","h1",null,{"className":"text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl","children":"Claude Code REPL: 5000 Lines Binding Every Subsystem"}],["$","div",null,{"className":"flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-slate-600","children":[["$","time",null,{"dateTime":"2026-04-02","children":"April 2, 2026"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"5 min read"}],[["$","span",null,{"children":"•"}],["$","span",null,{"children":"AI Agents"}]]]}],["$","p",null,{"className":"text-lg leading-relaxed text-slate-700","children":"How REPL.tsx uses 30+ hooks and the QueryGuard state machine to bind AppState, streaming, overlays, and tool execution into one interactive session, with messagesRef and onSubmitRef as key memory and correctness patterns."}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","span","ai-agents",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"ai-agents"}],["$","span","claude-code",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"claude-code"}],["$","span","repl",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"repl"}],["$","span","runtime",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"runtime"}],["$","span","react-hooks",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"react-hooks"}],["$","span","queryguard",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"queryguard"}]]}]]}],["$","div",null,{"className":"prose max-w-none rounded-xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8","children":[["$","nav",null,{"data-component":"SeriesNav","className":"styles_container__A3IRs","children":[["$","div",null,{"className":"styles_topBar__Z1gym","children":[["$","a",null,{"href":"/blog/ai-agents-claude-code-series-index","className":"styles_seriesLink__rLemJ","children":"Claude Code: Source Reading Series"}],["$","span",null,{"className":"styles_sep__GGjd3","children":"›"}],["$","span",null,{"className":"styles_layerBadge__Q0d3m","children":"Layer 5: The Platform"}],["$","span",null,{"className":"styles_partBadge__fUwxC","children":["Part ",17," / ",18]}]]}],["$","div",null,{"className":"styles_progressBar__fgLWL","children":["$","div",null,{"className":"styles_progressFill__qjZc_","style":{"width":"94%"}}]}],["$","div",null,{"className":"styles_bottomNav__qPM7g","children":[["$","a",null,{"href":"/blog/ai-agents-claude-code-analytics-observability-notes","className":"styles_navLink__Bk58u styles_navLinkPrev__LuRrD","children":[["$","span",null,{"className":"styles_navDirection__8wLNi","children":"← Previous"}],["$","span",null,{"className":"styles_navTitle__21udg","children":"Analytics & Observability"}]]}],["$","a",null,{"href":"/blog/ai-agents-claude-code-tool-implementations-notes","className":"styles_navLink__Bk58u styles_navLinkNext__2KWCL","children":[["$","span",null,{"className":"styles_navDirection__8wLNi","children":"Next →"}],["$","span",null,{"className":"styles_navTitle__21udg","children":"Tool Implementations"}]]}]]}],false]}],"\n",["$","p",null,{"children":"Every subsystem described in this series — the query loop, AppState, tools, permissions, MCP, memory, tasks, the Ink renderer — has one place where it actually gets assembled into a running product."}],"\n",["$","p",null,{"children":["That place is ",["$","code",null,{"children":"REPL.tsx"}],". At 5005 lines, it is the largest file in the codebase and the one that most directly answers the question: what does it mean for all these layers to work together?"]}],"\n",["$","h2",null,{"children":"File structure"}],"\n",["$","$L9",null,{"highlightedPaths":["src/screens/REPL.tsx"]}],"\n",["$","p",null,{"children":"The REPL.tsx file has no meaningful subdirectory structure — it is intentionally monolithic. All coordination logic lives in one place so the binding between subsystems is visible rather than scattered."}],"\n",["$","section",null,{"className":"styles_container__5lCUS","data-component":"SourceFileCard","children":[["$","div",null,{"className":"styles_header__dyQ1Z","children":[["$","div",null,{"className":"styles_headerMain__rjDfx","children":[["$","p",null,{"className":"styles_path__51AwZ","children":"src/screens/REPL.tsx"}],["$","h3",null,{"className":"styles_role__nfEhJ","children":"Session composition root — binds all agent services into one interactive component"}]]}],["$","div",null,{"className":"styles_badges__pF5IJ","children":["$","span",null,{"className":"styles_importanceBadge__L3cXb","children":"Critical"}]}]]}],["$","p",null,{"className":"styles_summary__U4AnH","children":"5005-line React component that owns the full interactive session. Mounts 30+ hooks covering query execution, AppState, streaming, overlays, MCP, tasks, bridge, speculation, IDE integration, surveys, and more. The QueryGuard replaces dual isLoading/isQueryRunning with a single atomic state machine."}],["$","dl",null,{"className":"styles_metaGrid__XCxXQ","children":["$","div",null,{"className":"styles_metaItem__WwAW9","children":[["$","dt",null,{"className":"styles_metaLabel___SXxX","children":"Module"}],["$","dd",null,{"className":"styles_metaValue__alqAB","children":"Terminal UI Runtime"}]]}]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Key Exports"}],["$","ul",null,{"className":"styles_chipList__6CD4U","children":[["$","li","REPL",{"className":"styles_chip__NkeZa","children":"REPL"}],["$","li","Props",{"className":"styles_chip__NkeZa","children":"Props"}]]}]]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Why It Matters"}],["$","ul",null,{"className":"styles_pointList__fc1yj","children":[["$","li","REPL.tsx is the composition root, not a UI file — its job is to bind every subsystem into one session lifecycle.",{"className":"styles_point__nyY9Y","children":"REPL.tsx is the composition root, not a UI file — its job is to bind every subsystem into one session lifecycle."}],["$","li","The QueryGuard is a sync state machine that prevents race conditions between query reservation and execution.",{"className":"styles_point__nyY9Y","children":"The QueryGuard is a sync state machine that prevents race conditions between query reservation and execution."}],["$","li","useDeferredValue on the message list lets input events interrupt expensive re-renders — a direct latency optimization.",{"className":"styles_point__nyY9Y","children":"useDeferredValue on the message list lets input events interrupt expensive re-renders — a direct latency optimization."}]]}]]}],null]}],"\n",["$","h2",null,{"children":"Why REPL.tsx is different from a UI component"}],"\n",["$","p",null,{"children":"The first thing to notice about REPL.tsx is how few JSX nodes it returns relative to its line count."}],"\n",["$","p",null,{"children":"Most of the file is state initialization, hook binding, and callback wiring. The actual render tree is compact. The complexity is in the coordination logic that connects 30+ subsystems so they all observe the same session state and respond to the same events."}],"\n",["$","p",null,{"children":"This is the right design. The alternative — embedding coordination logic in JSX or spreading it across hooks — would make the binding between subsystems invisible. In REPL.tsx, all of it is in one place."}],"\n",["$","h2",null,{"children":"The 30+ hooks"}],"\n",["$","section",null,{"className":"styles_container__ZnY0Q","data-component":"CalloutFlow","children":[["$","div",null,{"className":"styles_header__QlXI3","children":[["$","h3",null,{"className":"styles_title__PjGPE","children":"REPL.tsx hook categories"}],["$","p",null,{"className":"styles_description__A_tMR","children":"How the hooks are organized across the session lifecycle."}]]}],["$","ol",null,{"className":"styles_stepList__eTbMY","children":[["$","li","1-Core session state",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":1}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Core session state"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"lines 618–674"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"useAppState (selector-based reads), useSetAppState, useAppStateStore (direct store access for fresh reads in callbacks), useMainLoopModel, useTerminalNotification."}],null]}]]}],["$","li","2-Capability assembly",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":2}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Capability assembly"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"lines 727–840"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"useMergedClients (initial + dynamic MCP), useMergedTools (local + plugin + MCP), useMergedCommands, useCanUseTool, useSkillsChange (reload on file change), useManagePlugins."}],null]}]]}],["$","li","3-Query execution",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":3}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Query execution"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"lines 787–910"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"QueryGuard (sync state machine via useSyncExternalStore), useTasksV2WithCollapseEffect, useSwarmInitialization, useSessionBackgrounding (foreground task recovery)."}],null]}]]}],["$","li","4-External connections",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":4}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"External connections"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"lines 1388–2560"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"useRemoteSession (WebSocket to CCR), useDirectConnect (claude connect mode), useReplBridge (mobile bridge), useMailboxBridge (in-process teammate relay), useTaskListWatcher."}],null]}]]}],["$","li","5-Input and UX",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":5}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Input and UX"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"lines 492–1285"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"useInput (Ink keyboard), useSearchInput (/ search bar), useTerminalSize, useSearchHighlight, useTerminalFocus, useTerminalTitle, useUnseenDivider, useAwaySummary, useAssistantHistory."}],null]}]]}],["$","li","6-Product and telemetry",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":6}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Product and telemetry"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"lines 1665–1731"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"useFeedbackSurvey, usePostCompactSurvey, useMemorySurvey, useFrustrationDetection, useIDEIntegration, useFileHistorySnapshotInit, useMoreRight, useCostSummary, useLogMessages."}],null]}]]}]]}]]}],"\n",["$","h2",null,{"children":"The QueryGuard"}],"\n",["$","p",null,{"children":"The most important single design choice in REPL.tsx is the QueryGuard."}],"\n",["$","p",null,{"children":["The problem it solves: without it, ",["$","code",null,{"children":"isLoading"}]," and ",["$","code",null,{"children":"isQueryRunning"}]," are two separate state flags that can get out of sync. The window between setting one and the other creates a race condition where a second submit can enter the query path before the first one has fully started."]}],"\n",["$","p",null,{"children":"The QueryGuard replaces both flags with a sync state machine that has atomic reserve and start semantics:"}],"\n",["$","ol",null,{"children":["\n",["$","li",null,{"children":[["$","code",null,{"children":"queryGuard.reserve()"}]," fires before the first ",["$","code",null,{"children":"await"}]," in ",["$","code",null,{"children":"executeUserInput"}]," — it claims the execution slot synchronously"]}],"\n",["$","li",null,{"children":[["$","code",null,{"children":"queryGuard.tryStart()"}]," locks the state atomically"]}],"\n",["$","li",null,{"children":["The state is exposed via ",["$","code",null,{"children":"useSyncExternalStore"}]," so all subscribers see it simultaneously"]}],"\n"]}],"\n",["$","p",null,{"children":"This means there is never a window where \"someone thinks the query is not running, but a query has actually started.\""}],"\n",["$","h2",null,{"children":"The stale-read problem and the solution"}],"\n",["$","p",null,{"children":["REPL.tsx has many callbacks (",["$","code",null,{"children":"onQuery"}],", ",["$","code",null,{"children":"onQueryImpl"}],", ",["$","code",null,{"children":"handlePromptSubmit"}],") that fire much later than when they were created. If they read AppState through React closure captures, they will read stale values."]}],"\n",["$","p",null,{"children":"The solution is consistent throughout:"}],"\n",["$","ul",null,{"children":["\n",["$","li",null,{"children":["For AppState fields that change frequently: read via ",["$","code",null,{"children":"store.getState()"}]," inside the callback, not via captured state"]}],"\n",["$","li",null,{"children":"For AppState fields that are stable across a session: captured closure is acceptable"}],"\n"]}],"\n",["$","p",null,{"children":["The ",["$","code",null,{"children":"getToolUseContext"}]," function (which computes the full tool surface for a query) reads fresh MCP clients, permissions, and agent definitions from the store every time it is called. It never uses closure-captured values for these."]}],"\n",["$","p",null,{"children":"This is a subtle but important discipline. Violating it produces bugs where the agent uses tools from a previous MCP configuration, or applies permissions from before the user changed the mode."}],"\n",["$","h2",null,{"children":"The overlay priority stack"}],"\n",["$","p",null,{"children":["When multiple overlays want to show at the same time, REPL.tsx arbitrates via ",["$","code",null,{"children":"getFocusedInputDialog()"}]," — a priority-ordered function that returns the highest-priority overlay that currently has something to show:"]}],"\n",["$","ol",null,{"children":["\n",["$","li",null,{"children":"Exit states suppress everything"}],"\n",["$","li",null,{"children":"Message selector (Ctrl+O fullscreen) takes priority"}],"\n",["$","li",null,{"children":"Active typing suppresses prompts for 1500ms (PROMPT_SUPPRESSION_MS)"}],"\n",["$","li",null,{"children":"Sandbox permission requests (pre-interrupt, highest-trust)"}],"\n",["$","li",null,{"children":"Tool permission dialogs (gated by animation state)"}],"\n",["$","li",null,{"children":"Prompt dialogs, elicitation, cost dialog"}],"\n",["$","li",null,{"children":"Onboarding flows (IDE setup, model switch, effort callout)"}],"\n",["$","li",null,{"children":"LSP recommendation, plugin hints, desktop upsell"}],"\n"]}],"\n",["$","p",null,{"children":"This ordering is a product decision encoded in code. If a tool permission dialog and a cost dialog want to show at the same time, the tool permission dialog wins."}],"\n",["$","h2",null,{"children":"The messagesRef pattern (ref-as-source-of-truth)"}],"\n",["$","p",null,{"children":["One of the most specific design choices in REPL.tsx is how ",["$","code",null,{"children":"setMessages"}]," is implemented."]}],"\n",["$","p",null,{"children":["The standard React pattern is: call ",["$","code",null,{"children":"setState"}],", then the next render sees the new value. But for paths like ",["$","code",null,{"children":"handleSpeculationAccept → onQuery"}]," — where a callback reads the message list immediately after calling ",["$","code",null,{"children":"setMessages"}]," — that next-render timing is too late."]}],"\n",["$","p",null,{"children":"Claude Code solves this with a ref-as-source-of-truth pattern:"}],"\n",["$","pre",null,{"children":["$","code",null,{"className":"language-typescript","children":"// setMessages eagerly updates the ref BEFORE committing to React state\nconst setMessages = useCallback((update) => {\n  const next = typeof update === 'function' ? update(messagesRef.current) : update\n  messagesRef.current = next   // immediate — synchronous reads see new value\n  rawSetMessages(next)         // schedules the React re-render\n}, [])\n"}]}],"\n",["$","p",null,{"children":["Any callback that reads ",["$","code",null,{"children":"messagesRef.current"}]," after calling ",["$","code",null,{"children":"setMessages"}]," sees the updated value immediately, before React batching fires. This is the same pattern as Zustand's store — the ref is the canonical state, React state is the render projection."]}],"\n",["$","p",null,{"children":["The consequence: code that needs to read messages synchronously after mutation uses ",["$","code",null,{"children":"messagesRef.current"}],", not the hook value. Code that only needs to display messages uses the hook value. These are two different reads of the same data."]}],"\n",["$","h2",null,{"children":"The onSubmitRef stability optimization"}],"\n",["$","p",null,{"children":["REPL.tsx wraps ",["$","code",null,{"children":"onSubmit"}]," in a stable ref (",["$","code",null,{"children":"onSubmitRef"}],"). Every ",["$","code",null,{"children":"MessageRow"}]," that renders during the session pins this callback at mount time."]}],"\n",["$","p",null,{"children":["The reason is memory. A 1000-turn session creates 1000+ MessageRow fibers, each with a closure over the REPL component scope. If ",["$","code",null,{"children":"onSubmit"}]," is prop-drilled as a normal function, every turn that closes over REPL's scope keeps the entire previous scope alive. At ~35KB per REPL scope, that accumulates."]}],"\n",["$","p",null,{"children":"The stable ref breaks the closure chain: MessageRow fibers hold a reference to the ref object (which never changes) rather than to the specific function in the scope at mount time. Old REPL scopes can be garbage-collected once React finishes with them."}],"\n",["$","p",null,{"children":"This is a memory optimization that only becomes visible in very long sessions — but the 35MB number is large enough to notice in production."}],"\n",["$","h2",null,{"children":"Feature-gate dead code elimination"}],"\n",["$","p",null,{"children":"Several hooks in REPL.tsx are conditionally imported based on feature flags:"}],"\n",["$","pre",null,{"children":["$","code",null,{"className":"language-typescript","children":"const { useProactive } = require('./features/proactive')   // PROACTIVE/KAIROS\nconst { useVoice } = require('./features/voice')           // VOICE_MODE\nconst { useCoordinator } = require('./features/coordinator') // COORDINATOR_MODE\n"}]}],"\n",["$","p",null,{"children":["These use ",["$","code",null,{"children":"feature()"}]," from ",["$","code",null,{"children":"bun:bundle"}]," — a compile-time constant that Bun evaluates during the build. When a feature flag is disabled, the ",["$","code",null,{"children":"if (false)"}]," branch is eliminated entirely. The module is never loaded; the hook never runs."]}],"\n",["$","p",null,{"children":"This matters for external builds (VS Code extension, JetBrains) where ant-only features must not ship. Dead code elimination via compile-time constants is more reliable than runtime checks because there is no way for the code to accidentally execute."}],"\n",["$","h2",null,{"children":"Deferred rendering as a latency optimization"}],"\n",["$","p",null,{"children":[["$","code",null,{"children":"useDeferredValue(messages)"}]," on the message list is one of the quieter performance choices in the file."]}],"\n",["$","p",null,{"children":"React's deferred rendering means the reconciler yields every ~5ms to check for higher-priority updates (like user input). This keeps the input box responsive during expensive message tree re-renders after a long streaming response."}],"\n",["$","p",null,{"children":"Without it, typing during message rendering produces noticeable lag because the reconciler works through the full tree before processing the keypress."}],"\n",["$","p",null,{"children":["The ",["$","code",null,{"children":"deferredBehind"}]," counter tracks how many messages are pending deferred rendering. The UI can use this to show a loading indicator during the catch-up phase."]}],"\n",["$","h2",null,{"children":"Streaming architecture"}],"\n",["$","p",null,{"children":"Three streaming surfaces exist simultaneously:"}],"\n",["$","ol",null,{"children":["\n",["$","li",null,{"children":["\n",["$","p",null,{"children":[["$","strong",null,{"children":"visibleStreamingText"}]," — line-by-line preview of the model's in-progress text response. Cuts at the last newline so the partially-complete current line is not shown. Disabled if ",["$","code",null,{"children":"reducedMotion"}]," is set or if a cursor-up viewport bug is present."]}],"\n"]}],"\n",["$","li",null,{"children":["\n",["$","p",null,{"children":[["$","strong",null,{"children":"streamingToolUses"}]," — tool call objects from the model during generation. Rendered by the Messages component, not by REPL directly."]}],"\n"]}],"\n",["$","li",null,{"children":["\n",["$","p",null,{"children":[["$","strong",null,{"children":"streamingThinking"}]," — thinking block content. Auto-hides 30 seconds after streaming ends so it does not permanently clutter the conversation."]}],"\n"]}],"\n"]}],"\n",["$","p",null,{"children":"The ephemeral progress messages (bash tick updates, sleep progress) use a replace-not-append pattern. Without this, a 5-minute bash command would produce thousands of tick messages and make the message list unusable."}],"\n",["$","$La",null,{"title":"QueryGuard pattern and stale-read discipline","description":"The two most important implementation patterns in REPL.tsx. JS shows the actual shape; Python and Go show the same structure.","tabs":[{"label":"JavaScript","language":"typescript","filename":"REPL.tsx — QueryGuard + fresh store reads (simplified)","description":"Atomic query reservation and fresh-read discipline — actual patterns from learning-claude-code","code":"$b"},{"label":"Python","language":"python","filename":"query_guard.py (teaching version)","description":"Atomic query guard with observer pattern in Python","code":"$c"},{"label":"Go","language":"go","filename":"query_guard.go (teaching version)","description":"Atomic query guard with mutex and subscriber notification in Go","code":"$d"}]}],"\n",["$","section",null,{"className":"styles_container__oZwSC","data-component":"QuestionModule","children":[["$","div",null,{"className":"styles_header__mm_0m","children":[["$","h3",null,{"className":"styles_question__PznEA","children":"REPL.tsx uses useDeferredValue(messages) to defer the message list at transition priority. A simpler approach would be to memoize message rendering with useMemo. Why is useDeferredValue the better choice here?"}],["$","span",null,{"className":"styles_badge__4rHEw styles_badgeMedium__xXH7Q","children":"medium"}]]}],["$","p",null,{"className":"styles_context__hE7d4","children":"The message list can contain hundreds of items after a long session. The user continues typing while Claude is streaming responses. Input responsiveness is a core UX requirement."}],["$","ul",null,{"className":"styles_optionList__TKMHh","children":[["$","li","A",{"className":"styles_option__DTfSF","children":["$","details",null,{"children":[["$","summary",null,{"className":"styles_optionSummary__noBWC","children":[["$","span",null,{"className":"styles_optionMarker__tZP_f styles_optionMarkerIncorrect__ymBsg","children":"A"}],"useDeferredValue uses less memory than useMemo because it does not cache the previous value"]}],["$","div",null,{"className":"styles_reveal__PELdG styles_revealIncorrect__z_T88","children":[["$","span",null,{"className":"styles_revealLabel__IXR5j","children":"Incorrect."}],["$","span",null,{"children":"Memory usage is not the distinction. useMemo caches a computed value; useDeferredValue creates a version of the value that can lag behind. The concern is about rendering priority, not memory."}]]}]]}]}],["$","li","B",{"className":"styles_option__DTfSF","children":["$","details",null,{"children":[["$","summary",null,{"className":"styles_optionSummary__noBWC","children":[["$","span",null,{"className":"styles_optionMarker__tZP_f styles_optionMarkerCorrect__zxpQk","children":"B"}],"useMemo prevents re-computation but does not yield to higher-priority updates during reconciliation. useDeferredValue tells React to interrupt and yield every ~5ms for user input events, keeping the input box responsive during expensive tree updates"]}],["$","div",null,{"className":"styles_reveal__PELdG styles_revealCorrect__rDxQT","children":[["$","span",null,{"className":"styles_revealLabel__IXR5j","children":"Correct!"}],["$","span",null,{"children":"Correct. useMemo skips re-computation when dependencies have not changed, but when messages DO change (e.g., after a long streaming response), React still reconciles the full tree synchronously before processing keystrokes. useDeferredValue marks the update as low-priority, so React yields to input events during reconciliation — the user's keystrokes are processed immediately even while the message list is catching up."}]]}]]}]}],["$","li","C",{"className":"styles_option__DTfSF","children":["$","details",null,{"children":[["$","summary",null,{"className":"styles_optionSummary__noBWC","children":[["$","span",null,{"className":"styles_optionMarker__tZP_f styles_optionMarkerIncorrect__ymBsg","children":"C"}],"useMemo cannot be used with arrays, so useDeferredValue is the only option for the message list"]}],["$","div",null,{"className":"styles_reveal__PELdG styles_revealIncorrect__z_T88","children":[["$","span",null,{"className":"styles_revealLabel__IXR5j","children":"Incorrect."}],["$","span",null,{"children":"useMemo works fine with arrays. The reason is about rendering priority, not data type compatibility."}]]}]]}]}],["$","li","D",{"className":"styles_option__DTfSF","children":["$","details",null,{"children":[["$","summary",null,{"className":"styles_optionSummary__noBWC","children":[["$","span",null,{"className":"styles_optionMarker__tZP_f styles_optionMarkerIncorrect__ymBsg","children":"D"}],"useDeferredValue automatically batches state updates, reducing the number of re-renders"]}],["$","div",null,{"className":"styles_reveal__PELdG styles_revealIncorrect__z_T88","children":[["$","span",null,{"className":"styles_revealLabel__IXR5j","children":"Incorrect."}],["$","span",null,{"children":"Batching is a separate concern from deferred rendering. useDeferredValue is specifically about prioritized reconciliation — letting React yield to higher-priority work during an update."}]]}]]}]}]]}],"$undefined"]}]]}],["$","nav",null,{"aria-label":"Post navigation","className":"grid gap-3 sm:grid-cols-2","children":[["$","$Le",null,{"href":"/blog/ai-agents-claude-code-services-tools-runtime-notes","className":"rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-indigo-300 hover:bg-indigo-50","children":[["$","p",null,{"className":"text-xs font-medium uppercase tracking-wide text-slate-500","children":"Previous"}],["$","p",null,{"className":"mt-1 text-sm font-semibold text-slate-900","children":"Claude Code Tool Execution: Scheduling, Streaming, and Governance"}]]}],["$","$Le",null,{"href":"/blog/ai-agents-claude-code-memory-system-notes","className":"rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-indigo-300 hover:bg-indigo-50 sm:text-right","children":[["$","p",null,{"className":"text-xs font-medium uppercase tracking-wide text-slate-500","children":"Next"}],["$","p",null,{"className":"mt-1 text-sm font-semibold text-slate-900","children":"Claude Code Memory System: Five Layers from Injection to Consolidation"}]]}]]}]]}]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Claude Code REPL: 5000 Lines Binding Every Subsystem — Blog — Bowen Yang"}],["$","meta","3",{"name":"description","content":"How REPL.tsx uses 30+ hooks and the QueryGuard state machine to bind AppState, streaming, overlays, and tool execution into one interactive session, with messagesRef and onSubmitRef as key memory and correctness patterns."}],["$","meta","4",{"name":"keywords","content":"Claude Code REPL,REPL.tsx,QueryGuard,streaming agent,React hooks agent runtime,useDeferredValue"}],["$","meta","5",{"property":"og:title","content":"Claude Code REPL: 5000 Lines Binding Every Subsystem — Blog"}],["$","meta","6",{"property":"og:description","content":"How REPL.tsx uses 30+ hooks and the QueryGuard state machine to bind AppState, streaming, overlays, and tool execution into one interactive session, with messagesRef and onSubmitRef as key memory and correctness patterns."}],["$","meta","7",{"property":"og:url","content":"https://codewisdom.io/blog/ai-agents-claude-code-repl-runtime-notes/"}],["$","meta","8",{"property":"og:site_name","content":"Bowen Yang"}],["$","meta","9",{"property":"og:locale","content":"en_US"}],["$","meta","10",{"property":"og:type","content":"article"}],["$","meta","11",{"property":"article:published_time","content":"2026-04-02"}],["$","meta","12",{"property":"article:modified_time","content":"2026-04-02"}],["$","meta","13",{"name":"twitter:card","content":"summary"}],["$","meta","14",{"name":"twitter:title","content":"Claude Code REPL: 5000 Lines Binding Every Subsystem — Blog"}],["$","meta","15",{"name":"twitter:description","content":"How REPL.tsx uses 30+ hooks and the QueryGuard state machine to bind AppState, streaming, overlays, and tool execution into one interactive session, with messagesRef and onSubmitRef as key memory and correctness patterns."}],["$","link","16",{"rel":"icon","href":"/icon.svg?893d1655c173574a","type":"image/svg+xml","sizes":"any"}],["$","meta","17",{"name":"next-size-adjust"}]]
+1:null

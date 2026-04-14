@@ -1,0 +1,218 @@
+3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[5422,["231","static/chunks/231-cda03aaab516dc35.js","185","static/chunks/app/layout-7fb6aa1a64abd4d2.js"],"default"]
+7:I[9669,["231","static/chunks/231-cda03aaab516dc35.js","185","static/chunks/app/layout-7fb6aa1a64abd4d2.js"],"default"]
+4:["slug","ai-agents-claude-code-input-pipeline-notes","d"]
+0:["8Yk2ujLo2tCBbuzKM08m4",[[["",{"children":["blog",{"children":[["slug","ai-agents-claude-code-input-pipeline-notes","d"],{"children":["__PAGE__?{\"slug\":\"ai-agents-claude-code-input-pipeline-notes\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["blog",{"children":[["slug","ai-agents-claude-code-input-pipeline-notes","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fc97ab377e9eb9f1.css","precedence":"next","crossOrigin":"$undefined"}]]}],null]},[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null],null]},[["$","html",null,{"lang":"en","suppressHydrationWarning":true,"className":"__variable_f367f3","children":["$","body",null,{"suppressHydrationWarning":true,"className":"relative min-h-screen overflow-x-hidden bg-[#FAF9F5] text-slate-900 antialiased","children":[["$","$L6",null,{}],["$","div",null,{"id":"app-shell","className":"relative z-10 flex min-h-screen flex-col","children":[["$","$L7",null,{}],["$","main",null,{"className":"mx-auto w-full max-w-5xl flex-1 px-4 py-8 sm:px-6 sm:py-10","children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]}],["$","footer",null,{"className":"bg-transparent","children":["$","div",null,{"className":"mx-auto w-full max-w-5xl px-4 py-6 sm:px-6","children":["$","p",null,{"className":"text-sm text-slate-400","children":"Code Wisdom © 2024-2026"}]}]}]]}]]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/011c10e6cbcb66d9.css","precedence":"next","crossOrigin":"$undefined"}]],[null,"$L8"]]]]]
+9:I[5474,["231","static/chunks/231-cda03aaab516dc35.js","540","static/chunks/540-c71c30a3213e5e7b.js","224","static/chunks/224-fa8e27c5e1ae8a62.js","331","static/chunks/331-7b4554f1e2ba1fc6.js","811","static/chunks/811-fe7d5e4541f95d60.js","308","static/chunks/app/blog/%5Bslug%5D/page-47193f5182e28c69.js"],"default"]
+a:I[2295,["231","static/chunks/231-cda03aaab516dc35.js","540","static/chunks/540-c71c30a3213e5e7b.js","224","static/chunks/224-fa8e27c5e1ae8a62.js","331","static/chunks/331-7b4554f1e2ba1fc6.js","811","static/chunks/811-fe7d5e4541f95d60.js","308","static/chunks/app/blog/%5Bslug%5D/page-47193f5182e28c69.js"],"default"]
+e:I[231,["231","static/chunks/231-cda03aaab516dc35.js","540","static/chunks/540-c71c30a3213e5e7b.js","224","static/chunks/224-fa8e27c5e1ae8a62.js","331","static/chunks/331-7b4554f1e2ba1fc6.js","811","static/chunks/811-fe7d5e4541f95d60.js","308","static/chunks/app/blog/%5Bslug%5D/page-47193f5182e28c69.js"],""]
+b:T75e,type InputPath = 'text' | 'bash' | 'slash'
+
+interface ClassifiedInput {
+path: InputPath
+raw: string
+payload: string  // stripped of prefix for bash/slash
+}
+
+function classifyInput(raw: string): ClassifiedInput {
+if (raw.startsWith('!')) {
+  return { path: 'bash', raw, payload: raw.slice(1).trim() }
+}
+if (raw.startsWith('/')) {
+  return { path: 'slash', raw, payload: raw.slice(1).trim() }
+}
+return { path: 'text', raw, payload: raw }
+}
+
+async function processUserInput(
+raw: string,
+context: SessionContext
+): Promise<ProcessResult> {
+const classified = classifyInput(raw)
+
+switch (classified.path) {
+  case 'bash': {
+    // Check shell permission before executing
+    checkPermission(context, 'shell_execute')
+    return executeBashCommand(classified.payload, context)
+  }
+  case 'slash': {
+    // Resolve command from registry — fails if not available in this context
+    const command = resolveCommand(classified.payload, context)
+    return executeSlashCommand(command, context)
+  }
+  case 'text': {
+    // Check if speculative execution already has a result
+    const promoted = tryPromoteSpeculation(classified.payload, context)
+    if (promoted) return promoted
+    // Otherwise enter the query loop
+    return enterQueryLoop(classified.payload, context)
+  }
+}
+}
+
+// Speculation: starts before user submits
+async function speculativeExecute(
+suggestion: string,
+context: SessionContext
+): Promise<SpeculationResult> {
+const state = getSpeculationState()
+if (state.inFlight) return // only one speculation at a time
+
+setSpeculationState({ inFlight: true, target: suggestion })
+
+try {
+  // Model call with read-only tool restriction
+  const result = await runQueryLoopReadOnly(suggestion, context)
+  setSpeculationState({ inFlight: false, result, target: suggestion })
+  return result
+} catch {
+  setSpeculationState({ inFlight: false, result: null, target: null })
+  throw
+}
+}c:T6ef,from dataclasses import dataclass
+from typing import Literal
+from asyncio import Lock
+
+InputPath = Literal['text', 'bash', 'slash']
+
+@dataclass
+class ClassifiedInput:
+  path: InputPath
+  raw: str
+  payload: str
+
+def classify_input(raw: str) -> ClassifiedInput:
+  if raw.startswith('!'):
+      return ClassifiedInput('bash', raw, raw[1:].strip())
+  if raw.startswith('/'):
+      return ClassifiedInput('slash', raw, raw[1:].strip())
+  return ClassifiedInput('text', raw, raw)
+
+async def process_user_input(
+  raw: str,
+  context: 'SessionContext'
+) -> 'ProcessResult':
+  classified = classify_input(raw)
+
+  if classified.path == 'bash':
+      context.check_permission('shell_execute')
+      return await execute_bash_command(classified.payload, context)
+
+  if classified.path == 'slash':
+      command = resolve_command(classified.payload, context)
+      return await execute_slash_command(command, context)
+
+  # text path: try promotion first
+  promoted = try_promote_speculation(classified.payload, context)
+  if promoted:
+      return promoted
+  return await enter_query_loop(classified.payload, context)
+
+@dataclass
+class SpeculationState:
+  in_flight: bool = False
+  target: str | None = None
+  result: 'QueryResult | None' = None
+
+_speculation: SpeculationState = SpeculationState()
+_lock = Lock()
+
+async def speculative_execute(
+  suggestion: str,
+  context: 'SessionContext'
+) -> None:
+  """Start speculative execution in the background — read-only tools only."""
+  async with _lock:
+      if _speculation.in_flight:
+          return
+      _speculation.in_flight = True
+      _speculation.target = suggestion
+
+  try:
+      result = await run_query_loop_read_only(suggestion, context)
+      _speculation.result = result
+  finally:
+      _speculation.in_flight = Falsed:T750,type InputPath string
+
+const (
+  PathText  InputPath = "text"
+  PathBash  InputPath = "bash"
+  PathSlash InputPath = "slash"
+)
+
+type ClassifiedInput struct {
+  Path    InputPath
+  Raw     string
+  Payload string
+}
+
+func ClassifyInput(raw string) ClassifiedInput {
+  switch {
+  case strings.HasPrefix(raw, "!"):
+      return ClassifiedInput{PathBash, raw, strings.TrimSpace(raw[1:])}
+  case strings.HasPrefix(raw, "/"):
+      return ClassifiedInput{PathSlash, raw, strings.TrimSpace(raw[1:])}
+  default:
+      return ClassifiedInput{PathText, raw, raw}
+  }
+}
+
+func ProcessUserInput(raw string, ctx *SessionContext) (*ProcessResult, error) {
+  classified := ClassifyInput(raw)
+
+  switch classified.Path {
+  case PathBash:
+      if err := ctx.CheckPermission("shell_execute"); err != nil {
+          return nil, err
+      }
+      return ExecuteBashCommand(classified.Payload, ctx)
+
+  case PathSlash:
+      cmd, err := ResolveCommand(classified.Payload, ctx)
+      if err != nil {
+          return nil, err
+      }
+      return ExecuteSlashCommand(cmd, ctx)
+
+  default: // PathText
+      if promoted := TryPromoteSpeculation(classified.Payload, ctx); promoted != nil {
+          return promoted, nil
+      }
+      return EnterQueryLoop(classified.Payload, ctx)
+  }
+}
+
+// SpeculationState — protected by mutex
+type SpeculationState struct {
+  mu       sync.Mutex
+  InFlight bool
+  Target   string
+  Result   *QueryResult
+}
+
+func (s *SpeculationState) TryStart(suggestion string) bool {
+  s.mu.Lock()
+  defer s.mu.Unlock()
+  if s.InFlight {
+      return false
+  }
+  s.InFlight = true
+  s.Target = suggestion
+  return true
+}
+
+func (s *SpeculationState) TryPromote(input string) *QueryResult {
+  s.mu.Lock()
+  defer s.mu.Unlock()
+  if s.Target == input && s.Result != nil {
+      result := s.Result
+      s.Result = nil
+      s.Target = ""
+      return result
+  }
+  return nil
+}2:["$","article",null,{"className":"space-y-8","children":[["$","header",null,{"className":"space-y-4 rounded-2xl border border-slate-200 bg-gradient-to-br from-white to-indigo-50 p-6 sm:p-8","children":[["$","h1",null,{"className":"text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl","children":"Claude Code Input Pipeline: Three Paths Before the Model Runs"}],["$","div",null,{"className":"flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-slate-600","children":[["$","time",null,{"dateTime":"2026-04-02","children":"April 2, 2026"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"2 min read"}],[["$","span",null,{"children":"•"}],["$","span",null,{"children":"AI Agents"}]]]}],["$","p",null,{"className":"text-lg leading-relaxed text-slate-700","children":"How processUserInput routes text, !bash, and /slash into separate permission paths, and how speculative execution and prompt suggestions reduce perceived latency."}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","span","ai-agents",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"ai-agents"}],["$","span","claude-code",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"claude-code"}],["$","span","input-pipeline",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"input-pipeline"}],["$","span","speculation",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"speculation"}],["$","span","prompt-suggestions",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"prompt-suggestions"}]]}]]}],["$","div",null,{"className":"prose max-w-none rounded-xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8","children":[["$","nav",null,{"data-component":"SeriesNav","className":"styles_container__A3IRs","children":[["$","div",null,{"className":"styles_topBar__Z1gym","children":[["$","a",null,{"href":"/blog/ai-agents-claude-code-series-index","className":"styles_seriesLink__rLemJ","children":"Claude Code: Source Reading Series"}],["$","span",null,{"className":"styles_sep__GGjd3","children":"›"}],["$","span",null,{"className":"styles_layerBadge__Q0d3m","children":"Layer 1: The Runtime Host"}],["$","span",null,{"className":"styles_partBadge__fUwxC","children":["Part ",2," / ",18]}]]}],["$","div",null,{"className":"styles_progressBar__fgLWL","children":["$","div",null,{"className":"styles_progressFill__qjZc_","style":{"width":"11%"}}]}],["$","div",null,{"className":"styles_bottomNav__qPM7g","children":[["$","a",null,{"href":"/blog/ai-agents-claude-code-source-map-boot-pipeline","className":"styles_navLink__Bk58u styles_navLinkPrev__LuRrD","children":[["$","span",null,{"className":"styles_navDirection__8wLNi","children":"← Previous"}],["$","span",null,{"className":"styles_navTitle__21udg","children":"Boot & Session Assembly"}]]}],["$","a",null,{"href":"/blog/ai-agents-claude-code-query-loop-notes","className":"styles_navLink__Bk58u styles_navLinkNext__2KWCL","children":[["$","span",null,{"className":"styles_navDirection__8wLNi","children":"Next →"}],["$","span",null,{"className":"styles_navTitle__21udg","children":"Query Loop"}]]}]]}],false]}],"\n",["$","p",null,{"children":"The agent loop starts when the model runs."}],"\n",["$","p",null,{"children":"That is the wrong frame."}],"\n",["$","p",null,{"children":"In Claude Code, a significant amount of work happens before the model is called — routing input, pre-executing likely continuations, and generating suggestions for what the user might type next."}],"\n",["$","h2",null,{"children":"File structure"}],"\n",["$","$L9",null,{"highlightedPaths":["src/utils/processUserInput/processUserInput.ts","src/utils/speculation/speculativeExecute.ts","src/utils/speculation/speculations.ts","src/utils/promptSuggestion/generatePromptSuggestions.ts","src/utils/promptSuggestion/promptSuggestionState.ts"]}],"\n",["$","section",null,{"className":"styles_container__5lCUS","data-component":"SourceFileCard","children":[["$","div",null,{"className":"styles_header__dyQ1Z","children":[["$","div",null,{"className":"styles_headerMain__rjDfx","children":[["$","p",null,{"className":"styles_path__51AwZ","children":"src/utils/processUserInput/processUserInput.ts"}],["$","h3",null,{"className":"styles_role__nfEhJ","children":"3-path input router"}]]}],["$","div",null,{"className":"styles_badges__pF5IJ","children":["$","span",null,{"className":"styles_importanceBadge__L3cXb","children":"Critical"}]}]]}],["$","p",null,{"className":"styles_summary__U4AnH","children":"606-line router that classifies every user input into one of three paths: plain text (→ query loop), !bash command (→ shell execution), or /slash command (→ command handler). Each path has distinct pre-processing, permission checks, and output routing."}],["$","dl",null,{"className":"styles_metaGrid__XCxXQ","children":["$","div",null,{"className":"styles_metaItem__WwAW9","children":[["$","dt",null,{"className":"styles_metaLabel___SXxX","children":"Module"}],["$","dd",null,{"className":"styles_metaValue__alqAB","children":"Input Pipeline"}]]}]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Key Exports"}],["$","ul",null,{"className":"styles_chipList__6CD4U","children":[["$","li","processUserInput",{"className":"styles_chip__NkeZa","children":"processUserInput"}],["$","li","classifyInput",{"className":"styles_chip__NkeZa","children":"classifyInput"}],["$","li","InputPath",{"className":"styles_chip__NkeZa","children":"InputPath"}]]}]]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Why It Matters"}],["$","ul",null,{"className":"styles_pointList__fc1yj","children":[["$","li","The 3-path split means the query loop never sees raw !bash or /slash input — it only receives pre-classified text turns.",{"className":"styles_point__nyY9Y","children":"The 3-path split means the query loop never sees raw !bash or /slash input — it only receives pre-classified text turns."}],["$","li","Each path has its own permission check: !bash checks shell permissions, /slash resolves command availability, text goes straight to query.",{"className":"styles_point__nyY9Y","children":"Each path has its own permission check: !bash checks shell permissions, /slash resolves command availability, text goes straight to query."}],["$","li","At 606 lines, processUserInput is one of the largest single-responsibility files in the codebase — the routing logic is genuinely complex.",{"className":"styles_point__nyY9Y","children":"At 606 lines, processUserInput is one of the largest single-responsibility files in the codebase — the routing logic is genuinely complex."}]]}]]}],null]}],"\n",["$","section",null,{"className":"styles_container__5lCUS","data-component":"SourceFileCard","children":[["$","div",null,{"className":"styles_header__dyQ1Z","children":[["$","div",null,{"className":"styles_headerMain__rjDfx","children":[["$","p",null,{"className":"styles_path__51AwZ","children":"src/utils/speculation/"}],["$","h3",null,{"className":"styles_role__nfEhJ","children":"Speculative turn pre-execution"}]]}],["$","div",null,{"className":"styles_badges__pF5IJ","children":["$","span",null,{"className":"styles_importanceBadge__L3cXb","children":"High"}]}]]}],["$","p",null,{"className":"styles_summary__U4AnH","children":"Starts executing likely continuations in the background before the user submits. Uses the current conversation state and prompt suggestion candidates to speculatively call the model, then discards or promotes results based on whether the user's actual input matched the speculation."}],["$","dl",null,{"className":"styles_metaGrid__XCxXQ","children":["$","div",null,{"className":"styles_metaItem__WwAW9","children":[["$","dt",null,{"className":"styles_metaLabel___SXxX","children":"Module"}],["$","dd",null,{"className":"styles_metaValue__alqAB","children":"Input Pipeline"}]]}]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Key Exports"}],["$","ul",null,{"className":"styles_chipList__6CD4U","children":[["$","li","speculativeExecute",{"className":"styles_chip__NkeZa","children":"speculativeExecute"}],["$","li","SpeculationState",{"className":"styles_chip__NkeZa","children":"SpeculationState"}],["$","li","promoteSpeculation",{"className":"styles_chip__NkeZa","children":"promoteSpeculation"}],["$","li","discardSpeculation",{"className":"styles_chip__NkeZa","children":"discardSpeculation"}]]}]]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Why It Matters"}],["$","ul",null,{"className":"styles_pointList__fc1yj","children":[["$","li","Speculation is a latency optimization, not a feature — the user never sees speculative work unless it was promoted.",{"className":"styles_point__nyY9Y","children":"Speculation is a latency optimization, not a feature — the user never sees speculative work unless it was promoted."}],["$","li","The discard path must be careful not to leave observable side effects (tool calls, file writes) from a speculative turn.",{"className":"styles_point__nyY9Y","children":"The discard path must be careful not to leave observable side effects (tool calls, file writes) from a speculative turn."}],["$","li","AppState tracks SpeculationState so UI can indicate 'pre-computing' without exposing the actual speculative content.",{"className":"styles_point__nyY9Y","children":"AppState tracks SpeculationState so UI can indicate 'pre-computing' without exposing the actual speculative content."}]]}]]}],null]}],"\n",["$","section",null,{"className":"styles_container__5lCUS","data-component":"SourceFileCard","children":[["$","div",null,{"className":"styles_header__dyQ1Z","children":[["$","div",null,{"className":"styles_headerMain__rjDfx","children":[["$","p",null,{"className":"styles_path__51AwZ","children":"src/utils/promptSuggestion/"}],["$","h3",null,{"className":"styles_role__nfEhJ","children":"Background suggestion generation"}]]}],["$","div",null,{"className":"styles_badges__pF5IJ","children":["$","span",null,{"className":"styles_importanceBadge__L3cXb","children":"Medium"}]}]]}],["$","p",null,{"className":"styles_summary__U4AnH","children":"Generates candidate next prompts in the background during idle periods. Suggestions appear as autocomplete candidates in the input box. Generated using the conversation context and a lightweight prediction prompt."}],["$","dl",null,{"className":"styles_metaGrid__XCxXQ","children":["$","div",null,{"className":"styles_metaItem__WwAW9","children":[["$","dt",null,{"className":"styles_metaLabel___SXxX","children":"Module"}],["$","dd",null,{"className":"styles_metaValue__alqAB","children":"Input Pipeline"}]]}]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Key Exports"}],["$","ul",null,{"className":"styles_chipList__6CD4U","children":[["$","li","generatePromptSuggestions",{"className":"styles_chip__NkeZa","children":"generatePromptSuggestions"}],["$","li","PromptSuggestionState",{"className":"styles_chip__NkeZa","children":"PromptSuggestionState"}]]}]]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Why It Matters"}],["$","ul",null,{"className":"styles_pointList__fc1yj","children":[["$","li","Suggestion generation runs in idle time — it does not block the foreground turn.",{"className":"styles_point__nyY9Y","children":"Suggestion generation runs in idle time — it does not block the foreground turn."}],["$","li","Suggestions feed the speculation engine: the top suggestion is the most likely target for speculative execution.",{"className":"styles_point__nyY9Y","children":"Suggestions feed the speculation engine: the top suggestion is the most likely target for speculative execution."}],["$","li","AppState holds PromptSuggestionState, keeping suggestions synchronized across UI renders without prop drilling.",{"className":"styles_point__nyY9Y","children":"AppState holds PromptSuggestionState, keeping suggestions synchronized across UI renders without prop drilling."}]]}]]}],null]}],"\n",["$","h2",null,{"children":"The pre-turn pipeline"}],"\n",["$","section",null,{"className":"styles_container__ZnY0Q","data-component":"CalloutFlow","children":[["$","div",null,{"className":"styles_header__QlXI3","children":[["$","h3",null,{"className":"styles_title__PjGPE","children":"What happens before the model runs"}],["$","p",null,{"className":"styles_description__A_tMR","children":"The input pipeline stages that execute between user keypress and model API call."}]]}],["$","ol",null,{"className":"styles_stepList__eTbMY","children":[["$","li","1-Classify input",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":1}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Classify input"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"utils/processUserInput/processUserInput.ts"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"processUserInput.ts routes the raw input into one of three paths: plain text, !bash, or /slash. Each path gets separate permission checks and pre-processing."}],null]}]]}],["$","li","2-Generate suggestions (background)",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":2}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Generate suggestions (background)"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"utils/promptSuggestion/"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"During idle time between turns, promptSuggestion generates candidate next prompts. These appear as autocomplete in the input box and feed the speculation engine."}],null]}]]}],["$","li","3-Speculative pre-execution (background)",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":3}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Speculative pre-execution (background)"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"utils/speculation/"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"Using the top suggestion as a target, speculation starts executing the most likely continuation before the user submits. If the actual input matches, the result is promoted instead of re-executed."}],null]}]]}],["$","li","4-Query loop entry",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":4}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Query loop entry"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"query.ts"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"Classified text input enters query.ts. If speculation matched and was promoted, the turn result is already available. If not, a fresh turn begins."}],null]}]]}]]}]]}],"\n",["$","h2",null,{"children":"The 3-path router matters for permissions"}],"\n",["$","p",null,{"children":"The reason processUserInput is 606 lines is not routing complexity alone."}],"\n",["$","p",null,{"children":"Each path carries its own trust and permission model:"}],"\n",["$","p",null,{"children":[["$","strong",null,{"children":"Text path"}],": Goes to the query loop. The model decides what tools to call. Permissions apply at tool execution time."]}],"\n",["$","p",null,{"children":[["$","strong",null,{"children":"!bash path"}],": Executes a shell command directly. Requires the user to be in a trust context that allows arbitrary shell commands — a different check than tool permissions."]}],"\n",["$","p",null,{"children":[["$","strong",null,{"children":"/slash path"}],": Resolves a command from the command registry. Must verify the command exists and is available in the current context (not all commands are available in non-interactive mode, pipe mode, or bridge sessions)."]}],"\n",["$","p",null,{"children":["Merging these paths into one would mean applying the least-restrictive permission model to all three, which would let ",["$","code",null,{"children":"/slash"}]," and ",["$","code",null,{"children":"!bash"}]," bypass tool permission gates, or force text input through unnecessary checks."]}],"\n",["$","p",null,{"children":"The split is the correct design."}],"\n",["$","h2",null,{"children":"Why speculation needs a discard path"}],"\n",["$","p",null,{"children":"Speculative execution is only safe if the discard path is clean."}],"\n",["$","p",null,{"children":"The risk: a speculative turn calls a tool — writes a file, runs a shell command, makes an API call — and then the user's actual input does not match the speculation."}],"\n",["$","p",null,{"children":"Claude Code handles this by restricting what speculative turns can do."}],"\n",["$","p",null,{"children":"Speculation runs a model call but does not allow side-effectful tool execution. Read-only operations (file reads, search) are safe to speculate. Write operations and shell commands are not."}],"\n",["$","p",null,{"children":"The SpeculationState in AppState tracks whether a speculative call is in flight, so the UI can show a loading indicator without revealing which specific completion was being speculatively computed."}],"\n",["$","h2",null,{"children":"Suggestions as latency infrastructure"}],"\n",["$","p",null,{"children":"The prompt suggestion pipeline is easy to dismiss as a UI convenience."}],"\n",["$","p",null,{"children":"It is actually latency infrastructure."}],"\n",["$","p",null,{"children":"The suggestion pipeline runs during idle time — after a turn completes but before the user types their next input. If the user's next input matches a suggestion, speculation may have already completed the corresponding turn."}],"\n",["$","p",null,{"children":"That is the full loop:"}],"\n",["$","ol",null,{"children":["\n",["$","li",null,{"children":"turn completes"}],"\n",["$","li",null,{"children":"suggestions generated in background"}],"\n",["$","li",null,{"children":"speculation starts on top suggestion"}],"\n",["$","li",null,{"children":"user submits — if it matches, result is promoted; if not, discard and run fresh"}],"\n"]}],"\n",["$","p",null,{"children":"The latency benefit only materializes when the suggestion accurately predicted what the user would type. That accuracy depends on the quality of the suggestion prompt and the consistency of the user's working patterns."}],"\n",["$","$La",null,{"title":"Input routing and speculation pattern","description":"The 3-path router and speculation lifecycle. JS shows the actual shape; Python and Go show the same structure.","tabs":[{"label":"JavaScript","language":"typescript","filename":"utils/processUserInput (simplified)","description":"3-path input router — actual pattern from learning-claude-code","code":"$b"},{"label":"Python","language":"python","filename":"input_pipeline.py (teaching version)","description":"3-path router with speculation lifecycle in Python","code":"$c"},{"label":"Go","language":"go","filename":"input_pipeline.go (teaching version)","description":"3-path router and speculation state in Go","code":"$d"}]}],"\n",["$","section",null,{"className":"styles_container__oZwSC","data-component":"QuestionModule","children":[["$","div",null,{"className":"styles_header__mm_0m","children":[["$","h3",null,{"className":"styles_question__PznEA","children":"Claude Code's speculation engine restricts speculative turns to read-only tool operations. Why is this restriction necessary even though the user might eventually submit the speculated prompt?"}],["$","span",null,{"className":"styles_badge__4rHEw styles_badgeMedium__xXH7Q","children":"medium"}]]}],["$","p",null,{"className":"styles_context__hE7d4","children":"Speculative execution starts running a turn before the user submits. If the user's actual input matches the speculation, the result is promoted. If it does not match, the speculation is discarded."}],["$","ul",null,{"className":"styles_optionList__TKMHh","children":[["$","li","A",{"className":"styles_option__DTfSF","children":["$","details",null,{"children":[["$","summary",null,{"className":"styles_optionSummary__noBWC","children":[["$","span",null,{"className":"styles_optionMarker__tZP_f styles_optionMarkerIncorrect__ymBsg","children":"A"}],"Read-only tools are faster, so speculation completes before the user submits"]}],["$","div",null,{"className":"styles_reveal__PELdG styles_revealIncorrect__z_T88","children":[["$","span",null,{"className":"styles_revealLabel__IXR5j","children":"Incorrect."}],["$","span",null,{"children":"Performance is a benefit, but it is not the reason for the restriction. The primary concern is about side effects from non-matching speculations."}]]}]]}]}],["$","li","B",{"className":"styles_option__DTfSF","children":["$","details",null,{"children":[["$","summary",null,{"className":"styles_optionSummary__noBWC","children":[["$","span",null,{"className":"styles_optionMarker__tZP_f styles_optionMarkerCorrect__zxpQk","children":"B"}],"Speculative turns that do not match the user's actual input must be discarded without trace — write operations and shell commands cannot be undone if the speculation was wrong"]}],["$","div",null,{"className":"styles_reveal__PELdG styles_revealCorrect__rDxQT","children":[["$","span",null,{"className":"styles_revealLabel__IXR5j","children":"Correct!"}],["$","span",null,{"children":"Correct. If a speculative turn writes a file or runs a shell command, and then the user types something different, those side effects are already in the world. There is no clean discard path for writes. Read-only operations (file reads, search) produce no side effects, so they can be safely discarded if the speculation does not match."}]]}]]}]}],["$","li","C",{"className":"styles_option__DTfSF","children":["$","details",null,{"children":[["$","summary",null,{"className":"styles_optionSummary__noBWC","children":[["$","span",null,{"className":"styles_optionMarker__tZP_f styles_optionMarkerIncorrect__ymBsg","children":"C"}],"Write operations require user confirmation, which would reveal that speculation was in progress"]}],["$","div",null,{"className":"styles_reveal__PELdG styles_revealIncorrect__z_T88","children":[["$","span",null,{"className":"styles_revealLabel__IXR5j","children":"Incorrect."}],["$","span",null,{"children":"While this is a secondary concern, the primary issue is irreversibility. Even if the user never sees the write, the file system has already been modified."}]]}]]}]}],["$","li","D",{"className":"styles_option__DTfSF","children":["$","details",null,{"children":[["$","summary",null,{"className":"styles_optionSummary__noBWC","children":[["$","span",null,{"className":"styles_optionMarker__tZP_f styles_optionMarkerIncorrect__ymBsg","children":"D"}],"The model cannot reliably predict which files to write without seeing the user's exact input"]}],["$","div",null,{"className":"styles_reveal__PELdG styles_revealIncorrect__z_T88","children":[["$","span",null,{"className":"styles_revealLabel__IXR5j","children":"Incorrect."}],["$","span",null,{"children":"This describes a prediction quality issue, not the reason for the restriction. The restriction exists because of side-effect irreversibility, not because write prediction is unreliable."}]]}]]}]}]]}],"$undefined"]}]]}],["$","nav",null,{"aria-label":"Post navigation","className":"grid gap-3 sm:grid-cols-2","children":[["$","$Le",null,{"href":"/blog/ai-agents-claude-code-lsp-integration-notes","className":"rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-indigo-300 hover:bg-indigo-50","children":[["$","p",null,{"className":"text-xs font-medium uppercase tracking-wide text-slate-500","children":"Previous"}],["$","p",null,{"className":"mt-1 text-sm font-semibold text-slate-900","children":"Claude Code LSP Integration: Persistent Servers, Push-Based Diagnostics"}]]}],["$","$Le",null,{"href":"/blog/ai-agents-claude-code-architecture-review","className":"rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-indigo-300 hover:bg-indigo-50 sm:text-right","children":[["$","p",null,{"className":"text-xs font-medium uppercase tracking-wide text-slate-500","children":"Next"}],["$","p",null,{"className":"mt-1 text-sm font-semibold text-slate-900","children":"Claude Code Architecture: Five Principles for Building Agent Runtimes"}]]}]]}]]}]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Claude Code Input Pipeline: Three Paths Before the Model Runs — Blog — Bowen Yang"}],["$","meta","3",{"name":"description","content":"How processUserInput routes text, !bash, and /slash into separate permission paths, and how speculative execution and prompt suggestions reduce perceived latency."}],["$","meta","4",{"name":"keywords","content":"Claude Code input pipeline,processUserInput,speculative execution,prompt suggestions,input router"}],["$","meta","5",{"property":"og:title","content":"Claude Code Input Pipeline: Three Paths Before the Model Runs — Blog"}],["$","meta","6",{"property":"og:description","content":"How processUserInput routes text, !bash, and /slash into separate permission paths, and how speculative execution and prompt suggestions reduce perceived latency."}],["$","meta","7",{"property":"og:url","content":"https://codewisdom.io/blog/ai-agents-claude-code-input-pipeline-notes/"}],["$","meta","8",{"property":"og:site_name","content":"Bowen Yang"}],["$","meta","9",{"property":"og:locale","content":"en_US"}],["$","meta","10",{"property":"og:type","content":"article"}],["$","meta","11",{"property":"article:published_time","content":"2026-04-02"}],["$","meta","12",{"property":"article:modified_time","content":"2026-04-02"}],["$","meta","13",{"name":"twitter:card","content":"summary"}],["$","meta","14",{"name":"twitter:title","content":"Claude Code Input Pipeline: Three Paths Before the Model Runs — Blog"}],["$","meta","15",{"name":"twitter:description","content":"How processUserInput routes text, !bash, and /slash into separate permission paths, and how speculative execution and prompt suggestions reduce perceived latency."}],["$","link","16",{"rel":"icon","href":"/icon.svg?893d1655c173574a","type":"image/svg+xml","sizes":"any"}],["$","meta","17",{"name":"next-size-adjust"}]]
+1:null

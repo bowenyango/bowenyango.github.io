@@ -1,0 +1,210 @@
+3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[5422,["231","static/chunks/231-cda03aaab516dc35.js","185","static/chunks/app/layout-7fb6aa1a64abd4d2.js"],"default"]
+7:I[9669,["231","static/chunks/231-cda03aaab516dc35.js","185","static/chunks/app/layout-7fb6aa1a64abd4d2.js"],"default"]
+4:["slug","ai-agents-claude-code-lsp-integration-notes","d"]
+0:["8Yk2ujLo2tCBbuzKM08m4",[[["",{"children":["blog",{"children":[["slug","ai-agents-claude-code-lsp-integration-notes","d"],{"children":["__PAGE__?{\"slug\":\"ai-agents-claude-code-lsp-integration-notes\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["blog",{"children":[["slug","ai-agents-claude-code-lsp-integration-notes","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fc97ab377e9eb9f1.css","precedence":"next","crossOrigin":"$undefined"}]]}],null]},[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null],null]},[["$","html",null,{"lang":"en","suppressHydrationWarning":true,"className":"__variable_f367f3","children":["$","body",null,{"suppressHydrationWarning":true,"className":"relative min-h-screen overflow-x-hidden bg-[#FAF9F5] text-slate-900 antialiased","children":[["$","$L6",null,{}],["$","div",null,{"id":"app-shell","className":"relative z-10 flex min-h-screen flex-col","children":[["$","$L7",null,{}],["$","main",null,{"className":"mx-auto w-full max-w-5xl flex-1 px-4 py-8 sm:px-6 sm:py-10","children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]}],["$","footer",null,{"className":"bg-transparent","children":["$","div",null,{"className":"mx-auto w-full max-w-5xl px-4 py-6 sm:px-6","children":["$","p",null,{"className":"text-sm text-slate-400","children":"Code Wisdom © 2024-2026"}]}]}]]}]]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/011c10e6cbcb66d9.css","precedence":"next","crossOrigin":"$undefined"}]],[null,"$L8"]]]]]
+9:I[5474,["231","static/chunks/231-cda03aaab516dc35.js","540","static/chunks/540-c71c30a3213e5e7b.js","224","static/chunks/224-fa8e27c5e1ae8a62.js","331","static/chunks/331-7b4554f1e2ba1fc6.js","811","static/chunks/811-fe7d5e4541f95d60.js","308","static/chunks/app/blog/%5Bslug%5D/page-47193f5182e28c69.js"],"default"]
+a:I[2295,["231","static/chunks/231-cda03aaab516dc35.js","540","static/chunks/540-c71c30a3213e5e7b.js","224","static/chunks/224-fa8e27c5e1ae8a62.js","331","static/chunks/331-7b4554f1e2ba1fc6.js","811","static/chunks/811-fe7d5e4541f95d60.js","308","static/chunks/app/blog/%5Bslug%5D/page-47193f5182e28c69.js"],"default"]
+e:I[231,["231","static/chunks/231-cda03aaab516dc35.js","540","static/chunks/540-c71c30a3213e5e7b.js","224","static/chunks/224-fa8e27c5e1ae8a62.js","331","static/chunks/331-7b4554f1e2ba1fc6.js","811","static/chunks/811-fe7d5e4541f95d60.js","308","static/chunks/app/blog/%5Bslug%5D/page-47193f5182e28c69.js"],""]
+b:T5ed,type LSPServerState =
+| 'initializing'
+| 'ready'
+| 'error'
+| 'restarting'
+| 'stopped'
+
+class LSPServerInstance {
+private state: LSPServerState = 'initializing'
+private process: ChildProcess | null = null
+private capabilities: ServerCapabilities = {}
+
+async start() {
+  this.process = spawnLanguageServer(this.serverType)
+  const capabilities = await this.initialize()
+  this.capabilities = capabilities
+  this.state = 'ready'
+
+  this.process.on('exit', () => {
+    if (this.state !== 'stopped') {
+      this.state = 'restarting'
+      this.restart()
+    }
+  })
+}
+
+async sendRequest(method, params) {
+  if (this.state !== 'ready') throw new Error('Server not ready: ' + this.state)
+  return this.channel.sendRequest(method, params)
+}
+}
+
+// LSPDiagnosticRegistry: push-based, bounded
+class LSPDiagnosticRegistry {
+private byFile = new Map()
+private totalCount = 0
+
+// Called by server when it pushes textDocument/publishDiagnostics
+updateDiagnostics(fileUri: string, diagnostics: Diagnostic[]): void {
+  const prev = this.byFile.get(fileUri) ?? []
+  this.totalCount -= prev.length
+
+  // Enforce per-file and total bounds
+  const bounded = dedupLRU(diagnostics).slice(0, 10)
+  const allowedCount = Math.min(bounded.length, 30 - this.totalCount)
+  const accepted = bounded.slice(0, allowedCount)
+
+  this.byFile.set(fileUri, accepted)
+  this.totalCount += accepted.length
+}
+
+getDiagnostics(fileUri?: string): Diagnostic[] {
+  if (fileUri) return this.byFile.get(fileUri) ?? []
+  return [...this.byFile.values()].flat()
+}
+}c:T818,from dataclasses import dataclass, field
+from enum import Enum
+from collections import deque
+import asyncio
+
+class LSPServerState(Enum):
+  INITIALIZING = 'initializing'
+  READY = 'ready'
+  ERROR = 'error'
+  RESTARTING = 'restarting'
+  STOPPED = 'stopped'
+
+class LSPServerInstance:
+  def __init__(self, server_type: str) -> None:
+      self.server_type = server_type
+      self.state = LSPServerState.INITIALIZING
+      self.capabilities: dict = {}
+      self._process: asyncio.subprocess.Process | None = None
+
+  async def start(self) -> None:
+      self._process = await spawn_language_server(self.server_type)
+      self.capabilities = await self._initialize()
+      self.state = LSPServerState.READY
+
+      # Auto-restart on crash
+      asyncio.create_task(self._watch_process())
+
+  async def _watch_process(self) -> None:
+      await self._process.wait()
+      if self.state != LSPServerState.STOPPED:
+          self.state = LSPServerState.RESTARTING
+          await self.start()
+
+  async def send_request(self, method: str, params: dict) -> dict:
+      if self.state != LSPServerState.READY:
+          raise RuntimeError(f"Server not ready: {self.state}")
+      return await self._channel.send_request(method, params)
+
+MAX_PER_FILE = 10
+MAX_TOTAL = 30
+
+@dataclass
+class LSPDiagnosticRegistry:
+  _by_file: dict[str, list[dict]] = field(default_factory=dict)
+  _total: int = 0
+
+  def update_diagnostics(self, file_uri: str, diagnostics: list[dict]) -> None:
+      """Called when server pushes textDocument/publishDiagnostics."""
+      prev = self._by_file.get(file_uri, [])
+      self._total -= len(prev)
+
+      # Bound and deduplicate
+      deduped = dedup_lru(diagnostics)[:MAX_PER_FILE]
+      allowed = min(len(deduped), MAX_TOTAL - self._total)
+      accepted = deduped[:allowed]
+
+      self._by_file[file_uri] = accepted
+      self._total += len(accepted)
+
+  def get_diagnostics(self, file_uri: str | None = None) -> list[dict]:
+      if file_uri:
+          return self._by_file.get(file_uri, [])
+      return [d for diags in self._by_file.values() for d in diags]d:T6d6,type LSPServerState string
+
+const (
+  StateInitializing LSPServerState = "initializing"
+  StateReady        LSPServerState = "ready"
+  StateError        LSPServerState = "error"
+  StateRestarting   LSPServerState = "restarting"
+  StateStopped      LSPServerState = "stopped"
+)
+
+type LSPServerInstance struct {
+  mu           sync.Mutex
+  serverType   string
+  state        LSPServerState
+  capabilities map[string]any
+  process      *exec.Cmd
+  channel      *JSONRPCChannel
+}
+
+func (s *LSPServerInstance) Start(ctx context.Context) error {
+  proc, err := spawnLanguageServer(ctx, s.serverType)
+  if err != nil {
+      return err
+  }
+  s.process = proc
+
+  caps, err := s.initialize()
+  if err != nil {
+      return err
+  }
+
+  s.mu.Lock()
+  s.capabilities = caps
+  s.state = StateReady
+  s.mu.Unlock()
+
+  // Auto-restart on crash
+  go s.watchProcess(ctx)
+  return nil
+}
+
+func (s *LSPServerInstance) watchProcess(ctx context.Context) {
+  s.process.Wait()
+  s.mu.Lock()
+  if s.state != StateStopped {
+      s.state = StateRestarting
+      s.mu.Unlock()
+      s.Start(ctx)
+      return
+  }
+  s.mu.Unlock()
+}
+
+// LSPDiagnosticRegistry: push-based, bounded
+const maxPerFile = 10
+const maxTotal = 30
+
+type LSPDiagnosticRegistry struct {
+  mu     sync.RWMutex
+  byFile map[string][]Diagnostic
+  total  int
+}
+
+func (r *LSPDiagnosticRegistry) UpdateDiagnostics(fileURI string, diagnostics []Diagnostic) {
+  r.mu.Lock()
+  defer r.mu.Unlock()
+
+  prev := r.byFile[fileURI]
+  r.total -= len(prev)
+
+  deduped := dedupLRU(diagnostics)
+  if len(deduped) > maxPerFile {
+      deduped = deduped[:maxPerFile]
+  }
+  allowed := maxTotal - r.total
+  if len(deduped) > allowed {
+      deduped = deduped[:allowed]
+  }
+
+  r.byFile[fileURI] = deduped
+  r.total += len(deduped)
+}2:["$","article",null,{"className":"space-y-8","children":[["$","header",null,{"className":"space-y-4 rounded-2xl border border-slate-200 bg-gradient-to-br from-white to-indigo-50 p-6 sm:p-8","children":[["$","h1",null,{"className":"text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl","children":"Claude Code LSP Integration: Persistent Servers, Push-Based Diagnostics"}],["$","div",null,{"className":"flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-slate-600","children":[["$","time",null,{"dateTime":"2026-04-02","children":"April 2, 2026"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"2 min read"}],[["$","span",null,{"children":"•"}],["$","span",null,{"children":"AI Agents"}]]]}],["$","p",null,{"className":"text-lg leading-relaxed text-slate-700","children":"How Claude Code runs a persistent multi-server LSP stack, collects diagnostics passively via push notifications, and bounds the registry to 10 diagnostics per file and 30 total."}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","span","ai-agents",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"ai-agents"}],["$","span","claude-code",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"claude-code"}],["$","span","lsp",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"lsp"}],["$","span","language-server",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"language-server"}],["$","span","diagnostics",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"diagnostics"}]]}]]}],["$","div",null,{"className":"prose max-w-none rounded-xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8","children":[["$","nav",null,{"data-component":"SeriesNav","className":"styles_container__A3IRs","children":[["$","div",null,{"className":"styles_topBar__Z1gym","children":[["$","a",null,{"href":"/blog/ai-agents-claude-code-series-index","className":"styles_seriesLink__rLemJ","children":"Claude Code: Source Reading Series"}],["$","span",null,{"className":"styles_sep__GGjd3","children":"›"}],["$","span",null,{"className":"styles_layerBadge__Q0d3m","children":"Layer 3: The Capability Surface"}],["$","span",null,{"className":"styles_partBadge__fUwxC","children":["Part ",9," / ",18]}]]}],["$","div",null,{"className":"styles_progressBar__fgLWL","children":["$","div",null,{"className":"styles_progressFill__qjZc_","style":{"width":"50%"}}]}],["$","div",null,{"className":"styles_bottomNav__qPM7g","children":[["$","a",null,{"href":"/blog/ai-agents-claude-code-mcp-assembly-notes","className":"styles_navLink__Bk58u styles_navLinkPrev__LuRrD","children":[["$","span",null,{"className":"styles_navDirection__8wLNi","children":"← Previous"}],["$","span",null,{"className":"styles_navTitle__21udg","children":"MCP Assembly"}]]}],["$","a",null,{"href":"/blog/ai-agents-claude-code-memory-system-notes","className":"styles_navLink__Bk58u styles_navLinkNext__2KWCL","children":[["$","span",null,{"className":"styles_navDirection__8wLNi","children":"Next →"}],["$","span",null,{"className":"styles_navTitle__21udg","children":"Memory System"}]]}]]}],false]}],"\n",["$","p",null,{"children":"Most agent coding tools call a language server on demand — ask a question, get a diagnostic, discard."}],"\n",["$","p",null,{"children":"Claude Code runs a persistent multi-server LSP stack as background infrastructure."}],"\n",["$","p",null,{"children":"The difference matters: passive diagnostic collection means the agent has up-to-date type errors and reference data without paying a startup cost per query."}],"\n",["$","h2",null,{"children":"File structure"}],"\n",["$","$L9",null,{"highlightedPaths":["src/services/lsp/LSPServerInstance.ts","src/services/lsp/LSPDiagnosticRegistry.ts","src/services/lsp/LSPManager.ts","src/services/lsp/lspDiagnosticsTool.ts"]}],"\n",["$","section",null,{"className":"styles_container__5lCUS","data-component":"SourceFileCard","children":[["$","div",null,{"className":"styles_header__dyQ1Z","children":[["$","div",null,{"className":"styles_headerMain__rjDfx","children":[["$","p",null,{"className":"styles_path__51AwZ","children":"src/services/lsp/LSPServerInstance.ts"}],["$","h3",null,{"className":"styles_role__nfEhJ","children":"Language server lifecycle manager"}]]}],["$","div",null,{"className":"styles_badges__pF5IJ","children":["$","span",null,{"className":"styles_importanceBadge__L3cXb","children":"High"}]}]]}],["$","p",null,{"className":"styles_summary__U4AnH","children":"Factory-pattern server instance with 5 lifecycle states: initializing, ready, error, restarting, stopped. Manages process spawn, JSON-RPC channel, capability negotiation, and restart-on-crash logic."}],["$","dl",null,{"className":"styles_metaGrid__XCxXQ","children":["$","div",null,{"className":"styles_metaItem__WwAW9","children":[["$","dt",null,{"className":"styles_metaLabel___SXxX","children":"Module"}],["$","dd",null,{"className":"styles_metaValue__alqAB","children":"LSP Integration"}]]}]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Key Exports"}],["$","ul",null,{"className":"styles_chipList__6CD4U","children":[["$","li","LSPServerInstance",{"className":"styles_chip__NkeZa","children":"LSPServerInstance"}],["$","li","LSPServerState",{"className":"styles_chip__NkeZa","children":"LSPServerState"}],["$","li","createLSPServer",{"className":"styles_chip__NkeZa","children":"createLSPServer"}]]}]]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Why It Matters"}],["$","ul",null,{"className":"styles_pointList__fc1yj","children":[["$","li","The factory pattern means LSPServerInstance is created per server type (TypeScript, Python, Rust), not per file.",{"className":"styles_point__nyY9Y","children":"The factory pattern means LSPServerInstance is created per server type (TypeScript, Python, Rust), not per file."}],["$","li","Restart-on-crash is built into the lifecycle, not bolted on — the state machine handles the transition from error back to initializing.",{"className":"styles_point__nyY9Y","children":"Restart-on-crash is built into the lifecycle, not bolted on — the state machine handles the transition from error back to initializing."}],["$","li","Capability negotiation at initialization determines which LSP features are available, so not all servers offer the same surface.",{"className":"styles_point__nyY9Y","children":"Capability negotiation at initialization determines which LSP features are available, so not all servers offer the same surface."}]]}]]}],null]}],"\n",["$","section",null,{"className":"styles_container__5lCUS","data-component":"SourceFileCard","children":[["$","div",null,{"className":"styles_header__dyQ1Z","children":[["$","div",null,{"className":"styles_headerMain__rjDfx","children":[["$","p",null,{"className":"styles_path__51AwZ","children":"src/services/lsp/LSPDiagnosticRegistry.ts"}],["$","h3",null,{"className":"styles_role__nfEhJ","children":"Bounded diagnostic cache with LRU dedup"}]]}],["$","div",null,{"className":"styles_badges__pF5IJ","children":["$","span",null,{"className":"styles_importanceBadge__L3cXb","children":"High"}]}]]}],["$","p",null,{"className":"styles_summary__U4AnH","children":"Collects diagnostics pushed by language servers via textDocument/publishDiagnostics notifications. Enforces bounds: max 10 diagnostics per file, 30 total. LRU deduplication prevents the same error from filling the registry."}],["$","dl",null,{"className":"styles_metaGrid__XCxXQ","children":["$","div",null,{"className":"styles_metaItem__WwAW9","children":[["$","dt",null,{"className":"styles_metaLabel___SXxX","children":"Module"}],["$","dd",null,{"className":"styles_metaValue__alqAB","children":"LSP Integration"}]]}]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Key Exports"}],["$","ul",null,{"className":"styles_chipList__6CD4U","children":[["$","li","LSPDiagnosticRegistry",{"className":"styles_chip__NkeZa","children":"LSPDiagnosticRegistry"}],["$","li","getDiagnostics",{"className":"styles_chip__NkeZa","children":"getDiagnostics"}],["$","li","updateDiagnostics",{"className":"styles_chip__NkeZa","children":"updateDiagnostics"}]]}]]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Why It Matters"}],["$","ul",null,{"className":"styles_pointList__fc1yj","children":[["$","li","The registry is push-based — servers publish diagnostics asynchronously, not on request.",{"className":"styles_point__nyY9Y","children":"The registry is push-based — servers publish diagnostics asynchronously, not on request."}],["$","li","The 10-per-file and 30-total bounds are a deliberate product decision: more than this would overflow context when injected into a prompt.",{"className":"styles_point__nyY9Y","children":"The 10-per-file and 30-total bounds are a deliberate product decision: more than this would overflow context when injected into a prompt."}],["$","li","LRU deduplication prevents a single file with many variants of the same error from consuming the entire budget.",{"className":"styles_point__nyY9Y","children":"LRU deduplication prevents a single file with many variants of the same error from consuming the entire budget."}]]}]]}],null]}],"\n",["$","section",null,{"className":"styles_container__5lCUS","data-component":"SourceFileCard","children":[["$","div",null,{"className":"styles_header__dyQ1Z","children":[["$","div",null,{"className":"styles_headerMain__rjDfx","children":[["$","p",null,{"className":"styles_path__51AwZ","children":"src/services/lsp/LSPTool.ts"}],["$","h3",null,{"className":"styles_role__nfEhJ","children":"LSP tool surface exposed to the agent"}]]}],["$","div",null,{"className":"styles_badges__pF5IJ","children":["$","span",null,{"className":"styles_importanceBadge__L3cXb","children":"Medium"}]}]]}],["$","p",null,{"className":"styles_summary__U4AnH","children":"Wraps LSP server capabilities (hover, definition, references, rename, completion) as tool-protocol-compatible functions. The model can call these like any other tool, but they route to the appropriate language server instance."}],["$","dl",null,{"className":"styles_metaGrid__XCxXQ","children":["$","div",null,{"className":"styles_metaItem__WwAW9","children":[["$","dt",null,{"className":"styles_metaLabel___SXxX","children":"Module"}],["$","dd",null,{"className":"styles_metaValue__alqAB","children":"LSP Integration"}]]}]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Key Exports"}],["$","ul",null,{"className":"styles_chipList__6CD4U","children":[["$","li","LSPTool",{"className":"styles_chip__NkeZa","children":"LSPTool"}],["$","li","LSPToolInput",{"className":"styles_chip__NkeZa","children":"LSPToolInput"}],["$","li","LSPToolOutput",{"className":"styles_chip__NkeZa","children":"LSPToolOutput"}]]}]]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Why It Matters"}],["$","ul",null,{"className":"styles_pointList__fc1yj","children":[["$","li","LSPTool is the bridge between the agent's tool protocol and the JSON-RPC language server protocol.",{"className":"styles_point__nyY9Y","children":"LSPTool is the bridge between the agent's tool protocol and the JSON-RPC language server protocol."}],["$","li","Each capability (hover, definition, references) becomes a distinct tool the model can call by name.",{"className":"styles_point__nyY9Y","children":"Each capability (hover, definition, references) becomes a distinct tool the model can call by name."}],["$","li","The tool layer handles server routing — the model does not need to know which server handles which file type.",{"className":"styles_point__nyY9Y","children":"The tool layer handles server routing — the model does not need to know which server handles which file type."}]]}]]}],null]}],"\n",["$","h2",null,{"children":"Why a persistent stack instead of on-demand"}],"\n",["$","section",null,{"className":"styles_container__ZnY0Q","data-component":"CalloutFlow","children":[["$","div",null,{"className":"styles_header__QlXI3","children":[["$","h3",null,{"className":"styles_title__PjGPE","children":"LSP stack design in Claude Code"}],["$","p",null,{"className":"styles_description__A_tMR","children":"From persistent server process to agent-accessible diagnostic data."}]]}],["$","ol",null,{"className":"styles_stepList__eTbMY","children":[["$","li","1-Spawn language server processes at session start",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":1}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Spawn language server processes at session start"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"services/lsp/LSPServerInstance.ts"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"LSPServerInstance spawns one server process per supported language. Startup cost is paid once, not per query. Servers stay alive for the session."}],null]}]]}],["$","li","2-Negotiate capabilities",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":2}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Negotiate capabilities"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"services/lsp/LSPServerInstance.ts (initialize handshake)"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"Each server reports which LSP methods it supports during initialization. The capability map determines what LSPTool can offer for files of that language."}],null]}]]}],["$","li","3-Collect diagnostics passively",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":3}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Collect diagnostics passively"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"services/lsp/LSPDiagnosticRegistry.ts"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"Language servers push textDocument/publishDiagnostics notifications whenever they detect errors. The registry collects these in the background without any agent request."}],null]}]]}],["$","li","4-Bound and deduplicate",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":4}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Bound and deduplicate"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"services/lsp/LSPDiagnosticRegistry.ts"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"The registry enforces 10 diagnostics per file and 30 total. LRU deduplication prevents a single noisy file from consuming the entire budget."}],null]}]]}],["$","li","5-Expose as tool surface",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":5}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Expose as tool surface"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"services/lsp/LSPTool.ts"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"LSPTool wraps hover, definition, references, rename, and completion as tool-protocol-compatible functions the model can call by name."}],null]}]]}]]}]]}],"\n",["$","h2",null,{"children":"The passive collection model"}],"\n",["$","p",null,{"children":"The most important design choice in the LSP stack is that diagnostic collection is push-based."}],"\n",["$","p",null,{"children":["Language servers emit ",["$","code",null,{"children":"textDocument/publishDiagnostics"}]," notifications whenever they recompute. The registry listens and updates. The agent does not need to request diagnostics — they are already there when the model asks for context."]}],"\n",["$","p",null,{"children":"This is meaningfully different from a request-response model where the agent asks \"what are the current errors in file.ts?\" and waits for the server to respond."}],"\n",["$","p",null,{"children":"With passive collection:"}],"\n",["$","ul",null,{"children":["\n",["$","li",null,{"children":"diagnostic data is available at turn start, not mid-turn"}],"\n",["$","li",null,{"children":"no round-trip cost per diagnostic request"}],"\n",["$","li",null,{"children":"the agent can reference \"current errors\" without triggering a separate tool call"}],"\n"]}],"\n",["$","p",null,{"children":"The tradeoff is that the registry may be slightly stale if a server is slow to recompute. Claude Code accepts this tradeoff because staleness on the order of seconds is acceptable for the typical agent coding loop."}],"\n",["$","h2",null,{"children":"The registry bounds are a prompt budget decision"}],"\n",["$","p",null,{"children":"The 10-per-file and 30-total limits are not arbitrary."}],"\n",["$","p",null,{"children":"They are a prompt budget decision."}],"\n",["$","p",null,{"children":"If the agent injects diagnostics into a turn's context, those diagnostics consume tokens. Unbounded diagnostics from a project with many type errors could easily fill the available context budget before the actual task is described."}],"\n",["$","p",null,{"children":"The registry bounds ensure that diagnostic context is always bounded and predictable."}],"\n",["$","p",null,{"children":"The LRU deduplication ensures that one file with 50 variants of the same null reference error does not consume all 30 slots, leaving no room for diagnostics from other files."}],"\n",["$","h2",null,{"children":"Server routing and multi-language support"}],"\n",["$","p",null,{"children":"LSPTool handles routing transparently."}],"\n",["$","p",null,{"children":["When the model calls a tool like ",["$","code",null,{"children":"lsp_go_to_definition"}]," with a file path argument, LSPTool:"]}],"\n",["$","ol",null,{"children":["\n",["$","li",null,{"children":"determines the file's language from its extension"}],"\n",["$","li",null,{"children":"routes to the appropriate LSPServerInstance for that language"}],"\n",["$","li",null,{"children":"sends the JSON-RPC request and returns the result"}],"\n"]}],"\n",["$","p",null,{"children":"The model never needs to know which server handles TypeScript versus Python versus Rust. That routing is infrastructure, not capability."}],"\n",["$","$La",null,{"title":"LSP stack pattern across languages","description":"Persistent server, push-based diagnostic collection, and bounded registry. JS shows the actual shape; Python and Go show the same pattern.","tabs":[{"label":"JavaScript","language":"typescript","filename":"services/lsp/ (simplified)","description":"5-state server lifecycle and push-based registry — actual pattern from learning-claude-code","code":"$b"},{"label":"Python","language":"python","filename":"lsp_stack.py (teaching version)","description":"Server lifecycle and bounded registry in Python","code":"$c"},{"label":"Go","language":"go","filename":"lsp_stack.go (teaching version)","description":"5-state lifecycle and bounded registry in Go","code":"$d"}]}],"\n",["$","section",null,{"className":"styles_container__oZwSC","data-component":"QuestionModule","children":[["$","div",null,{"className":"styles_header__mm_0m","children":[["$","h3",null,{"className":"styles_question__PznEA","children":"Claude Code's LSP diagnostic registry enforces a 10-per-file and 30-total bound. A project has 8 files each with 6 type errors, for a total of 48 errors. How many diagnostics will the registry contain, and why?"}],["$","span",null,{"className":"styles_badge__4rHEw styles_badgeMedium__xXH7Q","children":"medium"}]]}],["$","p",null,{"className":"styles_context__hE7d4","children":"The registry uses LRU deduplication and enforces bounds. Updates arrive as push notifications from the language server, one file at a time."}],["$","ul",null,{"className":"styles_optionList__TKMHh","children":[["$","li","A",{"className":"styles_option__DTfSF","children":["$","details",null,{"children":[["$","summary",null,{"className":"styles_optionSummary__noBWC","children":[["$","span",null,{"className":"styles_optionMarker__tZP_f styles_optionMarkerIncorrect__ymBsg","children":"A"}],"48 — the bounds are only enforced if the user configures them"]}],["$","div",null,{"className":"styles_reveal__PELdG styles_revealIncorrect__z_T88","children":[["$","span",null,{"className":"styles_revealLabel__IXR5j","children":"Incorrect."}],["$","span",null,{"children":"The bounds are always enforced. They are not configurable per-project."}]]}]]}]}],["$","li","B",{"className":"styles_option__DTfSF","children":["$","details",null,{"children":[["$","summary",null,{"className":"styles_optionSummary__noBWC","children":[["$","span",null,{"className":"styles_optionMarker__tZP_f styles_optionMarkerCorrect__zxpQk","children":"B"}],"30 — the per-file cap of 10 applies first, then the total cap of 30 limits the rest"]}],["$","div",null,{"className":"styles_reveal__PELdG styles_revealCorrect__rDxQT","children":[["$","span",null,{"className":"styles_revealLabel__IXR5j","children":"Correct!"}],["$","span",null,{"children":"Correct. Each file contributes at most 10 diagnostics. With 8 files × up to 6 errors each = 48 raw errors. After the per-file cap: 8 files × 6 errors (all under 10) = 48 accepted per-file. But the total cap of 30 is then applied, so only 30 total diagnostics are retained. The exact distribution across files depends on the order updates arrived — later files may be crowded out if earlier ones filled the budget."}]]}]]}]}],["$","li","C",{"className":"styles_option__DTfSF","children":["$","details",null,{"children":[["$","summary",null,{"className":"styles_optionSummary__noBWC","children":[["$","span",null,{"className":"styles_optionMarker__tZP_f styles_optionMarkerIncorrect__ymBsg","children":"C"}],"80 — 10 per file × 8 files"]}],["$","div",null,{"className":"styles_reveal__PELdG styles_revealIncorrect__z_T88","children":[["$","span",null,{"className":"styles_revealLabel__IXR5j","children":"Incorrect."}],["$","span",null,{"children":"The per-file cap is 10, but there is also a total cap of 30 across all files. 10 × 8 = 80 would exceed the total cap."}]]}]]}]}],["$","li","D",{"className":"styles_option__DTfSF","children":["$","details",null,{"children":[["$","summary",null,{"className":"styles_optionSummary__noBWC","children":[["$","span",null,{"className":"styles_optionMarker__tZP_f styles_optionMarkerIncorrect__ymBsg","children":"D"}],"6 — only the errors from the most recently updated file are retained"]}],["$","div",null,{"className":"styles_reveal__PELdG styles_revealIncorrect__z_T88","children":[["$","span",null,{"className":"styles_revealLabel__IXR5j","children":"Incorrect."}],["$","span",null,{"children":"The registry is not last-write-wins. It accumulates diagnostics from all files up to the total cap."}]]}]]}]}]]}],"$undefined"]}]]}],["$","nav",null,{"aria-label":"Post navigation","className":"grid gap-3 sm:grid-cols-2","children":[["$","$Le",null,{"href":"/blog/ai-agents-claude-code-mcp-assembly-notes","className":"rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-indigo-300 hover:bg-indigo-50","children":[["$","p",null,{"className":"text-xs font-medium uppercase tracking-wide text-slate-500","children":"Previous"}],["$","p",null,{"className":"mt-1 text-sm font-semibold text-slate-900","children":"Claude Code MCP Assembly: Seven Config Sources, Three Capability Surfaces"}]]}],["$","$Le",null,{"href":"/blog/ai-agents-claude-code-input-pipeline-notes","className":"rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-indigo-300 hover:bg-indigo-50 sm:text-right","children":[["$","p",null,{"className":"text-xs font-medium uppercase tracking-wide text-slate-500","children":"Next"}],["$","p",null,{"className":"mt-1 text-sm font-semibold text-slate-900","children":"Claude Code Input Pipeline: Three Paths Before the Model Runs"}]]}]]}]]}]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Claude Code LSP Integration: Persistent Servers, Push-Based Diagnostics — Blog — Bowen Yang"}],["$","meta","3",{"name":"description","content":"How Claude Code runs a persistent multi-server LSP stack, collects diagnostics passively via push notifications, and bounds the registry to 10 diagnostics per file and 30 total."}],["$","meta","4",{"name":"keywords","content":"Claude Code LSP,language server protocol,LSPDiagnosticRegistry,LSPServerInstance,agent diagnostics"}],["$","meta","5",{"property":"og:title","content":"Claude Code LSP Integration: Persistent Servers, Push-Based Diagnostics — Blog"}],["$","meta","6",{"property":"og:description","content":"How Claude Code runs a persistent multi-server LSP stack, collects diagnostics passively via push notifications, and bounds the registry to 10 diagnostics per file and 30 total."}],["$","meta","7",{"property":"og:url","content":"https://codewisdom.io/blog/ai-agents-claude-code-lsp-integration-notes/"}],["$","meta","8",{"property":"og:site_name","content":"Bowen Yang"}],["$","meta","9",{"property":"og:locale","content":"en_US"}],["$","meta","10",{"property":"og:type","content":"article"}],["$","meta","11",{"property":"article:published_time","content":"2026-04-02"}],["$","meta","12",{"property":"article:modified_time","content":"2026-04-02"}],["$","meta","13",{"name":"twitter:card","content":"summary"}],["$","meta","14",{"name":"twitter:title","content":"Claude Code LSP Integration: Persistent Servers, Push-Based Diagnostics — Blog"}],["$","meta","15",{"name":"twitter:description","content":"How Claude Code runs a persistent multi-server LSP stack, collects diagnostics passively via push notifications, and bounds the registry to 10 diagnostics per file and 30 total."}],["$","link","16",{"rel":"icon","href":"/icon.svg?893d1655c173574a","type":"image/svg+xml","sizes":"any"}],["$","meta","17",{"name":"next-size-adjust"}]]
+1:null

@@ -1,0 +1,228 @@
+3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[5422,["231","static/chunks/231-cda03aaab516dc35.js","185","static/chunks/app/layout-7fb6aa1a64abd4d2.js"],"default"]
+7:I[9669,["231","static/chunks/231-cda03aaab516dc35.js","185","static/chunks/app/layout-7fb6aa1a64abd4d2.js"],"default"]
+4:["slug","ai-agents-claude-code-swarm-multiagent-notes","d"]
+0:["8Yk2ujLo2tCBbuzKM08m4",[[["",{"children":["blog",{"children":[["slug","ai-agents-claude-code-swarm-multiagent-notes","d"],{"children":["__PAGE__?{\"slug\":\"ai-agents-claude-code-swarm-multiagent-notes\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["blog",{"children":[["slug","ai-agents-claude-code-swarm-multiagent-notes","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fc97ab377e9eb9f1.css","precedence":"next","crossOrigin":"$undefined"}]]}],null]},[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null],null]},[["$","html",null,{"lang":"en","suppressHydrationWarning":true,"className":"__variable_f367f3","children":["$","body",null,{"suppressHydrationWarning":true,"className":"relative min-h-screen overflow-x-hidden bg-[#FAF9F5] text-slate-900 antialiased","children":[["$","$L6",null,{}],["$","div",null,{"id":"app-shell","className":"relative z-10 flex min-h-screen flex-col","children":[["$","$L7",null,{}],["$","main",null,{"className":"mx-auto w-full max-w-5xl flex-1 px-4 py-8 sm:px-6 sm:py-10","children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]}],["$","footer",null,{"className":"bg-transparent","children":["$","div",null,{"className":"mx-auto w-full max-w-5xl px-4 py-6 sm:px-6","children":["$","p",null,{"className":"text-sm text-slate-400","children":"Code Wisdom © 2024-2026"}]}]}]]}]]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/011c10e6cbcb66d9.css","precedence":"next","crossOrigin":"$undefined"}]],[null,"$L8"]]]]]
+9:I[5474,["231","static/chunks/231-cda03aaab516dc35.js","540","static/chunks/540-c71c30a3213e5e7b.js","224","static/chunks/224-fa8e27c5e1ae8a62.js","331","static/chunks/331-7b4554f1e2ba1fc6.js","811","static/chunks/811-fe7d5e4541f95d60.js","308","static/chunks/app/blog/%5Bslug%5D/page-47193f5182e28c69.js"],"default"]
+a:I[2295,["231","static/chunks/231-cda03aaab516dc35.js","540","static/chunks/540-c71c30a3213e5e7b.js","224","static/chunks/224-fa8e27c5e1ae8a62.js","331","static/chunks/331-7b4554f1e2ba1fc6.js","811","static/chunks/811-fe7d5e4541f95d60.js","308","static/chunks/app/blog/%5Bslug%5D/page-47193f5182e28c69.js"],"default"]
+e:I[231,["231","static/chunks/231-cda03aaab516dc35.js","540","static/chunks/540-c71c30a3213e5e7b.js","224","static/chunks/224-fa8e27c5e1ae8a62.js","331","static/chunks/331-7b4554f1e2ba1fc6.js","811","static/chunks/811-fe7d5e4541f95d60.js","308","static/chunks/app/blog/%5Bslug%5D/page-47193f5182e28c69.js"],""]
+b:T683,// The interface all backends implement
+interface SwarmBackend {
+spawn(task: SubagentTask): Promise<SubagentHandle>
+getResult(id: string): Promise<SubagentResult>
+stop(id: string): Promise<void>
+}
+
+interface SubagentTask {
+id: string
+instructions: string
+fileOwnership: string[]  // disjoint file set assigned by coordinator
+context: SessionContext
+}
+
+// TmuxBackend: each subagent gets a pane in a binary tree layout
+class TmuxBackend implements SwarmBackend {
+async spawn(task: SubagentTask): Promise<SubagentHandle> {
+  const paneId = await this.createPane(buildBinaryTreeLayout(this.activeCount))
+  await this.runInPane(paneId, `claude --task "${task.id}"`)
+  return { id: task.id, paneId }
+}
+}
+
+// InProcessBackend: subagent runs as async task
+class InProcessBackend implements SwarmBackend {
+private tasks = new Map<string, Promise<SubagentResult>>()
+
+async spawn(task: SubagentTask): Promise<SubagentHandle> {
+  const result = runAgentInProcess(task)
+  this.tasks.set(task.id, result)
+  return { id: task.id }
+}
+
+async getResult(id: string): Promise<SubagentResult> {
+  return this.tasks.get(id)!
+}
+}
+
+// Coordinator turn: plan → spawn → collect → synthesize
+async function runCoordinatorTurn(
+task: string,
+backend: SwarmBackend
+): Promise<string> {
+// 1. Plan with coordinator system prompt (synthesize first)
+const plan = await planWithCoordinator(task)
+
+// 2. Spawn subagents with disjoint task assignments
+const handles = await Promise.all(
+  plan.subtasks.map(t => backend.spawn(t))
+)
+
+// 3. Collect results
+const results = await Promise.all(
+  handles.map(h => backend.getResult(h.id))
+)
+
+// 4. Synthesize
+return synthesizeResults(results, plan)
+}c:T769,from abc import ABC, abstractmethod
+from dataclasses import dataclass
+import asyncio
+
+@dataclass
+class SubagentTask:
+  id: str
+  instructions: str
+  file_ownership: list[str]  # disjoint file set
+  context: dict
+
+@dataclass
+class SubagentResult:
+  id: str
+  output: str
+  success: bool
+  files_modified: list[str]
+
+class SwarmBackend(ABC):
+  """All backends implement this interface."""
+
+  @abstractmethod
+  async def spawn(self, task: SubagentTask) -> dict:
+      ...
+
+  @abstractmethod
+  async def get_result(self, task_id: str) -> SubagentResult:
+      ...
+
+  @abstractmethod
+  async def stop(self, task_id: str) -> None:
+      ...
+
+class InProcessBackend(SwarmBackend):
+  def __init__(self) -> None:
+      self._tasks: dict[str, asyncio.Task] = {}
+
+  async def spawn(self, task: SubagentTask) -> dict:
+      coro = run_agent_in_process(task)
+      self._tasks[task.id] = asyncio.create_task(coro)
+      return {'id': task.id}
+
+  async def get_result(self, task_id: str) -> SubagentResult:
+      return await self._tasks[task_id]
+
+  async def stop(self, task_id: str) -> None:
+      if task := self._tasks.get(task_id):
+          task.cancel()
+
+def select_backend() -> SwarmBackend:
+  """Environment-based backend selection."""
+  if is_tmux_available():
+      return TmuxBackend()
+  if is_iterm2():
+      return ITermBackend()
+  return InProcessBackend()
+
+# Coordinator: plan first, then spawn
+async def run_coordinator_turn(
+  task: str,
+  backend: SwarmBackend
+) -> str:
+  # 1. Plan with coordinator system prompt
+  plan = await plan_with_coordinator(task)
+
+  # 2. Spawn all subagents (disjoint ownership from plan)
+  handles = await asyncio.gather(*[
+      backend.spawn(subtask) for subtask in plan.subtasks
+  ])
+
+  # 3. Collect results
+  results = await asyncio.gather(*[
+      backend.get_result(h['id']) for h in handles
+  ])
+
+  # 4. Synthesize
+  return synthesize_results(results, plan)d:T7f7,type SubagentTask struct {
+  ID            string
+  Instructions  string
+  FileOwnership []string // disjoint file set
+  Context       *SessionContext
+}
+
+type SubagentResult struct {
+  ID            string
+  Output        string
+  Success       bool
+  FilesModified []string
+}
+
+// SwarmBackend: interface all backends implement
+type SwarmBackend interface {
+  Spawn(ctx context.Context, task SubagentTask) (string, error)
+  GetResult(ctx context.Context, id string) (*SubagentResult, error)
+  Stop(ctx context.Context, id string) error
+}
+
+// SelectBackend: environment-based selection
+func SelectBackend() SwarmBackend {
+  if IsTmuxAvailable() {
+      return &TmuxBackend{}
+  }
+  if IsITerm2() {
+      return &ITermBackend{}
+  }
+  return &InProcessBackend{}
+}
+
+// InProcessBackend: goroutine per subagent
+type InProcessBackend struct {
+  mu      sync.Mutex
+  results map[string]chan *SubagentResult
+}
+
+func (b *InProcessBackend) Spawn(ctx context.Context, task SubagentTask) (string, error) {
+  ch := make(chan *SubagentResult, 1)
+  b.mu.Lock()
+  b.results[task.ID] = ch
+  b.mu.Unlock()
+
+  go func() {
+      result := RunAgentInProcess(ctx, task)
+      ch <- result
+  }()
+  return task.ID, nil
+}
+
+// Coordinator: plan → spawn → collect → synthesize
+func RunCoordinatorTurn(ctx context.Context, task string, backend SwarmBackend) (string, error) {
+  plan, err := PlanWithCoordinator(ctx, task)
+  if err != nil {
+      return "", err
+  }
+
+  // Spawn all subagents in parallel
+  ids := make([]string, len(plan.Subtasks))
+  for i, subtask := range plan.Subtasks {
+      id, err := backend.Spawn(ctx, subtask)
+      if err != nil {
+          return "", err
+      }
+      ids[i] = id
+  }
+
+  // Collect results
+  results := make([]*SubagentResult, len(ids))
+  var wg sync.WaitGroup
+  for i, id := range ids {
+      wg.Add(1)
+      go func(i int, id string) {
+          defer wg.Done()
+          result, _ := backend.GetResult(ctx, id)
+          results[i] = result
+      }(i, id)
+  }
+  wg.Wait()
+
+  return SynthesizeResults(results, plan)
+}2:["$","article",null,{"className":"space-y-8","children":[["$","header",null,{"className":"space-y-4 rounded-2xl border border-slate-200 bg-gradient-to-br from-white to-indigo-50 p-6 sm:p-8","children":[["$","h1",null,{"className":"text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl","children":"Claude Code Multi-Agent Runtime: Coordinator, Three Backends, Disjoint Ownership"}],["$","div",null,{"className":"flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-slate-600","children":[["$","time",null,{"dateTime":"2026-04-02","children":"April 2, 2026"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"2 min read"}],[["$","span",null,{"children":"•"}],["$","span",null,{"children":"AI Agents"}]]]}],["$","p",null,{"className":"text-lg leading-relaxed text-slate-700","children":"How the coordinator's synthesize-first strategy prevents file conflicts, how three swarm backends (TmuxBackend, ITermBackend, InProcessBackend) share one interface, and what team context tracks."}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","span","ai-agents",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"ai-agents"}],["$","span","claude-code",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"claude-code"}],["$","span","multi-agent",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"multi-agent"}],["$","span","swarm",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"swarm"}],["$","span","coordinator",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"coordinator"}],["$","span","parallel-execution",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"parallel-execution"}]]}]]}],["$","div",null,{"className":"prose max-w-none rounded-xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8","children":[["$","nav",null,{"data-component":"SeriesNav","className":"styles_container__A3IRs","children":[["$","div",null,{"className":"styles_topBar__Z1gym","children":[["$","a",null,{"href":"/blog/ai-agents-claude-code-series-index","className":"styles_seriesLink__rLemJ","children":"Claude Code: Source Reading Series"}],["$","span",null,{"className":"styles_sep__GGjd3","children":"›"}],["$","span",null,{"className":"styles_layerBadge__Q0d3m","children":"Layer 4: The Agent Services"}],["$","span",null,{"className":"styles_partBadge__fUwxC","children":["Part ",13," / ",18]}]]}],["$","div",null,{"className":"styles_progressBar__fgLWL","children":["$","div",null,{"className":"styles_progressFill__qjZc_","style":{"width":"72%"}}]}],["$","div",null,{"className":"styles_bottomNav__qPM7g","children":[["$","a",null,{"href":"/blog/ai-agents-claude-code-task-subagent-runtime-notes","className":"styles_navLink__Bk58u styles_navLinkPrev__LuRrD","children":[["$","span",null,{"className":"styles_navDirection__8wLNi","children":"← Previous"}],["$","span",null,{"className":"styles_navTitle__21udg","children":"Subagent Runtime"}]]}],["$","a",null,{"href":"/blog/ai-agents-claude-code-ui-runtime-notes","className":"styles_navLink__Bk58u styles_navLinkNext__2KWCL","children":[["$","span",null,{"className":"styles_navDirection__8wLNi","children":"Next →"}],["$","span",null,{"className":"styles_navTitle__21udg","children":"UI Runtime"}]]}]]}],false]}],"\n",["$","p",null,{"children":"Running multiple agents concurrently is a coordination problem, not just a spawning problem."}],"\n",["$","p",null,{"children":"Claude Code has three swarm backends, a coordinator mode, and a team context system. Each part solves a distinct piece of the multi-agent problem."}],"\n",["$","h2",null,{"children":"File structure"}],"\n",["$","$L9",null,{"highlightedPaths":["src/coordinator/coordinatorMode.ts","src/utils/swarm/backends/TmuxBackend.ts","src/utils/swarm/backends/ITermBackend.ts","src/utils/swarm/backends/InProcessBackend.ts","src/utils/swarm/teamContext.ts"]}],"\n",["$","section",null,{"className":"styles_container__5lCUS","data-component":"SourceFileCard","children":[["$","div",null,{"className":"styles_header__dyQ1Z","children":[["$","div",null,{"className":"styles_headerMain__rjDfx","children":[["$","p",null,{"className":"styles_path__51AwZ","children":"src/coordinator/coordinatorMode.ts"}],["$","h3",null,{"className":"styles_role__nfEhJ","children":"Orchestration system prompt for coordinator agents"}]]}],["$","div",null,{"className":"styles_badges__pF5IJ","children":["$","span",null,{"className":"styles_importanceBadge__L3cXb","children":"Critical"}]}]]}],["$","p",null,{"className":"styles_summary__U4AnH","children":"Defines the 'synthesize first' orchestration strategy used when Claude Code runs as a coordinator. The system prompt instructs the coordinator to plan the full work breakdown before spawning subagents, assign disjoint tasks to prevent conflicts, and synthesize results after all subagents complete."}],["$","dl",null,{"className":"styles_metaGrid__XCxXQ","children":["$","div",null,{"className":"styles_metaItem__WwAW9","children":[["$","dt",null,{"className":"styles_metaLabel___SXxX","children":"Module"}],["$","dd",null,{"className":"styles_metaValue__alqAB","children":"Multi-Agent"}]]}]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Key Exports"}],["$","ul",null,{"className":"styles_chipList__6CD4U","children":[["$","li","coordinatorModeSystemPrompt",{"className":"styles_chip__NkeZa","children":"coordinatorModeSystemPrompt"}],["$","li","CoordinatorContext",{"className":"styles_chip__NkeZa","children":"CoordinatorContext"}]]}]]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Why It Matters"}],["$","ul",null,{"className":"styles_pointList__fc1yj","children":[["$","li","'Synthesize first' means the coordinator does not spawn subagents speculatively — it completes planning before any spawning.",{"className":"styles_point__nyY9Y","children":"'Synthesize first' means the coordinator does not spawn subagents speculatively — it completes planning before any spawning."}],["$","li","Disjoint task assignment is a deliberate instruction, not an automatic guarantee — the coordinator must reason about which files each subagent will touch.",{"className":"styles_point__nyY9Y","children":"Disjoint task assignment is a deliberate instruction, not an automatic guarantee — the coordinator must reason about which files each subagent will touch."}],["$","li","The coordinator is itself an agent turn in the query loop — it uses the same execution path as a regular turn, with a different system prompt.",{"className":"styles_point__nyY9Y","children":"The coordinator is itself an agent turn in the query loop — it uses the same execution path as a regular turn, with a different system prompt."}]]}]]}],null]}],"\n",["$","section",null,{"className":"styles_container__5lCUS","data-component":"SourceFileCard","children":[["$","div",null,{"className":"styles_header__dyQ1Z","children":[["$","div",null,{"className":"styles_headerMain__rjDfx","children":[["$","p",null,{"className":"styles_path__51AwZ","children":"src/utils/swarm/backends/TmuxBackend.ts"}],["$","h3",null,{"className":"styles_role__nfEhJ","children":"tmux-based subagent spawning with binary tree layout"}]]}],["$","div",null,{"className":"styles_badges__pF5IJ","children":["$","span",null,{"className":"styles_importanceBadge__L3cXb","children":"High"}]}]]}],["$","p",null,{"className":"styles_summary__U4AnH","children":"Spawns subagents as tmux panes arranged in a binary tree layout. Each subagent runs as a separate Claude Code process in its own pane. The binary tree ensures the layout scales to many subagents without producing unusable tiny panes."}],["$","dl",null,{"className":"styles_metaGrid__XCxXQ","children":["$","div",null,{"className":"styles_metaItem__WwAW9","children":[["$","dt",null,{"className":"styles_metaLabel___SXxX","children":"Module"}],["$","dd",null,{"className":"styles_metaValue__alqAB","children":"Multi-Agent"}]]}]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Key Exports"}],["$","ul",null,{"className":"styles_chipList__6CD4U","children":[["$","li","TmuxBackend",{"className":"styles_chip__NkeZa","children":"TmuxBackend"}],["$","li","spawnInPane",{"className":"styles_chip__NkeZa","children":"spawnInPane"}],["$","li","buildBinaryTreeLayout",{"className":"styles_chip__NkeZa","children":"buildBinaryTreeLayout"}]]}]]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Why It Matters"}],["$","ul",null,{"className":"styles_pointList__fc1yj","children":[["$","li","Binary tree layout is a deliberate UX choice: it keeps each subagent's output visible as the count grows.",{"className":"styles_point__nyY9Y","children":"Binary tree layout is a deliberate UX choice: it keeps each subagent's output visible as the count grows."}],["$","li","Each pane is a full Claude Code process — subagents have their own tool access, permissions context, and query loop.",{"className":"styles_point__nyY9Y","children":"Each pane is a full Claude Code process — subagents have their own tool access, permissions context, and query loop."}],["$","li","The coordinator communicates with subagents through the task channel, not through tmux directly.",{"className":"styles_point__nyY9Y","children":"The coordinator communicates with subagents through the task channel, not through tmux directly."}]]}]]}],null]}],"\n",["$","section",null,{"className":"styles_container__5lCUS","data-component":"SourceFileCard","children":[["$","div",null,{"className":"styles_header__dyQ1Z","children":[["$","div",null,{"className":"styles_headerMain__rjDfx","children":[["$","p",null,{"className":"styles_path__51AwZ","children":"src/utils/swarm/backends/ITermBackend.ts"}],["$","h3",null,{"className":"styles_role__nfEhJ","children":"iTerm2 split-pane subagent spawning"}]]}],["$","div",null,{"className":"styles_badges__pF5IJ","children":["$","span",null,{"className":"styles_importanceBadge__L3cXb","children":"Medium"}]}]]}],["$","p",null,{"className":"styles_summary__U4AnH","children":"Spawns subagents as iTerm2 split panes on macOS. Functionally equivalent to TmuxBackend but uses AppleScript/iTerm2 API instead of tmux socket commands. Detected automatically based on the TERM_PROGRAM environment variable."}],["$","dl",null,{"className":"styles_metaGrid__XCxXQ","children":["$","div",null,{"className":"styles_metaItem__WwAW9","children":[["$","dt",null,{"className":"styles_metaLabel___SXxX","children":"Module"}],["$","dd",null,{"className":"styles_metaValue__alqAB","children":"Multi-Agent"}]]}]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Key Exports"}],["$","ul",null,{"className":"styles_chipList__6CD4U","children":[["$","li","ITermBackend",{"className":"styles_chip__NkeZa","children":"ITermBackend"}],["$","li","spawnInSplit",{"className":"styles_chip__NkeZa","children":"spawnInSplit"}]]}]]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Why It Matters"}],["$","ul",null,{"className":"styles_pointList__fc1yj","children":[["$","li","ITermBackend is selected automatically — the user does not configure which backend is used.",{"className":"styles_point__nyY9Y","children":"ITermBackend is selected automatically — the user does not configure which backend is used."}],["$","li","The observable behavior (visible subagent panes) is the same as TmuxBackend; only the pane management API differs.",{"className":"styles_point__nyY9Y","children":"The observable behavior (visible subagent panes) is the same as TmuxBackend; only the pane management API differs."}],["$","li","This is the right abstraction: the coordinator uses SwarmBackend interface methods, not backend-specific calls.",{"className":"styles_point__nyY9Y","children":"This is the right abstraction: the coordinator uses SwarmBackend interface methods, not backend-specific calls."}]]}]]}],null]}],"\n",["$","section",null,{"className":"styles_container__5lCUS","data-component":"SourceFileCard","children":[["$","div",null,{"className":"styles_header__dyQ1Z","children":[["$","div",null,{"className":"styles_headerMain__rjDfx","children":[["$","p",null,{"className":"styles_path__51AwZ","children":"src/utils/swarm/backends/InProcessBackend.ts"}],["$","h3",null,{"className":"styles_role__nfEhJ","children":"In-process subagent spawning without external terminals"}]]}],["$","div",null,{"className":"styles_badges__pF5IJ","children":["$","span",null,{"className":"styles_importanceBadge__L3cXb","children":"Medium"}]}]]}],["$","p",null,{"className":"styles_summary__U4AnH","children":"Spawns subagents as in-process async tasks instead of external processes. Used when no tmux or iTerm2 is available, or when the session is non-interactive. Subagents share the parent process's memory but run in separate async execution contexts."}],["$","dl",null,{"className":"styles_metaGrid__XCxXQ","children":["$","div",null,{"className":"styles_metaItem__WwAW9","children":[["$","dt",null,{"className":"styles_metaLabel___SXxX","children":"Module"}],["$","dd",null,{"className":"styles_metaValue__alqAB","children":"Multi-Agent"}]]}]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Key Exports"}],["$","ul",null,{"className":"styles_chipList__6CD4U","children":[["$","li","InProcessBackend",{"className":"styles_chip__NkeZa","children":"InProcessBackend"}],["$","li","spawnInProcess",{"className":"styles_chip__NkeZa","children":"spawnInProcess"}]]}]]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Why It Matters"}],["$","ul",null,{"className":"styles_pointList__fc1yj","children":[["$","li","In-process subagents do not get their own visible terminal panes — output is routed back to the coordinator's task log.",{"className":"styles_point__nyY9Y","children":"In-process subagents do not get their own visible terminal panes — output is routed back to the coordinator's task log."}],["$","li","This backend enables multi-agent work in CI, pipe mode, and other non-interactive contexts.",{"className":"styles_point__nyY9Y","children":"This backend enables multi-agent work in CI, pipe mode, and other non-interactive contexts."}],["$","li","Shared process memory means in-process subagents must be careful about global state mutations.",{"className":"styles_point__nyY9Y","children":"Shared process memory means in-process subagents must be careful about global state mutations."}]]}]]}],null]}],"\n",["$","h2",null,{"children":"How the coordinator pattern works"}],"\n",["$","section",null,{"className":"styles_container__ZnY0Q","data-component":"CalloutFlow","children":[["$","div",null,{"className":"styles_header__QlXI3","children":[["$","h3",null,{"className":"styles_title__PjGPE","children":"Multi-agent coordination flow"}],["$","p",null,{"className":"styles_description__A_tMR","children":"From coordinator turn to parallel subagent execution to synthesis."}]]}],["$","ol",null,{"className":"styles_stepList__eTbMY","children":[["$","li","1-Coordinator receives task",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":1}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Coordinator receives task"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"coordinator/coordinatorMode.ts"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"The coordinator agent runs a regular turn with the coordinatorModeSystemPrompt. It plans the full work breakdown — which subtasks, which files, which subagent should own each."}],null]}]]}],["$","li","2-Select swarm backend",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":2}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Select swarm backend"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"utils/swarm/backends/"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"Based on environment detection (tmux, iTerm2, or fallback to in-process), the appropriate SwarmBackend is selected. The coordinator uses the same interface regardless of backend."}],null]}]]}],["$","li","3-Spawn subagents with disjoint tasks",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":3}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Spawn subagents with disjoint tasks"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"TmuxBackend / ITermBackend / InProcessBackend"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"Each subagent is spawned with a specific task assignment. The coordinator's planning step assigned disjoint file sets to prevent merge conflicts between concurrent subagents."}],null]}]]}],["$","li","4-Subagents run independently",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":4}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Subagents run independently"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"tasks/Task.ts / utils/swarm/"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"Each subagent has its own tool access, permissions context, and query loop. They report results back to the coordinator via the task channel."}],null]}]]}],["$","li","5-Coordinator synthesizes",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":5}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Coordinator synthesizes"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"coordinator/coordinatorMode.ts"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"After all subagents complete, the coordinator reads their results and synthesizes a final output. The 'synthesize first' instruction means the coordinator planned for this step from the start."}],null]}]]}]]}]]}],"\n",["$","h2",null,{"children":"Three backends, one interface"}],"\n",["$","p",null,{"children":"The SwarmBackend abstraction is one of the cleaner designs in the codebase."}],"\n",["$","p",null,{"children":["The coordinator never calls ",["$","code",null,{"children":"tmux new-window"}]," or AppleScript directly. It calls ",["$","code",null,{"children":"backend.spawn(task)"}]," and ",["$","code",null,{"children":"backend.getResult(id)"}],"."]}],"\n",["$","p",null,{"children":"The backend selection happens once at session start, based on environment detection:"}],"\n",["$","ol",null,{"children":["\n",["$","li",null,{"children":"check for tmux socket → TmuxBackend"}],"\n",["$","li",null,{"children":"check TERM_PROGRAM for iTerm2 → ITermBackend"}],"\n",["$","li",null,{"children":"fallback → InProcessBackend"}],"\n"]}],"\n",["$","p",null,{"children":"This means the same multi-agent workflow works in a developer's local terminal (visible panes), in macOS iTerm2 (native splits), and in a CI environment (in-process, no panes)."}],"\n",["$","p",null,{"children":"The tradeoff is that InProcessBackend loses the observability of visible panes. The coordinator can still see subagent results through the task channel, but the user cannot watch subagents working in real time."}],"\n",["$","h2",null,{"children":"Why \"synthesize first\" is the right coordinator strategy"}],"\n",["$","p",null,{"children":"An alternative coordinator strategy is \"spawn then plan\" — spawn subagents speculatively and let them explore, then synthesize based on what they found."}],"\n",["$","p",null,{"children":"Claude Code explicitly rejects this in the coordinator system prompt."}],"\n",["$","p",null,{"children":"The reason: uncoordinated exploration produces file conflicts."}],"\n",["$","p",null,{"children":"If two subagents both decide to refactor a shared utility file without coordination, their changes will conflict. The coordinator's planning step must assign disjoint file ownership before any spawning happens."}],"\n",["$","p",null,{"children":"\"Synthesize first\" means:"}],"\n",["$","ol",null,{"children":["\n",["$","li",null,{"children":"understand the full task before splitting it"}],"\n",["$","li",null,{"children":"assign disjoint ownership explicitly"}],"\n",["$","li",null,{"children":"spawn subagents with complete instructions"}],"\n",["$","li",null,{"children":"collect and synthesize results"}],"\n"]}],"\n",["$","p",null,{"children":"This is slower to start (planning takes time before any subagent begins work) but produces fewer conflicts and more predictable output."}],"\n",["$","h2",null,{"children":"Team context in AppState"}],"\n",["$","p",null,{"children":"AppState includes a team context field that tracks which subagents are active, their assigned tasks, and their current status."}],"\n",["$","p",null,{"children":"This is the coordination state for the coordinator turn — it knows who is working on what."}],"\n",["$","p",null,{"children":"The UI can surface this as a \"team\" view showing active subagents and their status, even when using InProcessBackend where there are no visible panes."}],"\n",["$","$La",null,{"title":"Swarm backend abstraction and coordinator pattern","description":"The interface that decouples coordinator from backend, and the coordinator turn structure. JS shows the actual pattern; Python and Go show the same shape.","tabs":[{"label":"JavaScript","language":"typescript","filename":"utils/swarm/ + coordinator/ (simplified)","description":"SwarmBackend interface and coordinator flow — actual pattern from learning-claude-code","code":"$b"},{"label":"Python","language":"python","filename":"swarm_pattern.py (teaching version)","description":"SwarmBackend protocol and coordinator flow in Python","code":"$c"},{"label":"Go","language":"go","filename":"swarm_pattern.go (teaching version)","description":"SwarmBackend interface and parallel subagent collection in Go","code":"$d"}]}],"\n",["$","section",null,{"className":"styles_container__oZwSC","data-component":"QuestionModule","children":[["$","div",null,{"className":"styles_header__mm_0m","children":[["$","h3",null,{"className":"styles_question__PznEA","children":"The Claude Code coordinator uses a 'synthesize first' strategy — it completes a full work breakdown plan before spawning any subagents. What failure mode does this prevent that a 'spawn then plan' strategy would not?"}],["$","span",null,{"className":"styles_badge__4rHEw styles_badgeMedium__xXH7Q","children":"medium"}]]}],["$","p",null,{"className":"styles_context__hE7d4","children":"Multiple subagents run concurrently, each with their own file system access and tool permissions. The coordinator assigns each subagent a specific set of files to work on."}],["$","ul",null,{"className":"styles_optionList__TKMHh","children":[["$","li","A",{"className":"styles_option__DTfSF","children":["$","details",null,{"children":[["$","summary",null,{"className":"styles_optionSummary__noBWC","children":[["$","span",null,{"className":"styles_optionMarker__tZP_f styles_optionMarkerIncorrect__ymBsg","children":"A"}],"Subagents calling the model API simultaneously would exceed rate limits"]}],["$","div",null,{"className":"styles_reveal__PELdG styles_revealIncorrect__z_T88","children":[["$","span",null,{"className":"styles_revealLabel__IXR5j","children":"Incorrect."}],["$","span",null,{"children":"Rate limit management is a concern but it is handled at the API call level, not by the planning strategy. 'Synthesize first' does not reduce total API calls."}]]}]]}]}],["$","li","B",{"className":"styles_option__DTfSF","children":["$","details",null,{"children":[["$","summary",null,{"className":"styles_optionSummary__noBWC","children":[["$","span",null,{"className":"styles_optionMarker__tZP_f styles_optionMarkerCorrect__zxpQk","children":"B"}],"Uncoordinated subagents would modify the same files simultaneously, producing merge conflicts that the coordinator cannot resolve"]}],["$","div",null,{"className":"styles_reveal__PELdG styles_revealCorrect__rDxQT","children":[["$","span",null,{"className":"styles_revealLabel__IXR5j","children":"Correct!"}],["$","span",null,{"children":"Correct. If the coordinator spawns subagents before planning, two subagents may independently decide to modify the same shared utility file. Their changes conflict, and the coordinator receives two conflicting results with no way to automatically merge them. 'Synthesize first' assigns disjoint file ownership before any subagent starts, so conflicts are prevented at planning time rather than requiring resolution after the fact."}]]}]]}]}],["$","li","C",{"className":"styles_option__DTfSF","children":["$","details",null,{"children":[["$","summary",null,{"className":"styles_optionSummary__noBWC","children":[["$","span",null,{"className":"styles_optionMarker__tZP_f styles_optionMarkerIncorrect__ymBsg","children":"C"}],"Spawning subagents speculatively wastes compute on tasks that turn out to be unnecessary"]}],["$","div",null,{"className":"styles_reveal__PELdG styles_revealIncorrect__z_T88","children":[["$","span",null,{"className":"styles_revealLabel__IXR5j","children":"Incorrect."}],["$","span",null,{"children":"Compute efficiency is a valid concern but it is not the primary reason. The deeper issue is correctness: conflicting file modifications from uncoordinated subagents can produce broken output regardless of compute cost."}]]}]]}]}],["$","li","D",{"className":"styles_option__DTfSF","children":["$","details",null,{"children":[["$","summary",null,{"className":"styles_optionSummary__noBWC","children":[["$","span",null,{"className":"styles_optionMarker__tZP_f styles_optionMarkerIncorrect__ymBsg","children":"D"}],"Without a plan, subagents would not know when to stop running"]}],["$","div",null,{"className":"styles_reveal__PELdG styles_revealIncorrect__z_T88","children":[["$","span",null,{"className":"styles_revealLabel__IXR5j","children":"Incorrect."}],["$","span",null,{"children":"Subagents are given specific task instructions and stop when their task is complete. The absence of a coordinator plan does not leave subagents running indefinitely."}]]}]]}]}]]}],"$undefined"]}]]}],["$","nav",null,{"aria-label":"Post navigation","className":"grid gap-3 sm:grid-cols-2","children":[["$","$Le",null,{"href":"/blog/ai-agents-claude-code-task-runtime-notes","className":"rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-indigo-300 hover:bg-indigo-50","children":[["$","p",null,{"className":"text-xs font-medium uppercase tracking-wide text-slate-500","children":"Previous"}],["$","p",null,{"className":"mt-1 text-sm font-semibold text-slate-900","children":"Claude Code Task Runtime: Background Work as First-Class Objects"}]]}],["$","$Le",null,{"href":"/blog/ai-agents-claude-code-services-tools-runtime-notes","className":"rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-indigo-300 hover:bg-indigo-50 sm:text-right","children":[["$","p",null,{"className":"text-xs font-medium uppercase tracking-wide text-slate-500","children":"Next"}],["$","p",null,{"className":"mt-1 text-sm font-semibold text-slate-900","children":"Claude Code Tool Execution: Scheduling, Streaming, and Governance"}]]}]]}]]}]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Claude Code Multi-Agent Runtime: Coordinator, Three Backends, Disjoint Ownership — Blog — Bowen Yang"}],["$","meta","3",{"name":"description","content":"How the coordinator's synthesize-first strategy prevents file conflicts, how three swarm backends (TmuxBackend, ITermBackend, InProcessBackend) share one interface, and what team context tracks."}],["$","meta","4",{"name":"keywords","content":"Claude Code swarm,multi-agent,coordinator mode,tmux backend,subagent,parallel agents"}],["$","meta","5",{"property":"og:title","content":"Claude Code Multi-Agent Runtime: Coordinator, Three Backends, Disjoint Ownership — Blog"}],["$","meta","6",{"property":"og:description","content":"How the coordinator's synthesize-first strategy prevents file conflicts, how three swarm backends (TmuxBackend, ITermBackend, InProcessBackend) share one interface, and what team context tracks."}],["$","meta","7",{"property":"og:url","content":"https://codewisdom.io/blog/ai-agents-claude-code-swarm-multiagent-notes/"}],["$","meta","8",{"property":"og:site_name","content":"Bowen Yang"}],["$","meta","9",{"property":"og:locale","content":"en_US"}],["$","meta","10",{"property":"og:type","content":"article"}],["$","meta","11",{"property":"article:published_time","content":"2026-04-02"}],["$","meta","12",{"property":"article:modified_time","content":"2026-04-02"}],["$","meta","13",{"name":"twitter:card","content":"summary"}],["$","meta","14",{"name":"twitter:title","content":"Claude Code Multi-Agent Runtime: Coordinator, Three Backends, Disjoint Ownership — Blog"}],["$","meta","15",{"name":"twitter:description","content":"How the coordinator's synthesize-first strategy prevents file conflicts, how three swarm backends (TmuxBackend, ITermBackend, InProcessBackend) share one interface, and what team context tracks."}],["$","link","16",{"rel":"icon","href":"/icon.svg?893d1655c173574a","type":"image/svg+xml","sizes":"any"}],["$","meta","17",{"name":"next-size-adjust"}]]
+1:null

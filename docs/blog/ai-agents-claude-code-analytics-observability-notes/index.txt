@@ -1,0 +1,211 @@
+3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[5422,["231","static/chunks/231-cda03aaab516dc35.js","185","static/chunks/app/layout-7fb6aa1a64abd4d2.js"],"default"]
+7:I[9669,["231","static/chunks/231-cda03aaab516dc35.js","185","static/chunks/app/layout-7fb6aa1a64abd4d2.js"],"default"]
+4:["slug","ai-agents-claude-code-analytics-observability-notes","d"]
+0:["8Yk2ujLo2tCBbuzKM08m4",[[["",{"children":["blog",{"children":[["slug","ai-agents-claude-code-analytics-observability-notes","d"],{"children":["__PAGE__?{\"slug\":\"ai-agents-claude-code-analytics-observability-notes\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["blog",{"children":[["slug","ai-agents-claude-code-analytics-observability-notes","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fc97ab377e9eb9f1.css","precedence":"next","crossOrigin":"$undefined"}]]}],null]},[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null],null]},[["$","html",null,{"lang":"en","suppressHydrationWarning":true,"className":"__variable_f367f3","children":["$","body",null,{"suppressHydrationWarning":true,"className":"relative min-h-screen overflow-x-hidden bg-[#FAF9F5] text-slate-900 antialiased","children":[["$","$L6",null,{}],["$","div",null,{"id":"app-shell","className":"relative z-10 flex min-h-screen flex-col","children":[["$","$L7",null,{}],["$","main",null,{"className":"mx-auto w-full max-w-5xl flex-1 px-4 py-8 sm:px-6 sm:py-10","children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]}],["$","footer",null,{"className":"bg-transparent","children":["$","div",null,{"className":"mx-auto w-full max-w-5xl px-4 py-6 sm:px-6","children":["$","p",null,{"className":"text-sm text-slate-400","children":"Code Wisdom © 2024-2026"}]}]}]]}]]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/011c10e6cbcb66d9.css","precedence":"next","crossOrigin":"$undefined"}]],[null,"$L8"]]]]]
+9:I[5474,["231","static/chunks/231-cda03aaab516dc35.js","540","static/chunks/540-c71c30a3213e5e7b.js","224","static/chunks/224-fa8e27c5e1ae8a62.js","331","static/chunks/331-7b4554f1e2ba1fc6.js","811","static/chunks/811-fe7d5e4541f95d60.js","308","static/chunks/app/blog/%5Bslug%5D/page-47193f5182e28c69.js"],"default"]
+a:I[2295,["231","static/chunks/231-cda03aaab516dc35.js","540","static/chunks/540-c71c30a3213e5e7b.js","224","static/chunks/224-fa8e27c5e1ae8a62.js","331","static/chunks/331-7b4554f1e2ba1fc6.js","811","static/chunks/811-fe7d5e4541f95d60.js","308","static/chunks/app/blog/%5Bslug%5D/page-47193f5182e28c69.js"],"default"]
+e:I[231,["231","static/chunks/231-cda03aaab516dc35.js","540","static/chunks/540-c71c30a3213e5e7b.js","224","static/chunks/224-fa8e27c5e1ae8a62.js","331","static/chunks/331-7b4554f1e2ba1fc6.js","811","static/chunks/811-fe7d5e4541f95d60.js","308","static/chunks/app/blog/%5Bslug%5D/page-47193f5182e28c69.js"],""]
+b:T706,// PII enforcement: this type can only be assigned by explicit verification
+// The verbose name is the enforcement — it is not an accident
+declare const _VERIFIED: unique symbol
+type AnalyticsMetadata_I_VERIFIED_THIS_IS_NOT_CODE_OR_FILEPATHS = {
+readonly [_VERIFIED]: true
+[key: string]: string | number | boolean
+}
+
+function verifyMetadata(
+m: Record<string, string | number | boolean>
+): AnalyticsMetadata_I_VERIFIED_THIS_IS_NOT_CODE_OR_FILEPATHS {
+// Call site must explicitly invoke this — the type name is the documentation
+return m as AnalyticsMetadata_I_VERIFIED_THIS_IS_NOT_CODE_OR_FILEPATHS
+}
+
+interface AnalyticsEvent {
+name: string
+metadata: AnalyticsMetadata_I_VERIFIED_THIS_IS_NOT_CODE_OR_FILEPATHS
+userId?: string
+}
+
+// Dual sink: both sinks always receive the same event
+async function trackEvent(event: AnalyticsEvent): Promise<void> {
+await Promise.allSettled([
+  datadogSink.emit(event),
+  firstPartySink.emit(event)
+])
+}
+
+// User bucket hashing for stable A/B assignment
+function getUserBucket(userId: string, bucketCount = 100): number {
+const hash = murmurhash(userId)
+return hash % bucketCount
+}
+
+// OTEL span wrapping the full turn — not just the model call
+async function runTurnWithSpan(
+input: string,
+context: SessionContext
+): Promise<TurnResult> {
+return tracer.startActiveSpan('turn.execute', async (span) => {
+  span.setAttributes({
+    'turn.input_length': input.length,
+    'session.id': context.sessionId,
+  })
+
+  try {
+    const result = await runTurn(input, context)
+    span.setStatus({ code: SpanStatusCode.OK })
+    span.setAttributes({ 'turn.tool_calls': result.toolCallCount })
+    return result
+  } catch (err) {
+    span.setStatus({ code: SpanStatusCode.ERROR })
+    span.recordException(err as Error)
+    throw
+  } finally {
+    span.end()
+  }
+})
+}c:T74a,from dataclasses import dataclass
+from typing import Any
+from opentelemetry import trace
+from opentelemetry.trace import SpanStatusCode
+import asyncio
+import hashlib
+
+# Python equivalent of the never-type PII marker:
+# a wrapper that must be explicitly constructed
+class VerifiedAnalyticsMetadata:
+  """
+  Metadata explicitly verified to not contain code or file paths.
+  The class name is the documentation — call sites must read it.
+  """
+  def __init__(self, data: dict[str, str | int | bool]) -> None:
+      self._data = data
+
+  def to_dict(self) -> dict[str, str | int | bool]:
+      return dict(self._data)
+
+@dataclass
+class AnalyticsEvent:
+  name: str
+  metadata: VerifiedAnalyticsMetadata
+  user_id: str | None = None
+
+async def track_event(event: AnalyticsEvent) -> None:
+  """Dual sink: both always receive the same event."""
+  await asyncio.gather(
+      datadog_sink.emit(event),
+      first_party_sink.emit(event),
+      return_exceptions=True  # don't fail if one sink is down
+  )
+
+def get_user_bucket(user_id: str, bucket_count: int = 100) -> int:
+  """Stable bucket assignment for A/B testing."""
+  digest = int(hashlib.md5(user_id.encode()).hexdigest(), 16)
+  return digest % bucket_count
+
+tracer = trace.get_tracer(__name__)
+
+async def run_turn_with_span(
+  input_text: str,
+  context: 'SessionContext'
+) -> 'TurnResult':
+  with tracer.start_as_current_span('turn.execute') as span:
+      span.set_attributes({
+          'turn.input_length': len(input_text),
+          'session.id': context.session_id,
+      })
+      try:
+          result = await run_turn(input_text, context)
+          span.set_status(SpanStatusCode.OK)
+          span.set_attribute('turn.tool_calls', result.tool_call_count)
+          return result
+      except Exception as e:
+          span.set_status(SpanStatusCode.ERROR)
+          span.record_exception(e)
+          raised:T79c,package analytics
+
+import (
+  "context"
+  "crypto/md5"
+  "encoding/binary"
+  "sync"
+
+  "go.opentelemetry.io/otel"
+  "go.opentelemetry.io/otel/codes"
+)
+
+// VerifiedMetadata: explicit PII verification wrapper
+// The type name documents the contract — callers must read it
+type VerifiedMetadata struct {
+  data map[string]any
+}
+
+func NewVerifiedMetadata(
+  // Caller explicitly constructs this, acknowledging the type name
+  data map[string]any,
+) VerifiedMetadata {
+  return VerifiedMetadata{data: data}
+}
+
+type AnalyticsEvent struct {
+  Name     string
+  Metadata VerifiedMetadata
+  UserID   string
+}
+
+// TrackEvent: dual-sink — both sinks always receive the same event
+func TrackEvent(ctx context.Context, event AnalyticsEvent) {
+  var wg sync.WaitGroup
+  wg.Add(2)
+
+  go func() {
+      defer wg.Done()
+      datadogSink.Emit(ctx, event) // ignore error — best effort
+  }()
+
+  go func() {
+      defer wg.Done()
+      firstPartySink.Emit(ctx, event) // ignore error — best effort
+  }()
+
+  wg.Wait()
+}
+
+// GetUserBucket: stable A/B assignment via hashing
+func GetUserBucket(userID string, bucketCount int) int {
+  hash := md5.Sum([]byte(userID))
+  n := binary.LittleEndian.Uint32(hash[:4])
+  return int(n) % bucketCount
+}
+
+var tracer = otel.Tracer("claude-code")
+
+// RunTurnWithSpan: OTEL span wrapping the full turn
+func RunTurnWithSpan(
+  ctx context.Context,
+  input string,
+  sessionCtx *SessionContext,
+) (*TurnResult, error) {
+  ctx, span := tracer.Start(ctx, "turn.execute")
+  defer span.End()
+
+  span.SetAttributes(
+      attribute.Int("turn.input_length", len(input)),
+      attribute.String("session.id", sessionCtx.SessionID),
+  )
+
+  result, err := RunTurn(ctx, input, sessionCtx)
+  if err != nil {
+      span.SetStatus(codes.Error, err.Error())
+      span.RecordError(err)
+      return nil, err
+  }
+
+  span.SetStatus(codes.Ok, "")
+  span.SetAttributes(attribute.Int("turn.tool_calls", result.ToolCallCount))
+  return result, nil
+}2:["$","article",null,{"className":"space-y-8","children":[["$","header",null,{"className":"space-y-4 rounded-2xl border border-slate-200 bg-gradient-to-br from-white to-indigo-50 p-6 sm:p-8","children":[["$","h1",null,{"className":"text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl","children":"Claude Code Observability: Dual-Sink Analytics, OTEL Spans, Perfetto Traces"}],["$","div",null,{"className":"flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-slate-600","children":[["$","time",null,{"dateTime":"2026-04-02","children":"April 2, 2026"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"3 min read"}],[["$","span",null,{"children":"•"}],["$","span",null,{"children":"AI Agents"}]]]}],["$","p",null,{"className":"text-lg leading-relaxed text-slate-700","children":"How dual-sink event routing, compile-time PII enforcement, full-turn OTEL instrumentation, and Perfetto/Chrome Trace export give Claude Code production-grade observability from a local-first runtime."}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","span","ai-agents",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"ai-agents"}],["$","span","claude-code",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"claude-code"}],["$","span","observability",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"observability"}],["$","span","analytics",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"analytics"}],["$","span","opentelemetry",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"opentelemetry"}],["$","span","tracing",{"className":"inline-block rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700","children":"tracing"}]]}]]}],["$","div",null,{"className":"prose max-w-none rounded-xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8","children":[["$","nav",null,{"data-component":"SeriesNav","className":"styles_container__A3IRs","children":[["$","div",null,{"className":"styles_topBar__Z1gym","children":[["$","a",null,{"href":"/blog/ai-agents-claude-code-series-index","className":"styles_seriesLink__rLemJ","children":"Claude Code: Source Reading Series"}],["$","span",null,{"className":"styles_sep__GGjd3","children":"›"}],["$","span",null,{"className":"styles_layerBadge__Q0d3m","children":"Layer 5: The Platform"}],["$","span",null,{"className":"styles_partBadge__fUwxC","children":["Part ",15," / ",18]}]]}],["$","div",null,{"className":"styles_progressBar__fgLWL","children":["$","div",null,{"className":"styles_progressFill__qjZc_","style":{"width":"83%"}}]}],["$","div",null,{"className":"styles_bottomNav__qPM7g","children":[["$","a",null,{"href":"/blog/ai-agents-claude-code-ui-runtime-notes","className":"styles_navLink__Bk58u styles_navLinkPrev__LuRrD","children":[["$","span",null,{"className":"styles_navDirection__8wLNi","children":"← Previous"}],["$","span",null,{"className":"styles_navTitle__21udg","children":"UI Runtime"}]]}],["$","a",null,{"href":"/blog/ai-agents-claude-code-architecture-review","className":"styles_navLink__Bk58u styles_navLinkNext__2KWCL","children":[["$","span",null,{"className":"styles_navDirection__8wLNi","children":"Next →"}],["$","span",null,{"className":"styles_navTitle__21udg","children":"Architecture Review"}]]}]]}],false]}],"\n",["$","p",null,{"children":"Observability in a local-first agent runtime is harder than in a server: there is no always-on backend to receive events, sessions may be offline, and PII is on the user's machine."}],"\n",["$","p",null,{"children":"Claude Code has a layered solution: dual-sink analytics, OpenTelemetry spans, BigQuery output, and Perfetto traces for deep performance analysis."}],"\n",["$","h2",null,{"children":"File structure"}],"\n",["$","$L9",null,{"highlightedPaths":["src/services/analytics/index.ts","src/services/analytics/types.ts","src/services/analytics/bucketHash.ts","src/utils/telemetry/otel.ts","src/utils/telemetry/betaSessionTracing.ts","src/utils/telemetry/perfetto.ts"]}],"\n",["$","section",null,{"className":"styles_container__5lCUS","data-component":"SourceFileCard","children":[["$","div",null,{"className":"styles_header__dyQ1Z","children":[["$","div",null,{"className":"styles_headerMain__rjDfx","children":[["$","p",null,{"className":"styles_path__51AwZ","children":"src/services/analytics/"}],["$","h3",null,{"className":"styles_role__nfEhJ","children":"Dual-sink event emission"}]]}],["$","div",null,{"className":"styles_badges__pF5IJ","children":["$","span",null,{"className":"styles_importanceBadge__L3cXb","children":"High"}]}]]}],["$","p",null,{"className":"styles_summary__U4AnH","children":"Routes analytics events to two sinks simultaneously: Datadog (product metrics) and a first-party Anthropic sink. PII fields are marked with a _PROTO_ prefix convention. User bucket hashing ensures consistent A/B assignment. The type AnalyticsMetadata_I_VERIFIED_THIS_IS_NOT_CODE_OR_FILEPATHS is a never-type marker enforcing that metadata values are not code or file paths."}],["$","dl",null,{"className":"styles_metaGrid__XCxXQ","children":["$","div",null,{"className":"styles_metaItem__WwAW9","children":[["$","dt",null,{"className":"styles_metaLabel___SXxX","children":"Module"}],["$","dd",null,{"className":"styles_metaValue__alqAB","children":"Analytics + Observability"}]]}]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Key Exports"}],["$","ul",null,{"className":"styles_chipList__6CD4U","children":[["$","li","trackEvent",{"className":"styles_chip__NkeZa","children":"trackEvent"}],["$","li","AnalyticsEvent",{"className":"styles_chip__NkeZa","children":"AnalyticsEvent"}],["$","li","AnalyticsMetadata_I_VERIFIED_THIS_IS_NOT_CODE_OR_FILEPATHS",{"className":"styles_chip__NkeZa","children":"AnalyticsMetadata_I_VERIFIED_THIS_IS_NOT_CODE_OR_FILEPATHS"}]]}]]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Why It Matters"}],["$","ul",null,{"className":"styles_pointList__fc1yj","children":[["$","li","The never-type marker on metadata is a compile-time enforcement of PII policy — you cannot accidentally pass file paths as event metadata.",{"className":"styles_point__nyY9Y","children":"The never-type marker on metadata is a compile-time enforcement of PII policy — you cannot accidentally pass file paths as event metadata."}],["$","li","Dual-sink means product metrics (Datadog) and usage analytics (1P sink) are always in sync — no divergence between what the team sees and what billing sees.",{"className":"styles_point__nyY9Y","children":"Dual-sink means product metrics (Datadog) and usage analytics (1P sink) are always in sync — no divergence between what the team sees and what billing sees."}],["$","li","User bucket hashing for A/B assignment means feature flag behavior is consistent across sessions for the same user.",{"className":"styles_point__nyY9Y","children":"User bucket hashing for A/B assignment means feature flag behavior is consistent across sessions for the same user."}]]}]]}],null]}],"\n",["$","section",null,{"className":"styles_container__5lCUS","data-component":"SourceFileCard","children":[["$","div",null,{"className":"styles_header__dyQ1Z","children":[["$","div",null,{"className":"styles_headerMain__rjDfx","children":[["$","p",null,{"className":"styles_path__51AwZ","children":"src/utils/telemetry/"}],["$","h3",null,{"className":"styles_role__nfEhJ","children":"OpenTelemetry spans and BigQuery output"}]]}],["$","div",null,{"className":"styles_badges__pF5IJ","children":["$","span",null,{"className":"styles_importanceBadge__L3cXb","children":"High"}]}]]}],["$","p",null,{"className":"styles_summary__U4AnH","children":"Instruments the query loop, tool execution, and MCP calls with OTEL spans. Exports to BigQuery for aggregate analysis. Includes a beta session tracer that extracts <system-reminder> tags as separate span attributes for structured analysis of system prompt injection."}],["$","dl",null,{"className":"styles_metaGrid__XCxXQ","children":["$","div",null,{"className":"styles_metaItem__WwAW9","children":[["$","dt",null,{"className":"styles_metaLabel___SXxX","children":"Module"}],["$","dd",null,{"className":"styles_metaValue__alqAB","children":"Analytics + Observability"}]]}]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Key Exports"}],["$","ul",null,{"className":"styles_chipList__6CD4U","children":[["$","li","startSpan",{"className":"styles_chip__NkeZa","children":"startSpan"}],["$","li","recordToolExecution",{"className":"styles_chip__NkeZa","children":"recordToolExecution"}],["$","li","BetaSessionTracer",{"className":"styles_chip__NkeZa","children":"BetaSessionTracer"}],["$","li","exportToBigQuery",{"className":"styles_chip__NkeZa","children":"exportToBigQuery"}]]}]]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Why It Matters"}],["$","ul",null,{"className":"styles_pointList__fc1yj","children":[["$","li","OTEL spans wrap the full turn execution, not just the model call — tool execution, permission checks, and MCP calls all generate spans.",{"className":"styles_point__nyY9Y","children":"OTEL spans wrap the full turn execution, not just the model call — tool execution, permission checks, and MCP calls all generate spans."}],["$","li","The beta session tracer treating <system-reminder> tags as separate attributes means system prompt injection is observable in BigQuery without manually parsing raw transcripts.",{"className":"styles_point__nyY9Y","children":"The beta session tracer treating <system-reminder> tags as separate attributes means system prompt injection is observable in BigQuery without manually parsing raw transcripts."}],["$","li","BigQuery export enables aggregate analysis across millions of sessions while keeping raw transcripts local.",{"className":"styles_point__nyY9Y","children":"BigQuery export enables aggregate analysis across millions of sessions while keeping raw transcripts local."}]]}]]}],null]}],"\n",["$","section",null,{"className":"styles_container__5lCUS","data-component":"SourceFileCard","children":[["$","div",null,{"className":"styles_header__dyQ1Z","children":[["$","div",null,{"className":"styles_headerMain__rjDfx","children":[["$","p",null,{"className":"styles_path__51AwZ","children":"src/utils/telemetry/betaSessionTracing.ts"}],["$","h3",null,{"className":"styles_role__nfEhJ","children":"Beta feature tracing with system-reminder extraction"}]]}],["$","div",null,{"className":"styles_badges__pF5IJ","children":["$","span",null,{"className":"styles_importanceBadge__L3cXb","children":"Medium"}]}]]}],["$","p",null,{"className":"styles_summary__U4AnH","children":"492-line beta tracer that intercepts conversation messages, extracts <system-reminder> tags as named span attributes, and records feature flag states alongside turn spans. Enables analysis of how beta features and system prompt injections correlate with turn outcomes."}],["$","dl",null,{"className":"styles_metaGrid__XCxXQ","children":["$","div",null,{"className":"styles_metaItem__WwAW9","children":[["$","dt",null,{"className":"styles_metaLabel___SXxX","children":"Module"}],["$","dd",null,{"className":"styles_metaValue__alqAB","children":"Analytics + Observability"}]]}]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Key Exports"}],["$","ul",null,{"className":"styles_chipList__6CD4U","children":[["$","li","BetaSessionTracer",{"className":"styles_chip__NkeZa","children":"BetaSessionTracer"}],["$","li","extractSystemReminders",{"className":"styles_chip__NkeZa","children":"extractSystemReminders"}],["$","li","recordBetaSpan",{"className":"styles_chip__NkeZa","children":"recordBetaSpan"}]]}]]}],["$","div",null,{"className":"styles_section__tHVRK","children":[["$","p",null,{"className":"styles_sectionTitle__DGYra","children":"Why It Matters"}],["$","ul",null,{"className":"styles_pointList__fc1yj","children":[["$","li","Extracting <system-reminder> tags as attributes means prompt injection points are structured data, not buried in raw text.",{"className":"styles_point__nyY9Y","children":"Extracting <system-reminder> tags as attributes means prompt injection points are structured data, not buried in raw text."}],["$","li","Correlating feature flags with turn outcomes in the same span tree enables direct attribution of behavior changes to specific beta features.",{"className":"styles_point__nyY9Y","children":"Correlating feature flags with turn outcomes in the same span tree enables direct attribution of behavior changes to specific beta features."}],["$","li","At 492 lines, this is a production-grade tracer, not a debug util — it reflects how seriously Anthropic instruments beta behavior.",{"className":"styles_point__nyY9Y","children":"At 492 lines, this is a production-grade tracer, not a debug util — it reflects how seriously Anthropic instruments beta behavior."}]]}]]}],null]}],"\n",["$","h2",null,{"children":"The dual-sink design"}],"\n",["$","section",null,{"className":"styles_container__ZnY0Q","data-component":"CalloutFlow","children":[["$","div",null,{"className":"styles_header__QlXI3","children":[["$","h3",null,{"className":"styles_title__PjGPE","children":"Analytics and observability pipeline"}],["$","p",null,{"className":"styles_description__A_tMR","children":"From agent event to Datadog metric and BigQuery aggregate."}]]}],["$","ol",null,{"className":"styles_stepList__eTbMY","children":[["$","li","1-Emit typed event",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":1}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Emit typed event"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"services/analytics/"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"trackEvent() accepts a typed AnalyticsEvent. Metadata values are enforced by the never-type marker to not contain code or file paths — a compile-time PII guard."}],null]}]]}],["$","li","2-Route to dual sinks",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":2}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Route to dual sinks"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"services/analytics/ (sink routing)"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"Each event is sent to both Datadog (product metrics dashboard) and the Anthropic 1P sink (usage analytics, billing). Both sinks receive every event — no routing logic that could cause divergence."}],null]}]]}],["$","li","3-Hash user bucket for A/B",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":3}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Hash user bucket for A/B"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"services/analytics/ (user bucket hashing)"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"User identity is hashed to a stable bucket for consistent A/B assignment. Same user in same bucket across sessions — no jitter in feature flag behavior."}],null]}]]}],["$","li","4-Instrument turn with OTEL spans",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":4}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Instrument turn with OTEL spans"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"utils/telemetry/"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"The query loop, tool execution, permission checks, and MCP calls each open OTEL spans. The full turn becomes a traceable span tree."}],null]}]]}],["$","li","5-Extract system-reminder tags",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":5}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Extract system-reminder tags"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"utils/telemetry/betaSessionTracing.ts"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"The beta tracer intercepts messages and pulls <system-reminder> tags into named span attributes. System prompt injection is now structured observability data."}],null]}]]}],["$","li","6-Export to BigQuery",{"className":"styles_stepCard__FkOEj","children":[["$","div",null,{"className":"styles_stepMarker__CmT4L","children":["$","span",null,{"className":"styles_stepNumber__QlJi9","children":6}]}],["$","div",null,{"className":"styles_stepBody__dbT7o","children":[["$","div",null,{"className":"styles_stepHeader__DcLID","children":[["$","h4",null,{"className":"styles_stepTitle__gyBVM","children":"Export to BigQuery"}],["$","span",null,{"className":"styles_sourceRef__fBCsX","children":"utils/telemetry/ (BigQuery export)"}]]}],["$","p",null,{"className":"styles_stepSummary__OtZYU","children":"Span trees are exported to BigQuery for aggregate analysis. Raw transcripts stay local; only structured span data leaves the machine."}],null]}]]}]]}]]}],"\n",["$","h2",null,{"children":"The PII enforcement design"}],"\n",["$","p",null,{"children":["The type name ",["$","code",null,{"children":"AnalyticsMetadata_I_VERIFIED_THIS_IS_NOT_CODE_OR_FILEPATHS"}]," is one of the most deliberate design choices in the codebase."]}],"\n",["$","p",null,{"children":["It is a never-type marker — a TypeScript type that cannot be assigned any value except ",["$","code",null,{"children":"never"}],", meaning the only way to use it is to explicitly cast and declare the verification."]}],"\n",["$","p",null,{"children":"The consequence: passing a file path or code snippet as analytics event metadata is a compile-time error, not a runtime check."}],"\n",["$","p",null,{"children":"This matters because analytics metadata ends up in Datadog dashboards and BigQuery tables that may be accessible to many people. If code or file paths accidentally end up there, they could expose source code, credentials in file names, or personal paths."}],"\n",["$","p",null,{"children":"The verification type forces every call site to explicitly attest that its metadata is safe."}],"\n",["$","h2",null,{"children":"Why OTEL spans wrap more than the model call"}],"\n",["$","p",null,{"children":"A common pattern in agent instrumentation is to put a span only around the model API call — measure latency, record token counts, done."}],"\n",["$","p",null,{"children":"Claude Code wraps a much wider surface: the full turn, including tool execution, permission checks, MCP client calls, and task spawning."}],"\n",["$","p",null,{"children":"This matters because in a real agent session, the model call is often not the slowest part. A tool that runs a shell command, a permission prompt waiting for user input, an MCP server that times out — these all appear in the span tree, giving a complete picture of where a slow turn actually spent its time."}],"\n",["$","h2",null,{"children":"Perfetto and Chrome Trace format"}],"\n",["$","p",null,{"children":"The telemetry layer also supports Perfetto trace export in Chrome Trace format."}],"\n",["$","p",null,{"children":["Perfetto is Google's system profiler. The Chrome Trace format is readable in ",["$","code",null,{"children":"chrome://tracing"}],", Perfetto UI, and Speedscope."]}],"\n",["$","p",null,{"children":"This is not for production monitoring — it is for deep performance analysis of individual sessions. A developer investigating a slow turn can export a Perfetto trace and see exactly how the span tree corresponds to CPU and wall-clock time."}],"\n",["$","$La",null,{"title":"Analytics dual-sink and OTEL span pattern","description":"The PII-enforced event emission and span-wrapped turn execution. JS shows the actual shape; Python and Go show the same structure.","tabs":[{"label":"JavaScript","language":"typescript","filename":"services/analytics/ + utils/telemetry/ (simplified)","description":"Never-type PII marker and dual-sink routing — actual pattern from learning-claude-code","code":"$b"},{"label":"Python","language":"python","filename":"analytics_observability.py (teaching version)","description":"Dual-sink analytics and OTEL span pattern in Python","code":"$c"},{"label":"Go","language":"go","filename":"analytics_observability.go (teaching version)","description":"Dual-sink event routing and OTEL spans in Go","code":"$d"}]}],"\n",["$","section",null,{"className":"styles_container__oZwSC","data-component":"QuestionModule","children":[["$","div",null,{"className":"styles_header__mm_0m","children":[["$","h3",null,{"className":"styles_question__PznEA","children":"Claude Code uses a type named AnalyticsMetadata_I_VERIFIED_THIS_IS_NOT_CODE_OR_FILEPATHS as a compile-time PII guard. What would be the consequence of enforcing this policy with a runtime check (e.g., a regex that rejects strings containing slashes) instead?"}],["$","span",null,{"className":"styles_badge__4rHEw styles_badgeMedium__xXH7Q","children":"medium"}]]}],["$","p",null,{"className":"styles_context__hE7d4","children":"Analytics events end up in Datadog dashboards and BigQuery tables accessible to many people. File paths and code snippets in event metadata could expose sensitive information."}],["$","ul",null,{"className":"styles_optionList__TKMHh","children":[["$","li","A",{"className":"styles_option__DTfSF","children":["$","details",null,{"children":[["$","summary",null,{"className":"styles_optionSummary__noBWC","children":[["$","span",null,{"className":"styles_optionMarker__tZP_f styles_optionMarkerIncorrect__ymBsg","children":"A"}],"Runtime checks are faster — the never-type approach adds TypeScript compilation overhead"]}],["$","div",null,{"className":"styles_reveal__PELdG styles_revealIncorrect__z_T88","children":[["$","span",null,{"className":"styles_revealLabel__IXR5j","children":"Incorrect."}],["$","span",null,{"children":"TypeScript type checking happens at compile time, not at runtime. It adds no overhead to the running program."}]]}]]}]}],["$","li","B",{"className":"styles_option__DTfSF","children":["$","details",null,{"children":[["$","summary",null,{"className":"styles_optionSummary__noBWC","children":[["$","span",null,{"className":"styles_optionMarker__tZP_f styles_optionMarkerIncorrect__ymBsg","children":"B"}],"A runtime regex would catch different patterns in different languages and environments, making it unreliable for a cross-platform tool"]}],["$","div",null,{"className":"styles_reveal__PELdG styles_revealIncorrect__z_T88","children":[["$","span",null,{"className":"styles_revealLabel__IXR5j","children":"Incorrect."}],["$","span",null,{"children":"This is a secondary concern. The more fundamental issue is that runtime checks fail silently (the event is dropped or the call throws) only after the code reaches production, while the compile-time approach prevents the mistake from being written at all."}]]}]]}]}],["$","li","C",{"className":"styles_option__DTfSF","children":["$","details",null,{"children":[["$","summary",null,{"className":"styles_optionSummary__noBWC","children":[["$","span",null,{"className":"styles_optionMarker__tZP_f styles_optionMarkerCorrect__zxpQk","children":"C"}],"Runtime checks fail at the call site after the code is written and deployed — they catch mistakes in production rather than at the point where the code is authored, and they can still be bypassed by converting values to safe-looking strings"]}],["$","div",null,{"className":"styles_reveal__PELdG styles_revealCorrect__rDxQT","children":[["$","span",null,{"className":"styles_revealLabel__IXR5j","children":"Correct!"}],["$","span",null,{"children":"Correct. A runtime check means the code compiles and ships even with the wrong metadata. The check then fires when the event is actually emitted — possibly in a session months after the code was written. The never-type marker is caught by the TypeScript compiler at the moment the developer writes the problematic call, before any code ships. Additionally, a runtime string check can be trivially bypassed by encoding a path differently (URL encoding, base64). The type-based approach cannot be bypassed without an explicit cast that documents the override."}]]}]]}]}],["$","li","D",{"className":"styles_option__DTfSF","children":["$","details",null,{"children":[["$","summary",null,{"className":"styles_optionSummary__noBWC","children":[["$","span",null,{"className":"styles_optionMarker__tZP_f styles_optionMarkerIncorrect__ymBsg","children":"D"}],"Runtime checks would prevent legitimate metadata like version numbers that contain dots (which look like file extensions)"]}],["$","div",null,{"className":"styles_reveal__PELdG styles_revealIncorrect__z_T88","children":[["$","span",null,{"className":"styles_revealLabel__IXR5j","children":"Incorrect."}],["$","span",null,{"children":"This describes a false positive risk in the check's pattern, not a fundamental difference between compile-time and runtime enforcement."}]]}]]}]}]]}],"$undefined"]}]]}],["$","nav",null,{"aria-label":"Post navigation","className":"grid gap-3 sm:grid-cols-2","children":[["$","$Le",null,{"href":"/blog/ai-agents-claude-code-architecture-review","className":"rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-indigo-300 hover:bg-indigo-50","children":[["$","p",null,{"className":"text-xs font-medium uppercase tracking-wide text-slate-500","children":"Previous"}],["$","p",null,{"className":"mt-1 text-sm font-semibold text-slate-900","children":"Claude Code Architecture: Five Principles for Building Agent Runtimes"}]]}],["$","div",null,{}]]}]]}]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Claude Code Observability: Dual-Sink Analytics, OTEL Spans, Perfetto Traces — Blog — Bowen Yang"}],["$","meta","3",{"name":"description","content":"How dual-sink event routing, compile-time PII enforcement, full-turn OTEL instrumentation, and Perfetto/Chrome Trace export give Claude Code production-grade observability from a local-first runtime."}],["$","meta","4",{"name":"keywords","content":"Claude Code analytics,OTEL,OpenTelemetry,Perfetto,dual-sink,agent observability,BigQuery"}],["$","meta","5",{"property":"og:title","content":"Claude Code Observability: Dual-Sink Analytics, OTEL Spans, Perfetto Traces — Blog"}],["$","meta","6",{"property":"og:description","content":"How dual-sink event routing, compile-time PII enforcement, full-turn OTEL instrumentation, and Perfetto/Chrome Trace export give Claude Code production-grade observability from a local-first runtime."}],["$","meta","7",{"property":"og:url","content":"https://codewisdom.io/blog/ai-agents-claude-code-analytics-observability-notes/"}],["$","meta","8",{"property":"og:site_name","content":"Bowen Yang"}],["$","meta","9",{"property":"og:locale","content":"en_US"}],["$","meta","10",{"property":"og:type","content":"article"}],["$","meta","11",{"property":"article:published_time","content":"2026-04-02"}],["$","meta","12",{"property":"article:modified_time","content":"2026-04-02"}],["$","meta","13",{"name":"twitter:card","content":"summary"}],["$","meta","14",{"name":"twitter:title","content":"Claude Code Observability: Dual-Sink Analytics, OTEL Spans, Perfetto Traces — Blog"}],["$","meta","15",{"name":"twitter:description","content":"How dual-sink event routing, compile-time PII enforcement, full-turn OTEL instrumentation, and Perfetto/Chrome Trace export give Claude Code production-grade observability from a local-first runtime."}],["$","link","16",{"rel":"icon","href":"/icon.svg?893d1655c173574a","type":"image/svg+xml","sizes":"any"}],["$","meta","17",{"name":"next-size-adjust"}]]
+1:null
